@@ -7,7 +7,7 @@ weight = 1917
 authors = ["Gene Stratton-Porter"]
 regions = ["Limberlost Indiana", "Rural Midwest"]
 studios = ["Paramount Pictures"]
-decades = ["1910s"]
+eras = ["early silent"]
 genres = ["Drama", "Romance"]
 availability = ["Lost"]
 directors = ["Marshall Neilan"]
@@ -38,7 +38,7 @@ show_citation = true
 
 # Film image
 [extra.film_image]
-url = "/images/freckles-1917-still.jpg"
+url = "/images/freckles1917.png"
 alt = "Jack Pickford and Louise Huff in Freckles (1917)"
 caption = "Jack Pickford and Louise Huff in an outdoor setting from the lost silent film Freckles (1917). Motography, June 1917."
 

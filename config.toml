@@ -13,7 +13,7 @@ taxonomies = [
     {name = "authors", feed = true},
     {name = "regions", feed = true},
     {name = "studios", feed = true},
-    {name = "decades", feed = true},
+    {name = "eras", feed = true},
     {name = "genres", feed = true},
     {name = "availability", feed = true},
     {name = "directors", feed = true}
