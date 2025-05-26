@@ -5,20 +5,10 @@
     <div class="content-wrapper">
         <div class="main-content">
             <h1 class="film-title">{{ page.title }}</h1>
-            
-            {% if page.extra.author_byline %}
-            <div class="film-byline">
-                by <span class="author-name">{{ page.extra.author_byline }}</span>
-            </div>
-            {% endif %}
-            
-            {% if page.extra.year %}
-            <div class="film-year">({{ page.extra.year }})</div>
-            {% endif %}
 
             {% if page.extra.original_story and page.extra.story_author %}
             <div class="film-description">
-                <p><em>Adapted from</em> {{ page.extra.original_story }} <em>by</em> {{ page.extra.story_author }}{% if page.extra.story_year %} ({{ page.extra.story_year }}){% endif %}</p>
+                <p><em>Adapted from</em> "{{ page.extra.original_story }}" <em>by</em> {{ page.extra.story_author }}{% if page.extra.story_year %} ({{ page.extra.story_year }}){% endif %}</p>
             </div>
             {% endif %}
 
@@ -28,7 +18,6 @@
                 </div>
             </div>
 
-
             <!-- Citation Section -->
             {% if page.extra.show_citation %}
             <div class="section citation">
@@ -37,7 +26,6 @@
                     <p class="citation-text">
                         {% if page.extra.author_byline %}{{ page.extra.author_byline }}. {% endif %}"{{ page.title }}." In <i>{{ config.title }}: A Digital Archive of Film Adaptations from American Women's Regional Literature, 1910-1961</i>. Web. Accessed [DATE]. &lt;{{ page.permalink }}&gt;
                     </p>
-                    <!-- <div class="citation-url">&lt;{{ config.base_url }}{{ page.permalink }}&gt;</div> -->
                 </div>
             </div>
             {% endif %}
@@ -65,11 +53,38 @@
                     </div>
                     {% endif %}
 
-                    {% if page.taxonomies.decades %}
+                    {% if page.taxonomies.eras %}
                     <div class="taxonomy-group">
                         <h4>Era</h4>
-                        {% for decade in page.taxonomies.decades %}
-                        <a href="{{ get_taxonomy_url(kind='decades', name=decade) }}" class="tag">{{ decade }}</a>
+                        {% for era in page.taxonomies.eras %}
+                        <a href="{{ get_taxonomy_url(kind='eras', name=era) }}" class="tag">{{ era }}</a>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+
+                    {% if page.taxonomies.genres %}
+                    <div class="taxonomy-group">
+                        <h4>Genres</h4>
+                        {% for genre in page.taxonomies.genres %}
+                        <a href="{{ get_taxonomy_url(kind='genres', name=genre) }}" class="tag">{{ genre }}</a>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+
+                    {% if page.taxonomies.studios %}
+                    <div class="taxonomy-group">
+                        <h4>Studios</h4>
+                        {% for studio in page.taxonomies.studios %}
+                        <a href="{{ get_taxonomy_url(kind='studios', name=studio) }}" class="tag">{{ studio }}</a>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+
+                    {% if page.taxonomies.directors %}
+                    <div class="taxonomy-group">
+                        <h4>Directors</h4>
+                        {% for director in page.taxonomies.directors %}
+                        <a href="{{ get_taxonomy_url(kind='directors', name=director) }}" class="tag">{{ director }}</a>
                         {% endfor %}
                     </div>
                     {% endif %}
@@ -82,8 +97,6 @@
         <aside class="film-sidebar">
             <!-- Action links like WFP -->
             <div class="action-links">
-                {% if page.extra.show_bibliography %}<a href="#bibliography">Bibliography</a>{% endif %}
-                {% if page.extra.show_citation %}<a href="#citation" class="citation">Citation</a>{% endif %}
                 <a href="javascript:window.print()" class="print">Print</a>
             </div>
 
@@ -104,7 +117,7 @@
                 {% if page.extra.year %}
                 <div class="metadata-item">
                     <span class="label">Year</span>
-                    <div class="value">{{ page.extra.year }}</div>
+                    <div class="value year-value">{{ page.extra.year }}</div>
                 </div>
                 {% endif %}
                 
@@ -220,6 +233,18 @@
                     </div>
                 </div>
                 {% endif %}
+            </div>
+            {% endif %}
+
+            <!-- Additional Details Box (if any other metadata exists) -->
+            {% if page.extra.adaptation_notes %}
+            <div class="metadata-box">
+                <h3>Notes</h3>
+                
+                <div class="metadata-item">
+                    <span class="label">Adaptation Notes</span>
+                    <div class="value">{{ page.extra.adaptation_notes }}</div>
+                </div>
             </div>
             {% endif %}
             {% endif %}

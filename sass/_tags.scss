@@ -3,7 +3,7 @@
 .tag {
   display: inline-block;
   font-family: $sans-serif;
-  font-size: $font-size-xs;
+  font-size: $font-size-base;
   font-weight: 600;
   color: $color-accent;
   background-color: rgba($color-accent, 0.08);
@@ -19,6 +19,7 @@
   &:hover {
     background-color: $color-accent;
     color: white;
+      text-decoration: none;
     transform: translateY(-1px);
     box-shadow: 0 4px 8px rgba($color-accent, 0.3);
   }

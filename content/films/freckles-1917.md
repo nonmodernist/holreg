@@ -13,6 +13,7 @@ availability = ["Lost"]
 directors = ["Marshall Neilan"]
 
 [extra]
+author_byline = "Alexandra Edwards"
 # Film metadata for sidebar
 year = 1917
 original_story = "Freckles"
@@ -29,7 +30,7 @@ duration = "Unknown"
 format = "Silent, B&W"
 filming_locations = ["Southern California (standing in for Indiana)"]
 adaptation_notes = "First adaptation of Stratton-Porter's novel"
-# author_byline = "Alexandra Edwards"
+
 
 # Content flags
 show_citation = true
