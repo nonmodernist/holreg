@@ -23,7 +23,7 @@ show_related_films = true
 
 # Author portrait
 [extra.author_image]
-url = "/images/anzia-yezierska-portrait.jpg"
+url = "/images/author-az.jpg"
 alt = "Anzia Yezierska portrait"
 caption = "Anzia Yezierska. Caption needed."
 

@@ -26,16 +26,14 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+
+# Film image
+[extra.film_image]
+url = "/images/sidebar-gonewith.jpg"
+alt = "ALT TEXT"
+caption = "CAPTION."
+
 +++
-
-*Gone with the Wind* (1939) is a film adaptation of "Gone with the Wind" by Margaret Mitchell (1936).
-
-## Production Details
-
-**Director:** Victor Fleming
-**Studio:** Selznick International
-**Setting:** Deep South (Georgia)
-**Availability:** DVD
 
 ## Plot Summary
 

@@ -26,16 +26,13 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+
+# Film image
+[extra.film_image]
+url = "/images/sidebar-an_alabaster_box.jpg"
+alt = "A man and a woman stand near a fence."
+caption = "CAPTION."
 +++
-
-*An Alabaster Box* (1917) is a film adaptation of "An Alabaster Box" by Mary Wilkins Freeman (1917).
-
-## Production Details
-
-**Director:** Chester Withey
-**Studio:** Vitagraph
-**Setting:** New England
-**Availability:** Lost
 
 ## Plot Summary
 

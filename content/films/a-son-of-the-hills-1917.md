@@ -26,16 +26,14 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+
+# Film image
+[extra.film_image]
+url = "/images/sidebar-hills.jpg"
+alt = "ALT TEXT"
+caption = "CAPTION."
+
 +++
-
-*A Son of the Hills* (1917) is a film adaptation of "A Son of the Hills" by Harriet Comstock (1913).
-
-## Production Details
-
-**Director:** Harry Davenport
-**Studio:** Vitagraph
-**Setting:** Appalachia
-**Availability:** Lost
 
 ## Plot Summary
 

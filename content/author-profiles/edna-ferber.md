@@ -23,7 +23,7 @@ show_related_films = true
 
 # Author portrait
 [extra.author_image]
-url = "/images/edna-ferber-portrait.jpg"
+url = "/images/author-ef.jpg"
 alt = "Edna Ferber portrait"
 caption = "Edna Ferber. Caption needed."
 

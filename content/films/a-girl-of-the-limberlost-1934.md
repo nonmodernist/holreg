@@ -26,6 +26,12 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+
+# Film image
+[extra.film_image]
+url = "/images/freckles-1917-still.jpg"
+alt = "ALT TEXT"
+caption = "CAPTION."
 +++
 
 *A Girl of the Limberlost* (1934) is a film adaptation of "A Girl of the Limberlost" by Gene Stratton-Porter (1909).

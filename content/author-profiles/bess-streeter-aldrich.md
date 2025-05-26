@@ -23,7 +23,7 @@ show_related_films = true
 
 # Author portrait
 [extra.author_image]
-url = "/images/bess-streeter-aldrich-portrait.jpg"
+url = "/images/author-bsa.jpg"
 alt = "Bess Streeter Aldrich portrait"
 caption = "Bess Streeter Aldrich. Caption needed."
 

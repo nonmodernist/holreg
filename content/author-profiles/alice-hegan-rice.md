@@ -23,7 +23,7 @@ show_related_films = true
 
 # Author portrait
 [extra.author_image]
-url = "/images/alice-hegan-rice-portrait.jpg"
+url = "/images/author-ahr.jpg"
 alt = "Alice Hegan Rice portrait"
 caption = "Alice Hegan Rice. Caption needed."
 

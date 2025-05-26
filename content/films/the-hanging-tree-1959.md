@@ -26,16 +26,14 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+
+# Film image
+[extra.film_image]
+url = "/images/sidebar-hanging-tree.jpg"
+alt = "ALT TEXT"
+caption = "CAPTION."
+
 +++
-
-*The Hanging Tree* (1959) is a film adaptation of "The Hanging Tree" by Dorothy M. Johnson (1957).
-
-## Production Details
-
-**Director:** Delmer Davies
-**Studio:** Warner Bros
-**Setting:** Montana
-**Availability:** DVD
 
 ## Plot Summary
 

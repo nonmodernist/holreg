@@ -36,7 +36,7 @@ show_citation = true
 
 # Film image
 [extra.film_image]
-url = "/images/freckles1917.png"
+url = "/images/sidebar-freckles1917.jpg"
 alt = "Jack Pickford and Louise Huff in Freckles (1917)"
 caption = "Jack Pickford and Louise Huff in an outdoor setting from the lost silent film Freckles (1917). Motography, June 1917."
 

@@ -26,16 +26,14 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+
+# Film image
+[extra.film_image]
+url = "/images/sidebar-hungryhearts.jpg"
+alt = "ALT TEXT"
+caption = "CAPTION."
+
 +++
-
-*Hungry Hearts* (1922) is a film adaptation of "Hungry Hearts" by Anzia Yezierska (1920).
-
-## Production Details
-
-**Director:** E. Mason Hopper
-**Studio:** Goldwyn Pictures
-**Setting:** NYC
-**Availability:** DVD
 
 ## Plot Summary
 

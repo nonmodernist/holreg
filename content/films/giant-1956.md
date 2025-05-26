@@ -26,16 +26,14 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+
+# Film image
+[extra.film_image]
+url = "/images/sidebar-giant1.jpg"
+alt = "ALT TEXT"
+caption = "CAPTION."
+
 +++
-
-*Giant* (1956) is a film adaptation of "Giant" by Edna Ferber (1952).
-
-## Production Details
-
-**Director:** George Stevens
-**Studio:** Warner Bros
-**Setting:** Texas
-**Availability:** DVD
 
 ## Plot Summary
 

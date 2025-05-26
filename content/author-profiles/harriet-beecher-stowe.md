@@ -23,7 +23,7 @@ show_related_films = true
 
 # Author portrait
 [extra.author_image]
-url = "/images/harriet-beecher-stowe-portrait.jpg"
+url = "/images/author-hbs.jpg"
 alt = "Harriet Beecher Stowe portrait"
 caption = "Harriet Beecher Stowe. Caption needed."
 

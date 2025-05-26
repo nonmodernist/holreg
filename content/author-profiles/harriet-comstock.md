@@ -23,7 +23,7 @@ show_related_films = true
 
 # Author portrait
 [extra.author_image]
-url = "/images/harriet-comstock-portrait.jpg"
+url = "/images/author-hc.jpg"
 alt = "Harriet Comstock portrait"
 caption = "Harriet Comstock. Caption needed."
 

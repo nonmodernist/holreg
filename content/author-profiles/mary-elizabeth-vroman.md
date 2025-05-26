@@ -23,7 +23,7 @@ show_related_films = true
 
 # Author portrait
 [extra.author_image]
-url = "/images/mary-elizabeth-vroman-portrait.jpg"
+url = "/images/author-mev.jpg"
 alt = "Mary Elizabeth Vroman portrait"
 caption = "Mary Elizabeth Vroman. Caption needed."
 

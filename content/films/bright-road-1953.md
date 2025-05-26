@@ -26,6 +26,12 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+
+# Film image
+[extra.film_image]
+url = "/images/sidebar-brightroad.jpg"
+alt = "ALT TEXT."
+caption = "CAPTION."
 +++
 
 *Bright Road* (1953) is a film adaptation of "“See How They Run”" by Mary Elizabeth Vroman (1951).

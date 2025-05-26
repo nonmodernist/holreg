@@ -23,7 +23,7 @@ show_related_films = true
 
 # Author portrait
 [extra.author_image]
-url = "/images/marjorie-kinnan-rawlings-portrait.jpg"
+url = "/images/author-mkr.jpg"
 alt = "Marjorie Kinnan Rawlings portrait"
 caption = "Marjorie Kinnan Rawlings. Caption needed."
 

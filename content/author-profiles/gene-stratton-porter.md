@@ -24,9 +24,9 @@ show_related_films = true
 
 # Author portrait
 [extra.author_image]
-url = "/images/gene-stratton-porter-portrait.jpg"
-alt = "Gene Stratton-Porter in the Limberlost Swamp"
-caption = "Gene Stratton-Porter photographing wildlife in the Limberlost Swamp, circa 1905. Courtesy of the Indiana State Library."
+url = "/images/author-gsp.jpg"
+alt = "Gene Stratton-Porter portrait"
+caption = "Gene Stratton-Porter. cpation needed."
 
 # Notable literary works
 [[extra.notable_works]]

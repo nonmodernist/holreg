@@ -28,15 +28,6 @@ format = "Unknown"
 show_citation = true
 +++
 
-*A Girl of the Limberlost* (1924) is a film adaptation of "A Girl of the Limberlost" by Gene Stratton-Porter (1909).
-
-## Production Details
-
-**Director:** James Leo Meehan
-**Studio:** Gene Stratton Porter Productions
-**Setting:** Limberlost
-**Availability:** Lost
-
 ## Plot Summary
 
 [Add plot summary here]

@@ -26,16 +26,13 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+
+# Film image
+[extra.film_image]
+url = "/images/sidebar-awakeningofhelena.jpg"
+alt = "ALT TEXT."
+caption = "CAPTION."
 +++
-
-*The Awakening of Helena Richie* (1916) is a film adaptation of "The Awakening of Helena Richie" by Margaret Deland (1906).
-
-## Production Details
-
-**Director:** John W. Noble
-**Studio:** Rolfe Photoplays
-**Setting:** Great Lakes Region - Western PA
-**Availability:** Incomplete
 
 ## Plot Summary
 

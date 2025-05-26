@@ -8,7 +8,8 @@
 body {
   font-family: $serif-secondary;
   font-size: $font-size-lg;
-  line-height: 1.7;
+  line-height: $line-height-relaxed;
+  font-weight: $font-weight-normal;
   color: $color-text;
   background-color: $color-background;
   margin: 0;
@@ -17,20 +18,36 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-// Enhanced Typography
+// Enhanced Typography Hierarchy
 h1, h2, h3, h4, h5, h6 {
   font-family: $serif-primary;
-  font-weight: 600;
-  line-height: 1.3;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-tight;
   color: $color-primary;
   margin: 0 0 $spacing-lg 0;
-  letter-spacing: -0.02em;
+  letter-spacing: $letter-spacing-tight;
 }
 
 h1 {
-  font-size: $font-size-4xl;
-  font-weight: 700;
+  font-size: clamp($font-size-3xl, 5vw, $font-size-5xl);
+  font-weight: $font-weight-extrabold;
   margin-bottom: $spacing-xl;
+  line-height: $line-height-tight;
+  
+  // Special styling for film titles
+  &.film-title {
+    font-style: italic;
+    color: $color-primary;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    margin-bottom: $spacing-md;
+  }
+  
+  // Special styling for author titles
+  &.author-title {
+    font-weight: $font-weight-bold;
+    color: $color-primary;
+    margin-bottom: $spacing-sm;
+  }
   
   @media (max-width: 768px) {
     font-size: $font-size-3xl;
@@ -39,8 +56,37 @@ h1 {
 
 h2 {
   font-size: $font-size-3xl;
+  font-weight: $font-weight-bold;
   margin-top: $spacing-xxl;
   margin-bottom: $spacing-lg;
+  color: $color-primary;
+  position: relative;
+  
+  // Add subtle underline accent
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -$spacing-xs;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, $color-accent 0%, $color-accent-light 100%);
+    border-radius: 2px;
+  }
+  
+  // Section titles get different styling
+  &.section-title {
+    font-size: $font-size-2xl;
+    font-weight: $font-weight-semibold;
+    color: $color-primary;
+    margin-bottom: $spacing-lg;
+    padding-bottom: $spacing-sm;
+    border-bottom: 2px solid $color-border;
+    
+    &::after {
+      display: none; // Remove the accent line for section titles
+    }
+  }
   
   @media (max-width: 768px) {
     font-size: $font-size-2xl;
@@ -49,42 +95,284 @@ h2 {
 
 h3 {
   font-size: $font-size-2xl;
+  font-weight: $font-weight-semibold;
   margin-top: $spacing-xl;
   color: $color-secondary;
+  line-height: $line-height-snug;
 }
 
 h4 {
   font-size: $font-size-xl;
+  font-weight: $font-weight-semibold;
   margin-top: $spacing-lg;
+  color: $color-secondary;
+  line-height: $line-height-snug;
+}
+
+h5 {
+  font-size: $font-size-lg;
+  font-weight: $font-weight-semibold;
+  margin-top: $spacing-md;
   color: $color-secondary;
 }
 
+h6 {
+  font-size: $font-size-base;
+  font-weight: $font-weight-semibold;
+  margin-top: $spacing-md;
+  color: $color-text-light;
+  text-transform: uppercase;
+  letter-spacing: $letter-spacing-wider;
+}
+
+// Enhanced paragraph styling
 p {
   margin: 0 0 $spacing-lg 0;
+  line-height: $line-height-relaxed;
   
   &:last-child {
     margin-bottom: 0;
   }
+  
+  // Lead paragraph styling
+  &.lead {
+    font-size: $font-size-xl;
+    font-weight: $font-weight-medium;
+    line-height: $line-height-normal;
+    color: $color-secondary;
+    margin-bottom: $spacing-xl;
+  }
+  
+  // Film description paragraphs
+  &.film-description {
+    font-size: $font-size-lg;
+    line-height: $line-height-relaxed;
+    margin-bottom: $spacing-xl;
+    color: $color-text;
+    font-style: italic;
+    
+    em {
+      font-style: normal;
+      font-weight: $font-weight-medium;
+      color: $color-accent;
+    }
+  }
 }
 
+// Enhanced byline and metadata styling
+.film-byline,
+.author-byline {
+  font-family: $sans-serif;
+  font-size: $font-size-base;
+  font-weight: $font-weight-medium;
+  color: $color-text-light;
+  margin-bottom: $spacing-lg;
+  font-style: italic;
+  letter-spacing: $letter-spacing-wide;
+  
+  .author-name,
+  .contributor-name {
+    color: $color-accent;
+    font-weight: $font-weight-semibold;
+    font-style: normal;
+  }
+}
 
+.film-year,
+.author-dates {
+  font-family: $sans-serif;
+  font-size: $font-size-xl;
+  font-weight: $font-weight-bold;
+  color: $color-accent;
+  margin-bottom: $spacing-xl;
+  letter-spacing: $letter-spacing-wide;
+}
 
-// Responsive typography
+// Enhanced blockquote styling
+blockquote {
+  font-family: $serif-primary;
+  font-size: $font-size-xl;
+  font-style: italic;
+  line-height: $line-height-normal;
+  color: $color-secondary;
+  margin: $spacing-xxl 0;
+  padding: $spacing-xl $spacing-xl $spacing-xl $spacing-xxl;
+  background: linear-gradient(135deg, rgba($color-accent, 0.03) 0%, rgba($color-accent-light, 0.03) 100%);
+  border-left: 4px solid $color-accent;
+  border-radius: 0 8px 8px 0;
+  position: relative;
+  
+  &::before {
+    content: '"';
+    font-family: $serif-primary;
+    font-size: $font-size-6xl;
+    font-weight: $font-weight-bold;
+    color: rgba($color-accent, 0.2);
+    position: absolute;
+    top: $spacing-sm;
+    left: $spacing-md;
+    line-height: 1;
+  }
+  
+  p {
+    margin-bottom: $spacing-md;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
+  cite {
+    display: block;
+    font-family: $sans-serif;
+    font-size: $font-size-sm;
+    font-style: normal;
+    font-weight: $font-weight-medium;
+    color: $color-text-muted;
+    margin-top: $spacing-md;
+    text-align: right;
+    
+    &::before {
+      content: '— ';
+    }
+  }
+}
+
+// Enhanced emphasis styling
+strong, b {
+  font-weight: $font-weight-bold;
+  color: $color-primary;
+}
+
+em, i {
+  font-style: italic;
+}
+
+// Enhanced link styling
+a {
+  color: $color-accent;
+  text-decoration: none;
+  font-weight: $font-weight-medium;
+  transition: all 0.2s ease;
+  
+  &:hover {
+    color: darken($color-accent, 10%);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+  }
+  
+  &:focus {
+    outline: 2px solid $color-accent;
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+}
+
+// Enhanced list styling
+ul, ol {
+  margin: 0 0 $spacing-lg 0;
+  padding-left: $spacing-xl;
+  
+  li {
+    margin-bottom: $spacing-sm;
+    line-height: $line-height-normal;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+ul {
+  li {
+    position: relative;
+    
+    &::marker {
+      color: $color-accent;
+    }
+  }
+}
+
+ol {
+  li {
+    &::marker {
+      color: $color-accent;
+      font-weight: $font-weight-semibold;
+    }
+  }
+}
+
+// Small text styling
+small {
+  font-size: $font-size-sm;
+  color: $color-text-light;
+}
+
+// Code and preformatted text
+code {
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: $font-size-sm;
+  background-color: rgba($color-accent, 0.1);
+  padding: 2px 4px;
+  border-radius: 3px;
+  color: $color-primary;
+}
+
+// Responsive typography adjustments
 @media (max-width: 768px) {
   body {
     font-size: $font-size-base;
+    line-height: $line-height-normal;
   }
   
   h1 {
-    font-size: $font-size-2xl;
+    font-size: $font-size-3xl;
   }
   
   h2 {
-    font-size: $font-size-xl;
+    font-size: $font-size-2xl;
+    margin-top: $spacing-xl;
   }
   
   h3 {
+    font-size: $font-size-xl;
+  }
+  
+  h4 {
     font-size: $font-size-lg;
+  }
+  
+  blockquote {
+    font-size: $font-size-lg;
+    padding: $spacing-lg;
+    margin: $spacing-xl 0;
+    
+    &::before {
+      font-size: $font-size-4xl;
+    }
+  }
+  
+  .film-description {
+    font-size: $font-size-base;
   }
 }
 
+// Print styles
+@media print {
+  body {
+    font-size: 12pt;
+    line-height: 1.4;
+    color: black;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: black;
+    page-break-after: avoid;
+  }
+  
+  blockquote {
+    border-left: 2pt solid black;
+    background: none;
+  }
+}

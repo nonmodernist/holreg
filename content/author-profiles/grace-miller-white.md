@@ -23,7 +23,7 @@ show_related_films = true
 
 # Author portrait
 [extra.author_image]
-url = "/images/grace-miller-white-portrait.jpg"
+url = "/images/author-gmw.jpg"
 alt = "Grace Miller White portrait"
 caption = "Grace Miller White. Caption needed."
 

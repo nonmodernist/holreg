@@ -26,16 +26,13 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+
+# Film image
+[extra.film_image]
+url = "/images/sidebar-cheersformissbishop.jpg"
+alt = "ALT TEXT."
+caption = "CAPTION."
 +++
-
-*Cheers for Miss Bishop* (1941) is a film adaptation of "Miss Bishop" by Bess Streeter Aldrich (1933).
-
-## Production Details
-
-**Director:** Tay Garnett
-**Studio:** United Artists
-**Setting:** Nebraska
-**Availability:** Online
 
 ## Plot Summary
 

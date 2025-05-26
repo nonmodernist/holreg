@@ -26,16 +26,13 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+
+# Film image
+[extra.film_image]
+url = "/images/sidebar-backstreet1932.jpg"
+alt = "ALT TEXT."
+caption = "CAPTION."
 +++
-
-*Back Street* (1932) is a film adaptation of "Back Street" by Fannie Hurst (1931).
-
-## Production Details
-
-**Director:** John M. Stahl
-**Studio:** Universal
-**Setting:** NYC
-**Availability:** Online
 
 ## Plot Summary
 

@@ -26,16 +26,9 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+
+
 +++
-
-*Imitation of Life* (1959) is a film adaptation of "Imitation of Life" by Fannie Hurst (1933).
-
-## Production Details
-
-**Director:** Douglas Sirk
-**Studio:** Universal
-**Setting:** NYC
-**Availability:** DVD
 
 ## Plot Summary
 

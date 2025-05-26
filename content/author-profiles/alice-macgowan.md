@@ -23,7 +23,7 @@ show_related_films = true
 
 # Author portrait
 [extra.author_image]
-url = "/images/alice-macgowan-portrait.jpg"
+url = "/images/author-am.jpg"
 alt = "Alice MacGowan portrait"
 caption = "Alice MacGowan. Caption needed."
 

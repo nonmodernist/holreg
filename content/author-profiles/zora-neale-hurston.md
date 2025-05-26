@@ -23,9 +23,9 @@ show_related_films = true
 
 # Author portrait
 [extra.author_image]
-url = "/images/-portrait.jpg"
-alt = "- portrait"
-caption = "-. Caption needed."
+url = "/images/author-znh.jpg"
+alt = "Zora Neale Hurston portrait"
+caption = "Zora Neale Hurston. Caption needed."
 
 # Notable literary works - ADD MANUALLY
 [[extra.notable_works]]

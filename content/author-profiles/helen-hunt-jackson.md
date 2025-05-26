@@ -23,7 +23,7 @@ show_related_films = true
 
 # Author portrait
 [extra.author_image]
-url = "/images/helen-hunt-jackson-portrait.jpg"
+url = "/images/author-hhj.jpg"
 alt = "Helen Hunt Jackson portrait"
 caption = "Helen Hunt Jackson. Caption needed."
 

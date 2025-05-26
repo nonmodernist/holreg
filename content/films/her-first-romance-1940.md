@@ -26,16 +26,13 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+# Film image
+[extra.film_image]
+url = "/images/sidebar-herfirstromance.jpg"
+alt = "ALT TEXT"
+caption = "CAPTION."
+
 +++
-
-*Her First Romance* (1940) is a film adaptation of "Her Father's Daughter" by Gene Stratton-Porter (1921).
-
-## Production Details
-
-**Director:** Edward Dmytryk
-**Studio:** Monogram
-**Setting:** Southern California
-**Availability:** Unknown
 
 ## Plot Summary
 

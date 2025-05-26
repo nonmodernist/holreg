@@ -26,16 +26,13 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+
+# Film image
+[extra.film_image]
+url = "/images/sidebar-cimarronw1960.jpg"
+alt = "ALT TEXT."
+caption = "CAPTION."
 +++
-
-*Cimarron* (1960) is a film adaptation of "Cimarron" by Edna Ferber (1930).
-
-## Production Details
-
-**Director:** Anthony Mann
-**Studio:** MGM
-**Setting:** Oklahoma
-**Availability:** DVD
 
 ## Plot Summary
 

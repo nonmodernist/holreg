@@ -26,16 +26,14 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+
+# Film image
+[extra.film_image]
+url = "/images/sidebar-humoresque-1920-2.jpg"
+alt = "ALT TEXT"
+caption = "CAPTION."
+
 +++
-
-*Humoresque* (1920) is a film adaptation of "Humoresque" by Fannie Hurst (1919).
-
-## Production Details
-
-**Director:** Frank Borzage
-**Studio:** Cosmopolitan Productions
-**Setting:** NYC
-**Availability:** Online
 
 ## Plot Summary
 
