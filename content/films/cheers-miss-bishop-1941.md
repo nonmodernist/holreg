@@ -1,0 +1,52 @@
++++
+title = "Cheers for Miss Bishop"
+date = 2024-01-01
+weight = 1941
+
+[taxonomies]
+authors = ["Bess Streeter Aldrich"]
+regions = ["Rural Midwest"]
+studios = ["United Artists"]
+eras = ["classical hollywood"]
+genres = ["Drama"]
+availability = ["Available"]
+directors = ["Tay Garnett"]
+
+[extra]
+# Film metadata for sidebar
+year = 1941
+original_story = "Miss Bishop"
+story_year = 1933
+story_author = "Bess Streeter Aldrich"
+director = "Tay Garnett"
+studio = "United Artists"
+setting = "Nebraska"
+survival_status = "Available"
+format = "Unknown"
+
+# Content flags
+show_citation = true
++++
+
+*Cheers for Miss Bishop* (1941) is a film adaptation of "Miss Bishop" by Bess Streeter Aldrich (1933).
+
+## Production Details
+
+**Director:** Tay Garnett
+**Studio:** United Artists
+**Setting:** Nebraska
+**Availability:** Online
+
+## Plot Summary
+
+[Add plot summary here]
+
+## Adaptation Analysis
+
+[Add analysis of how the film adapts the source material]
+
+## Historical Context
+
+[Add information about the film's place in Hollywood history and regional representation]
+
+

@@ -32,8 +32,6 @@ adaptation_notes = "First adaptation of Stratton-Porter's novel"
 # author_byline = "Alexandra Edwards"
 
 # Content flags
-show_bibliography = true
-show_filmography = true
 show_citation = true
 
 # Film image
@@ -43,13 +41,6 @@ alt = "Jack Pickford and Louise Huff in Freckles (1917)"
 caption = "Jack Pickford and Louise Huff in an outdoor setting from the lost silent film Freckles (1917). Motography, June 1917."
 
 # Filmography data
-[[extra.films_as_director]]
-title = "Freckles"
-director = "Marshall Neilan"
-year = "1917"
-format = "Silent, B&W"
-archive = "Lost Film"
-archive_url = "#"
 
 [[extra.dvd_sources]]
 title = "Early Stratton-Porter Adaptations Collection"

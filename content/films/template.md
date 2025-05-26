@@ -7,7 +7,7 @@ weight = 1900
 authors = ["TEMPLATE"]
 regions = ["REGION1", "REGION2"]
 studios = ["STUDIO"]
-eras = ["late silent", "pre-code", "classical Hollywood", "studio system decline"]
+eras = ["early silent", "late silent", "pre-code", "classical Hollywood", "studio system decline"]
 genres = ["Drama", "Romance"]
 availability = ["Unknown"]
 directors = ["DIRECTOR"]
@@ -38,10 +38,15 @@ show_citation = true
 # Film image
 [extra.film_image]
 url = "/images/freckles-1917-still.jpg"
-alt = "Jack Pickford and Louise Huff in Freckles (1917)"
-caption = "Jack Pickford and Louise Huff in an outdoor setting from the lost silent film Freckles (1917). Motography, June 1917."
+alt = "ALT TEXT"
+caption = "CAPTION."
 
 # Filmography data
+[[extra.dvd_sources]]
+title = "DVD TITLE"
+details = "DETAILS."
+
+# are there other bits of metadata to add?
 +++
 
 Content goes here.
