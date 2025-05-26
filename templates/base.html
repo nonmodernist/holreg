@@ -9,14 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Source+Sans+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ get_url(path='style.css') }}">
-    <link rel="stylesheet" href="{{ get_url(path='style.css') }}">
     <link rel="stylesheet" href="{{ get_url(path='citations.css') }}">
-    
-    {# Load bibliography data for JavaScript #}
-    {# Remove inline load_data and use a safer fallback for JS variable #}
-    <script>
-        window.BIBLIOGRAPHY_DATA = {};
-    </script>
 </head>
 <body>
     <header>
@@ -45,5 +38,122 @@
             </div>
         </div>
     </footer>
+
+    <!-- Load bibliography data as JSON -->
+    <script type="application/json" id="bibliography-data">
+        {{ load_data(path="data/bibliography.toml") | json_encode(pretty=true) | safe }}
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load bibliography data from the JSON script tag
+            const bibliographyScript = document.getElementById('bibliography-data');
+            let bibliography = {};
+            
+            try {
+                bibliography = JSON.parse(bibliographyScript.textContent);
+            } catch (e) {
+                console.error('Failed to parse bibliography data:', e);
+                return;
+            }
+            
+            // Create modal HTML
+            const modalHTML = `
+                <div id="quote-modal" class="quote-modal" aria-hidden="true" role="dialog">
+                    <div class="quote-modal-content">
+                        <button class="quote-modal-close" aria-label="Close quote modal">&times;</button>
+                        <h3 class="quote-modal-title">Source Quote</h3>
+                        <blockquote class="quote-modal-quote"></blockquote>
+                        <div class="quote-modal-citation"></div>
+                    </div>
+                </div>
+            `;
+            
+            document.body.insertAdjacentHTML('beforeend', modalHTML);
+            
+            const modal = document.getElementById('quote-modal');
+            const modalQuote = modal.querySelector('.quote-modal-quote');
+            const modalCitation = modal.querySelector('.quote-modal-citation');
+            const modalClose = modal.querySelector('.quote-modal-close');
+            
+            function formatCitation(citation) {
+                let formatted = '';
+                
+                if (citation.author) {
+                    formatted += citation.author + ', ';
+                }
+                
+                if (citation.title) {
+                    formatted += '"' + citation.title + '," ';
+                }
+                
+                formatted += '<em>' + citation.source + '</em>';
+                
+                if (citation.volume) {
+                    formatted += ', ' + citation.volume;
+                }
+                
+                if (citation.number) {
+                    formatted += ', no. ' + citation.number;
+                }
+                
+                if (citation.publisher) {
+                    formatted += ' (' + citation.location + ': ' + citation.publisher + ', ' + citation.year + ')';
+                } else if (citation.date) {
+                    formatted += ' (' + citation.date + ')';
+                }
+                
+                if (citation.page) {
+                    formatted += ', ' + citation.page;
+                }
+                
+                formatted += '.';
+                return formatted;
+            }
+            
+            function openModal(citationId) {
+                const citation = bibliography[citationId];
+                
+                if (!citation || !citation.quote) {
+                    return;
+                }
+                
+                modalQuote.textContent = citation.quote;
+                modalCitation.innerHTML = formatCitation(citation);
+                modal.classList.add('active');
+                modal.setAttribute('aria-hidden', 'false');
+                modalClose.focus();
+            }
+            
+            function closeModal() {
+                modal.classList.remove('active');
+                modal.setAttribute('aria-hidden', 'true');
+            }
+            
+            // Event listeners
+            document.addEventListener('click', function(e) {
+                if (e.target.classList.contains('view-quote-btn')) {
+                    e.preventDefault();
+                    const citationId = e.target.getAttribute('data-citation-id');
+                    openModal(citationId);
+                }
+            });
+            
+            modalClose.addEventListener('click', closeModal);
+            
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    closeModal();
+                }
+            });
+            
+            // Close on Escape key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && modal.classList.contains('active')) {
+                    closeModal();
+                }
+            });
+        });
+    </script>
 </body>
 </html>
