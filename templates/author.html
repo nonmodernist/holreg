@@ -81,7 +81,7 @@
             </div>
             {% endif %}
 
-            <!-- Bibliography Section - REPLACED BY ENDNOTES -->
+            <!-- ! Bibliography Section - REPLACED BY ENDNOTES -->
             <!-- {% if page.extra.show_bibliography %}
             <div class="section bibliography">
                 <h2 class="section-title">Bibliography</h2>
@@ -98,17 +98,17 @@
             <!-- Citation Section -->
             {% if page.extra.show_citation %}
             <div class="section citation">
-                <h2 class="section-title">Citation</h2>
+                <h2 class="section-title">How to Cite This Page</h2>
                 <div class="section-content">
                     <p class="citation-text">
-                        {% if page.extra.author_byline %}{{ page.extra.author_byline }}. {% endif %}"{{ page.title }}." In {{ config.title }}. {{ config.base_url }}{{ page.permalink }}
+                        {% if page.extra.author_byline %}{{ page.extra.author_byline }}. {% endif %}"{{ page.title }}." In <i>{{ config.title }}: A Digital Archive of Film Adaptations from American Women's Regional Literature, 1910-1961</i>. Web. Accessed [DATE]. &lt;{{ page.permalink }}&gt;
                     </p>
-                    <div class="citation-url">&lt;{{ config.base_url }}{{ page.permalink }}&gt;</div>
+                    <!-- <div class="citation-url">&lt;{{ config.base_url }}{{ page.permalink }}&gt;</div> -->
                 </div>
             </div>
             {% endif %}
 
-            <!-- Related Films Section -->
+            <!-- TODO FIX THIS Related Films Section -->
             {% if page.extra.show_related_films %}
             <div class="section">
                 <div class="section-title">Films Adapted from {{ page.title }}'s Work</div>
