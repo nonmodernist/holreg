@@ -18,10 +18,15 @@
     {% endif %}
 
     <!-- Enhanced film grid -->
+    {% if section.pages | filter(attribute="extra.year") | length > 0 %}
+        {% set items = section.pages | sort(attribute="extra.year", default=0) %}
+    {% else %}
+        {% set items = section.pages %}
+    {% endif %}
     <div class="section">
         <div class="section-title">All Films ({{ section.pages | length }})</div>
         <div class="grid grid-3">
-            {% for page in section.pages | sort(attribute="extra.year") %}
+            {% for page in items %}
             <div class="card">
                 <h3 class="card-title">
                     <a href="{{ page.permalink }}">{{ page.title }}</a>
