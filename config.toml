@@ -1,0 +1,34 @@
+# Zola configuration for Hollywood Regionalism project
+base_url = "https://hollywoodregionalism.com"
+title = "Hollywood Regionalism"
+description = "Exploring film adaptations of American women's regional literature, 1910-1960"
+
+# Build settings
+compile_sass = true
+minify_html = true
+generate_feeds = true
+
+# Taxonomies for filtering and organization
+taxonomies = [
+    {name = "authors", feed = true},
+    {name = "regions", feed = true},
+    {name = "studios", feed = true},
+    {name = "decades", feed = true},
+    {name = "genres", feed = true},
+    {name = "availability", feed = true},
+    {name = "directors", feed = true}
+]
+
+[markdown]
+# Enable helpful markdown features
+highlight_code = true
+highlight_theme = "base16-ocean-dark"
+render_emoji = true
+external_links_target_blank = true
+smart_punctuation = true
+
+[extra]
+# Custom site variables
+show_reading_time = false
+show_word_count = false
+enable_search = true

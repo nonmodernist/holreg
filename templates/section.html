@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="section-page">
+    <header class="page-header">
+        <h1>{{ section.title }}</h1>
+        {% if section.description %}
+        <p class="page-description">{{ section.description }}</p>
+        {% endif %}
+    </header>
+
+    {% if section.content %}
+    <div class="section">
+        <div class="section-content">
+            {{ section.content | safe }}
+        </div>
+    </div>
+    {% endif %}
+
+    <!-- Enhanced film grid -->
+    <div class="section">
+        <div class="section-title">All Films ({{ section.pages | length }})</div>
+        <div class="grid grid-3">
+            {% for page in section.pages | sort(attribute="extra.year") %}
+            <div class="card">
+                <h3 class="card-title">
+                    <a href="{{ page.permalink }}">{{ page.title }}</a>
+                </h3>
+                
+                <div class="card-meta">
+                    {% if page.extra.year %}{{ page.extra.year }}{% endif %}
+                    {% if page.taxonomies.authors %}<span class="separator">•</span>{{ page.taxonomies.authors[0] }}{% endif %}
+                    {% if page.extra.director %}<span class="separator">•</span>{{ page.extra.director }}{% endif %}
+                </div>
+                
+                {% if page.extra.survival_status %}
+                <div style="margin: 1rem 0;">
+                    <span class="status {{ page.extra.survival_status | lower }}">
+                        {{ page.extra.survival_status }}
+                    </span>
+                </div>
+                {% endif %}
+
+                {% if page.summary %}
+                <div class="card-content">{{ page.summary }}</div>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock content %}

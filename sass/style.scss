@@ -1,0 +1,600 @@
+// Enhanced Academic Website Styles for Hollywood Regionalism Project
+
+// Typography and Color Variables
+$serif-primary: 'Crimson Text', 'Times New Roman', serif;
+$serif-secondary: 'Lora', Georgia, serif;
+$sans-serif: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+
+$color-primary: #1a1a1a;
+$color-secondary: #333333;
+$color-accent: #8b4513; // Academic brown
+$color-accent-light: #d4af37; // Muted gold
+$color-text: #2c2c2c;
+$color-text-light: #666666;
+$color-background: #fefefe;
+$color-background-alt: #f8f8f8;
+$color-border: #e0e0e0;
+$color-border-light: #f0f0f0;
+
+// Spacing system
+$spacing-xs: 0.25rem;
+$spacing-sm: 0.5rem;
+$spacing-md: 1rem;
+$spacing-lg: 1.5rem;
+$spacing-xl: 2rem;
+$spacing-xxl: 3rem;
+
+// Typography scale
+$font-size-xs: 0.75rem;
+$font-size-sm: 0.875rem;
+$font-size-base: 1rem;
+$font-size-lg: 1.125rem;
+$font-size-xl: 1.25rem;
+$font-size-2xl: 1.5rem;
+$font-size-3xl: 1.875rem;
+$font-size-4xl: 2.25rem;
+
+// Base reset and typography
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $serif-secondary;
+  font-size: $font-size-lg;
+  line-height: 1.7;
+  color: $color-text;
+  background-color: $color-background;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Enhanced Typography
+h1, h2, h3, h4, h5, h6 {
+  font-family: $serif-primary;
+  font-weight: 600;
+  line-height: 1.3;
+  color: $color-primary;
+  margin: 0 0 $spacing-lg 0;
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: $font-size-4xl;
+  font-weight: 700;
+  margin-bottom: $spacing-xl;
+  
+  @media (max-width: 768px) {
+    font-size: $font-size-3xl;
+  }
+}
+
+h2 {
+  font-size: $font-size-3xl;
+  margin-top: $spacing-xxl;
+  margin-bottom: $spacing-lg;
+  
+  @media (max-width: 768px) {
+    font-size: $font-size-2xl;
+  }
+}
+
+h3 {
+  font-size: $font-size-2xl;
+  margin-top: $spacing-xl;
+  color: $color-secondary;
+}
+
+h4 {
+  font-size: $font-size-xl;
+  margin-top: $spacing-lg;
+  color: $color-secondary;
+}
+
+p {
+  margin: 0 0 $spacing-lg 0;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// Enhanced Navigation
+header {
+  background-color: $color-background;
+  border-bottom: 1px solid $color-border;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+  
+  nav {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: $spacing-lg $spacing-xl;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .site-title {
+      font-family: $serif-primary;
+      font-size: $font-size-2xl;
+      font-weight: 700;
+      color: $color-primary;
+      text-decoration: none;
+      letter-spacing: -0.02em;
+      
+      &:hover {
+        color: $color-accent;
+        transition: color 0.3s ease;
+      }
+    }
+    
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: $spacing-xl;
+      
+      @media (max-width: 768px) {
+        gap: $spacing-lg;
+      }
+      
+      a {
+        font-family: $sans-serif;
+        font-size: $font-size-base;
+        font-weight: 500;
+        color: $color-secondary;
+        text-decoration: none;
+        padding: $spacing-sm $spacing-md;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+        letter-spacing: 0.02em;
+        
+        &:hover {
+          color: $color-accent;
+          background-color: rgba($color-accent, 0.05);
+        }
+        
+        &.active {
+          color: $color-accent;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+// Main layout container
+main {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: $spacing-xxl $spacing-xl;
+  min-height: calc(100vh - 200px);
+  
+  @media (max-width: 768px) {
+    padding: $spacing-xl $spacing-lg;
+  }
+}
+
+// Film page specific styles
+.film-page {
+  .content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: $spacing-xxl * 1.5;
+    
+    @media (max-width: 1024px) {
+      grid-template-columns: 1fr;
+      gap: $spacing-xl;
+    }
+  }
+  
+  .main-content {
+    min-width: 0;
+    
+    .film-title {
+      font-family: $serif-primary;
+      font-size: $font-size-4xl;
+      font-weight: 700;
+      color: $color-primary;
+      margin-bottom: $spacing-sm;
+      font-style: italic;
+      
+      @media (max-width: 768px) {
+        font-size: $font-size-3xl;
+      }
+    }
+    
+    .film-year {
+      font-family: $sans-serif;
+      font-size: $font-size-xl;
+      font-weight: 600;
+      color: $color-accent;
+      margin-bottom: $spacing-xl;
+      letter-spacing: 0.05em;
+    }
+    
+    .film-description {
+      font-size: $font-size-lg;
+      line-height: 1.8;
+      margin-bottom: $spacing-xl;
+      color: $color-text;
+    }
+  }
+}
+
+// Enhanced Sidebar
+.film-sidebar {
+  @media (max-width: 1024px) {
+    order: -1;
+  }
+  
+  .metadata-box {
+    background-color: $color-background-alt;
+    border: 1px solid $color-border;
+    border-radius: 8px;
+    padding: $spacing-xl;
+    margin-bottom: $spacing-xl;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    
+    h3 {
+      font-family: $sans-serif;
+      font-size: $font-size-lg;
+      font-weight: 700;
+      color: $color-primary;
+      margin: 0 0 $spacing-lg 0;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      font-size: $font-size-sm;
+      border-bottom: 2px solid $color-accent;
+      padding-bottom: $spacing-sm;
+    }
+    
+    .metadata-item {
+      margin-bottom: $spacing-lg;
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
+      
+      .label {
+        font-family: $sans-serif;
+        font-size: $font-size-sm;
+        font-weight: 600;
+        color: $color-text-light;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin-bottom: $spacing-xs;
+        display: block;
+      }
+      
+      .value {
+        font-size: $font-size-base;
+        color: $color-text;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
+// Enhanced Status Indicators
+.status {
+  display: inline-block;
+  padding: $spacing-xs $spacing-sm;
+  border-radius: 20px;
+  font-family: $sans-serif;
+  font-size: $font-size-xs;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  
+  &.available {
+    background-color: #e8f5e8;
+    color: #2d5a2d;
+    border: 1px solid #c3e6c3;
+  }
+  
+  &.lost {
+    background-color: #ffeaea;
+    color: #8b2635;
+    border: 1px solid #f5c2c7;
+  }
+  
+  &.unknown {
+    background-color: #fff3cd;
+    color: #664d03;
+    border: 1px solid #ffecb5;
+  }
+}
+
+// Section styling
+.section {
+  margin-bottom: $spacing-xxl * 1.5;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+  
+  .section-title {
+    font-family: $serif-primary;
+    font-size: $font-size-2xl;
+    font-weight: 600;
+    color: $color-primary;
+    margin-bottom: $spacing-lg;
+    padding-bottom: $spacing-sm;
+    border-bottom: 1px solid $color-border;
+  }
+  
+  .section-content {
+    font-size: $font-size-lg;
+    line-height: 1.7;
+    color: $color-text;
+  }
+}
+
+// Enhanced Cards
+.card {
+  background-color: $color-background;
+  border: 1px solid $color-border;
+  border-radius: 8px;
+  padding: $spacing-xl;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+  
+  &:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-color: $color-accent;
+    transform: translateY(-1px);
+  }
+  
+  .card-title {
+    font-family: $serif-primary;
+    font-size: $font-size-xl;
+    font-weight: 600;
+    margin-bottom: $spacing-sm;
+    
+    a {
+      color: $color-primary;
+      text-decoration: none;
+      
+      &:hover {
+        color: $color-accent;
+      }
+    }
+  }
+  
+  .card-meta {
+    font-family: $sans-serif;
+    font-size: $font-size-sm;
+    color: $color-text-light;
+    margin-bottom: $spacing-md;
+    
+    .separator {
+      margin: 0 $spacing-xs;
+      color: $color-border;
+    }
+  }
+}
+
+// Grid layouts
+.grid {
+  display: grid;
+  gap: $spacing-xl;
+  
+  &.grid-2 {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+  
+  &.grid-3 {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Enhanced Tags
+.tag {
+  display: inline-block;
+  font-family: $sans-serif;
+  font-size: $font-size-xs;
+  font-weight: 600;
+  color: $color-accent;
+  background-color: rgba($color-accent, 0.1);
+  border: 1px solid rgba($color-accent, 0.2);
+  padding: $spacing-xs $spacing-sm;
+  margin: $spacing-xs $spacing-xs $spacing-xs 0;
+  border-radius: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background-color: $color-accent;
+    color: white;
+    transform: translateY(-1px);
+  }
+}
+
+// Enhanced Filters
+.filters {
+  background-color: $color-background-alt;
+  border: 1px solid $color-border;
+  border-radius: 8px;
+  padding: $spacing-xl;
+  margin-bottom: $spacing-xl;
+  
+  .filter-title {
+    font-family: $sans-serif;
+    font-size: $font-size-lg;
+    font-weight: 700;
+    color: $color-primary;
+    margin-bottom: $spacing-lg;
+    letter-spacing: 0.02em;
+  }
+  
+  .filter-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-sm;
+    
+    .filter-option {
+      font-family: $sans-serif;
+      font-size: $font-size-sm;
+      font-weight: 500;
+      color: $color-secondary;
+      background-color: white;
+      border: 1px solid $color-border;
+      padding: $spacing-sm $spacing-md;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      
+      &:hover, &.active {
+        background-color: $color-accent;
+        color: white;
+        border-color: $color-accent;
+      }
+    }
+  }
+}
+
+// Enhanced Footer
+footer {
+  background-color: $color-background-alt;
+  border-top: 1px solid $color-border;
+  padding: $spacing-xxl $spacing-xl;
+  margin-top: $spacing-xxl * 2;
+  
+  .footer-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+    
+    .footer-text {
+      font-family: $sans-serif;
+      font-size: $font-size-sm;
+      color: $color-text-light;
+      line-height: 1.6;
+    }
+    
+    .footer-links {
+      margin-top: $spacing-lg;
+      
+      a {
+        font-family: $sans-serif;
+        font-size: $font-size-sm;
+        font-weight: 500;
+        color: $color-accent;
+        text-decoration: none;
+        margin: 0 $spacing-md;
+        
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+// Homepage enhancements
+.homepage {
+  .hero {
+    text-align: center;
+    padding: $spacing-xxl * 2 0;
+    margin-bottom: $spacing-xxl;
+    
+    .hero-title {
+      font-family: $serif-primary;
+      font-size: clamp($font-size-3xl, 5vw, 4rem);
+      font-weight: 700;
+      color: $color-primary;
+      margin-bottom: $spacing-lg;
+      line-height: 1.2;
+    }
+    
+    .hero-subtitle {
+      font-family: $serif-secondary;
+      font-size: $font-size-xl;
+      color: $color-text-light;
+      font-style: italic;
+      margin-bottom: $spacing-xl;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .hero-description {
+      font-size: $font-size-lg;
+      line-height: 1.8;
+      color: $color-text;
+      max-width: 900px;
+      margin: 0 auto $spacing-xl auto;
+    }
+  }
+  
+  .featured-sections {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: $spacing-xl;
+    margin-bottom: $spacing-xxl;
+  }
+}
+
+// Responsive typography
+@media (max-width: 768px) {
+  body {
+    font-size: $font-size-base;
+  }
+  
+  h1 {
+    font-size: $font-size-2xl;
+  }
+  
+  h2 {
+    font-size: $font-size-xl;
+  }
+  
+  h3 {
+    font-size: $font-size-lg;
+  }
+}
+
+// Print styles
+@media print {
+  header, footer, .filters, .sidebar {
+    display: none;
+  }
+  
+  body {
+    font-size: 12pt;
+    line-height: 1.5;
+    color: black;
+  }
+  
+  .film-page .content-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Focus states for accessibility
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid $color-accent;
+  outline-offset: 2px;
+}
+
+// Selection styles
+::selection {
+  background-color: rgba($color-accent, 0.2);
+  color: $color-primary;
+}

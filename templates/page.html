@@ -1,0 +1,153 @@
+{% extends "base.html" %}
+
+{% block content %}
+<article class="film-page">
+    <div class="content-wrapper">
+        <div class="main-content">
+            <h1 class="film-title">{{ page.title }}</h1>
+            
+            {% if page.extra.year %}
+            <div class="film-year">({{ page.extra.year }})</div>
+            {% endif %}
+
+            {% if page.extra.original_story and page.extra.story_author %}
+            <div class="film-description">
+                <p><em>Adapted from</em> {{ page.extra.original_story }} <em>by</em> {{ page.extra.story_author }}{% if page.extra.story_year %} ({{ page.extra.story_year }}){% endif %}</p>
+            </div>
+            {% endif %}
+
+            <div class="section">
+                <div class="section-content">
+                    {{ page.content | safe }}
+                </div>
+            </div>
+
+            <!-- Taxonomy links -->
+            {% if page.taxonomies %}
+            <div class="section">
+                <div class="section-title">Related</div>
+                <div class="taxonomies">
+                    {% if page.taxonomies.authors %}
+                    <div class="taxonomy-group">
+                        <h4>Authors</h4>
+                        {% for author in page.taxonomies.authors %}
+                        <a href="{{ get_taxonomy_url(kind='authors', name=author) }}" class="tag">{{ author }}</a>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+
+                    {% if page.taxonomies.regions %}
+                    <div class="taxonomy-group">
+                        <h4>Regions</h4>
+                        {% for region in page.taxonomies.regions %}
+                        <a href="{{ get_taxonomy_url(kind='regions', name=region) }}" class="tag">{{ region }}</a>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+
+                    {% if page.taxonomies.decades %}
+                    <div class="taxonomy-group">
+                        <h4>Era</h4>
+                        {% for decade in page.taxonomies.decades %}
+                        <a href="{{ get_taxonomy_url(kind='decades', name=decade) }}" class="tag">{{ decade }}</a>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+            {% endif %}
+        </div>
+
+        <!-- Enhanced sidebar with film metadata -->
+        {% if page.extra %}
+        <aside class="film-sidebar">
+            <div class="metadata-box">
+                <h3>Film Details</h3>
+                
+                {% if page.extra.year %}
+                <div class="metadata-item">
+                    <span class="label">Year</span>
+                    <div class="value">{{ page.extra.year }}</div>
+                </div>
+                {% endif %}
+                
+                {% if page.extra.director %}
+                <div class="metadata-item">
+                    <span class="label">Director</span>
+                    <div class="value">{{ page.extra.director }}</div>
+                </div>
+                {% endif %}
+                
+                {% if page.extra.studio %}
+                <div class="metadata-item">
+                    <span class="label">Studio</span>
+                    <div class="value">{{ page.extra.studio }}</div>
+                </div>
+                {% endif %}
+                
+                {% if page.extra.stars %}
+                <div class="metadata-item">
+                    <span class="label">Stars</span>
+                    <div class="value">
+                        {% for star in page.extra.stars %}
+                            {{ star }}{% if not loop.last %}, {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endif %}
+                
+                {% if page.extra.survival_status %}
+                <div class="metadata-item">
+                    <span class="label">Availability</span>
+                    <div class="value">
+                        <span class="status {{ page.extra.survival_status | lower }}">
+                            {{ page.extra.survival_status }}
+                        </span>
+                    </div>
+                </div>
+                {% endif %}
+                
+                {% if page.extra.setting %}
+                <div class="metadata-item">
+                    <span class="label">Setting</span>
+                    <div class="value">{{ page.extra.setting }}</div>
+                </div>
+                {% endif %}
+                
+                {% if page.extra.genre %}
+                <div class="metadata-item">
+                    <span class="label">Genre</span>
+                    <div class="value">{{ page.extra.genre }}</div>
+                </div>
+                {% endif %}
+            </div>
+
+            {% if page.extra.original_story %}
+            <div class="metadata-box">
+                <h3>Source Literature</h3>
+                
+                <div class="metadata-item">
+                    <span class="label">Original Work</span>
+                    <div class="value">{{ page.extra.original_story }}</div>
+                </div>
+                
+                {% if page.extra.story_author %}
+                <div class="metadata-item">
+                    <span class="label">Author</span>
+                    <div class="value">{{ page.extra.story_author }}</div>
+                </div>
+                {% endif %}
+                
+                {% if page.extra.story_year %}
+                <div class="metadata-item">
+                    <span class="label">Published</span>
+                    <div class="value">{{ page.extra.story_year }}</div>
+                </div>
+                {% endif %}
+            </div>
+            {% endif %}
+        </aside>
+        {% endif %}
+    </div>
+</article>
+{% endblock content %}

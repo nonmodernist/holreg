@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="taxonomy-index">
+    <header class="page-header">
+        <h1>{{ term.name | title }}</h1>
+        {% if taxonomy.name == "authors" %}
+        <p class="page-description">American women writers whose regional novels and short stories were adapted for film between 1910 and 1960.</p>
+        {% elif taxonomy.name == "regions" %}
+        <p class="page-description">Geographic regions depicted in American women's regionalist literature and their film adaptations.</p>
+        {% endif %}
+    </header>
+
+    <div class="section">
+        <div class="grid grid-2">
+            {% for page in term.pages %}
+            <div class="card">
+                <h3 class="card-title">
+                    <a href="{{ page.permalink }}">{{ page.title }}</a>
+                </h3>
+                <div class="card-meta">
+                    {{ page.extra.year }}
+                </div>
+                <div class="card-content">
+                    {{ page.summary | safe }}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock content %}
