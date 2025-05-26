@@ -1176,3 +1176,466 @@ select:focus {
   background-color: rgba($color-accent, 0.2);
   color: $color-primary;
 }
+
+// Reference Page Styles - Add to your existing style.scss
+
+// Reference page layout
+.reference-page {
+  .reference-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 $spacing-xl;
+    
+    @media (max-width: 768px) {
+      padding: 0 $spacing-lg;
+    }
+  }
+  
+  .reference-header {
+    text-align: center;
+    margin-bottom: $spacing-xxl;
+    padding-bottom: $spacing-xl;
+    border-bottom: 2px solid $color-border-light;
+    
+    .reference-title {
+      font-family: $serif-primary;
+      font-size: $font-size-4xl;
+      font-weight: 700;
+      color: $color-primary;
+      margin-bottom: $spacing-lg;
+      
+      @media (max-width: 768px) {
+        font-size: $font-size-3xl;
+      }
+    }
+    
+    .reference-description {
+      font-size: $font-size-lg;
+      color: $color-text-light;
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+  }
+}
+
+// Navigation for reference pages
+.reference-navigation {
+  background-color: $color-background-alt;
+  border: 1px solid $color-border;
+  border-radius: 8px;
+  padding: $spacing-lg;
+  margin-bottom: $spacing-xxl;
+  transition: all 0.3s ease;
+  
+  &.sticky {
+    position: fixed;
+    top: 80px;
+    right: $spacing-xl;
+    width: 250px;
+    z-index: 50;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    
+    @media (max-width: 1024px) {
+      position: static;
+      width: auto;
+      box-shadow: none;
+    }
+  }
+  
+  .nav-title {
+    font-family: $sans-serif;
+    font-size: $font-size-sm;
+    font-weight: 700;
+    color: $color-primary;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: $spacing-md;
+    padding-bottom: $spacing-sm;
+    border-bottom: 1px solid $color-border;
+  }
+  
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-sm;
+    
+    .nav-link {
+      font-family: $sans-serif;
+      font-size: $font-size-sm;
+      font-weight: 500;
+      color: $color-accent;
+      background-color: white;
+      border: 1px solid $color-border;
+      padding: $spacing-xs $spacing-sm;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      
+      &:hover {
+        background-color: $color-accent;
+        color: white;
+        transform: translateY(-1px);
+      }
+    }
+  }
+}
+// Reference Page Styles - Add to your existing style.scss
+
+// Reference page layout
+.reference-page {
+  .reference-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 $spacing-xl;
+    
+    @media (max-width: 768px) {
+      padding: 0 $spacing-lg;
+    }
+  }
+  
+  .reference-header {
+    text-align: center;
+    margin-bottom: $spacing-xxl;
+    padding-bottom: $spacing-xl;
+    border-bottom: 2px solid $color-border-light;
+    
+    .reference-title {
+      font-family: $serif-primary;
+      font-size: $font-size-4xl;
+      font-weight: 700;
+      color: $color-primary;
+      margin-bottom: $spacing-lg;
+      
+      @media (max-width: 768px) {
+        font-size: $font-size-3xl;
+      }
+    }
+    
+    .reference-description {
+      font-size: $font-size-lg;
+      color: $color-text-light;
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+  }
+}
+// Reference Page Styles - Add to your existing style.scss
+
+// Reference page layout
+.reference-page {
+  .reference-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 $spacing-xl;
+    
+    @media (max-width: 768px) {
+      padding: 0 $spacing-lg;
+    }
+  }
+  
+  .reference-header {
+    text-align: center;
+    margin-bottom: $spacing-xxl;
+    padding-bottom: $spacing-xl;
+    border-bottom: 2px solid $color-border-light;
+    
+    .reference-title {
+      font-family: $serif-primary;
+      font-size: $font-size-4xl;
+      font-weight: 700;
+      color: $color-primary;
+      margin-bottom: $spacing-lg;
+      
+      @media (max-width: 768px) {
+        font-size: $font-size-3xl;
+      }
+    }
+    
+    .reference-description {
+      font-size: $font-size-lg;
+      color: $color-text-light;
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+  }
+}
+
+// Navigation for reference pages
+.reference-navigation {
+  background-color: $color-background-alt;
+  border: 1px solid $color-border;
+  border-radius: 8px;
+  padding: $spacing-lg;
+  margin-bottom: $spacing-xxl;
+  
+  .nav-title {
+    font-family: $sans-serif;
+    font-size: $font-size-sm;
+    font-weight: 700;
+    color: $color-primary;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: $spacing-md;
+    padding-bottom: $spacing-sm;
+    border-bottom: 1px solid $color-border;
+  }
+  
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-sm;
+    
+    .nav-link {
+      font-family: $sans-serif;
+      font-size: $font-size-sm;
+      font-weight: 500;
+      color: $color-accent;
+      background-color: white;
+      border: 1px solid $color-border;
+      padding: $spacing-xs $spacing-sm;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      
+      &:hover {
+        background-color: $color-accent;
+        color: white;
+        transform: translateY(-1px);
+      }
+    }
+  }
+}
+
+// Reference content styling
+.reference-content {
+  font-size: $font-size-lg;
+  line-height: 1.7;
+  
+  // Section headers (A, B, C, etc.)
+  h2 {
+    font-family: $serif-primary;
+    font-size: $font-size-3xl;
+    font-weight: 700;
+    color: $color-primary;
+    margin: $spacing-xxl * 1.5 0 $spacing-xl 0;
+    padding: $spacing-lg 0 $spacing-md 0;
+    border-bottom: 3px solid $color-accent;
+    position: relative;
+    
+    &:first-child {
+      margin-top: 0;
+    }
+    
+    // Add a subtle background highlight
+    &::before {
+      content: '';
+      position: absolute;
+      left: -$spacing-lg;
+      right: -$spacing-lg;
+      top: 0;
+      bottom: 0;
+      background-color: rgba($color-accent, 0.03);
+      border-radius: 4px;
+      z-index: -1;
+    }
+  }
+  
+  // Individual entries
+  p {
+    margin-bottom: $spacing-lg;
+    
+    // Style for film entries
+    strong {
+      font-family: $serif-primary;
+      font-size: $font-size-xl;
+      font-weight: 600;
+      color: $color-primary;
+      display: inline-block;
+      margin-bottom: $spacing-xs;
+    }
+    
+    // Style for film details (year, director, etc.)
+    &:not(:last-child) {
+      padding-bottom: $spacing-md;
+      border-bottom: 1px solid $color-border-light;
+    }
+  }
+  
+  // Enhanced readability for long lists
+  .film-entry {
+    background-color: rgba($color-background-alt, 0.3);
+    padding: $spacing-lg;
+    margin-bottom: $spacing-md;
+    border-radius: 6px;
+    border-left: 4px solid $color-accent-light;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      background-color: rgba($color-accent, 0.05);
+      border-left-color: $color-accent;
+      transform: translateX(2px);
+    }
+    
+    .film-title {
+      font-family: $serif-primary;
+      font-size: $font-size-xl;
+      font-weight: 600;
+      color: $color-primary;
+      margin-bottom: $spacing-xs;
+    }
+    
+    .film-details {
+      font-size: $font-size-base;
+      color: $color-text;
+      line-height: 1.6;
+      
+      .film-year {
+        font-weight: 600;
+        color: $color-accent;
+      }
+      
+      .film-studio {
+        color: $color-secondary;
+      }
+      
+      .film-director {
+        font-style: italic;
+      }
+      
+      .source-info {
+        margin-top: $spacing-sm;
+        font-size: $font-size-sm;
+        color: $color-text-light;
+        
+        em {
+          color: $color-accent;
+        }
+      }
+    }
+  }
+  
+  // Bibliography specific styles
+  .bibliography-entry {
+    margin-bottom: $spacing-lg;
+    padding: $spacing-md;
+    background-color: rgba($color-background-alt, 0.5);
+    border-radius: 4px;
+    border-left: 3px solid $color-accent-light;
+    
+    .citation {
+      font-size: $font-size-base;
+      line-height: 1.6;
+      color: $color-text;
+      
+      .author {
+        font-weight: 600;
+        color: $color-primary;
+      }
+      
+      .title {
+        font-style: italic;
+        color: $color-secondary;
+      }
+      
+      .publication {
+        color: $color-text-light;
+      }
+    }
+  }
+  
+  // Summary/total information
+  .reference-summary {
+    background-color: $color-background-alt;
+    border: 1px solid $color-border;
+    border-radius: 8px;
+    padding: $spacing-xl;
+    margin-top: $spacing-xxl;
+    text-align: center;
+    
+    .summary-title {
+      font-family: $serif-primary;
+      font-size: $font-size-2xl;
+      font-weight: 600;
+      color: $color-primary;
+      margin-bottom: $spacing-md;
+    }
+    
+    .summary-text {
+      font-size: $font-size-lg;
+      color: $color-text;
+      line-height: 1.6;
+    }
+    
+    .total-count {
+      font-size: $font-size-3xl;
+      font-weight: 700;
+      color: $color-accent;
+      margin: $spacing-lg 0;
+    }
+  }
+}
+
+// Back to top button
+.back-to-top {
+  position: fixed;
+  bottom: $spacing-xl;
+  right: $spacing-xl;
+  width: 50px;
+  height: 50px;
+  background-color: $color-accent;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: $font-size-xl;
+  font-weight: 700;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+  
+  &.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  &:hover {
+    background-color: darken($color-accent, 10%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  }
+  
+  @media (max-width: 768px) {
+    bottom: $spacing-lg;
+    right: $spacing-lg;
+    width: 45px;
+    height: 45px;
+    font-size: $font-size-lg;
+  }
+}
+
+// Print styles for reference pages
+@media print {
+  .reference-navigation,
+  .back-to-top {
+    display: none;
+  }
+  
+  .reference-content {
+    h2 {
+      page-break-after: avoid;
+      margin-top: $spacing-lg;
+    }
+    
+    .film-entry,
+    .bibliography-entry {
+      page-break-inside: avoid;
+      background-color: transparent;
+      border: 1px solid #ccc;
+    }
+  }
+}

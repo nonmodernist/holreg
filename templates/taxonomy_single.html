@@ -1,31 +1,54 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="taxonomy-index">
+<div class="taxonomy-single-page">
     <header class="page-header">
-        <h1>{{ term.name | title }}</h1>
         {% if taxonomy.name == "authors" %}
-        <p class="page-description">American women writers whose regional novels and short stories were adapted for film between 1910 and 1960.</p>
+        <h1>Films by {{ term.name }}</h1>
+        <p class="page-description">Film adaptations of {{ term.name }}'s novels and short stories.</p>
+        
+        <!-- Link to author's biographical page if it exists -->
+        {% set author_slug = term.name | slugify %}
+        <div class="author-profile-link">
+            <a href="{{ get_url(path='@/author-profiles/' ~ author_slug ~ '.md') }}" class="cta-button">
+                → Learn more about {{ term.name }}
+            </a>
+        </div>
+        
         {% elif taxonomy.name == "regions" %}
-        <p class="page-description">Geographic regions depicted in American women's regionalist literature and their film adaptations.</p>
+        <h1>Films Set in {{ term.name }}</h1>
+        <p class="page-description">Films depicting the {{ term.name }} region in American literature and cinema.</p>
+        
+        {% else %}
+        <h1>{{ term.name | title }}</h1>
+        <p class="page-description">Films categorized under {{ term.name }}.</p>
         {% endif %}
     </header>
 
     <div class="section">
+        <div class="section-title">All Films ({{ term.pages | length }})</div>
         <div class="grid grid-2">
-            {% for page in term.pages %}
+            {% set films_with_year = term.pages | filter(attribute="extra.year") %}
+            {% for page in films_with_year | sort(attribute="extra.year") %}
             <div class="card">
                 <h3 class="card-title">
                     <a href="{{ page.permalink }}">{{ page.title }}</a>
                 </h3>
                 <div class="card-meta">
-                    {% if page.extra.year %}
-                        {{ page.extra.year }}
-                    {% endif %}
+                    {% if page.extra.year %}{{ page.extra.year }}{% endif %}
+                    {% if page.extra.director %}<span class="separator">•</span>{{ page.extra.director }}{% endif %}
+                    {% if page.extra.studio %}<span class="separator">•</span>{{ page.extra.studio }}{% endif %}
                 </div>
-                <div class="card-content">
-                    {{ page.summary | safe }}
+                {% if page.extra.survival_status %}
+                <div style="margin: 1rem 0;">
+                    <span class="status {{ page.extra.survival_status | lower }}">
+                        {{ page.extra.survival_status }}
+                    </span>
                 </div>
+                {% endif %}
+                {% if page.summary %}
+                <div class="card-content">{{ page.summary }}</div>
+                {% endif %}
             </div>
             {% endfor %}
         </div>

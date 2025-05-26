@@ -1,35 +1,35 @@
 +++
-title = "DUMMY POST"
+title = "TEMPLATE"
 date = 2024-01-01
 weight = 1900
 
 [taxonomies]
-authors = ["Gene Stratton-Porter"]
-regions = ["Limberlost Indiana", "Rural Midwest"]
-studios = ["Paramount Pictures"]
+authors = ["TEMPLATE"]
+regions = ["REGION1", "REGION2"]
+studios = ["STUDIO"]
 eras = ["late silent", "pre-code", "classical Hollywood", "studio system decline"]
 genres = ["Drama", "Romance"]
 availability = ["Lost"]
-directors = ["Marshall Neilan"]
+directors = ["DIRECTOR"]
 
 [extra]
 # Film metadata for sidebar
-year = 1917
-original_story = "Freckles"
-story_year = 1904
-story_author = "Gene Stratton-Porter"
-director = "Marshall Neilan"
-studio = "Paramount Pictures"
-production_company = "Lasky-Paramount"
-distributor = "Paramount Pictures"
-stars = ["Jack Pickford", "Louise Huff"]
-setting = "Limberlost Swamp, Indiana"
+year = 1900
+original_story = "ORIGSTORY"
+story_year = 1900
+story_author = "AUTHOR"
+director = "DIRECTOR"
+studio = "STUDIO"
+production_company = "PRODUCTION"
+distributor = "DISTRIBUTION"
+stars = ["STAR1", "STAR2"]
+setting = "SETTING"
 survival_status = "Lost"
 duration = "Unknown"
 format = "Silent, B&W"
-filming_locations = ["Southern California (standing in for Indiana)"]
-adaptation_notes = "First adaptation of Stratton-Porter's novel"
-author_byline = "Alexandra Edwards"
+filming_locations = ["LOCATION"]
+adaptation_notes = "NOTES"
+# author_byline = "Alexandra Edwards"
 
 # Content flags
 show_bibliography = true
@@ -43,6 +43,7 @@ alt = "Jack Pickford and Louise Huff in Freckles (1917)"
 caption = "Jack Pickford and Louise Huff in an outdoor setting from the lost silent film Freckles (1917). Motography, June 1917."
 
 # Filmography data
+# update this to be other adaptations from same source
 [[extra.films_as_director]]
 title = "Freckles"
 director = "Marshall Neilan"
@@ -52,6 +53,8 @@ archive = "Lost Film"
 archive_url = "#"
 
 [[extra.dvd_sources]]
-title = "Early Stratton-Porter Adaptations Collection"
-details = "DVD collection containing surviving promotional materials and stills from the 1917 adaptation."
+title = "TITLE"
+details = "DETAILS"
 +++
+
+Content goes here.
