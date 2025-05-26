@@ -1,0 +1,18 @@
+
+// Grid layouts
+.grid {
+  display: grid;
+  gap: $spacing-xl;
+  
+  &.grid-2 {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+  
+  &.grid-3 {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}

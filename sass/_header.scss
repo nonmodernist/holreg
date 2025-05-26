@@ -1,0 +1,95 @@
+@import 'variables';
+
+// Enhanced Navigation inspired by WFP
+header {
+  background-color: rgba($color-background, 0.95);
+  border-bottom: 1px solid $color-border;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+  
+  nav {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: $spacing-md $spacing-xl;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .site-title {
+      font-family: $serif-primary;
+      font-size: $font-size-xl;
+      font-weight: 700;
+      color: $color-primary;
+      text-decoration: none;
+      letter-spacing: -0.02em;
+      
+      &:hover {
+        color: $color-accent;
+        transition: color 0.3s ease;
+      }
+    }
+    
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: $spacing-lg;
+      
+      @media (max-width: 768px) {
+        gap: $spacing-md;
+      }
+      
+      a {
+        font-family: $sans-serif;
+        font-size: $font-size-sm;
+        font-weight: 500;
+        color: $color-secondary;
+        text-decoration: none;
+        padding: $spacing-xs $spacing-sm;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+        letter-spacing: 0.02em;
+        
+        &:hover {
+          color: $color-accent;
+          background-color: rgba($color-accent, 0.05);
+        }
+        
+        &.active {
+          color: $color-accent;
+          font-weight: 600;
+        }
+      }
+    }
+    
+    // Search box like WFP
+    .search-container {
+      position: relative;
+      margin-left: $spacing-lg;
+      
+      input[type="search"] {
+        font-family: $sans-serif;
+        font-size: $font-size-sm;
+        padding: $spacing-xs $spacing-md;
+        border: 1px solid $color-border;
+        border-radius: 4px;
+        background-color: white;
+        width: 200px;
+        transition: all 0.3s ease;
+        
+        &:focus {
+          outline: none;
+          border-color: $color-accent;
+          box-shadow: 0 0 0 2px rgba($color-accent, 0.2);
+        }
+        
+        &::placeholder {
+          color: $color-text-muted;
+        }
+      }
+    }
+  }
+}

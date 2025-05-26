@@ -1,0 +1,25 @@
+
+// Enhanced Tags with better hierarchy
+.tag {
+  display: inline-block;
+  font-family: $sans-serif;
+  font-size: $font-size-xs;
+  font-weight: 600;
+  color: $color-accent;
+  background-color: rgba($color-accent, 0.08);
+  border: 1px solid rgba($color-accent, 0.2);
+  padding: $spacing-xs $spacing-md;
+  margin: $spacing-xs $spacing-xs $spacing-xs 0;
+  border-radius: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background-color: $color-accent;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba($color-accent, 0.3);
+  }
+}

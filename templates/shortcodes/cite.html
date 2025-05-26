@@ -1,0 +1,51 @@
+{#- Citation shortcode for Hollywood Regionalism -#}
+{% set bib = load_data(path="data/bibliography.toml") %}
+{% set citation = bib[id] %}
+
+{%- if citation -%}
+    {%- if citation.type == "print" -%}
+        {#- Format print source citation with Chicago style -#}
+        {%- if citation.author -%}
+            {{ citation.author }},&nbsp;
+        {%- endif -%}
+        {%- if citation.title -%}
+            "{{ citation.title }},"&nbsp;
+        {%- endif -%} 
+        <em>{{ citation.source }}</em>&nbsp;
+        {%- if citation.volume -%},&nbsp;{{ citation.volume }}{%- endif -%} 
+        {%- if citation.number -%},&nbsp;no. {{ citation.number }}{%- endif -%} 
+        {%- if citation.publisher -%}
+            ({{ citation.location }}: {{ citation.publisher }}, {{ citation.year }}) 
+        {%- elif citation.date -%}
+            ({{ citation.date }}) 
+        {%- endif -%}
+        {%- if citation.page -%}, {{ citation.page }}{%- endif -%}. 
+        {%- if citation.quote -%} 
+            &nbsp;<button class="view-quote-btn" data-citation-id="{{ id }}" aria-label="View quote from source">View quote</button> 
+        {%- endif -%}
+    {%- elif citation.type == "online" -%}
+        {#- Format online source citation with Chicago style -#}
+        {%- if citation.author -%}
+            {{ citation.author }},&nbsp;
+        {%- endif -%}
+        {%- if citation.url -%}
+            <a href="{{ citation.url }}" target="_blank" rel="noopener noreferrer"> 
+        {%- endif -%}
+        {%- if citation.title -%}
+            "{{ citation.title }},"
+        {%- else -%}
+            {{ citation.source }} 
+        {%- endif -%}
+        {%- if citation.url -%}
+            </a> &nbsp;
+        {%- endif -%} 
+        {%- if citation.title -%}
+            <em>{{ citation.source }}</em>,&nbsp;
+        {%- endif -%} 
+        {%- if citation.accessed -%}
+            accessed {{ citation.accessed }}.
+        {%- endif -%}
+    {%- endif -%}
+{%- else -%}
+    <span class="citation-error">[Citation not found: {{ id }}]</span>
+{%- endif -%}

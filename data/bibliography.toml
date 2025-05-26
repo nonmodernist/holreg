@@ -1,0 +1,131 @@
+# Bibliography Data File for Hollywood Regionalism
+# Each entry should have a unique ID and contain all necessary citation information
+# For print sources, include a "quote" field with the relevant passage
+# For online sources, include a "url" field
+
+# Example entries showing different source types
+
+[afi_hollywood_reporter_1944]
+type = "print"
+title = "Production Notes"
+source = "Hollywood Reporter"
+date = "May 19, 1944"
+page = "3"
+quote = "The elaborate four-story tenement set featured mechanically complex elevator-mounted cameras that allowed for unprecedented vertical tracking shots through multiple floors of the building."
+
+[castro_district_wiki]
+type = "online"
+title = "Castro District, San Francisco"
+source = "Wikipedia"
+url = "https://en.wikipedia.org/wiki/Castro_District,_San_Francisco"
+accessed = "2024-01-15"
+
+[exhibitors_herald_1917]
+type = "print"
+author = ""
+title = "Freckles Production Notes"
+source = "Exhibitors Herald"
+date = "June 2, 1917"
+page = "15"
+quote = "The company moved to Southern California for the filming, as the western atmosphere demands a typical California setting for the Limberlost scenes."
+
+[gaines_2018]
+type = "print"
+author = "Jane Gaines"
+source = "Pink-Slipped: What Happened to the Women in the Silent Film Industries?"
+publisher = "University of Illinois Press"
+location = "Champaign"
+year = "2018"
+page = "72-75"
+quote = "The extant film print itself is no final proof of the existence of past events and therefore the surviving object alone may not put an end to questions about what actually happened behind or in front of the camera loaded with light-sensitive film stock."
+
+[motography_1917]
+type = "print"
+title = "Jack Pickford Has Gone West"
+source = "Motography"
+date = "February 10, 1917"
+page = "234"
+quote = "Jack Pickford followed Louise Huff to California in February for the production of Freckles, though they were not traveling to Indiana but to Southern California."
+
+[fetterley_pryse_2003]
+type = "print"
+author = "Judith Fetterley and Marjorie Pryse"
+source = "Writing Out of Place: Regionalism, Women, and American Literary Culture"
+publisher = "University of Illinois Press"
+location = "Champaign"
+year = "2003"
+page = "18"
+quote = "American women's regionalism offered unconventional, noncanonical, and counterhegemonic stories of female (and male) development across the life cycle."
+
+[stratton_porter_1924]
+type = "print"
+author = "Gene Stratton-Porter"
+title = "All Together, Heave"
+source = "Izaak Walton League Monthly"
+volume = "2"
+number = "7"
+date = "December 1924"
+page = "cover"
+quote = "The time has come for all nature lovers to unite in a great campaign to save what remains of our natural heritage."
+
+[armitage_2012]
+type = "print"
+author = "Kevin Armitage"
+title = "On Gene Stratton Porter's Conservation Aesthetic"
+source = "Environmental History"
+volume = "17"
+number = "3"
+date = "2012"
+page = "537"
+quote = "Stratton-Porter's conservation message was bound up in problematically genteel modes of activism that failed to acknowledge the complicity of capitalism and racism in environmental degradation."
+
+[long_1990]
+type = "print"
+author = "Judith Reick Long"
+source = "Gene Stratton-Porter: Novelist and Naturalist"
+publisher = "Indiana Historical Society"
+location = "Indianapolis"
+year = "1990"
+page = "156"
+quote = "Stratton-Porter moved to Hollywood in 1923, purchasing a bungalow between Second and Third Streets, almost at the heart of the developing studio district."
+
+[meehan_1927]
+type = "print"
+author = "Jeannette Porter Meehan"
+source = "Life and Letters of Gene Stratton-Porter"
+publisher = "Hutchinson"
+location = "London"
+year = "1927"
+page = "243"
+quote = "She had allowed a well-known company to do one of her early books. They had invited her to approve the adaptation and continuity and make suggestions; all of which she did. But when they made the picture, they ignored all of her ideas and suggestions."
+
+[afi_catalog_freckles]
+type = "online"
+title = "Freckles (1917)"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Catalog/moviedetails/16906"
+accessed = "2024-01-20"
+
+[variety_1924]
+type = "print"
+title = "A Girl of the Limberlost Review"
+source = "Variety"
+date = "May 7, 1924"
+page = "22"
+quote = "Gene Stratton-Porter Productions has created a film that stays true to the naturalist elements of the source novel while making necessary adaptations for the screen."
+
+[moving_picture_world_1925]
+type = "print"
+title = "The Magic Garden in Production"
+source = "Moving Picture World"
+date = "March 15, 1925"
+page = "234"
+quote = "The company took a herd of goats to San Clemente Island, sixty miles off the coast, where they filmed sequences requiring remote wilderness settings that could not be achieved on studio backlots."
+
+[film_daily_1924]
+type = "print"
+title = "Listen to Me a Minute, Mr. Exhibitor"
+source = "Film Daily"
+date = "May 2, 1924"
+page = "5"
+quote = "Gene Stratton-Porter Productions presents films that are an example of how entertaining pictures could be made and be censorproof."

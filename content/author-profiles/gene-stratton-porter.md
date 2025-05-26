@@ -5,19 +5,19 @@ template = "author.html"
 
 [taxonomies]
 regions = ["Limberlost Indiana", "Rural Midwest", "Southern California"]
-genres = ["Regional Literature", "Nature Writing", "Conservation Literature"]
 
 [extra]
+author_byline = "Alexandra Edwards"
+
 # Author biographical info
 author_dates = "1863-1924"
-author_byline = "Alexandra Edwards"
 birth_date = "August 17, 1863"
 death_date = "December 6, 1924"
 occupation = ["novelist", "naturalist", "photographer", "conservationist", "filmmaker", "women's club organizer"]
 locations = ["Geneva, Indiana", "Rome City, Indiana", "Los Angeles, California"]
 
 # Content flags
-show_bibliography = true
+show_bibliography = false
 show_filmography = true
 show_citation = true
 show_related_films = true
@@ -60,65 +60,8 @@ surviving_films = 6
 adaptation_span = "1917-1960"
 studios = ["Paramount", "Gene Stratton-Porter Productions", "RKO", "Monogram", "Republic", "Columbia", "20th Century Fox"]
 
-# Silent Era Adaptations (1917-1930)
-[[extra.silent_adaptations]]
-title = "Freckles"
-director = "Marshall Neilan"
-studio = "Lasky-Paramount"
-year = 1917
-status = "Lost"
-
-[[extra.silent_adaptations]]
-title = "Michael O'Halloran"
-director = "James Leo Meehan"
-studio = "Gene Stratton-Porter Productions"
-year = 1923
-status = "Lost"
-
-[[extra.silent_adaptations]]
-title = "A Girl of the Limberlost"
-director = "James Leo Meehan"
-studio = "Gene Stratton-Porter Productions"
-year = 1924
-status = "Lost"
-
-[[extra.silent_adaptations]]
-title = "The Keeper of the Bees"
-director = "James Leo Meehan"
-studio = "Gene Stratton-Porter Productions"
-year = 1925
-status = "Lost"
-
-[[extra.silent_adaptations]]
-title = "Laddie"
-director = "James Leo Meehan"
-studio = "Gene Stratton-Porter Productions"
-year = 1926
-status = "Lost"
-
-[[extra.silent_adaptations]]
-title = "The Magic Garden"
-director = "James Leo Meehan"
-studio = "Gene Stratton-Porter Productions"
-year = 1927
-status = "Lost"
-
-[[extra.silent_adaptations]]
-title = "The Harvester"
-director = "James Leo Meehan"
-studio = "Gene Stratton-Porter Productions"
-year = 1927
-status = "Lost"
-
-[[extra.silent_adaptations]]
-title = "Freckles"
-director = "James Leo Meehan"
-studio = "FBO"
-year = 1928
-status = "Lost"
-
-# Sound Era Adaptations (1930-1960)
-[[extra.sound_adaptations]]
+# Extant Adaptations
+[[extra.extant_adaptations]]
 title = "A Girl of the Limberlost"
 director = "Christy Cabanne"
 studio = "Monogram Pictures"
@@ -126,7 +69,7 @@ year = 1934
 format = "Sound, B&W"
 availability = "Available online"
 
-[[extra.sound_adaptations]]
+[[extra.extant_adaptations]]
 title = "The Keeper of the Bees"
 director = "Christy Cabanne"
 studio = "Monogram Pictures"
@@ -134,39 +77,7 @@ year = 1935
 format = "Sound, B&W"
 availability = "Available online"
 
-[[extra.sound_adaptations]]
-title = "Freckles"
-director = "Edward Killy & William Hamilton"
-studio = "RKO"
-year = 1935
-format = "Sound, B&W"
-status = "Lost"
-
-[[extra.sound_adaptations]]
-title = "Laddie"
-director = "George Stevens"
-studio = "RKO"
-year = 1935
-format = "Sound, B&W"
-status = "Lost"
-
-[[extra.sound_adaptations]]
-title = "The Harvester"
-director = "Joseph Santley"
-studio = "Republic Pictures"
-year = 1936
-format = "Sound, B&W"
-status = "Lost"
-
-[[extra.sound_adaptations]]
-title = "Michael O'Halloran"
-director = "Karl Brown"
-studio = "Republic Pictures"
-year = 1937
-format = "Sound, B&W"
-status = "Lost"
-
-[[extra.sound_adaptations]]
+[[extra.extant_adaptations]]
 title = "Romance of the Limberlost"
 director = "William Nigh"
 studio = "Monogram Pictures"
@@ -174,7 +85,7 @@ year = 1938
 format = "Sound, B&W"
 availability = "Available online"
 
-[[extra.sound_adaptations]]
+[[extra.extant_adaptations]]
 title = "Her First Romance"
 director = "Edward Dmytryk"
 studio = "Monogram Pictures"
@@ -182,7 +93,7 @@ year = 1940
 format = "Sound, B&W"
 availability = "Available online"
 
-[[extra.sound_adaptations]]
+[[extra.extant_adaptations]]
 title = "Laddie"
 director = "Jack Hively"
 studio = "RKO"
@@ -190,7 +101,112 @@ year = 1940
 format = "Sound, B&W"
 availability = "Available online"
 
-[[extra.sound_adaptations]]
+[[extra.extant_adaptations]]
+title = "Freckles"
+director = "Andrew McLaglen"
+studio = "20th Century Fox"
+year = 1960
+format = "CinemaScope, Color"
+availability = "Fox Movie Channel"
+
+# Lost Adaptations
+[[extra.lost_adaptations]]
+title = "Freckles"
+director = "Marshall Neilan"
+studio = "Lasky-Paramount"
+year = 1917
+format = "Silent, B&W"
+status = "Lost"
+
+[[extra.lost_adaptations]]
+title = "Michael O'Halloran"
+director = "James Leo Meehan"
+studio = "Gene Stratton-Porter Productions"
+year = 1923
+format = "Silent, B&W"
+status = "Lost"
+
+[[extra.lost_adaptations]]
+title = "A Girl of the Limberlost"
+director = "James Leo Meehan"
+studio = "Gene Stratton-Porter Productions"
+year = 1924
+format = "Silent, B&W"
+status = "Lost"
+
+[[extra.lost_adaptations]]
+title = "The Keeper of the Bees"
+director = "James Leo Meehan"
+studio = "Gene Stratton-Porter Productions"
+year = 1925
+format = "Silent, B&W"
+status = "Lost"
+
+[[extra.lost_adaptations]]
+title = "Laddie"
+director = "James Leo Meehan"
+studio = "Gene Stratton-Porter Productions"
+year = 1926
+format = "Silent, B&W"
+status = "Lost"
+
+[[extra.lost_adaptations]]
+title = "The Magic Garden"
+director = "James Leo Meehan"
+studio = "Gene Stratton-Porter Productions"
+year = 1927
+format = "Silent, B&W"
+status = "Lost"
+
+[[extra.lost_adaptations]]
+title = "The Harvester"
+director = "James Leo Meehan"
+studio = "Gene Stratton-Porter Productions"
+year = 1927
+format = "Silent, B&W"
+status = "Lost"
+
+[[extra.lost_adaptations]]
+title = "Freckles"
+director = "James Leo Meehan"
+studio = "FBO"
+year = 1928
+format = "Silent, B&W"
+status = "Lost"
+
+[[extra.lost_adaptations]]
+title = "Freckles"
+director = "Edward Killy & William Hamilton"
+studio = "RKO"
+year = 1935
+format = "Sound, B&W"
+status = "Lost"
+
+[[extra.lost_adaptations]]
+title = "Laddie"
+director = "George Stevens"
+studio = "RKO"
+year = 1935
+format = "Sound, B&W"
+status = "Lost"
+
+[[extra.lost_adaptations]]
+title = "The Harvester"
+director = "Joseph Santley"
+studio = "Republic Pictures"
+year = 1936
+format = "Sound, B&W"
+status = "Lost"
+
+[[extra.lost_adaptations]]
+title = "Michael O'Halloran"
+director = "Karl Brown"
+studio = "Republic Pictures"
+year = 1937
+format = "Sound, B&W"
+status = "Lost"
+
+[[extra.lost_adaptations]]
 title = "A Girl of the Limberlost"
 director = "Mel Ferrer"
 studio = "Columbia Pictures"
@@ -198,7 +214,7 @@ year = 1945
 format = "Sound, B&W"
 status = "Lost"
 
-[[extra.sound_adaptations]]
+[[extra.lost_adaptations]]
 title = "Keeper of the Bees"
 director = "John Sturges"
 studio = "Columbia Pictures"
@@ -206,7 +222,7 @@ year = 1947
 format = "Sound, B&W"
 status = "Lost"
 
-[[extra.sound_adaptations]]
+[[extra.lost_adaptations]]
 title = "Michael O'Halloran"
 director = "John Rawlins"
 studio = "Windsor Pictures/Monogram"
@@ -214,13 +230,6 @@ year = 1948
 format = "Sound, B&W"
 status = "Lost"
 
-[[extra.sound_adaptations]]
-title = "Freckles"
-director = "Andrew McLaglen"
-studio = "20th Century Fox"
-year = 1960
-format = "CinemaScope, Color"
-availability = "Fox Movie Channel"
 
 # DVD and streaming sources
 [[extra.dvd_sources]]
@@ -235,10 +244,6 @@ details = "Rome City, Indiana. Houses manuscripts, photographs, and production m
 [[extra.archive_collections]]
 title = "Indiana State Library"
 details = "Manuscript collection includes correspondence with film producers and screenplay drafts."
-
-[[extra.archive_collections]]
-title = "Margaret Herrick Library, Academy of Motion Picture Arts and Sciences"
-details = "Production files for several studio adaptations, including publicity materials and reviews."
 +++
 
 In her sixty years on earth, Gene Stratton-Porter was many things: a women's club organizer, nature photographer, naturalist, conservationist, best-selling novelist, and a burgeoning film producer who died just as her film studio began to realize her mission of adapting her novels into movies that could further her education and conservation efforts. By 1960, eight of her books had been turned into twenty-one films—silent and sound, black and white and color, from Poverty Row studios to members of the Big Five.

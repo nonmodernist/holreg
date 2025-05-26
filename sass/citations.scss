@@ -1,0 +1,178 @@
+// Citation and Quote Modal Styles for Hollywood Regionalism
+
+@import 'variables';
+@import 'typography';
+
+// Citation button styling
+.view-quote-btn {
+  display: inline;
+  background: none;
+  border: none;
+  color: $color-accent;
+  font-family: $sans-serif;
+  font-size: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    color: darken($color-accent, 10%);
+    text-decoration: underline;
+  }
+  
+  &:focus {
+    outline: 2px solid $color-accent;
+    outline-offset: 2px;
+  }
+}
+
+// Quote Modal Styles
+.quote-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+  overflow-y: auto;
+  padding: $spacing-xl;
+  
+  &.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .quote-modal-content {
+    background-color: $color-background;
+    border: 1px solid $color-border;
+    border-radius: 8px;
+    padding: $spacing-xxl;
+    max-width: 700px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    
+    @media (max-width: 768px) {
+      padding: $spacing-xl;
+      width: 95%;
+      max-height: 90vh;
+    }
+  }
+  
+  .quote-modal-close {
+    position: absolute;
+    top: $spacing-lg;
+    right: $spacing-lg;
+    font-family: $sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1;
+    color: $color-text-light;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: $spacing-sm;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      background-color: $color-background-alt;
+      color: $color-text;
+    }
+    
+    &:focus {
+      outline: 2px solid $color-accent;
+      outline-offset: 2px;
+    }
+  }
+  
+  .quote-modal-title {
+    font-family: $serif-primary;
+    font-size: $font-size-2xl;
+    font-weight: 600;
+    color: $color-primary;
+    margin: 0 0 $spacing-lg 0;
+    padding-right: $spacing-xl;
+  }
+  
+  .quote-modal-quote {
+    font-family: $serif-secondary;
+    font-size: $font-size-lg;
+    line-height: 1.8;
+    color: $color-text;
+    margin: 0 0 $spacing-xl 0;
+    padding: $spacing-xl;
+    background-color: $color-background-alt;
+    border-left: 4px solid $color-accent;
+    border-radius: 4px;
+    font-style: italic;
+  }
+  
+  .quote-modal-citation {
+    font-family: $sans-serif;
+    font-size: $font-size-base;
+    line-height: 1.6;
+    color: $color-text-light;
+    padding-top: $spacing-lg;
+    border-top: 1px solid $color-border;
+    
+    em {
+      font-style: italic;
+    }
+  }
+}
+
+// Endnotes section styling
+.endnotes {
+  margin-top: $spacing-xxl * 2;
+  padding-top: $spacing-xl;
+  border-top: 1px solid $color-border;
+  
+  h2, h3 {
+    font-family: $serif-primary;
+    font-size: $font-size-2xl;
+    font-weight: 600;
+    color: $color-primary;
+    margin-bottom: $spacing-lg;
+  }
+  
+  ol {
+    margin: 0;
+    padding-left: $spacing-xl;
+    
+    li {
+      margin-bottom: $spacing-lg;
+      line-height: 1.7;
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
+      
+      strong {
+        font-weight: 600;
+        color: $color-primary;
+      }
+    }
+  }
+}
+
+// Citation error styling
+.citation-error {
+  color: #d32f2f;
+  font-family: $sans-serif;
+  font-size: $font-size-sm;
+  font-style: italic;
+}

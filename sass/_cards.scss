@@ -1,0 +1,124 @@
+// Enhanced Cards with better content organization
+.card {
+  background-color: $color-background;
+  border: 1px solid $color-border;
+  border-radius: 12px;
+  padding: $spacing-xl;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  
+  &:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border-color: $color-accent;
+    transform: translateY(-2px);
+  }
+  
+  .card-title {
+    font-family: $serif-primary;
+    font-size: $font-size-xl;
+    font-weight: 600;
+    margin-bottom: $spacing-md;
+    
+    a {
+      color: $color-primary;
+      text-decoration: none;
+      
+      &:hover {
+        color: $color-accent;
+      }
+    }
+  }
+  
+  .card-meta {
+    font-family: $sans-serif;
+    font-size: $font-size-sm;
+    color: $color-text-light;
+    margin-bottom: $spacing-lg;
+    
+    .separator {
+      margin: 0 $spacing-xs;
+      color: $color-border;
+    }
+  }
+  
+  .card-content {
+    flex-grow: 1;
+    line-height: 1.6;
+    
+    p {
+      margin-bottom: $spacing-md;
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  
+  // Enhanced featured items styling
+  .featured-items {
+    margin-top: $spacing-lg;
+    
+    h4 {
+      font-family: $sans-serif;
+      font-size: $font-size-sm;
+      font-weight: 700;
+      color: $color-primary;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: $spacing-md;
+      padding-bottom: $spacing-xs;
+      border-bottom: 2px solid $color-accent;
+    }
+    
+    // Decade links styling
+    .decade-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: $spacing-sm;
+    }
+    
+    // Author and region lists
+    .author-list,
+    .region-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      
+      li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: $spacing-sm 0;
+        border-bottom: 1px solid $color-border-light;
+        
+        &:last-child {
+          border-bottom: none;
+        }
+        
+        a {
+          color: $color-text;
+          text-decoration: none;
+          font-weight: 500;
+          transition: color 0.3s ease;
+          
+          &:hover {
+            color: $color-accent;
+          }
+        }
+        
+        .count {
+          font-family: $sans-serif;
+          font-size: $font-size-xs;
+          color: $color-text-muted;
+          font-weight: 600;
+          background-color: $color-background-alt;
+          padding: $spacing-xs $spacing-sm;
+          border-radius: 12px;
+        }
+      }
+    }
+  }
+}

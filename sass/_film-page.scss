@@ -1,0 +1,116 @@
+// Film page specific styles with sidebar layout inspired by WFP
+.film-page {
+  .content-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: $spacing-xxl;
+    
+    @media (max-width: 1024px) {
+      grid-template-columns: 1fr;
+      gap: $spacing-xl;
+    }
+  }
+  
+  .main-content {
+    min-width: 0;
+    
+    .film-title {
+      font-family: $serif-primary;
+      font-size: $font-size-4xl;
+      font-weight: 700;
+      color: $color-primary;
+      margin-bottom: $spacing-sm;
+      font-style: italic;
+      line-height: 1.2;
+      
+      @media (max-width: 768px) {
+        font-size: $font-size-3xl;
+      }
+    }
+    
+    .film-byline {
+      font-family: $sans-serif;
+      font-size: $font-size-base;
+      color: $color-text-light;
+      margin-bottom: $spacing-lg;
+      font-style: italic;
+      
+      .author-name {
+        color: $color-accent;
+        font-weight: 600;
+      }
+    }
+    
+    .film-year {
+      font-family: $sans-serif;
+      font-size: $font-size-xl;
+      font-weight: 600;
+      color: $color-accent;
+      margin-bottom: $spacing-xl;
+      letter-spacing: 0.05em;
+    }
+    
+    .film-description {
+      font-size: $font-size-lg;
+      line-height: 1.8;
+      margin-bottom: $spacing-xl;
+      color: $color-text;
+    }
+    
+    // Text content styling like WFP
+    .content-body {
+      font-size: $font-size-lg;
+      line-height: 1.7;
+      
+      p {
+        margin-bottom: $spacing-lg;
+        text-align: justify;
+        
+        // &:first-of-type::first-letter {
+        //   font-family: $serif-primary;
+        //   font-size: 3.5em;
+        //   line-height: 0.8;
+        //   float: left;
+        //   margin: 0.1em 0.1em 0 0;
+        //   color: $color-accent;
+        //   font-weight: 700;
+        // }
+      }
+      
+      // Enhanced quote styling
+      blockquote {
+        font-style: italic;
+        margin: $spacing-xl 0;
+        padding: $spacing-lg;
+        background-color: rgba($color-accent, 0.05);
+        border-left: 4px solid $color-accent;
+        font-size: $font-size-base;
+        
+        p:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  
+  // Enhanced taxonomy organization
+  .taxonomies {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: $spacing-lg;
+    
+    .taxonomy-group {
+      h4 {
+        font-family: $sans-serif;
+        font-size: $font-size-sm;
+        font-weight: 700;
+        color: $color-primary;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        margin-bottom: $spacing-sm;
+        padding-bottom: $spacing-xs;
+        border-bottom: 2px solid $color-accent;
+      }
+    }
+  }
+}

@@ -27,50 +27,29 @@
             <div class="section filmography">
                 <h2 class="section-title">Filmography</h2>
                 <div class="section-content">
-                    <h3>A. Archival Filmography: Extant Film Titles:</h3>
-                    
-                    {% if page.extra.films_as_director %}
-                    <h4>1. {{ page.title }} Adaptations as Director</h4>
-                    {% for film in page.extra.films_as_director %}
+                    <!-- Extant Adaptations -->
+                    {% if page.extra.extant_adaptations %}
+                    <h3>Extant Adaptations</h3>
+                    {% for film in page.extra.extant_adaptations %}
                     <div class="film-entry">
                         <div class="film-title">{{ film.title }}</div>
-                        <div class="film-details">Dir: {{ film.director }} ({{ film.year }}) {{ film.format }}{% if film.duration %}, {{ film.duration }}{% endif %}. Archive: <a href="{{ film.archive_url }}">{{ film.archive }}</a>.</div>
+                        <div class="film-details">Dir: {{ film.director }} ({{ film.studio }}, {{ film.year }}). {{ film.format }}{% if film.duration %}, {{ film.duration }}{% endif %}. Availability: {{ film.availability }}.</div>
                     </div>
                     {% endfor %}
                     {% endif %}
                     
-                    {% if page.extra.hollywood_adaptations %}
-                    <h4>2. Hollywood Studio Adaptations</h4>
-                    {% for film in page.extra.hollywood_adaptations %}
+                    {% if page.extra.lost_adaptations %}
+                    <h3>Lost Adaptations</h3>
+                    {% for film in page.extra.lost_adaptations %}
                     <div class="film-entry">
                         <div class="film-title">{{ film.title }}</div>
-                        <div class="film-details">Dir: {{ film.director }} ({{ film.studio }}, {{ film.year }}) {{ film.format }}{% if film.duration %}, {{ film.duration }}{% endif %}. {% if film.availability %}Availability: {{ film.availability }}.{% else %}Status: {{ film.status }}.{% endif %}</div>
-                    </div>
-                    {% endfor %}
-                    {% endif %}
-                    
-                    {% if page.extra.silent_adaptations %}
-                    <h4>3. Silent Era Adaptations (1910-1930)</h4>
-                    {% for film in page.extra.silent_adaptations %}
-                    <div class="film-entry">
-                        <div class="film-title">{{ film.title }}</div>
-                        <div class="film-details">Dir: {{ film.director }} ({{ film.studio }}, {{ film.year }}) Silent, B&W{% if film.duration %}, {{ film.duration }}{% endif %}. Status: {{ film.status }}.</div>
-                    </div>
-                    {% endfor %}
-                    {% endif %}
-                    
-                    {% if page.extra.sound_adaptations %}
-                    <h4>4. Sound Era Adaptations (1930-1960)</h4>
-                    {% for film in page.extra.sound_adaptations %}
-                    <div class="film-entry">
-                        <div class="film-title">{{ film.title }}</div>
-                        <div class="film-details">Dir: {{ film.director }} ({{ film.studio }}, {{ film.year }}) {{ film.format }}{% if film.duration %}, {{ film.duration }}{% endif %}. {% if film.availability %}Availability: {{ film.availability }}.{% else %}Status: {{ film.status }}.{% endif %}</div>
+                        <div class="film-details">Dir: {{ film.director }} ({{ film.studio }}, {{ film.year }}). {{ film.format }}{% if film.duration %}, {{ film.duration }}{% endif %}.</div>
                     </div>
                     {% endfor %}
                     {% endif %}
                     
                     {% if page.extra.tv_adaptations %}
-                    <h4>5. Television and Later Adaptations</h4>
+                    <h3>Television and Later Adaptations</h3>
                     {% for film in page.extra.tv_adaptations %}
                     <div class="film-entry">
                         <div class="film-title">{{ film.title }}</div>
@@ -80,7 +59,7 @@
                     {% endif %}
                     
                     {% if page.extra.dvd_sources %}
-                    <h3>B. DVD and Digital Sources:</h3>
+                    <h2>DVD and Digital Sources:</h2>
                     {% for dvd in page.extra.dvd_sources %}
                     <div class="dvd-entry">
                         <div class="dvd-title">{{ dvd.title }}</div>
@@ -90,7 +69,7 @@
                     {% endif %}
                     
                     {% if page.extra.archive_collections %}
-                    <h3>C. Archival Collections:</h3>
+                    <h2>Archival Collections:</h2>
                     {% for collection in page.extra.archive_collections %}
                     <div class="archive-entry">
                         <div class="archive-name">{{ collection.title }}</div>
@@ -102,8 +81,8 @@
             </div>
             {% endif %}
 
-            <!-- Bibliography Section -->
-            {% if page.extra.show_bibliography %}
+            <!-- Bibliography Section - REPLACED BY ENDNOTES -->
+            <!-- {% if page.extra.show_bibliography %}
             <div class="section bibliography">
                 <h2 class="section-title">Bibliography</h2>
                 <div class="section-content">
@@ -114,7 +93,7 @@
                     {% endif %}
                 </div>
             </div>
-            {% endif %}
+            {% endif %} -->
 
             <!-- Citation Section -->
             {% if page.extra.show_citation %}
@@ -169,13 +148,13 @@
 
         <!-- Author sidebar -->
         <aside class="author-sidebar">
-            <!-- Action links -->
-            <div class="action-links">
+            <!-- TODO Action links - REVISE THIS -->
+            <!-- <div class="action-links">
                 {% if page.extra.show_bibliography %}<a href="#bibliography">Bibliography</a>{% endif %}
                 {% if page.extra.show_filmography %}<a href="#filmography">Filmography</a>{% endif %}
                 {% if page.extra.show_citation %}<a href="#citation" class="citation">Citation</a>{% endif %}
                 <a href="javascript:window.print()" class="print">Print</a>
-            </div>
+            </div> -->
 
             <!-- Author portrait if available -->
             {% if page.extra.author_image %}

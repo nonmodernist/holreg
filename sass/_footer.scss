@@ -1,0 +1,39 @@
+// Enhanced Footer
+footer {
+  background: linear-gradient(135deg, $color-background-alt 0%, rgba($color-background-alt, 0.8) 100%);
+  border-top: 1px solid $color-border;
+  padding: $spacing-xxl $spacing-xl;
+  margin-top: $spacing-xxl * 2;
+  
+  .footer-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+    
+    .footer-text {
+      font-family: $sans-serif;
+      font-size: $font-size-sm;
+      color: $color-text-light;
+      line-height: 1.6;
+    }
+    
+    .footer-links {
+      margin-top: $spacing-lg;
+      
+      a {
+        font-family: $sans-serif;
+        font-size: $font-size-sm;
+        font-weight: 500;
+        color: $color-accent;
+        text-decoration: none;
+        margin: 0 $spacing-md;
+        transition: color 0.3s ease;
+        
+        &:hover {
+          text-decoration: underline;
+          color: darken($color-accent, 10%);
+        }
+      }
+    }
+  }
+}

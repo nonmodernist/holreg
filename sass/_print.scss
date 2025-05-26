@@ -1,0 +1,38 @@
+// Print styles
+@media print {
+  header, footer, .filters, .sidebar {
+    display: none;
+  }
+  
+  body {
+    font-size: 12pt;
+    line-height: 1.5;
+    color: black;
+  }
+  
+  .film-page .content-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Print styles for reference pages
+@media print {
+  .reference-navigation,
+  .back-to-top {
+    display: none;
+  }
+  
+  .reference-content {
+    h2 {
+      page-break-after: avoid;
+      margin-top: $spacing-lg;
+    }
+    
+    .film-entry,
+    .bibliography-entry {
+      page-break-inside: avoid;
+      background-color: transparent;
+      border: 1px solid #ccc;
+    }
+  }
+}

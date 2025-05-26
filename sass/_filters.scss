@@ -1,0 +1,46 @@
+
+// Enhanced Filters
+.filters {
+  background: linear-gradient(135deg, $color-background-alt 0%, rgba($color-background-alt, 0.7) 100%);
+  border: 1px solid $color-border;
+  border-radius: 12px;
+  padding: $spacing-xl;
+  margin-bottom: $spacing-xl;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  
+  .filter-title {
+    font-family: $sans-serif;
+    font-size: $font-size-lg;
+    font-weight: 700;
+    color: $color-primary;
+    margin-bottom: $spacing-lg;
+    letter-spacing: 0.02em;
+  }
+  
+  .filter-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-sm;
+    
+    .filter-option {
+      font-family: $sans-serif;
+      font-size: $font-size-sm;
+      font-weight: 500;
+      color: $color-secondary;
+      background-color: white;
+      border: 1px solid $color-border;
+      padding: $spacing-sm $spacing-md;
+      border-radius: 20px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      
+      &:hover, &.active {
+        background-color: $color-accent;
+        color: white;
+        border-color: $color-accent;
+        transform: translateY(-1px);
+        box-shadow: 0 4px 8px rgba($color-accent, 0.3);
+      }
+    }
+  }
+}
