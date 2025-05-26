@@ -576,8 +576,96 @@ main {
   }
 }
 
-// Enhanced Sidebar inspired by WFP layout
-.film-sidebar {
+// Author page specific styles
+.author-page {
+  .content-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: $spacing-xxl;
+    
+    @media (max-width: 1024px) {
+      grid-template-columns: 1fr;
+      gap: $spacing-xl;
+    }
+  }
+  
+  .main-content {
+    min-width: 0;
+    
+    .author-title {
+      font-family: $serif-primary;
+      font-size: $font-size-4xl;
+      font-weight: 700;
+      color: $color-primary;
+      margin-bottom: $spacing-sm;
+      line-height: 1.2;
+      
+      @media (max-width: 768px) {
+        font-size: $font-size-3xl;
+      }
+    }
+    
+    .author-dates {
+      font-family: $sans-serif;
+      font-size: $font-size-xl;
+      font-weight: 600;
+      color: $color-accent;
+      margin-bottom: $spacing-md;
+      letter-spacing: 0.05em;
+    }
+    
+    .author-byline {
+      font-family: $sans-serif;
+      font-size: $font-size-base;
+      color: $color-text-light;
+      margin-bottom: $spacing-xl;
+      font-style: italic;
+      
+      .contributor-name {
+        color: $color-accent;
+        font-weight: 600;
+      }
+    }
+    
+    // Text content styling
+    .content-body {
+      font-size: $font-size-lg;
+      line-height: 1.7;
+      
+      p {
+        margin-bottom: $spacing-lg;
+        text-align: justify;
+        
+        &:first-of-type::first-letter {
+          font-family: $serif-primary;
+          font-size: 3.5em;
+          line-height: 0.8;
+          float: left;
+          margin: 0.1em 0.1em 0 0;
+          color: $color-accent;
+          font-weight: 700;
+        }
+      }
+      
+      blockquote {
+        font-style: italic;
+        margin: $spacing-xl 0;
+        padding: $spacing-lg;
+        background-color: rgba($color-accent, 0.05);
+        border-left: 4px solid $color-accent;
+        font-size: $font-size-base;
+        
+        p:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+// Enhanced Sidebar inspired by WFP layout (shared between film and author pages)
+.film-sidebar,
+.author-sidebar {
   background-color: $color-background-sidebar;
   padding: $spacing-xl;
   border-radius: 8px;
@@ -589,7 +677,8 @@ main {
   }
   
   // Image container like WFP
-  .film-image-container {
+  .film-image-container,
+  .author-image-container {
     margin-bottom: $spacing-xl;
     
     img {
@@ -653,6 +742,21 @@ main {
         color: $color-text;
         line-height: 1.4;
       }
+    }
+    
+    // Author-specific metadata styling
+    .occupation-tag {
+      display: inline-block;
+      font-family: $sans-serif;
+      font-size: $font-size-xs;
+      font-weight: 600;
+      color: $color-accent;
+      background-color: rgba($color-accent, 0.1);
+      border: 1px solid rgba($color-accent, 0.2);
+      padding: $spacing-xs $spacing-sm;
+      margin: $spacing-xs $spacing-xs $spacing-xs 0;
+      border-radius: 12px;
+      text-transform: lowercase;
     }
   }
   
@@ -801,11 +905,12 @@ main {
           font-style: italic;
           font-weight: 600;
           color: $color-primary;
+          margin-bottom: $spacing-xs;
         }
         
         .film-details {
           color: $color-text;
-          margin-top: $spacing-xs;
+          line-height: 1.5;
           
           a {
             color: $color-accent-purple;
@@ -826,6 +931,27 @@ main {
           font-style: italic;
           font-weight: 600;
           color: $color-primary;
+          margin-bottom: $spacing-xs;
+        }
+      }
+      
+      // Archive collections
+      .archive-entry {
+        background-color: rgba($color-accent-light, 0.08);
+        padding: $spacing-md;
+        margin: $spacing-md 0;
+        border-radius: 4px;
+        border-left: 4px solid $color-accent-light;
+        
+        .archive-name {
+          font-weight: 600;
+          color: $color-primary;
+          margin-bottom: $spacing-xs;
+        }
+        
+        .archive-details {
+          color: $color-text;
+          line-height: 1.5;
         }
       }
     }
