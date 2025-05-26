@@ -16,7 +16,7 @@
             <a href="{{ get_url(path='@/_index.md') }}" class="site-title">{{ config.title }}</a>
             <ul>
                 <li><a href="{{ get_url(path='@/films/_index.md') }}" {% if current_path and current_path is starting_with("/films") %}class="active"{% endif %}>Films</a></li>
-                <li><a href="{{ get_url(path='@/authors/_index.md') }}" {% if current_path and current_path is starting_with("/authors") %}class="active"{% endif %}>Authors</a></li>
+                <li><a href="{{ get_url(path='@/author-profiles/_index.md') }}" {% if current_path and current_path is starting_with("/authors") %}class="active"{% endif %}>Authors</a></li>
                 <li><a href="{{ get_url(path='@/regions/_index.md') }}" {% if current_path and current_path is starting_with("/regions") %}class="active"{% endif %}>Regions</a></li>
                 <li><a href="{{ get_url(path='@/about/_index.md') }}" {% if current_path and current_path is starting_with("/about") %}class="active"{% endif %}>About</a></li>
             </ul>

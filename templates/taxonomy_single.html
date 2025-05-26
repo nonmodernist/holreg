@@ -19,7 +19,9 @@
                     <a href="{{ page.permalink }}">{{ page.title }}</a>
                 </h3>
                 <div class="card-meta">
-                    {{ page.extra.year }}
+                    {% if page.extra.year %}
+                        {{ page.extra.year }}
+                    {% endif %}
                 </div>
                 <div class="card-content">
                     {{ page.summary | safe }}

@@ -1,4 +1,5 @@
 // Enhanced Academic Website Styles for Hollywood Regionalism Project
+// Inspired by Women Film Pioneers Project design patterns
 
 // Typography and Color Variables
 $serif-primary: 'Crimson Text', 'Times New Roman', serif;
@@ -9,10 +10,13 @@ $color-primary: #1a1a1a;
 $color-secondary: #333333;
 $color-accent: #8b4513; // Academic brown
 $color-accent-light: #d4af37; // Muted gold
+$color-accent-purple: #8e44ad; // Purple for special links/actions
 $color-text: #2c2c2c;
 $color-text-light: #666666;
+$color-text-muted: #999999;
 $color-background: #fefefe;
 $color-background-alt: #f8f8f8;
+$color-background-sidebar: #f5f5f5;
 $color-border: #e0e0e0;
 $color-border-light: #f0f0f0;
 
@@ -101,9 +105,9 @@ p {
   }
 }
 
-// Enhanced Navigation
+// Enhanced Navigation inspired by WFP
 header {
-  background-color: $color-background;
+  background-color: rgba($color-background, 0.95);
   border-bottom: 1px solid $color-border;
   position: sticky;
   top: 0;
@@ -113,14 +117,14 @@ header {
   nav {
     max-width: 1400px;
     margin: 0 auto;
-    padding: $spacing-lg $spacing-xl;
+    padding: $spacing-md $spacing-xl;
     display: flex;
     justify-content: space-between;
     align-items: center;
     
     .site-title {
       font-family: $serif-primary;
-      font-size: $font-size-2xl;
+      font-size: $font-size-xl;
       font-weight: 700;
       color: $color-primary;
       text-decoration: none;
@@ -137,19 +141,19 @@ header {
       margin: 0;
       padding: 0;
       display: flex;
-      gap: $spacing-xl;
+      gap: $spacing-lg;
       
       @media (max-width: 768px) {
-        gap: $spacing-lg;
+        gap: $spacing-md;
       }
       
       a {
         font-family: $sans-serif;
-        font-size: $font-size-base;
+        font-size: $font-size-sm;
         font-weight: 500;
         color: $color-secondary;
         text-decoration: none;
-        padding: $spacing-sm $spacing-md;
+        padding: $spacing-xs $spacing-sm;
         border-radius: 4px;
         transition: all 0.3s ease;
         letter-spacing: 0.02em;
@@ -162,6 +166,33 @@ header {
         &.active {
           color: $color-accent;
           font-weight: 600;
+        }
+      }
+    }
+    
+    // Search box like WFP
+    .search-container {
+      position: relative;
+      margin-left: $spacing-lg;
+      
+      input[type="search"] {
+        font-family: $sans-serif;
+        font-size: $font-size-sm;
+        padding: $spacing-xs $spacing-md;
+        border: 1px solid $color-border;
+        border-radius: 4px;
+        background-color: white;
+        width: 200px;
+        transition: all 0.3s ease;
+        
+        &:focus {
+          outline: none;
+          border-color: $color-accent;
+          box-shadow: 0 0 0 2px rgba($color-accent, 0.2);
+        }
+        
+        &::placeholder {
+          color: $color-text-muted;
         }
       }
     }
@@ -180,12 +211,260 @@ main {
   }
 }
 
-// Film page specific styles
+// Homepage enhancements
+.homepage {
+  .hero {
+    text-align: center;
+    padding: $spacing-xxl * 2 0;
+    margin-bottom: $spacing-xxl;
+    
+    .hero-title {
+      font-family: $serif-primary;
+      font-size: clamp($font-size-3xl, 5vw, 4rem);
+      font-weight: 700;
+      color: $color-primary;
+      margin-bottom: $spacing-lg;
+      line-height: 1.2;
+      letter-spacing: -0.03em;
+    }
+    
+    .hero-subtitle {
+      font-family: $serif-secondary;
+      font-size: $font-size-xl;
+      color: $color-text-light;
+      font-style: italic;
+      margin-bottom: $spacing-xl;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.5;
+    }
+    
+    .hero-description {
+      font-size: $font-size-lg;
+      line-height: 1.8;
+      color: $color-text;
+      max-width: 900px;
+      margin: 0 auto $spacing-xxl auto;
+    }
+    
+    // Enhanced Hero Stats
+    .hero-stats {
+      display: flex;
+      justify-content: center;
+      gap: $spacing-xxl;
+      margin-top: $spacing-xxl;
+      
+      @media (max-width: 768px) {
+        flex-direction: column;
+        gap: $spacing-lg;
+        align-items: center;
+      }
+      
+      .stat-item {
+        text-align: center;
+        padding: $spacing-lg $spacing-xl;
+        background: linear-gradient(135deg, rgba($color-accent, 0.05) 0%, rgba($color-accent-light, 0.05) 100%);
+        border: 1px solid rgba($color-accent, 0.15);
+        border-radius: 12px;
+        transition: all 0.3s ease;
+        min-width: 140px;
+        
+        &:hover {
+          transform: translateY(-3px);
+          box-shadow: 0 8px 25px rgba($color-accent, 0.15);
+          border-color: rgba($color-accent, 0.3);
+          background: linear-gradient(135deg, rgba($color-accent, 0.08) 0%, rgba($color-accent-light, 0.08) 100%);
+        }
+        
+        .stat-number {
+          display: block;
+          font-family: $serif-primary;
+          font-size: $font-size-3xl;
+          font-weight: 700;
+          color: $color-accent;
+          line-height: 1.1;
+          margin-bottom: $spacing-xs;
+          letter-spacing: -0.02em;
+        }
+        
+        .stat-label {
+          font-family: $sans-serif;
+          font-size: $font-size-sm;
+          font-weight: 600;
+          color: $color-text-light;
+          text-transform: uppercase;
+          letter-spacing: 0.1em;
+          line-height: 1.2;
+        }
+      }
+    }
+  }
+  
+  .featured-sections {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: $spacing-xl;
+    margin-bottom: $spacing-xxl;
+  }
+}
+
+// Enhanced Cards with better content organization
+.card {
+  background-color: $color-background;
+  border: 1px solid $color-border;
+  border-radius: 12px;
+  padding: $spacing-xl;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  
+  &:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border-color: $color-accent;
+    transform: translateY(-2px);
+  }
+  
+  .card-title {
+    font-family: $serif-primary;
+    font-size: $font-size-xl;
+    font-weight: 600;
+    margin-bottom: $spacing-md;
+    
+    a {
+      color: $color-primary;
+      text-decoration: none;
+      
+      &:hover {
+        color: $color-accent;
+      }
+    }
+  }
+  
+  .card-meta {
+    font-family: $sans-serif;
+    font-size: $font-size-sm;
+    color: $color-text-light;
+    margin-bottom: $spacing-lg;
+    
+    .separator {
+      margin: 0 $spacing-xs;
+      color: $color-border;
+    }
+  }
+  
+  .card-content {
+    flex-grow: 1;
+    line-height: 1.6;
+    
+    p {
+      margin-bottom: $spacing-md;
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  
+  // Enhanced featured items styling
+  .featured-items {
+    margin-top: $spacing-lg;
+    
+    h4 {
+      font-family: $sans-serif;
+      font-size: $font-size-sm;
+      font-weight: 700;
+      color: $color-primary;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: $spacing-md;
+      padding-bottom: $spacing-xs;
+      border-bottom: 2px solid $color-accent;
+    }
+    
+    // Decade links styling
+    .decade-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: $spacing-sm;
+    }
+    
+    // Author and region lists
+    .author-list,
+    .region-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      
+      li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: $spacing-sm 0;
+        border-bottom: 1px solid $color-border-light;
+        
+        &:last-child {
+          border-bottom: none;
+        }
+        
+        a {
+          color: $color-text;
+          text-decoration: none;
+          font-weight: 500;
+          transition: color 0.3s ease;
+          
+          &:hover {
+            color: $color-accent;
+          }
+        }
+        
+        .count {
+          font-family: $sans-serif;
+          font-size: $font-size-xs;
+          color: $color-text-muted;
+          font-weight: 600;
+          background-color: $color-background-alt;
+          padding: $spacing-xs $spacing-sm;
+          border-radius: 12px;
+        }
+      }
+    }
+  }
+}
+
+// Enhanced Tags with better hierarchy
+.tag {
+  display: inline-block;
+  font-family: $sans-serif;
+  font-size: $font-size-xs;
+  font-weight: 600;
+  color: $color-accent;
+  background-color: rgba($color-accent, 0.08);
+  border: 1px solid rgba($color-accent, 0.2);
+  padding: $spacing-xs $spacing-md;
+  margin: $spacing-xs $spacing-xs $spacing-xs 0;
+  border-radius: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background-color: $color-accent;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba($color-accent, 0.3);
+  }
+}
+
+// Film page specific styles with sidebar layout inspired by WFP
 .film-page {
   .content-wrapper {
     display: grid;
-    grid-template-columns: 1fr 350px;
-    gap: $spacing-xxl * 1.5;
+    grid-template-columns: 2fr 1fr;
+    gap: $spacing-xxl;
     
     @media (max-width: 1024px) {
       grid-template-columns: 1fr;
@@ -203,9 +482,23 @@ main {
       color: $color-primary;
       margin-bottom: $spacing-sm;
       font-style: italic;
+      line-height: 1.2;
       
       @media (max-width: 768px) {
         font-size: $font-size-3xl;
+      }
+    }
+    
+    .film-byline {
+      font-family: $sans-serif;
+      font-size: $font-size-base;
+      color: $color-text-light;
+      margin-bottom: $spacing-lg;
+      font-style: italic;
+      
+      .author-name {
+        color: $color-accent;
+        font-weight: 600;
       }
     }
     
@@ -224,38 +517,122 @@ main {
       margin-bottom: $spacing-xl;
       color: $color-text;
     }
+    
+    // Text content styling like WFP
+    .content-body {
+      font-size: $font-size-lg;
+      line-height: 1.7;
+      
+      p {
+        margin-bottom: $spacing-lg;
+        text-align: justify;
+        
+        &:first-of-type::first-letter {
+          font-family: $serif-primary;
+          font-size: 3.5em;
+          line-height: 0.8;
+          float: left;
+          margin: 0.1em 0.1em 0 0;
+          color: $color-accent;
+          font-weight: 700;
+        }
+      }
+      
+      // Enhanced quote styling
+      blockquote {
+        font-style: italic;
+        margin: $spacing-xl 0;
+        padding: $spacing-lg;
+        background-color: rgba($color-accent, 0.05);
+        border-left: 4px solid $color-accent;
+        font-size: $font-size-base;
+        
+        p:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  
+  // Enhanced taxonomy organization
+  .taxonomies {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: $spacing-lg;
+    
+    .taxonomy-group {
+      h4 {
+        font-family: $sans-serif;
+        font-size: $font-size-sm;
+        font-weight: 700;
+        color: $color-primary;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        margin-bottom: $spacing-sm;
+        padding-bottom: $spacing-xs;
+        border-bottom: 2px solid $color-accent;
+      }
+    }
   }
 }
 
-// Enhanced Sidebar
+// Enhanced Sidebar inspired by WFP layout
 .film-sidebar {
+  background-color: $color-background-sidebar;
+  padding: $spacing-xl;
+  border-radius: 8px;
+  
   @media (max-width: 1024px) {
     order: -1;
+    background-color: transparent;
+    padding: 0;
+  }
+  
+  // Image container like WFP
+  .film-image-container {
+    margin-bottom: $spacing-xl;
+    
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+    
+    .image-caption {
+      font-family: $sans-serif;
+      font-size: $font-size-xs;
+      color: $color-text-muted;
+      margin-top: $spacing-sm;
+      line-height: 1.4;
+      font-style: italic;
+    }
   }
   
   .metadata-box {
-    background-color: $color-background-alt;
+    background-color: white;
     border: 1px solid $color-border;
-    border-radius: 8px;
-    padding: $spacing-xl;
-    margin-bottom: $spacing-xl;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    border-radius: 6px;
+    padding: $spacing-lg;
+    margin-bottom: $spacing-lg;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
     
     h3 {
-      font-family: $sans-serif;
+      font-family: $serif-primary;
       font-size: $font-size-lg;
-      font-weight: 700;
+      font-weight: 600;
       color: $color-primary;
-      margin: 0 0 $spacing-lg 0;
-      letter-spacing: 0.02em;
-      text-transform: uppercase;
-      font-size: $font-size-sm;
-      border-bottom: 2px solid $color-accent;
-      padding-bottom: $spacing-sm;
+      margin: 0 0 $spacing-md 0;
+      padding-bottom: $spacing-xs;
+      border-bottom: 1px solid $color-border;
     }
     
     .metadata-item {
-      margin-bottom: $spacing-lg;
+      margin-bottom: $spacing-md;
       
       &:last-child {
         margin-bottom: 0;
@@ -263,19 +640,63 @@ main {
       
       .label {
         font-family: $sans-serif;
-        font-size: $font-size-sm;
-        font-weight: 600;
+        font-size: $font-size-xs;
+        font-weight: 700;
         color: $color-text-light;
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-        margin-bottom: $spacing-xs;
         display: block;
+        margin-bottom: $spacing-xs;
       }
       
       .value {
-        font-size: $font-size-base;
+        font-family: $serif-secondary;
+        font-size: $font-size-sm;
         color: $color-text;
-        line-height: 1.5;
+        line-height: 1.4;
+      }
+    }
+  }
+  
+  // Action links like WFP's top-right links
+  .action-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-sm;
+    margin-bottom: $spacing-lg;
+    justify-content: flex-end;
+    
+    @media (max-width: 1024px) {
+      justify-content: flex-start;
+    }
+    
+    a {
+      font-family: $sans-serif;
+      font-size: $font-size-xs;
+      font-weight: 600;
+      color: $color-accent-purple;
+      text-decoration: none;
+      padding: $spacing-xs $spacing-sm;
+      background-color: rgba($color-accent-purple, 0.1);
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      transition: all 0.3s ease;
+      
+      &:hover {
+        background-color: $color-accent-purple;
+        color: white;
+      }
+      
+      &::before {
+        content: "📄 ";
+        margin-right: $spacing-xs;
+      }
+      
+      &.citation::before {
+        content: "📋 ";
+      }
+      
+      &.print::before {
+        content: "🖨 ";
       }
     }
   }
@@ -311,7 +732,7 @@ main {
   }
 }
 
-// Section styling
+// Section styling with enhanced bibliography and filmography sections
 .section {
   margin-bottom: $spacing-xxl * 1.5;
   
@@ -334,48 +755,108 @@ main {
     line-height: 1.7;
     color: $color-text;
   }
-}
-
-// Enhanced Cards
-.card {
-  background-color: $color-background;
-  border: 1px solid $color-border;
-  border-radius: 8px;
-  padding: $spacing-xl;
-  transition: all 0.3s ease;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
   
-  &:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    border-color: $color-accent;
-    transform: translateY(-1px);
-  }
-  
-  .card-title {
-    font-family: $serif-primary;
-    font-size: $font-size-xl;
-    font-weight: 600;
-    margin-bottom: $spacing-sm;
-    
-    a {
-      color: $color-primary;
-      text-decoration: none;
+  // Bibliography section styling like WFP
+  &.bibliography,
+  &.filmography {
+    .section-content {
+      p {
+        margin-bottom: $spacing-md;
+        
+        a {
+          color: $color-accent-purple;
+          text-decoration: none;
+          
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
       
-      &:hover {
-        color: $color-accent;
+      // Filmography subsections
+      h3 {
+        font-family: $sans-serif;
+        font-size: $font-size-lg;
+        font-weight: 600;
+        color: $color-primary;
+        margin: $spacing-xl 0 $spacing-md 0;
+        letter-spacing: 0.02em;
+      }
+      
+      h4 {
+        font-family: $sans-serif;
+        font-size: $font-size-base;
+        font-weight: 600;
+        color: $color-secondary;
+        margin: $spacing-lg 0 $spacing-sm 0;
+      }
+      
+      // Film entries
+      .film-entry {
+        margin-bottom: $spacing-lg;
+        padding-left: $spacing-lg;
+        border-left: 3px solid rgba($color-accent, 0.3);
+        
+        .film-title {
+          font-style: italic;
+          font-weight: 600;
+          color: $color-primary;
+        }
+        
+        .film-details {
+          color: $color-text;
+          margin-top: $spacing-xs;
+          
+          a {
+            color: $color-accent-purple;
+            font-weight: 500;
+          }
+        }
+      }
+      
+      // DVD sources
+      .dvd-entry {
+        background-color: rgba($color-accent, 0.05);
+        padding: $spacing-md;
+        margin: $spacing-md 0;
+        border-radius: 4px;
+        border-left: 4px solid $color-accent;
+        
+        .dvd-title {
+          font-style: italic;
+          font-weight: 600;
+          color: $color-primary;
+        }
       }
     }
   }
   
-  .card-meta {
-    font-family: $sans-serif;
-    font-size: $font-size-sm;
-    color: $color-text-light;
-    margin-bottom: $spacing-md;
+  // Citation box styling
+  &.citation {
+    background-color: $color-background-alt;
+    padding: $spacing-xl;
+    border-radius: 6px;
+    border: 1px solid $color-border;
+    margin-top: $spacing-xxl;
     
-    .separator {
-      margin: 0 $spacing-xs;
-      color: $color-border;
+    .citation-text {
+      font-family: $serif-secondary;
+      font-size: $font-size-base;
+      line-height: 1.6;
+      color: $color-text;
+      margin: 0;
+      padding: $spacing-md;
+      background-color: white;
+      border-radius: 4px;
+      border: 1px solid $color-border-light;
+    }
+    
+    .citation-url {
+      font-family: $sans-serif;
+      font-size: $font-size-sm;
+      color: $color-text-muted;
+      margin-top: $spacing-sm;
+      word-break: break-all;
     }
   }
 }
@@ -398,37 +879,14 @@ main {
   }
 }
 
-// Enhanced Tags
-.tag {
-  display: inline-block;
-  font-family: $sans-serif;
-  font-size: $font-size-xs;
-  font-weight: 600;
-  color: $color-accent;
-  background-color: rgba($color-accent, 0.1);
-  border: 1px solid rgba($color-accent, 0.2);
-  padding: $spacing-xs $spacing-sm;
-  margin: $spacing-xs $spacing-xs $spacing-xs 0;
-  border-radius: 4px;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  transition: all 0.3s ease;
-  
-  &:hover {
-    background-color: $color-accent;
-    color: white;
-    transform: translateY(-1px);
-  }
-}
-
 // Enhanced Filters
 .filters {
-  background-color: $color-background-alt;
+  background: linear-gradient(135deg, $color-background-alt 0%, rgba($color-background-alt, 0.7) 100%);
   border: 1px solid $color-border;
-  border-radius: 8px;
+  border-radius: 12px;
   padding: $spacing-xl;
   margin-bottom: $spacing-xl;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
   
   .filter-title {
     font-family: $sans-serif;
@@ -452,7 +910,7 @@ main {
       background-color: white;
       border: 1px solid $color-border;
       padding: $spacing-sm $spacing-md;
-      border-radius: 6px;
+      border-radius: 20px;
       text-decoration: none;
       transition: all 0.3s ease;
       
@@ -460,6 +918,42 @@ main {
         background-color: $color-accent;
         color: white;
         border-color: $color-accent;
+        transform: translateY(-1px);
+        box-shadow: 0 4px 8px rgba($color-accent, 0.3);
+      }
+    }
+  }
+}
+
+// About preview section
+.about-preview {
+  background: linear-gradient(135deg, rgba($color-accent, 0.03) 0%, rgba($color-accent-light, 0.03) 100%);
+  border-radius: 12px;
+  padding: $spacing-xxl;
+  border: 1px solid rgba($color-accent, 0.1);
+  
+  .project-links {
+    margin-top: $spacing-xl;
+    text-align: center;
+    
+    .cta-button {
+      display: inline-block;
+      font-family: $sans-serif;
+      font-size: $font-size-base;
+      font-weight: 600;
+      color: white;
+      background: linear-gradient(135deg, $color-accent 0%, darken($color-accent, 10%) 100%);
+      padding: $spacing-md $spacing-xl;
+      border-radius: 25px;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba($color-accent, 0.3);
+      
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba($color-accent, 0.4);
+        background: linear-gradient(135deg, darken($color-accent, 5%) 0%, darken($color-accent, 15%) 100%);
       }
     }
   }
@@ -467,7 +961,7 @@ main {
 
 // Enhanced Footer
 footer {
-  background-color: $color-background-alt;
+  background: linear-gradient(135deg, $color-background-alt 0%, rgba($color-background-alt, 0.8) 100%);
   border-top: 1px solid $color-border;
   padding: $spacing-xxl $spacing-xl;
   margin-top: $spacing-xxl * 2;
@@ -494,56 +988,14 @@ footer {
         color: $color-accent;
         text-decoration: none;
         margin: 0 $spacing-md;
+        transition: color 0.3s ease;
         
         &:hover {
           text-decoration: underline;
+          color: darken($color-accent, 10%);
         }
       }
     }
-  }
-}
-
-// Homepage enhancements
-.homepage {
-  .hero {
-    text-align: center;
-    padding: $spacing-xxl * 2 0;
-    margin-bottom: $spacing-xxl;
-    
-    .hero-title {
-      font-family: $serif-primary;
-      font-size: clamp($font-size-3xl, 5vw, 4rem);
-      font-weight: 700;
-      color: $color-primary;
-      margin-bottom: $spacing-lg;
-      line-height: 1.2;
-    }
-    
-    .hero-subtitle {
-      font-family: $serif-secondary;
-      font-size: $font-size-xl;
-      color: $color-text-light;
-      font-style: italic;
-      margin-bottom: $spacing-xl;
-      max-width: 800px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    
-    .hero-description {
-      font-size: $font-size-lg;
-      line-height: 1.8;
-      color: $color-text;
-      max-width: 900px;
-      margin: 0 auto $spacing-xl auto;
-    }
-  }
-  
-  .featured-sections {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: $spacing-xl;
-    margin-bottom: $spacing-xxl;
   }
 }
 

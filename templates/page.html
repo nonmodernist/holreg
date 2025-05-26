@@ -6,6 +6,12 @@
         <div class="main-content">
             <h1 class="film-title">{{ page.title }}</h1>
             
+            {% if page.extra.author_byline %}
+            <div class="film-byline">
+                by <span class="author-name">{{ page.extra.author_byline }}</span>
+            </div>
+            {% endif %}
+            
             {% if page.extra.year %}
             <div class="film-year">({{ page.extra.year }})</div>
             {% endif %}
@@ -17,10 +23,35 @@
             {% endif %}
 
             <div class="section">
-                <div class="section-content">
+                <div class="content-body">
                     {{ page.content | safe }}
                 </div>
             </div>
+
+            <!-- Bibliography Section -->
+            {% if page.extra.show_bibliography %}
+            <div class="section bibliography">
+                <h2 class="section-title">Bibliography</h2>
+                <div class="section-content">
+                    <p>The bibliography for this essay is included in the "<a href="{{ get_url(path='@/about/bibliography.md') }}">Film Adaptations Bibliography</a>" overview essay.</p>
+                </div>
+            </div>
+            {% endif %}
+
+
+
+            <!-- Citation Section -->
+            {% if page.extra.show_citation %}
+            <div class="section citation">
+                <h2 class="section-title">Citation</h2>
+                <div class="section-content">
+                    <p class="citation-text">
+                        {% if page.extra.author_byline %}{{ page.extra.author_byline }}. {% endif %}"{{ page.title }}." In {{ config.title }}. {{ config.base_url }}{{ page.permalink }}
+                    </p>
+                    <div class="citation-url">&lt;{{ config.base_url }}{{ page.permalink }}&gt;</div>
+                </div>
+            </div>
+            {% endif %}
 
             <!-- Taxonomy links -->
             {% if page.taxonomies %}
@@ -58,9 +89,26 @@
             {% endif %}
         </div>
 
-        <!-- Enhanced sidebar with film metadata -->
-        {% if page.extra %}
+        <!-- Enhanced sidebar with action links and metadata -->
         <aside class="film-sidebar">
+            <!-- Action links like WFP -->
+            <div class="action-links">
+                {% if page.extra.show_bibliography %}<a href="#bibliography">Bibliography</a>{% endif %}
+                {% if page.extra.show_citation %}<a href="#citation" class="citation">Citation</a>{% endif %}
+                <a href="javascript:window.print()" class="print">Print</a>
+            </div>
+
+            <!-- Film image if available -->
+            {% if page.extra.film_image %}
+            <div class="film-image-container">
+                <img src="{{ page.extra.film_image.url }}" alt="{{ page.extra.film_image.alt | default(value=page.title) }}">
+                {% if page.extra.film_image.caption %}
+                <div class="image-caption">{{ page.extra.film_image.caption }}</div>
+                {% endif %}
+            </div>
+            {% endif %}
+
+            {% if page.extra %}
             <div class="metadata-box">
                 <h3>Film Details</h3>
                 
@@ -114,10 +162,17 @@
                 </div>
                 {% endif %}
                 
-                {% if page.extra.genre %}
+                {% if page.extra.format %}
                 <div class="metadata-item">
-                    <span class="label">Genre</span>
-                    <div class="value">{{ page.extra.genre }}</div>
+                    <span class="label">Format</span>
+                    <div class="value">{{ page.extra.format }}</div>
+                </div>
+                {% endif %}
+                
+                {% if page.extra.duration %}
+                <div class="metadata-item">
+                    <span class="label">Duration</span>
+                    <div class="value">{{ page.extra.duration }}</div>
                 </div>
                 {% endif %}
             </div>
@@ -146,8 +201,40 @@
                 {% endif %}
             </div>
             {% endif %}
+
+            <!-- Production Details Box -->
+            {% if page.extra.production_company or page.extra.distributor or page.extra.filming_locations %}
+            <div class="metadata-box">
+                <h3>Production</h3>
+                
+                {% if page.extra.production_company %}
+                <div class="metadata-item">
+                    <span class="label">Production Company</span>
+                    <div class="value">{{ page.extra.production_company }}</div>
+                </div>
+                {% endif %}
+                
+                {% if page.extra.distributor %}
+                <div class="metadata-item">
+                    <span class="label">Distributor</span>
+                    <div class="value">{{ page.extra.distributor }}</div>
+                </div>
+                {% endif %}
+                
+                {% if page.extra.filming_locations %}
+                <div class="metadata-item">
+                    <span class="label">Filmed</span>
+                    <div class="value">
+                        {% for location in page.extra.filming_locations %}
+                            {{ location }}{% if not loop.last %}<br>{% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+            {% endif %}
+            {% endif %}
         </aside>
-        {% endif %}
     </div>
 </article>
 {% endblock content %}
