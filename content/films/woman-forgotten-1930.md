@@ -15,7 +15,7 @@ directors = ["Richard Thomas"]
 [extra]
 # Film metadata for sidebar
 year = 1930
-original_story = ""The Woman Who Was Forgotten""
+original_story = "The Woman Who Was Forgotten"
 story_year = 1926
 story_author = "Bess Streeter Aldrich"
 director = "Richard Thomas"

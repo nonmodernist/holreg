@@ -1,0 +1,50 @@
++++
+title = "Humoresque"
+date = 2024-01-01
+weight = 1946
+
+[taxonomies]
+authors = ["Fannie Hurst"]
+regions = ["Urban Northeast"]
+studios = ["Warner Bros"]
+eras = ["classical hollywood"]
+genres = ["Melodrama"]
+availability = ["Available"]
+directors = ["Jean Negulesco"]
+
+[extra]
+# Film metadata for sidebar
+year = 1946
+original_story = "Humoresque"
+story_year = 1919
+story_author = "Fannie Hurst"
+director = "Jean Negulesco"
+studio = "Warner Bros"
+setting = "NYC"
+survival_status = "Available"
+format = "Unknown"
+
+# Content flags
+show_citation = true
++++
+
+*Humoresque* (1946) is a film adaptation of "Humoresque" by Fannie Hurst (1919).
+
+## Production Details
+
+**Director:** Jean Negulesco
+**Studio:** Warner Bros
+**Setting:** NYC
+**Availability:** DVD
+
+## Plot Summary
+
+[Add plot summary here]
+
+## Adaptation Analysis
+
+[Add analysis of how the film adapts the source material]
+
+## Historical Context
+
+[Add information about the film's place in Hollywood history and regional representation]
