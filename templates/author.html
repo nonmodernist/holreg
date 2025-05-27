@@ -22,7 +22,7 @@
                 </div>
             </div>
 
-            <!-- STEP 6: Add legend and clean filmography -->
+            <!-- Filmography section -->
             {% if page.extra.show_filmography %}
             <div class="section filmography">
                 <h2 class="section-title">Filmography</h2>
@@ -208,6 +208,81 @@
                 {% endif %}
             </div>
             {% endif %}
+
+
+
+
+
+
+ 
+
+<!-- Film statistics from manual frontmatter -->
+{% if page.extra.film_stats %}
+<div class="metadata-box">
+    <h3>Film Adaptations</h3>
+    
+    {% if page.extra.film_stats.total_adaptations %}
+    <div class="metadata-item">
+        <span class="label">Total Adaptations</span>
+        <div class="value year-value">{{ page.extra.film_stats.total_adaptations }}</div>
+    </div>
+    {% endif %}
+    
+    {% if page.extra.film_stats.regional_adaptations %}
+    <div class="metadata-item">
+        <span class="label">Regional Adaptations</span>
+        <div class="value">{{ page.extra.film_stats.regional_adaptations }} <small>(featured in this project)</small></div>
+    </div>
+    {% endif %}
+    
+    {% if page.extra.film_stats.non_regional_adaptations %}
+    <div class="metadata-item">
+        <span class="label">Other Adaptations</span>
+        <div class="value">{{ page.extra.film_stats.non_regional_adaptations }} <small>(not included in project)</small></div>
+    </div>
+    {% endif %}
+    
+    {% if page.extra.film_stats.surviving_films %}
+    <div class="metadata-item">
+        <span class="label">Surviving Regional Films</span>
+        <div class="value">{{ page.extra.film_stats.surviving_films }}</div>
+    </div>
+    {% endif %}
+    
+    {% if page.extra.film_stats.lost_films %}
+    <div class="metadata-item">
+        <span class="label">Lost Regional Films</span>
+        <div class="value">{{ page.extra.film_stats.lost_films }}</div>
+    </div>
+    {% endif %}
+    
+    {% if page.extra.film_stats.adaptation_span %}
+    <div class="metadata-item">
+        <span class="label">Adaptation Period</span>
+        <div class="value">{{ page.extra.film_stats.adaptation_span }}</div>
+    </div>
+    {% endif %}
+    
+    {% if page.extra.film_stats.studios %}
+    <div class="metadata-item">
+        <span class="label">Studios Involved</span>
+        <div class="value">
+            {% for studio in page.extra.film_stats.studios %}
+                {{ studio }}{% if not loop.last %}, {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+</div>
+{% endif %}
+
+
+
+
+
+
+
+            
         </aside>
     </div>
 </article>

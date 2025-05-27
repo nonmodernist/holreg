@@ -43,8 +43,10 @@ year = 1905
 [extra.film_stats]
 total_adaptations = 9
 surviving_films = 5
+lost_films = 4
 adaptation_span = "1914-1942"
-studios = ['Bluebird Photoplays', 'California Motion Picture Co.', 'Famous Players-Lasky', 'MGM', 'Paramount', 'Universal']
+studios = ["Paramount", "MGM", "Universal"]
+
 
 # NEW STRUCTURE: Film references by category
 [extra.film_references]
