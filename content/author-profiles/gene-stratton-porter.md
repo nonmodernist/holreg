@@ -67,6 +67,7 @@ director = "Christy Cabanne"
 studio = "Monogram Pictures"
 year = 1934
 format = "Sound, B&W"
+status = "survives"
 availability = "Available online"
 
 [[extra.extant_adaptations]]
@@ -75,6 +76,7 @@ director = "Christy Cabanne"
 studio = "Monogram Pictures"
 year = 1935
 format = "Sound, B&W"
+status = "survives"
 availability = "Available online"
 
 [[extra.extant_adaptations]]
@@ -83,6 +85,7 @@ director = "William Nigh"
 studio = "Monogram Pictures"
 year = 1938
 format = "Sound, B&W"
+status = "survives"
 availability = "Available online"
 
 [[extra.extant_adaptations]]
@@ -91,6 +94,7 @@ director = "Edward Dmytryk"
 studio = "Monogram Pictures"
 year = 1940
 format = "Sound, B&W"
+status = "survives"
 availability = "Available online"
 
 [[extra.extant_adaptations]]
@@ -99,6 +103,7 @@ director = "Jack Hively"
 studio = "RKO"
 year = 1940
 format = "Sound, B&W"
+status = "survives"
 availability = "Available online"
 
 [[extra.extant_adaptations]]
@@ -107,7 +112,8 @@ director = "Andrew McLaglen"
 studio = "20th Century Fox"
 year = 1960
 format = "CinemaScope, Color"
-availability = "Fox Movie Channel"
+status = "survives"
+availability = "Available via Fox Movie Channel"
 
 # Lost Adaptations
 [[extra.lost_adaptations]]

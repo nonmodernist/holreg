@@ -46,6 +46,7 @@ director = "DIRECTOR"
 studio = "STUDIO"
 year = 1900
 format = "Sound, B&W"
+status = "Incomplete"
 availability = "Online"
 
 # Lost Adaptations
