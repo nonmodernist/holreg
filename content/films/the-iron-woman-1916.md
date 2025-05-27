@@ -26,16 +26,14 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+
+# Film image
+[extra.film_image]
+url = "/images/sidebar-ironwoman.jpg"
+alt = "ALT TEXT"
+caption = "CAPTION."
+
 +++
-
-*The Iron Woman* (1916) is a film adaptation of "The Iron Woman" by Margaret Deland (1911).
-
-## Production Details
-
-**Director:** Carl Harbaugh
-**Studio:** Popular Plays and Players
-**Setting:** Great Lakes Region - Western PA
-**Availability:** Lost
 
 ## Plot Summary
 

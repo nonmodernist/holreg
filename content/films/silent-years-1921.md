@@ -26,16 +26,14 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+
+# Film image
+[extra.film_image]
+url = "/images/sidebar-silentyears-1921.jpg"
+alt = "ALT TEXT"
+caption = "CAPTION."
+
 +++
-
-*Silent Years* (1921) is a film adaptation of "Mam'selle Jo" by Harriet Comstock (1918).
-
-## Production Details
-
-**Director:** Louis Gasnier
-**Studio:** R-C Pictures
-**Setting:** St. Lawrence River Valley - NY
-**Availability:** Lost
 
 ## Plot Summary
 

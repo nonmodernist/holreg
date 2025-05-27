@@ -26,16 +26,13 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+# Film image
+[extra.film_image]
+url = "/images/sidebar-kildare.jpg"
+alt = "ALT TEXT"
+caption = "CAPTION."
+
 +++
-
-*Kildare of Storm* (1918) is a film adaptation of ""Kildares of Storm"" by Eleanor Mercein Kelly (1916).
-
-## Production Details
-
-**Director:** Harry L. Franklin
-**Studio:** Metro Pictures
-**Setting:** Appalachia - KY
-**Availability:** Lost
 
 ## Plot Summary
 

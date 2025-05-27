@@ -26,16 +26,14 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+
+# Film image
+[extra.film_image]
+url = "/images/sidebar-ramona1936.jpg"
+alt = "ALT TEXT"
+caption = "CAPTION."
+
 +++
-
-*Ramona* (1936) is a film adaptation of "Ramona" by Helen Hunt Jackson (1884).
-
-## Production Details
-
-**Director:** Henry King
-**Studio:** 20th Century Fox
-**Setting:** Southern California
-**Availability:** DVD
 
 ## Plot Summary
 

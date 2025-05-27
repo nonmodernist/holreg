@@ -26,16 +26,14 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+
+# Film image
+[extra.film_image]
+url = "/images/sidebar-pearloflove.jpg"
+alt = "ALT TEXT"
+caption = "CAPTION."
+
 +++
-
-*The Pearl of Love* (1925) is a film adaptation of "The Pearl of Orr's Island" by Harriet Beecher Stowe (1862).
-
-## Production Details
-
-**Director:** Leon E. Danmun
-**Studio:** Paul W. Whitcombe Productions
-**Setting:** Maine - coastal
-**Availability:** Lost
 
 ## Plot Summary
 

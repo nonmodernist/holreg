@@ -26,16 +26,14 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+
+# Film image
+[extra.film_image]
+url = "/images/sidebar-mountainrat.jpg"
+alt = "ALT TEXT"
+caption = "CAPTION."
+
 +++
-
-*The Mountain Rat* (1914) is a film adaptation of ""The Mountain Rat"" by Mary Rider (1914).
-
-## Production Details
-
-**Director:** James Kirkwood Sr.
-**Studio:** Biograph
-**Setting:** West
-**Availability:** Lost
 
 ## Plot Summary
 

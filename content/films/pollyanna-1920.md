@@ -26,16 +26,13 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+# Film image
+[extra.film_image]
+url = "/images/sidebar-pollyanna1920.jpg"
+alt = "ALT TEXT"
+caption = "CAPTION."
+
 +++
-
-*Pollyanna* (1920) is a film adaptation of "Pollyanna" by Eleanor H. Porter (1913).
-
-## Production Details
-
-**Director:** Paul Powell
-**Studio:** Mary Pickford Company
-**Setting:** Vermont
-**Availability:** Online
 
 ## Plot Summary
 

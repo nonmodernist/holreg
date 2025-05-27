@@ -26,16 +26,14 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+
+# Film image
+[extra.film_image]
+url = "/images/sidebar-ramona1928.jpg"
+alt = "ALT TEXT"
+caption = "CAPTION."
+
 +++
-
-*Ramona* (1928) is a film adaptation of "Ramona" by Helen Hunt Jackson (1884).
-
-## Production Details
-
-**Director:** Edwin Carewe
-**Studio:** United Artists
-**Setting:** Southern California
-**Availability:** Online
 
 ## Plot Summary
 

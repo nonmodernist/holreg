@@ -26,16 +26,14 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+
+# Film image
+[extra.film_image]
+url = "/images/sidebar-womanwhowasforgotten.jpg"
+alt = "ALT TEXT"
+caption = "CAPTION."
+
 +++
-
-*The Woman Who Was Forgotten* (1930) is a film adaptation of ""The Woman Who Was Forgotten"" by Bess Streeter Aldrich (1926).
-
-## Production Details
-
-**Director:** Richard Thomas
-**Studio:** States Cinema
-**Setting:** midwest
-**Availability:** Unknown
 
 ## Plot Summary
 

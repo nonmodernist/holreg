@@ -26,16 +26,14 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+
+# Film image
+[extra.film_image]
+url = "/images/sidebar-thesuncomesup.jpg"
+alt = "ALT TEXT"
+caption = "CAPTION."
+
 +++
-
-*The Sun Comes Up* (1949) is a film adaptation of "Mountain Prelude" by Marjorie Kinnan Rawlings (1947).
-
-## Production Details
-
-**Director:** Richard Thorpe
-**Studio:** MGM
-**Setting:** Appalachia
-**Availability:** Online
 
 ## Plot Summary
 

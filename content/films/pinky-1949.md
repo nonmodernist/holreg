@@ -26,16 +26,13 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+# Film image
+[extra.film_image]
+url = "/images/sidebar-pinky.jpg"
+alt = "ALT TEXT"
+caption = "CAPTION."
+
 +++
-
-*Pinky* (1949) is a film adaptation of "Quality" by Cid Ricketts Sumner (1946).
-
-## Production Details
-
-**Director:** Elia Kazan
-**Studio:** 20th Century Fox
-**Setting:** Deep South
-**Availability:** DVD
 
 ## Plot Summary
 

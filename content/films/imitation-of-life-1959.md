@@ -27,6 +27,11 @@ format = "Unknown"
 # Content flags
 show_citation = true
 
+# Film image
+[extra.film_image]
+url = "/images/sidebar-imitation1959.jpg"
+alt = "ALT TEXT"
+caption = "CAPTION."
 
 +++
 

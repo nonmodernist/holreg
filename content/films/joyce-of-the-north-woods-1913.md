@@ -26,16 +26,13 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+# Film image
+[extra.film_image]
+url = "/images/sidebar-joyce.jpg"
+alt = "ALT TEXT"
+caption = "CAPTION."
+
 +++
-
-*Joyce of the North Woods* (1913) is a film adaptation of "Joyce of the North Woods" by Harriet Comstock (1911).
-
-## Production Details
-
-**Director:** Ashley Miller
-**Studio:** Edison Company
-**Setting:** Maine
-**Availability:** Unknown
 
 ## Plot Summary
 

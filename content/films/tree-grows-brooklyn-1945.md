@@ -26,16 +26,14 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+
+# Film image
+[extra.film_image]
+url = "/images/sidebar-treegrowsbrooklyn.jpg"
+alt = "Woman in striped dress and straw hat sitting on steps with two children, all smiling at each other in black and white photo."
+caption = "A scene still from A Tree Grows in Brooklyn (1945) showing Joan Blondell and 2 children in period costume seated on outdoor steps."
+
 +++
-
-*A Tree Grows in Brooklyn* (1945) is a film adaptation of "A Tree Grows in Brooklyn" by Betty Smith (1943).
-
-## Production Details
-
-**Director:** Elia Kazan
-**Studio:** 20th Century Fox
-**Setting:** NYC - brooklyn
-**Availability:** DVD
 
 ## Plot Summary
 

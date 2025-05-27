@@ -30,8 +30,9 @@ show_citation = true
 # Film image
 [extra.film_image]
 url = "/images/sidebar-giant1.jpg"
-alt = "ALT TEXT"
-caption = "CAPTION."
+alt = "Man in work clothes stands next to car with arm outstretched while woman in headscarf sits nearby, looking up at him."
+
+caption = "Elizabeth Taylor and James Dean share a moment in this publicity still from \"Giant,\" the 1956 film that brings Edna Ferber's sweeping Texas novel to life."
 
 +++
 

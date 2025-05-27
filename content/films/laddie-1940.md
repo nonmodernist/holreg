@@ -26,16 +26,13 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+# Film image
+[extra.film_image]
+url = "/images/sidebar-laddie1940.jpg"
+alt = "ALT TEXT"
+caption = "CAPTION."
+
 +++
-
-*Laddie* (1940) is a film adaptation of "Laddie" by Gene Stratton-Porter (1913).
-
-## Production Details
-
-**Director:** Jack Hively
-**Studio:** RKO
-**Setting:** Limberlost
-**Availability:** Online
 
 ## Plot Summary
 

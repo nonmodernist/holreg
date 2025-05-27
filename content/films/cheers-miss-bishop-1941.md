@@ -30,8 +30,8 @@ show_citation = true
 # Film image
 [extra.film_image]
 url = "/images/sidebar-cheersformissbishop.jpg"
-alt = "ALT TEXT."
-caption = "CAPTION."
+alt = "2 people in conversation outdoors; man in apron and suspenders, woman in checkered dress with curled hair."
+caption = "Scene still from the 1941 film \"Cheers for Miss Bishop\" showing two characters in a rural setting."
 +++
 
 ## Plot Summary

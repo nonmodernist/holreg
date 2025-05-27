@@ -26,16 +26,13 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+# Film image
+[extra.film_image]
+url = "/images/sidebar-mrswiggs1914.jpg"
+alt = "ALT TEXT"
+caption = "CAPTION."
+
 +++
-
-*Mrs. Wiggs of the Cabbage Patch* (1914) is a film adaptation of "Mrs. Wiggs of the Cabbage Patch" by Alice Hegan Rice (1901).
-
-## Production Details
-
-**Director:** Harold Entwistle
-**Studio:** California Motion Picture Co
-**Setting:** Kentucky
-**Availability:** Lost
 
 ## Plot Summary
 

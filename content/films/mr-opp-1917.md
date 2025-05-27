@@ -28,16 +28,13 @@ filming_locations = "Unknown"
 
 # Content flags
 show_citation = true
+# Film image
+[extra.film_image]
+url = "/images/sidebar-mropp.jpg"
+alt = "ALT TEXT"
+caption = "CAPTION."
+
 +++
-
-plot synopsis
-
-## Production Details
-
-**Director:** Lynn Reynolds
-**Studio:** Bluebird Photoplays
-**Setting:** Kentucky?
-**Availability:** Lost
 
 ## Plot Summary
 

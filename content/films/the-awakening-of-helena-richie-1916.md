@@ -30,8 +30,9 @@ show_citation = true
 # Film image
 [extra.film_image]
 url = "/images/sidebar-awakeningofhelena.jpg"
-alt = "ALT TEXT."
-caption = "CAPTION."
+alt = "A woman in white clothing lies on bed with child beside her, while a man in suit stands nearby in Victorian-era room."
+
+caption = "Scene still from \"The Awakening of Helena Richie\". [SOURCE NEEDED] [YEAR NEEDED]"
 +++
 
 ## Plot Summary

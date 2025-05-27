@@ -26,16 +26,14 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+
+# Film image
+[extra.film_image]
+url = "/images/sidebar-primrosering.jpg"
+alt = "ALT TEXT"
+caption = "CAPTION."
+
 +++
-
-*The Primrose Ring* (1917) is a film adaptation of "The Primrose Ring" by Ruth Sawyer (1915).
-
-## Production Details
-
-**Director:** Robert Leonard
-**Studio:** Jesse Lasky
-
-**Availability:** Lost
 
 ## Plot Summary
 

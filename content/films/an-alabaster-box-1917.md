@@ -30,8 +30,9 @@ show_citation = true
 # Film image
 [extra.film_image]
 url = "/images/sidebar-an_alabaster_box.jpg"
-alt = "A man and a woman stand near a fence."
-caption = "CAPTION."
+alt = "2 people standing at wooden fence near water, woman in white dress and man in dark suit."
+
+caption = "Scene still from the 1917 film \"An Alabaster Box\" showing a couple in conversation by a lakeside. This publicity image features actors from the Vitagraph production."
 +++
 
 ## Plot Summary

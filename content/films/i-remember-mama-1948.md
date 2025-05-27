@@ -26,16 +26,14 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+
+# Film image
+[extra.film_image]
+url = "/images/sidebar-mama1948.jpg"
+alt = "ALT TEXT"
+caption = "CAPTION."
+
 +++
-
-*I Remember Mama* (1948) is a film adaptation of "Mama's Bank Account" by Kathryn Forbes (1943).
-
-## Production Details
-
-**Director:** George Stevens
-**Studio:** RKO
-**Setting:** northern california - SF
-**Availability:** DVD
 
 ## Plot Summary
 

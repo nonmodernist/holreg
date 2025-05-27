@@ -26,16 +26,13 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+# Film image
+[extra.film_image]
+url = "/images/sidebar-placebeyond.jpg"
+alt = "ALT TEXT"
+caption = "CAPTION."
+
 +++
-
-*The Place Beyond the Winds* (1916) is a film adaptation of "The Place Beyond the Winds" by Harriet Comstock (1914).
-
-## Production Details
-
-**Director:** Joseph De Grasse
-**Studio:** Universal
-**Setting:** St. Lawrence River Valley - Kenmore, Canada
-**Availability:** DVD
 
 ## Plot Summary
 

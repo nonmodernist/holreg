@@ -30,8 +30,8 @@ show_citation = true
 # Film image
 [extra.film_image]
 url = "/images/sidebar-backstreet1932.jpg"
-alt = "ALT TEXT."
-caption = "CAPTION."
+alt = "2 people sit close together, woman in feathery wrap and man in suit with hat, looking at each other against lattice background."
+caption = "Scene still from the 1932 film \"Back Street\" showing a couple in an intimate conversation."
 +++
 
 ## Plot Summary

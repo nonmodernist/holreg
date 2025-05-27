@@ -26,16 +26,14 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+
+# Film image
+[extra.film_image]
+url = "/images/sidebar-romancelimberlost.jpg"
+alt = "ALT TEXT"
+caption = "CAPTION."
+
 +++
-
-*Romance of the Limberlost* (1938) is a film adaptation of "A Girl of the Limberlost" by Gene Stratton-Porter (1909).
-
-## Production Details
-
-**Director:** William Nigh
-**Studio:** Monogram
-**Setting:** Limberlost
-**Availability:** Online
 
 ## Plot Summary
 

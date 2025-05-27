@@ -26,16 +26,14 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+
+# Film image
+[extra.film_image]
+url = "/images/sidebar-janet.jpg"
+alt = "ALT TEXT"
+caption = "CAPTION."
+
 +++
-
-*Janet of the Dunes* (1913) is a film adaptation of "Janet of the Dunes" by Harriet Comstock (1908).
-
-## Production Details
-
-**Director:** Richard Ridgely
-**Studio:** Edison Company
-**Setting:** northeast atlantic coast - Long Island
-**Availability:** Unknown
 
 ## Plot Summary
 

@@ -26,16 +26,14 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+
+# Film image
+[extra.film_image]
+url = "/images/sidebar-salome.jpg"
+alt = "ALT TEXT"
+caption = "CAPTION."
+
 +++
-
-*Salome of the Tenements* (1925) is a film adaptation of "Salome of the Tenements" by Anzia Yezierska (1923).
-
-## Production Details
-
-**Director:** Sidney Olcott
-**Studio:** Paramount
-**Setting:** NYC
-**Availability:** Lost
 
 ## Plot Summary
 

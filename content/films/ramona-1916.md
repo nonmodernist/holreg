@@ -26,16 +26,14 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+
+# Film image
+[extra.film_image]
+url = "/images/sidebar-ramona_1916.jpg"
+alt = "ALT TEXT"
+caption = "CAPTION."
+
 +++
-
-*Ramona* (1916) is a film adaptation of "Ramona" by Helen Hunt Jackson (1884).
-
-## Production Details
-
-**Director:** Donald Crisp
-**Studio:** State Rights
-**Setting:** Southern California
-**Availability:** Incomplete
 
 ## Plot Summary
 

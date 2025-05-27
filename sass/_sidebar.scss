@@ -1,5 +1,3 @@
-
-
 // Enhanced Sidebar inspired by WFP layout (shared between film and author pages)
 .film-sidebar,
 .author-sidebar {
@@ -78,12 +76,41 @@
         font-size: $font-size-base;
         color: $color-text;
         line-height: 1.4;
-          font-size: $font-size-base; // Increased from sm
+        font-size: $font-size-base; // Increased from sm
 
-                  &.year-value {
+        &.year-value {
           font-size: $font-size-lg;
           font-weight: $font-weight-bold;
           color: $color-accent;
+        }
+        &.title-value {
+          font-size: $font-size-lg;
+          font-weight: $font-weight-bold;
+          color: $color-primary;
+        }
+      }
+      
+      // Taxonomy tags styling in sidebar
+      .taxonomy-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: $spacing-xs;
+        margin-top: $spacing-xs;
+        
+        .tag {
+          font-size: $font-size-base;
+          padding: $spacing-sm $spacing-md;
+          margin: 0; // Reset margin since we're using gap
+          border-radius: 16px;
+          font-weight: 500;
+          text-transform: none;
+          letter-spacing: normal;
+          
+          // Make tags smaller and more subtle in sidebar
+          &:hover {
+            transform: none; // Remove the translateY effect in sidebar
+            box-shadow: 0 2px 4px rgba($color-accent, 0.2);
+          }
         }
       }
     }
@@ -153,8 +180,8 @@
 // Enhanced Status Indicators
 .status {
   display: inline-block;
-  padding: $spacing-xs $spacing-sm;
-  border-radius: 20px;
+  padding: $spacing-sm $spacing-md;
+  border-radius: 16px;
   font-family: $sans-serif;
   font-size: $font-size-sm;
   font-weight: 700;

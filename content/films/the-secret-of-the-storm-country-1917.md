@@ -26,16 +26,14 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+
+# Film image
+[extra.film_image]
+url = "/images/sidebar-secretofstormcountry.jpg"
+alt = "ALT TEXT"
+caption = "CAPTION."
+
 +++
-
-*The Secret of the Storm Country* (1917) is a film adaptation of "The Secret of the Storm Country" by Grace Miller White (1917).
-
-## Production Details
-
-**Director:** Charles Miller
-**Studio:** Norma Talmadge Film Corporation
-**Setting:** Ithaca, NY
-**Availability:** Lost
 
 ## Plot Summary
 

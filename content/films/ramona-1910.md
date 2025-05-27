@@ -22,20 +22,19 @@ director = "D.W. Griffith"
 studio = "Biograph"
 setting = "Southern California"
 survival_status = "Available"
-format = "Unknown"
+format = "Silent, B&W"
 
 # Content flags
 show_citation = true
+
+# Film image
+[extra.film_image]
+url = "/images/sidebar-ramona.jpg"
+alt = "Woman with dark hair looks through barred window with concerned expression, holding onto bars"
+
+caption = "Scene still from the 1910 film adaptation \"Ramona\" showing the protagonist, played by Mary Pickford, confined behind a barred window."
+
 +++
-
-*Ramona* (1910) is a film adaptation of "Ramona" by Helen Hunt Jackson (1884).
-
-## Production Details
-
-**Director:** D.W. Griffith
-**Studio:** Biograph
-**Setting:** Southern California
-**Availability:** Online
 
 ## Plot Summary
 

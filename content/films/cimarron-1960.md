@@ -30,8 +30,9 @@ show_citation = true
 # Film image
 [extra.film_image]
 url = "/images/sidebar-cimarronw1960.jpg"
-alt = "ALT TEXT."
-caption = "CAPTION."
+alt = "Person in cowboy hat riding horseback across open plain, leading group of riders in black and white scene."
+
+caption = "Scene still from \"Cimarron\" (1960) showing settlers on horseback racing across the territory."
 +++
 
 ## Plot Summary

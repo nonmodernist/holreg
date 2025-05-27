@@ -26,16 +26,14 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+
+# Film image
+[extra.film_image]
+url = "/images/sidebar-rebecca1917.jpg"
+alt = "ALT TEXT"
+caption = "CAPTION."
+
 +++
-
-*Rebecca of Sunnybrook Farm* (1917) is a film adaptation of "Rebecca of Sunnybrook Farm" by Kate Douglas Wiggin (1903).
-
-## Production Details
-
-**Director:** Marshall Neilan
-**Studio:** Mary Pickford Company
-**Setting:** Maine
-**Availability:** Online
 
 ## Plot Summary
 

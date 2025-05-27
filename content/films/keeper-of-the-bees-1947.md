@@ -26,16 +26,14 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+
+# Film image
+[extra.film_image]
+url = "/images/sidebar-keeper1947.jpg"
+alt = "ALT TEXT"
+caption = "CAPTION."
+
 +++
-
-*Keeper of the Bees* (1947) is a film adaptation of "The Keeper of the Bees" by Gene Stratton-Porter (1925).
-
-## Production Details
-
-**Director:** John Sturges
-**Studio:** Columbia
-**Setting:** Southern California
-**Availability:** Unknown
 
 ## Plot Summary
 

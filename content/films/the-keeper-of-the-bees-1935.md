@@ -26,16 +26,14 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+
+# Film image
+[extra.film_image]
+url = "/images/sidebar-keeper1935.jpg"
+alt = "ALT TEXT"
+caption = "CAPTION."
+
 +++
-
-*The Keeper of the Bees* (1935) is a film adaptation of "The Keeper of the Bees" by Gene Stratton-Porter (1925).
-
-## Production Details
-
-**Director:** Christy Cabanne
-**Studio:** Monogram
-**Setting:** Southern California
-**Availability:** Online
 
 ## Plot Summary
 

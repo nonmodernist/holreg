@@ -26,16 +26,14 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+
+# Film image
+[extra.film_image]
+url = "/images/sidebar-theyearling1946.jpg"
+alt = "ALT TEXT"
+caption = "CAPTION."
+
 +++
-
-*The Yearling* (1946) is a film adaptation of "The Yearling" by Marjorie Kinnan Rawlings (1938).
-
-## Production Details
-
-**Director:** Clarence Brown
-**Studio:** MGM
-**Setting:** Central Florida
-**Availability:** DVD
 
 ## Plot Summary
 

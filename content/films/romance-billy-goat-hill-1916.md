@@ -26,16 +26,14 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+
+# Film image
+[extra.film_image]
+url = "/images/sidebar-romanceofbillygoathill.jpg"
+alt = "ALT TEXT"
+caption = "CAPTION."
+
 +++
-
-*A Romance of Billy-Goat Hill* (1916) is a film adaptation of "A Romance of Billy-Goat Hill" by Alice Hegan Rice (1912).
-
-## Production Details
-
-**Director:** Lynn Reynolds
-**Studio:** Universal
-**Setting:** Deep South
-**Availability:** Unknown
 
 ## Plot Summary
 

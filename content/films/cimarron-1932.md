@@ -30,8 +30,9 @@ show_citation = true
 # Film image
 [extra.film_image]
 url = "/images/sidebar-cimarron_1.jpg"
-alt = "ALT TEXT."
-caption = "CAPTION."
+alt = "Covered wagons and riders on horseback rush across dusty plains in black and white, creating a dramatic landscape scene."
+
+caption = "Scene from \"Cimarron\" (1932) depicting the Oklahoma Land Rush with settlers racing to claim territory. This iconic sequence shows the historic westward expansion portrayed in the film adaptation of Edna Ferber's novel."
 +++
 
 ## Plot Summary

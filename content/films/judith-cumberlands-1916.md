@@ -26,16 +26,13 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+# Film image
+[extra.film_image]
+url = "/images/sidebar-judithofthecumberlands.jpg"
+alt = "ALT TEXT"
+caption = "CAPTION."
+
 +++
-
-*Judith of the Cumberlands* (1916) is a film adaptation of "Judith of the Cumberlands" by Alice MacGowan (1908).
-
-## Production Details
-
-**Director:** J.P. McGowan
-**Studio:** Signal Film Corp.
-**Setting:** Appalachia
-**Availability:** Lost
 
 ## Plot Summary
 

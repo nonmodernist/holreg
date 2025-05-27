@@ -26,16 +26,14 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+
+# Film image
+[extra.film_image]
+url = "/images/sidebar-memberwedding.jpg"
+alt = "ALT TEXT"
+caption = "CAPTION."
+
 +++
-
-*The Member of the Wedding* (1953) is a film adaptation of "The Member of the Wedding" by Carson McCullers (1946).
-
-## Production Details
-
-**Director:** Fred Zinnemann
-**Studio:** Columbia
-**Setting:** Deep South
-**Availability:** DVD
 
 ## Plot Summary
 

@@ -26,16 +26,14 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+
+# Film image
+[extra.film_image]
+url = "/images/sidebar-tess1914.jpg"
+alt = "ALT TEXT"
+caption = "CAPTION."
+
 +++
-
-*Tess of the Storm Country* (1914) is a film adaptation of "Tess of the Storm Country" by Grace Miller White (1909).
-
-## Production Details
-
-**Director:** Edwin S. Porter
-**Studio:** Famous Players Film Company
-**Setting:** Ithaca, NY
-**Availability:** Online
 
 ## Plot Summary
 

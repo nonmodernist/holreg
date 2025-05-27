@@ -29,7 +29,7 @@ show_citation = true
 
 # Film image
 [extra.film_image]
-url = "/images/freckles-1917-still.jpg"
+url = "/images/sidebar-limberlost1934.jpg"
 alt = "ALT TEXT"
 caption = "CAPTION."
 +++

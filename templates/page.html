@@ -29,68 +29,6 @@
                 </div>
             </div>
             {% endif %}
-
-            <!-- Taxonomy links -->
-            {% if page.taxonomies %}
-            <div class="section">
-                <div class="section-title">Related</div>
-                <div class="taxonomies">
-                    {% if page.taxonomies.authors %}
-                    <div class="taxonomy-group">
-                        <h4>Authors</h4>
-                        {% for author in page.taxonomies.authors %}
-                        <a href="{{ get_taxonomy_url(kind='authors', name=author) }}" class="tag">{{ author }}</a>
-                        {% endfor %}
-                    </div>
-                    {% endif %}
-
-                    {% if page.taxonomies.regions %}
-                    <div class="taxonomy-group">
-                        <h4>Regions</h4>
-                        {% for region in page.taxonomies.regions %}
-                        <a href="{{ get_taxonomy_url(kind='regions', name=region) }}" class="tag">{{ region }}</a>
-                        {% endfor %}
-                    </div>
-                    {% endif %}
-
-                    {% if page.taxonomies.eras %}
-                    <div class="taxonomy-group">
-                        <h4>Era</h4>
-                        {% for era in page.taxonomies.eras %}
-                        <a href="{{ get_taxonomy_url(kind='eras', name=era) }}" class="tag">{{ era }}</a>
-                        {% endfor %}
-                    </div>
-                    {% endif %}
-
-                    {% if page.taxonomies.genres %}
-                    <div class="taxonomy-group">
-                        <h4>Genres</h4>
-                        {% for genre in page.taxonomies.genres %}
-                        <a href="{{ get_taxonomy_url(kind='genres', name=genre) }}" class="tag">{{ genre }}</a>
-                        {% endfor %}
-                    </div>
-                    {% endif %}
-
-                    {% if page.taxonomies.studios %}
-                    <div class="taxonomy-group">
-                        <h4>Studios</h4>
-                        {% for studio in page.taxonomies.studios %}
-                        <a href="{{ get_taxonomy_url(kind='studios', name=studio) }}" class="tag">{{ studio }}</a>
-                        {% endfor %}
-                    </div>
-                    {% endif %}
-
-                    {% if page.taxonomies.directors %}
-                    <div class="taxonomy-group">
-                        <h4>Directors</h4>
-                        {% for director in page.taxonomies.directors %}
-                        <a href="{{ get_taxonomy_url(kind='directors', name=director) }}" class="tag">{{ director }}</a>
-                        {% endfor %}
-                    </div>
-                    {% endif %}
-                </div>
-            </div>
-            {% endif %}
         </div>
 
         <!-- Enhanced sidebar with action links and metadata -->
@@ -113,26 +51,88 @@
             {% if page.extra %}
             <div class="metadata-box">
                 <h3>Film Details</h3>
-                
+
+                <div class="metadata-item">
+                    <span class="label">Title</span>
+                    <div class="value title-value"><i>{{ page.title }}</i></div>
+                </div>
+
                 {% if page.extra.year %}
                 <div class="metadata-item">
                     <span class="label">Year</span>
                     <div class="value year-value">{{ page.extra.year }}</div>
                 </div>
                 {% endif %}
-                
-                {% if page.extra.director %}
+
+                {% if page.taxonomies.eras %}
                 <div class="metadata-item">
-                    <span class="label">Director</span>
-                    <div class="value">{{ page.extra.director }}</div>
+                    <span class="label">Era</span>
+                    <div class="value taxonomy-tags">
+                        {% for era in page.taxonomies.eras %}
+                        <a href="{{ get_taxonomy_url(kind='eras', name=era) }}" class="tag">{{ era }}</a>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endif %}
+
+                {% if page.taxonomies.regions %}
+                <div class="metadata-item">
+                    <span class="label">Region</span>
+                    <div class="value taxonomy-tags">
+                        {% for region in page.taxonomies.regions %}
+                        <a href="{{ get_taxonomy_url(kind='regions', name=region) }}" class="tag">{{ region }}</a>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endif %}
+
+                {% if page.taxonomies.genres %}
+                <div class="metadata-item">
+                    <span class="label">Genres</span>
+                    <div class="value taxonomy-tags">
+                        {% for genre in page.taxonomies.genres %}
+                        <a href="{{ get_taxonomy_url(kind='genres', name=genre) }}" class="tag">{{ genre }}</a>
+                        {% endfor %}
+                    </div>
                 </div>
                 {% endif %}
                 
-                {% if page.extra.studio %}
+                <!-- Director - prefer taxonomy over extra -->
+                {% if page.taxonomies.directors %}
+                <div class="metadata-item">
+                    <span class="label">Director</span>
+                    <div class="value taxonomy-tags">
+                        {% for director in page.taxonomies.directors %}
+                        <a href="{{ get_taxonomy_url(kind='directors', name=director) }}" class="tag">{{ director }}</a>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% else %}
+                    {% if page.extra.director %}
+                    <div class="metadata-item">
+                        <span class="label">Director</span>
+                        <div class="value">{{ page.extra.director }}</div>
+                    </div>
+                    {% endif %}
+                {% endif %}
+
+                <!-- Studio - prefer taxonomy over extra -->
+                {% if page.taxonomies.studios %}
                 <div class="metadata-item">
                     <span class="label">Studio</span>
-                    <div class="value">{{ page.extra.studio }}</div>
+                    <div class="value taxonomy-tags">
+                        {% for studio in page.taxonomies.studios %}
+                        <a href="{{ get_taxonomy_url(kind='studios', name=studio) }}" class="tag">{{ studio }}</a>
+                        {% endfor %}
+                    </div>
                 </div>
+                {% else %}
+                    {% if page.extra.studio %}
+                    <div class="metadata-item">
+                        <span class="label">Studio</span>
+                        <div class="value">{{ page.extra.studio }}</div>
+                    </div>
+                    {% endif %}
                 {% endif %}
                 
                 {% if page.extra.stars %}
@@ -148,7 +148,7 @@
                 
                 {% if page.extra.survival_status %}
                 <div class="metadata-item">
-                    <span class="label">Availability</span>
+                    <span class="label">Survival Status</span>
                     <div class="value">
                         <span class="status {{ page.extra.survival_status | lower }}">
                             {{ page.extra.survival_status }}
@@ -156,14 +156,7 @@
                     </div>
                 </div>
                 {% endif %}
-                
-                {% if page.extra.setting %}
-                <div class="metadata-item">
-                    <span class="label">Setting</span>
-                    <div class="value">{{ page.extra.setting }}</div>
-                </div>
-                {% endif %}
-                
+
                 {% if page.extra.format %}
                 <div class="metadata-item">
                     <span class="label">Format</span>
@@ -181,17 +174,21 @@
 
             {% if page.extra.original_story %}
             <div class="metadata-box">
-                <h3>Source Literature</h3>
+                <h3>Source Details</h3>
                 
                 <div class="metadata-item">
-                    <span class="label">Original Work</span>
-                    <div class="value">{{ page.extra.original_story }}</div>
+                    <span class="label">Adapted From</span>
+                    <div class="value title-value"><i>{{ page.extra.original_story }}</i></div>
                 </div>
-                
-                {% if page.extra.story_author %}
+
+                {% if page.taxonomies.authors %}
                 <div class="metadata-item">
                     <span class="label">Author</span>
-                    <div class="value">{{ page.extra.story_author }}</div>
+                    <div class="value taxonomy-tags">
+                        {% for author in page.taxonomies.authors %}
+                        <a href="{{ get_taxonomy_url(kind='authors', name=author) }}" class="tag">{{ author }}</a>
+                        {% endfor %}
+                    </div>
                 </div>
                 {% endif %}
                 

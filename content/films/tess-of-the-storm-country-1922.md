@@ -26,16 +26,14 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+
+# Film image
+[extra.film_image]
+url = "/images/sidebar-tess.jpg"
+alt = "ALT TEXT"
+caption = "CAPTION."
+
 +++
-
-*Tess of the Storm Country* (1922) is a film adaptation of "Tess of the Storm Country" by Grace Miller White (1909).
-
-## Production Details
-
-**Director:** John S. Robertson
-**Studio:** United Artists
-**Setting:** Ithaca, NY
-**Availability:** Online
 
 ## Plot Summary
 

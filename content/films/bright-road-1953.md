@@ -30,20 +30,11 @@ show_citation = true
 # Film image
 [extra.film_image]
 url = "/images/sidebar-brightroad.jpg"
-alt = "ALT TEXT."
-caption = "CAPTION."
+alt = "Two people laughing in front of a chalkboard, man in suit on left, woman in light-colored outfit on right."
+
+caption = "Publicity still from \"Bright Road\" (1953) showing the lead actors in a classroom setting with a chalkboard visible in the background. [SOURCE NEEDED]"
 +++
 
-*Bright Road* (1953) is a film adaptation of "“See How They Run”" by Mary Elizabeth Vroman (1951).
-
-## Production Details
-
-**Director:** Gerald Mayer
-**Studio:** MGM
-**Setting:** Deep South
-**Availability:** DVD
-
-## Plot Summary
 
 [Add plot summary here]
 

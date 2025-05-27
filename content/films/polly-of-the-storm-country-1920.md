@@ -26,16 +26,14 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+
+# Film image
+[extra.film_image]
+url = "/images/sidebar-polly-1920.jpg"
+alt = "ALT TEXT"
+caption = "CAPTION."
+
 +++
-
-*Polly of the Storm Country* (1920) is a film adaptation of "Storm Country Polly" by Grace Miller White (1920).
-
-## Production Details
-
-**Director:** Arthur Rossen
-**Studio:** Chaplin-Mayer Pictures Company
-**Setting:** Ithaca, NY
-**Availability:** Lost
 
 ## Plot Summary
 
