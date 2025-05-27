@@ -78,7 +78,6 @@ director = "Charles Giblyn"
 studio = "Famous Players-Lasky"
 year = 1918
 format = "Silent, B&W"
-status = "Survives"
 availability = "Held at Centre National du Cinéma et de l’image animée [CNC] film archive"
 
 [[extra.lost_adaptations]]
@@ -95,7 +94,6 @@ director = "Hugh Ford"
 studio = "Famous Players-Lasky"
 year = 1919
 format = "Silent, B&W"
-status = "Survives"
 availability = "Online"
 url = "https://www.youtube.com/watch?v=8qCWom9rmGQ"
 
@@ -114,7 +112,6 @@ director = "Norman Taurog"
 studio = "Paramount"
 year = 1934
 format = "Sound, B&W"
-status = "Survives"
 availability = "On DVD"
 
 [[extra.extant_adaptations]]
@@ -123,7 +120,6 @@ director = "Ralph Murphy"
 studio = "Paramount"
 year = 1942
 format = "Sound, B&W"
-status = "survives"
 availability = "Held at the UCLA Film Archive"
 
 # DVD and streaming sources - ADD MANUALLY
