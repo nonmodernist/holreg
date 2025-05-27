@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["Popular Plays and Players"]
 eras = ["early silent"]
 genres = ["Drama"]
-availability = ["Lost"]
+survival = ["Lost"]
 directors = ["Carl Harbaugh"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Margaret Deland"
 director = "Carl Harbaugh"
 studio = "Popular Plays and Players"
 setting = "Great Lakes Region - Western PA"
-survival_status = "Lost"
+availability = "Lost"
 format = "Unknown"
 
 # Content flags

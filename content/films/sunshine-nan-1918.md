@@ -9,7 +9,7 @@ regions = ["Appalachian Kentucky"]
 studios = ["Famous Players-Lasky"]
 eras = ["early silent"]
 genres = ["Comedy", "Drama"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["Charles Giblyn"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Alice Hegan Rice"
 director = "Charles Giblyn"
 studio = "Famous Players-Lasky"
 setting = "Kentucky?"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags
@@ -35,7 +35,7 @@ show_citation = true
 **Director:** Charles Giblyn
 **Studio:** Famous Players-Lasky
 **Setting:** Kentucky?
-**Availability:** Survives
+**survival:** Survives
 
 ## Plot Summary
 

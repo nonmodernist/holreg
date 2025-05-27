@@ -9,7 +9,7 @@ regions = ["Urban Northeast"]
 studios = ["Goldwyn Pictures"]
 eras = ["late silent"]
 genres = ["Drama"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["E. Mason Hopper"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Anzia Yezierska"
 director = "E. Mason Hopper"
 studio = "Goldwyn Pictures"
 setting = "NYC"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags

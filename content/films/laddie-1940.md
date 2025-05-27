@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["RKO"]
 eras = ["classical hollywood"]
 genres = ["Drama"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["Jack Hively"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Gene Stratton-Porter"
 director = "Jack Hively"
 studio = "RKO"
 setting = "Limberlost"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags

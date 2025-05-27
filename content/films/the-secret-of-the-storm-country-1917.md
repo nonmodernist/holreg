@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["Norma Talmadge Film Corporation"]
 eras = ["early silent"]
 genres = ["Drama"]
-availability = ["Lost"]
+survival = ["Lost"]
 directors = ["Charles Miller"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Grace Miller White"
 director = "Charles Miller"
 studio = "Norma Talmadge Film Corporation"
 setting = "Ithaca, NY"
-survival_status = "Lost"
+availability = "Lost"
 format = "Unknown"
 
 # Content flags

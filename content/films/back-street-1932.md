@@ -9,7 +9,7 @@ regions = ["Urban Northeast"]
 studios = ["Universal"]
 eras = ["pre-code"]
 genres = ["Drama"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["John M. Stahl"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Fannie Hurst"
 director = "John M. Stahl"
 studio = "Universal"
 setting = "NYC"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags

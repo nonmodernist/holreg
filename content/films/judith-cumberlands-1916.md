@@ -9,7 +9,7 @@ regions = ["Appalachian Kentucky"]
 studios = ["Signal Film Corp."]
 eras = ["early silent"]
 genres = ["Drama"]
-availability = ["Lost"]
+survival = ["Lost"]
 directors = ["J.P. McGowan"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Alice MacGowan"
 director = "J.P. McGowan"
 studio = "Signal Film Corp."
 setting = "Appalachia"
-survival_status = "Lost"
+availability = "Lost"
 format = "Unknown"
 
 # Content flags

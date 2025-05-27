@@ -9,7 +9,7 @@ regions = ["Appalachian Kentucky"]
 studios = ["Famous Players-Lasky"]
 eras = ["early silent"]
 genres = ["Comedy", "Drama"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["Hugh Ford"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Alice Hegan Rice"
 director = "Hugh Ford"
 studio = "Famous Players-Lasky"
 setting = "Kentucky"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags
@@ -35,7 +35,7 @@ show_citation = true
 **Director:** Hugh Ford
 **Studio:** Famous Players-Lasky
 **Setting:** Kentucky
-**Availability:** Online
+**survival:** Online
 
 ## Plot Summary
 

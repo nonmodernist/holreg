@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["Chaplin-Mayer Pictures Company"]
 eras = ["early silent"]
 genres = ["Drama"]
-availability = ["Lost"]
+survival = ["Lost"]
 directors = ["Arthur Rossen"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Grace Miller White"
 director = "Arthur Rossen"
 studio = "Chaplin-Mayer Pictures Company"
 setting = "Ithaca, NY"
-survival_status = "Lost"
+availability = "Lost"
 format = "Unknown"
 
 # Content flags

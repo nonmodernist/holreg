@@ -9,7 +9,7 @@ regions = ["Appalachian Kentucky"]
 studios = ["MGM"]
 eras = ["studio system decline"]
 genres = ["Musical", "Drama"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["Richard Thorpe"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Marjorie Kinnan Rawlings"
 director = "Richard Thorpe"
 studio = "MGM"
 setting = "Appalachia"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags

@@ -9,7 +9,7 @@ regions = ["Southern California"]
 studios = ["State Rights"]
 eras = ["early silent"]
 genres = ["Melodrama", "Western"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["Donald Crisp"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Helen Hunt Jackson"
 director = "Donald Crisp"
 studio = "State Rights"
 setting = "Southern California"
-survival_status = "Incomplete"
+availability = "Incomplete"
 format = "Unknown"
 
 # Content flags

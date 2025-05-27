@@ -9,7 +9,7 @@ regions = ["Unknown"]
 studios = ["Jesse Lasky"]
 eras = ["early silent"]
 genres = ["Drama"]
-availability = ["Lost"]
+survival = ["Lost"]
 directors = ["Robert Leonard"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Ruth Sawyer"
 director = "Robert Leonard"
 studio = "Jesse Lasky"
 
-survival_status = "Lost"
+availability = "Lost"
 format = "Unknown"
 
 # Content flags

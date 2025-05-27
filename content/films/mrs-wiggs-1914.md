@@ -9,7 +9,7 @@ regions = ["Appalachian Kentucky"]
 studios = ["California Motion Picture Co"]
 eras = ["early silent"]
 genres = ["Drama"]
-availability = ["Lost"]
+survival = ["Lost"]
 directors = ["Harold Entwistle"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Alice Hegan Rice"
 director = "Harold Entwistle"
 studio = "California Motion Picture Co"
 setting = "Kentucky"
-survival_status = "Lost"
+availability = "Lost"
 format = "Unknown"
 
 # Content flags

@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["RKO"]
 eras = ["classical hollywood"]
 genres = ["Drama"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["Edward Killy and William Hamilton"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Gene Stratton-Porter"
 director = "Edward Killy and William Hamilton"
 studio = "RKO"
 setting = "Limberlost"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags
@@ -35,7 +35,7 @@ show_citation = true
 **Director:** Edward Killy and William Hamilton
 **Studio:** RKO
 **Setting:** Limberlost
-**Availability:** Survives
+**survival:** Survives
 
 ## Plot Summary
 

@@ -9,7 +9,7 @@ regions = ["Southern California"]
 studios = ["20th Century Fox"]
 eras = ["classical hollywood"]
 genres = ["Drama", "Musical", "Western"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["Henry King"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Helen Hunt Jackson"
 director = "Henry King"
 studio = "20th Century Fox"
 setting = "Southern California"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags

@@ -145,17 +145,6 @@
                     </div>
                 </div>
                 {% endif %}
-                
-                {% if page.extra.survival_status %}
-                <div class="metadata-item">
-                    <span class="label">Survival Status</span>
-                    <div class="value">
-                        <span class="status {{ page.extra.survival_status | lower }}">
-                            {{ page.extra.survival_status }}
-                        </span>
-                    </div>
-                </div>
-                {% endif %}
 
                 {% if page.extra.format %}
                 <div class="metadata-item">
@@ -170,7 +159,19 @@
                     <div class="value">{{ page.extra.duration }}</div>
                 </div>
                 {% endif %}
-            </div>
+            
+
+            {% if page.extra.availability %}
+                <div class="metadata-item">
+                    <span class="label">Availability</span>
+                    <div class="value">
+                        <span class="status {{ page.extra.availability | lower }}">
+                            {{ page.extra.availability }}
+                        </span>
+                    </div>
+                </div>
+                {% endif %}
+                </div>
 
             {% if page.extra.original_story %}
             <div class="metadata-box">

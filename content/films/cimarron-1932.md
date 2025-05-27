@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["STU"]
 eras = ["pre-code"]
 genres = ["Western"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["DIR"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Edna Ferber"
 director = "DIR"
 studio = "STU"
 setting = "Oklahoma"
-survival_status = "Available"
+availability = "Available"
 format = "Sound, B&W"
 
 # Content flags

@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["Warner Bros"]
 eras = ["classical hollywood"]
 genres = ["Drama"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["Peter Godfrey"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Edith Roberts"
 director = "Peter Godfrey"
 studio = "Warner Bros"
 setting = "Great Lakes Region - Ohio"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags
@@ -35,7 +35,7 @@ show_citation = true
 **Director:** Peter Godfrey
 **Studio:** Warner Bros
 **Setting:** Great Lakes Region - Ohio
-**Availability:** DVD
+**survival:** DVD
 
 ## Plot Summary
 

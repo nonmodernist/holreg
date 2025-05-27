@@ -9,7 +9,7 @@ regions = ["Urban Northeast"]
 studios = ["Fox Film Corporation"]
 eras = ["late silent"]
 genres = ["Drama"]
-availability = ["Lost"]
+survival = ["Lost"]
 directors = ["John Ford"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Myra Kelly"
 director = "John Ford"
 studio = "Fox Film Corporation"
 setting = "NYC"
-survival_status = "Lost"
+availability = "Lost"
 format = "Unknown"
 
 # Content flags
@@ -35,7 +35,7 @@ show_citation = true
 **Director:** John Ford
 **Studio:** Fox Film Corporation
 **Setting:** NYC
-**Availability:** Lost
+**survival:** Lost
 
 ## Plot Summary
 

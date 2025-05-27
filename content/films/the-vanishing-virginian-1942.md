@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["MGM"]
 eras = ["classical hollywood"]
 genres = ["Drama"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["Frank Borzage"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Rebecca Yancey Williams"
 director = "Frank Borzage"
 studio = "MGM"
 setting = "Virginia"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags
@@ -35,7 +35,7 @@ show_citation = true
 **Director:** Frank Borzage
 **Studio:** MGM
 **Setting:** Virginia
-**Availability:** DVD
+**survival:** DVD
 
 ## Plot Summary
 

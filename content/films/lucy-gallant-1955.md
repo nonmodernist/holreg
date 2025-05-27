@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["Paramount"]
 eras = ["studio system decline"]
 genres = ["Drama", "Western"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["Robert Parrish"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Margaret Cousins"
 director = "Robert Parrish"
 studio = "Paramount"
 setting = "Texas"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags
@@ -35,7 +35,7 @@ show_citation = true
 **Director:** Robert Parrish
 **Studio:** Paramount
 **Setting:** Texas
-**Availability:** Survives
+**survival:** Survives
 
 ## Plot Summary
 

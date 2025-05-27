@@ -9,7 +9,7 @@ regions = ["Deep South"]
 studios = ["Universal"]
 eras = ["studio system decline"]
 genres = ["Romance"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["Joseph Pevney"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Cid Ricketts Sumner"
 director = "Joseph Pevney"
 studio = "Universal"
 setting = "Deep South - Natchez, MS"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags
@@ -35,7 +35,7 @@ show_citation = true
 **Director:** Joseph Pevney
 **Studio:** Universal
 **Setting:** Deep South - Natchez, MS
-**Availability:** DVD
+**survival:** DVD
 
 ## Plot Summary
 

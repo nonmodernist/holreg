@@ -9,7 +9,7 @@ regions = ["Urban Northeast"]
 studios = ["Warner Bros"]
 eras = ["classical hollywood"]
 genres = ["Melodrama"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["Jean Negulesco"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Fannie Hurst"
 director = "Jean Negulesco"
 studio = "Warner Bros"
 setting = "NYC"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags
@@ -35,7 +35,7 @@ show_citation = true
 **Director:** Jean Negulesco
 **Studio:** Warner Bros
 **Setting:** NYC
-**Availability:** DVD
+**survival:** DVD
 
 ## Plot Summary
 

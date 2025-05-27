@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["Universal"]
 eras = ["pre-code"]
 genres = ["Drama"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["John M. Stahl"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Fannie Hurst"
 director = "John M. Stahl"
 studio = "Universal"
 setting = "northeast atlantic coast - NJ shore"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags
@@ -35,7 +35,7 @@ show_citation = true
 **Director:** John M. Stahl
 **Studio:** Universal
 **Setting:** northeast atlantic coast - NJ shore
-**Availability:** DVD
+**survival:** DVD
 
 ## Plot Summary
 

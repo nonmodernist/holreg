@@ -9,7 +9,7 @@ regions = ["Southern California"]
 studios = ["Artcraft Pictures Corporation"]
 eras = ["early silent"]
 genres = ["Comedy", "Romance"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["Marshall Neilan"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Belle K. Maniates"
 director = "Marshall Neilan"
 studio = "Artcraft Pictures Corporation"
 setting = "northern california - SF"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags
@@ -35,7 +35,7 @@ show_citation = true
 **Director:** Marshall Neilan
 **Studio:** Artcraft Pictures Corporation
 **Setting:** northern california - SF
-**Availability:** Online
+**survival:** Online
 
 ## Plot Summary
 

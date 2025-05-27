@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["Republic"]
 eras = ["classical hollywood"]
 genres = ["Melodrama"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["Karl Brown"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Gene Stratton-Porter"
 director = "Karl Brown"
 studio = "Republic"
 setting = "Limberlost"
-survival_status = "Incomplete"
+availability = "Incomplete"
 format = "Unknown"
 
 # Content flags
@@ -35,7 +35,7 @@ show_citation = true
 **Director:** Karl Brown
 **Studio:** Republic
 **Setting:** Limberlost
-**Availability:** Incomplete
+**survival:** Incomplete
 
 ## Plot Summary
 

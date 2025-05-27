@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["First National"]
 eras = ["pre-code"]
 genres = ["Drama"]
-availability = ["Unknown"]
+survival = ["Unknown"]
 directors = ["Hobart Henley"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Helen Grace Carlisle"
 director = "Hobart Henley"
 studio = "First National"
 setting = "?"
-survival_status = "Unknown"
+availability = "Unknown"
 format = "Unknown"
 
 # Content flags
@@ -35,7 +35,7 @@ show_citation = true
 **Director:** Hobart Henley
 **Studio:** First National
 **Setting:** ?
-**Availability:** Unknown
+**survival:** Unknown
 
 ## Plot Summary
 

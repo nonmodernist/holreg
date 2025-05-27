@@ -9,7 +9,7 @@ regions = ["Deep South"]
 studios = ["World Producing Corp."]
 eras = ["early silent"]
 genres = ["Melodrama"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["William Robert Daly"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Harriet Beecher Stowe"
 director = "William Robert Daly"
 studio = "World Producing Corp."
 setting = "Deep South"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags
@@ -35,7 +35,7 @@ show_citation = true
 **Director:** William Robert Daly
 **Studio:** World Producing Corp.
 **Setting:** Deep South
-**Availability:** Survives
+**survival:** Survives
 
 ## Plot Summary
 

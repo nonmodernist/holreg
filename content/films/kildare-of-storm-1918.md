@@ -9,7 +9,7 @@ regions = ["Appalachian Kentucky"]
 studios = ["Metro Pictures"]
 eras = ["early silent"]
 genres = ["Drama"]
-availability = ["Lost"]
+survival = ["Lost"]
 directors = ["Harry L. Franklin"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Eleanor Mercein Kelly"
 director = "Harry L. Franklin"
 studio = "Metro Pictures"
 setting = "Appalachia - KY"
-survival_status = "Lost"
+availability = "Lost"
 format = "Unknown"
 
 # Content flags

@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["MGM"]
 eras = ["studio system decline"]
 genres = ["Western"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["Anthony Mann"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Edna Ferber"
 director = "Anthony Mann"
 studio = "MGM"
 setting = "Oklahoma"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags

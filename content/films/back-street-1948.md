@@ -9,7 +9,7 @@ regions = ["Southern California"]
 studios = ["Silver Light"]
 eras = ["classical hollywood"]
 genres = ["Drama"]
-availability = ["Lost"]
+survival = ["Lost"]
 directors = ["Esther Eng"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Fannie Hurst"
 director = "Esther Eng"
 studio = "Silver Light"
 setting = "northern california - SF"
-survival_status = "Lost"
+availability = "Lost"
 format = "Unknown"
 
 # Content flags
@@ -35,7 +35,7 @@ show_citation = true
 **Director:** Esther Eng
 **Studio:** Silver Light
 **Setting:** northern california - SF
-**Availability:** Lost
+**survival:** Lost
 
 ## Plot Summary
 

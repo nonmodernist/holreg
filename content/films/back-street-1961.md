@@ -9,7 +9,7 @@ regions = ["Urban Northeast"]
 studios = ["Universal"]
 eras = ["studio system decline"]
 genres = ["Drama"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["David Miller"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Fannie Hurst"
 director = "David Miller"
 studio = "Universal"
 setting = "NYC"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags
@@ -35,7 +35,7 @@ show_citation = true
 **Director:** David Miller
 **Studio:** Universal
 **Setting:** NYC
-**Availability:** DVD
+**survival:** DVD
 
 ## Plot Summary
 

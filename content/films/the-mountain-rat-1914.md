@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["Biograph"]
 eras = ["early silent"]
 genres = ["Western"]
-availability = ["Lost"]
+survival = ["Lost"]
 directors = ["James Kirkwood Sr."]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Mary Rider"
 director = "James Kirkwood Sr."
 studio = "Biograph"
 setting = "West"
-survival_status = "Lost"
+availability = "Lost"
 format = "Unknown"
 
 # Content flags

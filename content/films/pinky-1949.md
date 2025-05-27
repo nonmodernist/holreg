@@ -9,7 +9,7 @@ regions = ["Deep South"]
 studios = ["20th Century Fox"]
 eras = ["studio system decline"]
 genres = ["Drama"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["Elia Kazan"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Cid Ricketts Sumner"
 director = "Elia Kazan"
 studio = "20th Century Fox"
 setting = "Deep South"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags

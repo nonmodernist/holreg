@@ -9,7 +9,7 @@ regions = ["Deep South"]
 studios = ["Universal"]
 eras = ["early silent"]
 genres = ["Drama"]
-availability = ["Unknown"]
+survival = ["Unknown"]
 directors = ["Lynn Reynolds"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Alice Hegan Rice"
 director = "Lynn Reynolds"
 studio = "Universal"
 setting = "Deep South"
-survival_status = "Unknown"
+availability = "Unknown"
 format = "Unknown"
 
 # Content flags

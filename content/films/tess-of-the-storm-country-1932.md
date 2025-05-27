@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["Fox Film Corporation"]
 eras = ["pre-code"]
 genres = ["Drama"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["Alfred Santell"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Grace Miller White"
 director = "Alfred Santell"
 studio = "Fox Film Corporation"
 setting = "Ithaca, NY"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags
@@ -35,7 +35,7 @@ show_citation = true
 **Director:** Alfred Santell
 **Studio:** Fox Film Corporation
 **Setting:** Ithaca, NY
-**Availability:** Survives
+**survival:** Survives
 
 ## Plot Summary
 

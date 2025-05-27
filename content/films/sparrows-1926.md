@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["United Artists"]
 eras = ["late silent"]
 genres = ["Drama"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["William Beaudine"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Winnifred Dunn"
 director = "William Beaudine"
 studio = "United Artists"
 setting = "southern swamplands"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags
@@ -35,7 +35,7 @@ show_citation = true
 **Director:** William Beaudine
 **Studio:** United Artists
 **Setting:** southern swamplands
-**Availability:** DVD
+**survival:** DVD
 
 ## Plot Summary
 

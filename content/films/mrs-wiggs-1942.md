@@ -9,7 +9,7 @@ regions = ["Appalachian Kentucky"]
 studios = ["Paramount"]
 eras = ["classical hollywood"]
 genres = ["Comedy", "Drama"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["Ralph Murphy"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Alice Hegan Rice"
 director = "Ralph Murphy"
 studio = "Paramount"
 setting = "Kentucky"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags
@@ -35,7 +35,7 @@ show_citation = true
 **Director:** Ralph Murphy
 **Studio:** Paramount
 **Setting:** Kentucky
-**Availability:** Survives
+**survival:** Survives
 
 ## Plot Summary
 

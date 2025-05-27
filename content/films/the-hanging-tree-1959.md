@@ -9,7 +9,7 @@ regions = ["American West"]
 studios = ["Warner Bros"]
 eras = ["studio system decline"]
 genres = ["Western"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["Delmer Davies"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Dorothy M. Johnson"
 director = "Delmer Davies"
 studio = "Warner Bros"
 setting = "Montana"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags

@@ -9,7 +9,7 @@ regions = ["Rural Midwest"]
 studios = ["United Artists"]
 eras = ["classical hollywood"]
 genres = ["Drama"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["Tay Garnett"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Bess Streeter Aldrich"
 director = "Tay Garnett"
 studio = "United Artists"
 setting = "Nebraska"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags

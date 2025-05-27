@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["Monogram"]
 eras = ["pre-code"]
 genres = ["Drama"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["Christy Cabanne"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Gene Stratton-Porter"
 director = "Christy Cabanne"
 studio = "Monogram"
 setting = "Limberlost"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags
@@ -41,7 +41,7 @@ caption = "CAPTION."
 **Director:** Christy Cabanne
 **Studio:** Monogram
 **Setting:** Limberlost
-**Availability:** Online
+**survival:** Online
 
 ## Plot Summary
 

@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["Robertson-Cole Pictures Corp"]
 eras = ["late silent"]
 genres = ["Comedy", "Drama"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["Howard Hickman"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Kate Langley Bosher"
 director = "Howard Hickman"
 studio = "Robertson-Cole Pictures Corp"
 setting = "? orphanage"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags
@@ -35,7 +35,7 @@ show_citation = true
 **Director:** Howard Hickman
 **Studio:** Robertson-Cole Pictures Corp
 **Setting:** ? orphanage
-**Availability:** Survives
+**survival:** Survives
 
 ## Plot Summary
 

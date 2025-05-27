@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["Mary Pickford Company"]
 eras = ["early silent"]
 genres = ["Drama"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["Paul Powell"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Eleanor H. Porter"
 director = "Paul Powell"
 studio = "Mary Pickford Company"
 setting = "Vermont"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags

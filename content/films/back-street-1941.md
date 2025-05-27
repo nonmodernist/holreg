@@ -9,7 +9,7 @@ regions = ["Urban Northeast"]
 studios = ["Universal"]
 eras = ["classical hollywood"]
 genres = ["Drama"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["Robert Stevenson"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Fannie Hurst"
 director = "Robert Stevenson"
 studio = "Universal"
 setting = "NYC"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags
@@ -35,7 +35,7 @@ show_citation = true
 **Director:** Robert Stevenson
 **Studio:** Universal
 **Setting:** NYC
-**Availability:** DVD
+**survival:** DVD
 
 ## Plot Summary
 

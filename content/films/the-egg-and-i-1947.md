@@ -9,7 +9,7 @@ regions = ["Pacific Northwest"]
 studios = ["Universal"]
 eras = ["classical hollywood"]
 genres = ["Comedy"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["Chester Erskine"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Betty MacDonald"
 director = "Chester Erskine"
 studio = "Universal"
 setting = "Pacific Northwest"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags
@@ -35,7 +35,7 @@ show_citation = true
 **Director:** Chester Erskine
 **Studio:** Universal
 **Setting:** Pacific Northwest
-**Availability:** Survives
+**survival:** Survives
 
 ## Plot Summary
 

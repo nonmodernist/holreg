@@ -9,7 +9,7 @@ regions = ["Deep South"]
 studios = ["Columbia"]
 eras = ["studio system decline"]
 genres = ["Drama"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["Fred Zinnemann"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Carson McCullers"
 director = "Fred Zinnemann"
 studio = "Columbia"
 setting = "Deep South"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags

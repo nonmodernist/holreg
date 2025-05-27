@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["Warner Bros"]
 eras = ["classical hollywood"]
 genres = ["Melodrama"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["John Huston"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Ellen Glasgow"
 director = "John Huston"
 studio = "Warner Bros"
 setting = "Virginia/MD"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags
@@ -35,7 +35,7 @@ show_citation = true
 **Director:** John Huston
 **Studio:** Warner Bros
 **Setting:** Virginia/MD
-**Availability:** DVD
+**survival:** DVD
 
 ## Plot Summary
 

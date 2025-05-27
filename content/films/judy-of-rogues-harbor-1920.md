@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["Realart Pictures Corporation"]
 eras = ["early silent"]
 genres = ["Drama"]
-availability = ["Lost"]
+survival = ["Lost"]
 directors = ["William Desmond Taylor"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Grace Miller White"
 director = "William Desmond Taylor"
 studio = "Realart Pictures Corporation"
 setting = "Ithaca, NY"
-survival_status = "Lost"
+availability = "Lost"
 format = "Unknown"
 
 # Content flags
@@ -35,7 +35,7 @@ show_citation = true
 **Director:** William Desmond Taylor
 **Studio:** Realart Pictures Corporation
 **Setting:** Ithaca, NY
-**Availability:** Lost
+**survival:** Lost
 
 ## Plot Summary
 

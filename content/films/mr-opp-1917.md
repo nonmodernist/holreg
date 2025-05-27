@@ -9,7 +9,7 @@ regions = ["Appalachia"]
 studios = ["Bluebird Photoplays"]
 eras = ["early silent"]
 genres = ["Drama"]
-availability = ["Lost"]
+survival = ["Lost"]
 directors = ["Lynn Reynolds"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Alice Hegan Rice"
 director = "Lynn Reynolds"
 studio = "Bluebird Photoplays"
 setting = "Kentucky?"
-survival_status = "Lost"
+availability = "Lost"
 duration = "Unknown"
 format = "Unknown"
 filming_locations = "Unknown"

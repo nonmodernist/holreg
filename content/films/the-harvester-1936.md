@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["Republic"]
 eras = ["classical hollywood"]
 genres = ["Comedy"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["Joseph Santley"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Gene Stratton-Porter"
 director = "Joseph Santley"
 studio = "Republic"
 setting = "Limberlost"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags
@@ -35,7 +35,7 @@ show_citation = true
 **Director:** Joseph Santley
 **Studio:** Republic
 **Setting:** Limberlost
-**Availability:** Survives
+**survival:** Survives
 
 ## Plot Summary
 

@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["20th Century Fox"]
 eras = ["classical hollywood"]
 genres = ["Musical", "Comedy"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["Allan Dwan"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Kate Douglas Wiggin"
 director = "Allan Dwan"
 studio = "20th Century Fox"
 setting = "Maine"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags
@@ -35,7 +35,7 @@ show_citation = true
 **Director:** Allan Dwan
 **Studio:** 20th Century Fox
 **Setting:** Maine
-**Availability:** DVD
+**survival:** DVD
 
 ## Plot Summary
 

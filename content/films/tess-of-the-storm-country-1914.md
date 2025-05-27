@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["Famous Players Film Company"]
 eras = ["early silent"]
 genres = ["Drama"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["Edwin S. Porter"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Grace Miller White"
 director = "Edwin S. Porter"
 studio = "Famous Players Film Company"
 setting = "Ithaca, NY"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags

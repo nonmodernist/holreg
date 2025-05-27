@@ -9,7 +9,7 @@ regions = ["Deep South"]
 studios = ["Vitagraph"]
 eras = ["early silent"]
 genres = ["Melodrama"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["Frederick A. Thomson"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Harriet Beecher Stowe"
 director = "Frederick A. Thomson"
 studio = "Vitagraph"
 setting = "Deep South"
-survival_status = "Incomplete"
+availability = "Incomplete"
 format = "Unknown"
 
 # Content flags
@@ -35,7 +35,7 @@ show_citation = true
 **Director:** Frederick A. Thomson
 **Studio:** Vitagraph
 **Setting:** Deep South
-**Availability:** Incomplete
+**survival:** Incomplete
 
 ## Plot Summary
 

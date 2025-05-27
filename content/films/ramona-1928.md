@@ -9,7 +9,7 @@ regions = ["Southern California"]
 studios = ["United Artists"]
 eras = ["late silent"]
 genres = ["Drama", "Western"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["Edwin Carewe"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Helen Hunt Jackson"
 director = "Edwin Carewe"
 studio = "United Artists"
 setting = "Southern California"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags

@@ -9,7 +9,7 @@ regions = ["Central Florida"]
 studios = ["MGM"]
 eras = ["classical hollywood"]
 genres = ["Drama"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["Clarence Brown"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Marjorie Kinnan Rawlings"
 director = "Clarence Brown"
 studio = "MGM"
 setting = "Central Florida"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags

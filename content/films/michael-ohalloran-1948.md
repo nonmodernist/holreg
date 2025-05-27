@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["Windsor Pictures Corp. (distributed by Monogram)"]
 eras = ["classical hollywood"]
 genres = ["Drama"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["John Rawlins"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Gene Stratton-Porter"
 director = "John Rawlins"
 studio = "Windsor Pictures Corp. (distributed by Monogram)"
 setting = "Limberlost"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags
@@ -35,7 +35,7 @@ show_citation = true
 **Director:** John Rawlins
 **Studio:** Windsor Pictures Corp. (distributed by Monogram)
 **Setting:** Limberlost
-**Availability:** Survives
+**survival:** Survives
 
 ## Plot Summary
 

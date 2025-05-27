@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["Disney"]
 eras = ["studio system decline"]
 genres = ["Drama"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["David Swift"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Eleanor H. Porter"
 director = "David Swift"
 studio = "Disney"
 setting = "Vermont"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags
@@ -35,7 +35,7 @@ show_citation = true
 **Director:** David Swift
 **Studio:** Disney
 **Setting:** Vermont
-**Availability:** DVD
+**survival:** DVD
 
 ## Plot Summary
 

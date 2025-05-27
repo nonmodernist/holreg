@@ -9,7 +9,7 @@ regions = ["Rural Midwest"]
 studios = ["States Cinema"]
 eras = ["pre-code"]
 genres = ["Drama"]
-availability = ["Unknown"]
+survival = ["Unknown"]
 directors = ["Richard Thomas"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Bess Streeter Aldrich"
 director = "Richard Thomas"
 studio = "States Cinema"
 setting = "midwest"
-survival_status = "Unknown"
+availability = "Unknown"
 format = "Unknown"
 
 # Content flags

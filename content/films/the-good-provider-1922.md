@@ -9,7 +9,7 @@ regions = ["Urban Northeast"]
 studios = ["Cosmopolitan Productions"]
 eras = ["late silent"]
 genres = ["Melodrama"]
-availability = ["Unknown"]
+survival = ["Unknown"]
 directors = ["Frank Borzage"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Fannie Hurst"
 director = "Frank Borzage"
 studio = "Cosmopolitan Productions"
 setting = "NYC"
-survival_status = "Unknown"
+availability = "Unknown"
 format = "Unknown"
 
 # Content flags
@@ -35,7 +35,7 @@ show_citation = true
 **Director:** Frank Borzage
 **Studio:** Cosmopolitan Productions
 **Setting:** NYC
-**Availability:** Unknown
+**survival:** Unknown
 
 ## Plot Summary
 

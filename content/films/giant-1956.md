@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["Warner Bros"]
 eras = ["studio system decline"]
 genres = ["Western"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["George Stevens"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Edna Ferber"
 director = "George Stevens"
 studio = "Warner Bros"
 setting = "Texas"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags

@@ -9,7 +9,7 @@ regions = ["Deep South"]
 studios = ["Selznick International"]
 eras = ["classical hollywood"]
 genres = ["Romance"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["Victor Fleming"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Margaret Mitchell"
 director = "Victor Fleming"
 studio = "Selznick International"
 setting = "Deep South (Georgia)"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags

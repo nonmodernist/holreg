@@ -9,7 +9,7 @@ regions = ["Urban Northeast"]
 studios = ["Cosmopolitan Productions"]
 eras = ["late silent"]
 genres = ["Melodrama"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["Frances Marion"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Fannie Hurst"
 director = "Frances Marion"
 studio = "Cosmopolitan Productions"
 setting = "NYC"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags
@@ -35,7 +35,7 @@ show_citation = true
 **Director:** Frances Marion
 **Studio:** Cosmopolitan Productions
 **Setting:** NYC
-**Availability:** Survives
+**survival:** Survives
 
 ## Plot Summary
 

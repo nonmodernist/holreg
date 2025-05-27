@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["United Artists"]
 eras = ["late silent"]
 genres = ["Melodrama"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["John S. Robertson"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Grace Miller White"
 director = "John S. Robertson"
 studio = "United Artists"
 setting = "Ithaca, NY"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags

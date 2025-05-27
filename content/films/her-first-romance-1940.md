@@ -9,7 +9,7 @@ regions = ["Southern California"]
 studios = ["Monogram"]
 eras = ["classical hollywood"]
 genres = ["Drama"]
-availability = ["Unknown"]
+survival = ["Unknown"]
 directors = ["Edward Dmytryk"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Gene Stratton-Porter"
 director = "Edward Dmytryk"
 studio = "Monogram"
 setting = "Southern California"
-survival_status = "Unknown"
+availability = "Unknown"
 format = "Unknown"
 
 # Content flags

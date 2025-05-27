@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["Warner Bros"]
 eras = ["studio system decline"]
 genres = ["Drama"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["Robert Wise"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Edna Ferber"
 director = "Robert Wise"
 studio = "Warner Bros"
 setting = "Chicago"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags
@@ -35,7 +35,7 @@ show_citation = true
 **Director:** Robert Wise
 **Studio:** Warner Bros
 **Setting:** Chicago
-**Availability:** Survives
+**survival:** Survives
 
 ## Plot Summary
 

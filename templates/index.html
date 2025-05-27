@@ -3,14 +3,22 @@
 {% block content %}
 <div class="homepage">
     <section class="hero">
-        <h1 class="hero-title">Hollywood Regionalism</h1>
-        <p class="hero-subtitle">Film Adaptations of American Women's Regional Literature, 1910-1961</p>
+        <h1 class="hero-title">From 1910 to 1961, Hollywood made more than 100 films inspired by the novels and short stories of American women regionalists—illuminating the landscapes, cultures, and social debates that shaped a nation.</h1>
+        <p class="hero-subtitle">Hollywood Regionalism explores the US film industry's fascination with American women regionalists both famous and forgotten.</p>
         
         <div class="hero-description">
-            <p>Between 1910 and 1961, the United States film industry made over 100 films adapted from the novels and short stories of American women regionalists. This digital archive explores how Hollywood engaged with regional literature and the nation-building project of American literary regionalism.</p>
+            <p>While academic tradition limits regionalism to a brief literary movement (1880s-1910), <b>Hollywood reveals a different story</b>. For over fifty years, filmmakers transformed these regional works into vivid screen adaptations, bringing their stories to national audiences.</p>
+
+            <p>This remarkable half-century of adaptations demonstrates how regionalist storytelling evolved across media—from magazine pages to movie screens—and continued to resonate with audiences long after scholars declared the movement finished.</p>
         </div>
         
         <div class="hero-stats">
+            <div class="stat-item">
+                <a href="{{ get_url(path='@/author-profiles/_index.md') }}" class="stat-link">
+                <span class="stat-number">40+</span>
+                <span class="stat-label">Authors</span>
+                </a>
+            </div>
             <div class="stat-item">
                 <a href="{{ get_url(path='@/all-films-alphabetical.md') }}" class="stat-link">
                     <span class="stat-number">121</span>
@@ -18,12 +26,8 @@
                 </a>
             </div>
             <div class="stat-item">
-                <span class="stat-number">50</span>
+                <span class="stat-number">51</span>
                 <span class="stat-label">Years Covered</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-number">50+</span>
-                <span class="stat-label">Authors Adapted</span>
             </div>
         </div>
     </section>
@@ -63,6 +67,22 @@
                             <a href="{{ get_taxonomy_url(kind='authors', name='Gene Stratton-Porter') }}">Gene Stratton-Porter</a> 
                             <span class="count">(21 films)</span>
                         </li>
+                        <li>
+                            <a href="{{ get_taxonomy_url(kind='authors', name='Fannie Hurst') }}">Fannie Hurst</a> 
+                            <span class="count">(10 films)</span>
+                        </li>
+                        <li>
+                            <a href="{{ get_taxonomy_url(kind='authors', name='Alice Hegan Rice') }}">Alice Hegan Rice</a> 
+                            <span class="count">(9 films)</span>
+                        </li>
+                        <li>
+                            <a href="{{ get_taxonomy_url(kind='authors', name='Edna Ferber') }}">Edna Ferber</a> 
+                            <span class="count">(8 films)</span>
+                        </li>
+                        <li>
+                            <a href="{{ get_taxonomy_url(kind='authors', name='Harriet Beecher Stowe') }}">Harriet Beecher Stowe</a> 
+                            <span class="count">(8 films)</span>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -90,7 +110,19 @@
         <div class="section">
             <h2 class="section-title">About This Project</h2>
             <div class="section-content">
-                <p>This research explores how the Hollywood studio system appropriated successful brands of regionalism and their audiences while also appropriating and augmenting particular modes of environmental and social activism. The films examined here demonstrate both the persistence and the problems of American literary regionalism as it transitioned from print to screen.</p>
+                <p>Hollywood Regionalism is about an overlooked chapter in American cultural history: how women's regional literature became national cinema across five decades.</p>
+
+<p>The site's mission is to build a resource that:</p>
+<ul>
+<li>Documents these significant but understudied film adaptations</li>
+
+<li>Connects researchers, students, and film enthusiasts with viewing opportunities</li>
+
+<li>Reveals how regional stories found their way to national audiences</li>
+
+<li>Expands our understanding of both literary regionalism and early Hollywood</li>
+</ul>
+<p>By preserving and examining this cultural legacy, Hollywood Regionalism illuminates how diverse American voices and experiences were translated from page to screen during a pivotal era in both literature and filmmaking.</p>
                 
                 <div class="project-links">
                     <a href="{{ get_url(path='@/about/_index.md') }}" class="cta-button">Learn More</a>

@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["First National"]
 eras = ["late silent"]
 genres = ["Drama"]
-availability = ["Lost"]
+survival = ["Lost"]
 directors = ["Charles Brabin"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Edna Ferber"
 director = "Charles Brabin"
 studio = "First National"
 setting = "Chicago"
-survival_status = "Lost"
+availability = "Lost"
 format = "Unknown"
 
 # Content flags
@@ -35,7 +35,7 @@ show_citation = true
 **Director:** Charles Brabin
 **Studio:** First National
 **Setting:** Chicago
-**Availability:** Lost
+**survival:** Lost
 
 ## Plot Summary
 

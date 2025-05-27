@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["Film Booking Office"]
 eras = ["late silent"]
 genres = ["Drama"]
-availability = ["Lost"]
+survival = ["Lost"]
 directors = ["James Leo Meehan"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Gene Stratton-Porter"
 director = "James Leo Meehan"
 studio = "Film Booking Office"
 setting = "Limberlost"
-survival_status = "Lost"
+availability = "Lost"
 format = "Unknown"
 
 # Content flags
@@ -35,7 +35,7 @@ show_citation = true
 **Director:** James Leo Meehan
 **Studio:** Film Booking Office
 **Setting:** Limberlost
-**Availability:** Lost
+**survival:** Lost
 
 ## Plot Summary
 

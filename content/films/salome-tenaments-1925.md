@@ -9,7 +9,7 @@ regions = ["Urban Northeast"]
 studios = ["Paramount"]
 eras = ["late silent"]
 genres = ["Drama"]
-availability = ["Lost"]
+survival = ["Lost"]
 directors = ["Sidney Olcott"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Anzia Yezierska"
 director = "Sidney Olcott"
 studio = "Paramount"
 setting = "NYC"
-survival_status = "Lost"
+availability = "Lost"
 format = "Unknown"
 
 # Content flags

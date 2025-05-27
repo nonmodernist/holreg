@@ -9,7 +9,7 @@ regions = ["Southern California"]
 studios = ["RKO"]
 eras = ["classical hollywood"]
 genres = ["Drama"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["George Stevens"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Kathryn Forbes"
 director = "George Stevens"
 studio = "RKO"
 setting = "northern california - SF"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags

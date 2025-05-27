@@ -9,7 +9,7 @@ regions = ["Urban Northeast"]
 studios = ["20th Century Fox"]
 eras = ["classical hollywood"]
 genres = ["Drama", "Romance"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["Elia Kazan"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Betty Smith"
 director = "Elia Kazan"
 studio = "20th Century Fox"
 setting = "NYC - brooklyn"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags

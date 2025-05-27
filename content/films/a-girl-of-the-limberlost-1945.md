@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["Columbia"]
 eras = ["classical hollywood"]
 genres = ["Drama"]
-availability = ["Unknown"]
+survival = ["Unknown"]
 directors = ["Mel Ferrer"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Gene Stratton-Porter"
 director = "Mel Ferrer"
 studio = "Columbia"
 setting = "Limberlost"
-survival_status = "Unknown"
+availability = "Unknown"
 format = "Unknown"
 
 # Content flags
@@ -35,7 +35,7 @@ show_citation = true
 **Director:** Mel Ferrer
 **Studio:** Columbia
 **Setting:** Limberlost
-**Availability:** Unknown
+**survival:** Unknown
 
 ## Plot Summary
 

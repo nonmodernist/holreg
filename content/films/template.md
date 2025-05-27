@@ -9,7 +9,7 @@ regions = ["REGION1", "REGION2"]
 studios = ["STUDIO"]
 eras = ["early silent", "late silent", "pre-code", "classical Hollywood", "studio system decline"]
 genres = ["Drama", "Romance"]
-availability = ["Unknown"]
+survival = ["Unknown"]
 directors = ["DIRECTOR"]
 
 [extra]
@@ -24,7 +24,7 @@ production_company = "PRODUCTION"
 distributor = "DISTRIBUTION"
 stars = ["STAR1", "STAR2"]
 setting = "SETTING"
-survival_status = "Unknown"
+availability = "Unknown"
 duration = "Unknown"
 format = "Silent, B&W"
 filming_locations = ["LOCATION"]

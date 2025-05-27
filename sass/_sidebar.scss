@@ -147,17 +147,17 @@
       font-family: $sans-serif;
       font-size: $font-size-base;
       font-weight: 600;
-      color: $color-accent-purple;
+      color: $color-accent-blue;
       text-decoration: none;
       padding: $spacing-xs $spacing-sm;
-      background-color: rgba($color-accent-purple, 0.1);
+      background-color: rgba($color-accent-blue, 0.1);
       border-radius: 4px;
       text-transform: uppercase;
       letter-spacing: 0.05em;
       transition: all 0.3s ease;
       
       &:hover {
-        background-color: $color-accent-purple;
+        background-color: $color-accent-blue;
         color: white;
       }
       

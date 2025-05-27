@@ -9,7 +9,7 @@ regions = ["Southern California"]
 studios = ["Monogram"]
 eras = ["classical hollywood"]
 genres = ["Drama"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["Christy Cabanne"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Gene Stratton-Porter"
 director = "Christy Cabanne"
 studio = "Monogram"
 setting = "Southern California"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags

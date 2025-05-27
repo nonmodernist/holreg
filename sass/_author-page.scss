@@ -1,4 +1,4 @@
-// Author page specific styles
+// Enhanced Author page with visual statistics and expandable filmography
 .author-page {
   .content-wrapper {
     display: grid;
@@ -31,7 +31,7 @@
       font-family: $sans-serif;
       font-size: $font-size-xl;
       font-weight: 600;
-      color: $color-accent;
+      color: $color-accent-secondary;
       margin-bottom: $spacing-md;
       letter-spacing: 0.05em;
     }
@@ -44,12 +44,224 @@
       font-style: italic;
       
       .contributor-name {
-        color: $color-accent;
+        color: $color-accent-tertiary;
         font-weight: 600;
       }
     }
     
-    // Text content styling
+    // Jump-to navigation for long pages
+    .page-navigation {
+      background: linear-gradient(135deg, rgba($color-accent-tertiary, 0.05) 0%, rgba($color-accent-secondary, 0.05) 100%);
+      border: 1px solid rgba($color-accent-tertiary, 0.2);
+      border-radius: 12px;
+      padding: $spacing-lg;
+      margin-bottom: $spacing-xxl;
+      
+      .nav-title {
+        font-family: $sans-serif;
+        font-size: $font-size-sm;
+        font-weight: 700;
+        color: $color-primary;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        margin-bottom: $spacing-md;
+        display: flex;
+        align-items: center;
+        
+        &::before {
+          content: "🧭";
+          margin-right: $spacing-sm;
+        }
+      }
+      
+      .nav-links {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: $spacing-sm;
+        
+        .nav-link {
+          font-family: $sans-serif;
+          font-size: $font-size-sm;
+          font-weight: 500;
+          color: $color-accent-tertiary;
+          background-color: white;
+          border: 1px solid rgba($color-accent-tertiary, 0.3);
+          padding: $spacing-sm $spacing-md;
+          border-radius: 8px;
+          text-decoration: none;
+          transition: all 0.3s ease;
+          text-align: center;
+          
+          &:hover {
+            background-color: $color-accent-tertiary;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba($color-accent-tertiary, 0.3);
+          }
+        }
+      }
+    }
+    
+    // Enhanced film statistics with visual elements
+    .film-statistics {
+      background: linear-gradient(135deg, $color-background-alt 0%, rgba($color-accent-secondary, 0.05) 100%);
+      border-radius: 16px;
+      padding: $spacing-xxl;
+      margin: $spacing-xxl 0;
+      border: 1px solid rgba($color-accent-secondary, 0.2);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      
+      .stats-title {
+        font-family: $serif-primary;
+        font-size: $font-size-2xl;
+        font-weight: 600;
+        color: $color-primary;
+        margin-bottom: $spacing-xl;
+        text-align: center;
+        position: relative;
+        
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: -$spacing-sm;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 60px;
+          height: 3px;
+          background: linear-gradient(90deg, $color-accent-secondary 0%, $color-accent-tertiary 100%);
+          border-radius: 2px;
+        }
+      }
+      
+      .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        gap: $spacing-lg;
+        margin-bottom: $spacing-xl;
+        
+        .stat-card {
+          background: white;
+          border: 1px solid rgba($color-accent-secondary, 0.2);
+          border-radius: 12px;
+          padding: $spacing-lg;
+          text-align: center;
+          transition: all 0.3s ease;
+          position: relative;
+          overflow: hidden;
+          
+          &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, $color-accent 0%, $color-accent-secondary 50%, $color-accent-tertiary 100%);
+          }
+          
+          &:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba($color-accent-secondary, 0.2);
+            border-color: $color-accent-secondary;
+          }
+          
+          .stat-number {
+            display: block;
+            font-family: $serif-primary;
+            font-size: $font-size-3xl;
+            font-weight: 700;
+            color: $color-accent;
+            line-height: 1;
+            margin-bottom: $spacing-sm;
+            
+            &.large {
+              font-size: $font-size-4xl;
+              color: $color-accent-secondary;
+            }
+          }
+          
+          .stat-label {
+            font-family: $sans-serif;
+            font-size: $font-size-sm;
+            font-weight: 600;
+            color: $color-text-light;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            line-height: 1.2;
+          }
+          
+          .stat-sublabel {
+            font-family: $sans-serif;
+            font-size: $font-size-xs;
+            color: $color-text-muted;
+            margin-top: $spacing-xs;
+            font-style: italic;
+          }
+        }
+      }
+      
+      // Visual timeline for adaptation span
+      .adaptation-timeline {
+        background: white;
+        border-radius: 8px;
+        padding: $spacing-lg;
+        border: 1px solid rgba($color-accent-tertiary, 0.2);
+        
+        .timeline-title {
+          font-family: $sans-serif;
+          font-size: $font-size-base;
+          font-weight: 600;
+          color: $color-primary;
+          margin-bottom: $spacing-md;
+          text-align: center;
+        }
+        
+        .timeline-bar {
+          height: 8px;
+          background: linear-gradient(90deg, 
+            $color-accent 0%, 
+            $color-accent-secondary 30%, 
+            $color-accent-tertiary 70%, 
+            $color-accent-quaternary 100%);
+          border-radius: 4px;
+          position: relative;
+          margin: $spacing-md 0;
+          
+          &::before,
+          &::after {
+            content: '';
+            position: absolute;
+            top: -4px;
+            width: 16px;
+            height: 16px;
+            background: $color-accent;
+            border-radius: 50%;
+            border: 2px solid white;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+          }
+          
+          &::before {
+            left: -8px;
+          }
+          
+          &::after {
+            right: -8px;
+            background: $color-accent-tertiary;
+          }
+        }
+        
+        .timeline-labels {
+          display: flex;
+          justify-content: space-between;
+          font-family: $sans-serif;
+          font-size: $font-size-sm;
+          font-weight: 600;
+          color: $color-text-light;
+        }
+      }
+    }
+    
+    // Text content styling with pull quotes
     .content-body {
       font-size: $font-size-lg;
       line-height: 1.7;
@@ -64,8 +276,40 @@
           line-height: 0.8;
           float: left;
           margin: 0.1em 0.1em 0 0;
-          color: $color-accent;
+          color: $color-accent-secondary;
           font-weight: 700;
+        }
+      }
+      
+      // Enhanced pull quotes
+      .pull-quote {
+        font-family: $serif-primary;
+        font-size: $font-size-xl;
+        font-style: italic;
+        line-height: $line-height-normal;
+        color: $color-accent;
+        margin: $spacing-xxl 0;
+        padding: $spacing-xl;
+        background: linear-gradient(135deg, rgba($color-accent-secondary, 0.08) 0%, rgba($color-accent-tertiary, 0.08) 100%);
+        border-left: 6px solid $color-accent-secondary;
+        border-radius: 0 12px 12px 0;
+        position: relative;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        
+        &::before {
+          content: '"';
+          font-size: $font-size-6xl;
+          color: rgba($color-accent-secondary, 0.3);
+          position: absolute;
+          top: $spacing-sm;
+          left: $spacing-lg;
+          line-height: 1;
+          font-weight: 700;
+        }
+        
+        p {
+          margin: 0;
+          padding-left: $spacing-xl;
         }
       }
       
@@ -73,12 +317,161 @@
         font-style: italic;
         margin: $spacing-xl 0;
         padding: $spacing-lg;
-        background-color: rgba($color-accent, 0.05);
-        border-left: 4px solid $color-accent;
+        background-color: rgba($color-accent-tertiary, 0.05);
+        border-left: 4px solid $color-accent-tertiary;
         font-size: $font-size-base;
+        border-radius: 0 8px 8px 0;
         
         p:last-child {
           margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+// Enhanced expandable filmography sections
+.section.filmography {
+  .filmography-container {
+    .filmography-section {
+      margin-bottom: $spacing-xxl;
+      
+      .section-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: linear-gradient(135deg, rgba($color-accent, 0.05) 0%, rgba($color-accent-secondary, 0.05) 100%);
+        padding: $spacing-lg $spacing-xl;
+        border-radius: 12px;
+        border: 1px solid rgba($color-accent, 0.2);
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin-bottom: $spacing-md;
+        
+        &:hover {
+          background: linear-gradient(135deg, rgba($color-accent, 0.08) 0%, rgba($color-accent-secondary, 0.08) 100%);
+          border-color: rgba($color-accent, 0.4);
+          transform: translateY(-2px);
+          box-shadow: 0 6px 20px rgba($color-accent, 0.15);
+        }
+        
+        h3 {
+          font-family: $serif-primary;
+          font-size: $font-size-xl;
+          font-weight: 600;
+          color: $color-primary;
+          margin: 0;
+          display: flex;
+          align-items: center;
+          
+          .film-count {
+            font-family: $sans-serif;
+            font-size: $font-size-sm;
+            font-weight: 700;
+            color: $color-accent-secondary;
+            background: rgba($color-accent-secondary, 0.1);
+            padding: $spacing-xs $spacing-sm;
+            border-radius: 12px;
+            margin-left: $spacing-md;
+          }
+        }
+        
+        .expand-icon {
+          font-size: $font-size-xl;
+          color: $color-accent;
+          transition: transform 0.3s ease;
+          
+          &.expanded {
+            transform: rotate(180deg);
+          }
+        }
+      }
+      
+      .filmography-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.4s ease;
+        
+        &.expanded {
+          max-height: 2000px;
+          margin-bottom: $spacing-lg;
+        }
+        
+        .film-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          gap: $spacing-lg;
+          padding: $spacing-lg 0;
+        }
+        
+        .film-entry {
+          background: white;
+          border: 1px solid $color-border;
+          border-radius: 8px;
+          padding: $spacing-lg;
+          transition: all 0.3s ease;
+          position: relative;
+          overflow: hidden;
+          
+          &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(180deg, $color-accent 0%, $color-accent-secondary 100%);
+          }
+          
+          &:hover {
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+            border-color: $color-accent-secondary;
+          }
+          
+          .film-title {
+            font-family: $serif-primary;
+            font-size: $font-size-lg;
+            font-weight: 600;
+            color: $color-primary;
+            margin-bottom: $spacing-sm;
+            font-style: italic;
+          }
+          
+          .film-details {
+            font-family: $sans-serif;
+            font-size: $font-size-sm;
+            color: $color-text;
+            line-height: 1.5;
+            
+            .film-year {
+              font-weight: 700;
+              color: $color-accent-secondary;
+            }
+            
+            .film-status {
+              display: inline-block;
+              padding: $spacing-xs $spacing-sm;
+              border-radius: 12px;
+              font-size: $font-size-xs;
+              font-weight: 700;
+              text-transform: uppercase;
+              letter-spacing: 0.05em;
+              margin-top: $spacing-sm;
+              
+              &.extant {
+                background: rgba($color-success, 0.1);
+                color: $color-success;
+                border: 1px solid rgba($color-success, 0.3);
+              }
+              
+              &.lost {
+                background: rgba($color-error, 0.1);
+                color: $color-error;
+                border: 1px solid rgba($color-error, 0.3);
+              }
+            }
+          }
         }
       }
     }

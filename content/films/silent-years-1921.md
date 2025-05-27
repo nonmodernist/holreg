@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["R-C Pictures"]
 eras = ["late silent"]
 genres = ["Melodrama"]
-availability = ["Lost"]
+survival = ["Lost"]
 directors = ["Louis Gasnier"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Harriet Comstock"
 director = "Louis Gasnier"
 studio = "R-C Pictures"
 setting = "St. Lawrence River Valley - NY"
-survival_status = "Lost"
+availability = "Lost"
 format = "Unknown"
 
 # Content flags

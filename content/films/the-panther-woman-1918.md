@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["Petrova Picture Company"]
 eras = ["early silent"]
 genres = ["Drama"]
-availability = ["Lost"]
+survival = ["Lost"]
 directors = ["Ralph Ince"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Gertrude Atherton"
 director = "Ralph Ince"
 studio = "Petrova Picture Company"
 setting = "Monterey, CA (coastal central CA)"
-survival_status = "Lost"
+availability = "Lost"
 format = "Unknown"
 
 # Content flags
@@ -35,7 +35,7 @@ show_citation = true
 **Director:** Ralph Ince
 **Studio:** Petrova Picture Company
 **Setting:** Monterey, CA (coastal central CA)
-**Availability:** Lost
+**survival:** Lost
 
 ## Plot Summary
 

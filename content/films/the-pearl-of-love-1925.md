@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["Paul W. Whitcombe Productions"]
 eras = ["late silent"]
 genres = ["Melodrama"]
-availability = ["Lost"]
+survival = ["Lost"]
 directors = ["Leon E. Danmun"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Harriet Beecher Stowe"
 director = "Leon E. Danmun"
 studio = "Paul W. Whitcombe Productions"
 setting = "Maine - coastal"
-survival_status = "Lost"
+availability = "Lost"
 format = "Unknown"
 
 # Content flags

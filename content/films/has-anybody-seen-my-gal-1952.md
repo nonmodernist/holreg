@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["Universal"]
 eras = ["studio system decline"]
 genres = ["Comedy"]
-availability = ["Unknown"]
+survival = ["Unknown"]
 directors = ["Douglas Sirk"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Eleanor H. Porter"
 director = "Douglas Sirk"
 studio = "Universal"
 setting = "Vermont"
-survival_status = "Unknown"
+availability = "Unknown"
 format = "Unknown"
 
 # Content flags

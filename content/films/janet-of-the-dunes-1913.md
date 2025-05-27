@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["Edison Company"]
 eras = ["early silent"]
 genres = ["Drama"]
-availability = ["Unknown"]
+survival = ["Unknown"]
 directors = ["Richard Ridgely"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Harriet Comstock"
 director = "Richard Ridgely"
 studio = "Edison Company"
 setting = "northeast atlantic coast - Long Island"
-survival_status = "Unknown"
+availability = "Unknown"
 format = "Unknown"
 
 # Content flags

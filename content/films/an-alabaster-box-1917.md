@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["Vitagraph"]
 eras = ["early silent"]
 genres = ["Drama"]
-availability = ["Lost"]
+survival = ["Lost"]
 directors = ["Chester Withey"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Mary Wilkins Freeman"
 director = "Chester Withey"
 studio = "Vitagraph"
 setting = "New England"
-survival_status = "Lost"
+availability = "Lost"
 format = "Unknown"
 
 # Content flags

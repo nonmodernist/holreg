@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["Universal"]
 eras = ["early silent"]
 genres = ["Drama"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["Joseph De Grasse"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Harriet Comstock"
 director = "Joseph De Grasse"
 studio = "Universal"
 setting = "St. Lawrence River Valley - Kenmore, Canada"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags

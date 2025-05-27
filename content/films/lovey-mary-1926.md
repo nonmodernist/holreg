@@ -9,7 +9,7 @@ regions = ["Appalachian Kentucky"]
 studios = ["MGM"]
 eras = ["late silent"]
 genres = ["Comedy", "Drama"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["King Baggot"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Alice Hegan Rice"
 director = "King Baggot"
 studio = "MGM"
 setting = "Kentucky"
-survival_status = "Incomplete"
+availability = "Incomplete"
 format = "Unknown"
 
 # Content flags
@@ -35,7 +35,7 @@ show_citation = true
 **Director:** King Baggot
 **Studio:** MGM
 **Setting:** Kentucky
-**Availability:** Incomplete
+**survival:** Incomplete
 
 ## Plot Summary
 

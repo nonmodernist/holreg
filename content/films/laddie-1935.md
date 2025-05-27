@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["RKO"]
 eras = ["classical hollywood"]
 genres = ["Comedy", "Drama"]
-availability = ["Unknown"]
+survival = ["Unknown"]
 directors = ["George Stevens"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Gene Stratton-Porter"
 director = "George Stevens"
 studio = "RKO"
 setting = "Limberlost"
-survival_status = "Unknown"
+availability = "Unknown"
 format = "Unknown"
 
 # Content flags
@@ -35,7 +35,7 @@ show_citation = true
 **Director:** George Stevens
 **Studio:** RKO
 **Setting:** Limberlost
-**Availability:** Unknown
+**survival:** Unknown
 
 ## Plot Summary
 

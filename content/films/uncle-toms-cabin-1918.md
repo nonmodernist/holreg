@@ -9,7 +9,7 @@ regions = ["Deep South"]
 studios = ["Famous Players-Lasky"]
 eras = ["early silent"]
 genres = ["Drama"]
-availability = ["Lost"]
+survival = ["Lost"]
 directors = ["J. Searle Dawley"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Harriet Beecher Stowe"
 director = "J. Searle Dawley"
 studio = "Famous Players-Lasky"
 setting = "Deep South"
-survival_status = "Lost"
+availability = "Lost"
 format = "Unknown"
 
 # Content flags
@@ -35,7 +35,7 @@ show_citation = true
 **Director:** J. Searle Dawley
 **Studio:** Famous Players-Lasky
 **Setting:** Deep South
-**Availability:** Lost
+**survival:** Lost
 
 ## Plot Summary
 

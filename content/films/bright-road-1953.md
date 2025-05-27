@@ -9,7 +9,7 @@ regions = ["Deep South"]
 studios = ["MGM"]
 eras = ["studio system decline"]
 genres = ["Drama"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["Gerald Mayer"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Mary Elizabeth Vroman"
 director = "Gerald Mayer"
 studio = "MGM"
 setting = "Deep South"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags

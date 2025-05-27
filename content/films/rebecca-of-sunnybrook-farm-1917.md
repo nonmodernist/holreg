@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["Mary Pickford Company"]
 eras = ["early silent"]
 genres = ["Drama"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["Marshall Neilan"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Kate Douglas Wiggin"
 director = "Marshall Neilan"
 studio = "Mary Pickford Company"
 setting = "Maine"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags

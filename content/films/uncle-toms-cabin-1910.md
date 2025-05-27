@@ -9,7 +9,7 @@ regions = ["Deep South"]
 studios = ["Thanhauser"]
 eras = ["early silent"]
 genres = ["Drama"]
-availability = ["Lost"]
+survival = ["Lost"]
 directors = ["Barry O'Neil"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Harriet Beecher Stowe"
 director = "Barry O'Neil"
 studio = "Thanhauser"
 setting = "Deep South"
-survival_status = "Lost"
+availability = "Lost"
 format = "Unknown"
 
 # Content flags
@@ -35,7 +35,7 @@ show_citation = true
 **Director:** Barry O'Neil
 **Studio:** Thanhauser
 **Setting:** Deep South
-**Availability:** Lost
+**survival:** Lost
 
 ## Plot Summary
 

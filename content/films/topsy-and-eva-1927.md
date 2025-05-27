@@ -9,7 +9,7 @@ regions = ["Deep South"]
 studios = ["Feature Productions/United Artists"]
 eras = ["late silent"]
 genres = ["Drama"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["Del Lord"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Harriet Beecher Stowe"
 director = "Del Lord"
 studio = "Feature Productions/United Artists"
 setting = "Deep South"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags
@@ -35,7 +35,7 @@ show_citation = true
 **Director:** Del Lord
 **Studio:** Feature Productions/United Artists
 **Setting:** Deep South
-**Availability:** Survives
+**survival:** Survives
 
 ## Plot Summary
 

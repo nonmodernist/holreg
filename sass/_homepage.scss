@@ -14,37 +14,47 @@ main {
 .homepage {
   .hero {
     text-align: center;
-    padding: $spacing-xxl * 2 0;
+    padding: $spacing-xs 0;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: $spacing-xxl;
     
+    
+  
     .hero-title {
       font-family: $serif-primary;
       font-size: clamp($font-size-3xl, 5vw, 4rem);
       font-weight: 700;
       color: $color-primary;
       margin-bottom: $spacing-lg;
-      line-height: 1.2;
+      line-height: 1;
+      text-align: left;
+      margin-left: auto;
+      margin-right: auto;
       letter-spacing: -0.03em;
     }
     
     .hero-subtitle {
       font-family: $serif-secondary;
-      font-size: $font-size-xl;
-      color: $color-text-light;
+      font-size: $font-size-2xl;
+      color: $color-text;
       font-style: italic;
       margin-bottom: $spacing-xl;
-      max-width: 800px;
+      max-width: 700px;
       margin-left: auto;
       margin-right: auto;
       line-height: 1.5;
+      text-align: justify;
     }
     
     .hero-description {
       font-size: $font-size-lg;
       line-height: 1.8;
       color: $color-text;
-      max-width: 900px;
+      max-width: 700px;
       margin: 0 auto $spacing-xxl auto;
+      text-align: justify;
     }
     
     // Enhanced Hero Stats

@@ -1,0 +1,436 @@
+{% extends "base.html" %}
+
+{% block content %}
+<article class="author-page">
+    <div class="content-wrapper">
+        <div class="main-content">
+            <h1 class="author-title">{{ page.title }}</h1>
+            
+            {% if page.extra.author_dates %}
+            <div class="author-dates">({{ page.extra.author_dates }})</div>
+            {% endif %}
+            
+            {% if page.extra.author_byline %}
+            <div class="author-byline">
+                by <span class="contributor-name">{{ page.extra.author_byline }}</span>
+            </div>
+            {% endif %}
+
+            <!-- Jump-to Navigation for Long Pages -->
+            <nav class="page-navigation" id="page-nav">
+                <div class="nav-title">Quick Navigation</div>
+                <div class="nav-links">
+                    <a href="#biography" class="nav-link">Biography</a>
+                    {% if page.extra.show_filmography %}<a href="#film-stats" class="nav-link">Film Statistics</a>{% endif %}
+                    {% if page.extra.show_filmography %}<a href="#filmography" class="nav-link">Complete Filmography</a>{% endif %}
+                    {% if page.extra.show_citation %}<a href="#citation" class="nav-link">Citation</a>{% endif %}
+                </div>
+            </nav>
+
+            <!-- Visual Film Statistics Section -->
+            {% if page.extra.film_stats %}
+            <div class="film-statistics" id="film-stats">
+                <h2 class="stats-title">Film Adaptation Overview</h2>
+                
+                <div class="stats-grid">
+                    {% if page.extra.film_stats.total_adaptations %}
+                    <div class="stat-card">
+                        <span class="stat-number large">{{ page.extra.film_stats.total_adaptations }}</span>
+                        <span class="stat-label">Total Films</span>
+                        <div class="stat-sublabel">1917-1960</div>
+                    </div>
+                    {% endif %}
+                    
+                    {% if page.extra.film_stats.surviving_films %}
+                    <div class="stat-card">
+                        <span class="stat-number">{{ page.extra.film_stats.surviving_films }}</span>
+                        <span class="stat-label">Surviving</span>
+                        <div class="stat-sublabel">Available Today</div>
+                    </div>
+                    {% endif %}
+                    
+                    {% if page.extra.film_stats.total_adaptations and page.extra.film_stats.surviving_films %}
+                    <div class="stat-card">
+                        <span class="stat-number">{{ page.extra.film_stats.total_adaptations | int - page.extra.film_stats.surviving_films | int }}</span>
+                        <span class="stat-label">Lost Films</span>
+                        <div class="stat-sublabel">No Longer Extant</div>
+                    </div>
+                    {% endif %}
+                    
+                    {% if page.extra.film_stats.studios %}
+                    <div class="stat-card">
+                        <span class="stat-number">{{ page.extra.film_stats.studios | length }}</span>
+                        <span class="stat-label">Studios</span>
+                        <div class="stat-sublabel">Major Producers</div>
+                    </div>
+                    {% endif %}
+                </div>
+                
+                <!-- Visual Timeline -->
+                {% if page.extra.film_stats.adaptation_span %}
+                <div class="adaptation-timeline">
+                    <div class="timeline-title">Adaptation Period</div>
+                    <div class="timeline-bar"></div>
+                    <div class="timeline-labels">
+                        <span>1917</span>
+                        <span>{{ page.extra.film_stats.adaptation_span }}</span>
+                        <span>1960</span>
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+            {% endif %}
+
+            <!-- Main Biography Content -->
+            <div class="section" id="biography">
+                <div class="content-body">
+                    {{ page.content | safe }}
+                </div>
+            </div>
+
+            <!-- Enhanced Expandable Filmography Section -->
+            {% if page.extra.show_filmography %}
+            <div class="section filmography" id="filmography">
+                <h2 class="section-title">Complete Filmography</h2>
+                <div class="filmography-container">
+                    
+                    <!-- Extant Adaptations -->
+                    {% if page.extra.extant_adaptations %}
+                    <div class="filmography-section">
+                        <div class="section-header" onclick="toggleSection('extant-section')">
+                            <h3>
+                                Surviving Films
+                                <span class="film-count">{{ page.extra.extant_adaptations | length }}</span>
+                            </h3>
+                            <span class="expand-icon" id="extant-icon">▼</span>
+                        </div>
+                        <div class="filmography-content expanded" id="extant-section">
+                            <div class="film-grid">
+                                {% for film in page.extra.extant_adaptations %}
+                                <div class="film-entry">
+                                    <div class="film-title">{{ film.title }}</div>
+                                    <div class="film-details">
+                                        <span class="film-year">{{ film.year }}</span> • 
+                                        Dir: {{ film.director }}<br>
+                                        {{ film.studio }} • {{ film.format }}<br>
+                                        {% if film.availability %}<strong>Availability:</strong> {{ film.availability }}{% endif %}
+                                        <div class="film-status extant">Available</div>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+                    
+                    <!-- Lost Adaptations -->
+                    {% if page.extra.lost_adaptations %}
+                    <div class="filmography-section">
+                        <div class="section-header" onclick="toggleSection('lost-section')">
+                            <h3>
+                                Lost Films
+                                <span class="film-count">{{ page.extra.lost_adaptations | length }}</span>
+                            </h3>
+                            <span class="expand-icon" id="lost-icon">▼</span>
+                        </div>
+                        <div class="filmography-content" id="lost-section">
+                            <div class="film-grid">
+                                {% for film in page.extra.lost_adaptations %}
+                                <div class="film-entry">
+                                    <div class="film-title">{{ film.title }}</div>
+                                    <div class="film-details">
+                                        <span class="film-year">{{ film.year }}</span> • 
+                                        Dir: {{ film.director }}<br>
+                                        {{ film.studio }} • {{ film.format }}
+                                        <div class="film-status lost">Lost</div>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+                    
+                    <!-- TV and Later Adaptations -->
+                    {% if page.extra.tv_adaptations %}
+                    <div class="filmography-section">
+                        <div class="section-header" onclick="toggleSection('tv-section')">
+                            <h3>
+                                Television & Later Adaptations
+                                <span class="film-count">{{ page.extra.tv_adaptations | length }}</span>
+                            </h3>
+                            <span class="expand-icon" id="tv-icon">▼</span>
+                        </div>
+                        <div class="filmography-content" id="tv-section">
+                            <div class="film-grid">
+                                {% for film in page.extra.tv_adaptations %}
+                                <div class="film-entry">
+                                    <div class="film-title">{{ film.title }}</div>
+                                    <div class="film-details">
+                                        <span class="film-year">{{ film.year }}</span> • 
+                                        Dir: {{ film.director }}<br>
+                                        {{ film.network_or_studio }} • {{ film.format }}<br>
+                                        {% if film.availability %}<strong>Availability:</strong> {{ film.availability }}{% endif %}
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+                    
+                    <!-- DVD and Digital Sources -->
+                    {% if page.extra.dvd_sources %}
+                    <div class="filmography-section">
+                        <div class="section-header" onclick="toggleSection('sources-section')">
+                            <h3>
+                                DVD & Digital Sources
+                                <span class="film-count">{{ page.extra.dvd_sources | length }}</span>
+                            </h3>
+                            <span class="expand-icon" id="sources-icon">▼</span>
+                        </div>
+                        <div class="filmography-content" id="sources-section">
+                            {% for dvd in page.extra.dvd_sources %}
+                            <div class="dvd-entry">
+                                <div class="dvd-title">{{ dvd.title }}</div>
+                                <div>{{ dvd.details }}</div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% endif %}
+                    
+                    <!-- Archive Collections -->
+                    {% if page.extra.archive_collections %}
+                    <div class="filmography-section">
+                        <div class="section-header" onclick="toggleSection('archives-section')">
+                            <h3>
+                                Archival Collections
+                                <span class="film-count">{{ page.extra.archive_collections | length }}</span>
+                            </h3>
+                            <span class="expand-icon" id="archives-icon">▼</span>
+                        </div>
+                        <div class="filmography-content" id="archives-section">
+                            {% for collection in page.extra.archive_collections %}
+                            <div class="archive-entry">
+                                <div class="archive-name">{{ collection.title }}</div>
+                                <div class="archive-details">{{ collection.details }}</div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+            {% endif %}
+
+            <!-- Citation Section -->
+            {% if page.extra.show_citation %}
+            <div class="section citation" id="citation">
+                <h2 class="section-title">How to Cite This Page</h2>
+                <div class="section-content">
+                    <p class="citation-text">
+                        {% if page.extra.author_byline %}{{ page.extra.author_byline }}. {% endif %}"{{ page.title }}." In <i>{{ config.title }}: A Digital Archive of Film Adaptations from American Women's Regional Literature, 1910-1961</i>. Web. Accessed [DATE]. &lt;{{ page.permalink }}&gt;
+                    </p>
+                </div>
+            </div>
+            {% endif %}
+
+            <!-- Related Films Section -->
+            {% if page.extra.show_related_films %}
+            <div class="section">
+                <div class="section-title">Films Adapted from {{ page.title }}'s Work</div>
+                <div class="grid grid-2">
+                    {% set author_name = page.title %}
+                    {% set author_taxonomy = get_taxonomy(kind="authors", name=author_name) %}
+                    {% if author_taxonomy and author_taxonomy.pages %}
+                        {% for film_page in author_taxonomy.pages %}
+                        <div class="card">
+                            <h3 class="card-title">
+                                <a href="{{ film_page.permalink }}">{{ film_page.title }}</a>
+                            </h3>
+                            <div class="card-meta">
+                                {{ film_page.extra.year }}
+                                {% if film_page.extra.director %}<span class="separator">•</span>{{ film_page.extra.director }}{% endif %}
+                                {% if film_page.extra.studio %}<span class="separator">•</span>{{ film_page.extra.studio }}{% endif %}
+                            </div>
+                            {% if film_page.extra.survival_status %}
+                            <div style="margin: 1rem 0;">
+                                <span class="status {{ film_page.extra.survival_status | lower }}">
+                                    {{ film_page.extra.survival_status }}
+                                </span>
+                            </div>
+                            {% endif %}
+                            {% if film_page.summary %}
+                            <div class="card-content">{{ film_page.summary }}</div>
+                            {% endif %}
+                        </div>
+                        {% endfor %}
+                    {% else %}
+                        <div>No related films found.</div>
+                    {% endif %}
+                </div>
+            </div>
+            {% endif %}
+        </div>
+
+        <!-- Enhanced Author sidebar -->
+        <aside class="author-sidebar">
+            <!-- Action links -->
+            <div class="action-links">
+                {% if page.extra.show_filmography %}<a href="#filmography">Filmography</a>{% endif %}
+                {% if page.extra.show_citation %}<a href="#citation" class="citation">Citation</a>{% endif %}
+                <a href="javascript:window.print()" class="print">Print</a>
+            </div>
+
+            <!-- Author portrait if available -->
+            {% if page.extra.author_image %}
+            <div class="author-image-container">
+                <img src="{{ page.extra.author_image.url }}" alt="{{ page.extra.author_image.alt | default(value=page.title) }}">
+                {% if page.extra.author_image.caption %}
+                <div class="image-caption">{{ page.extra.author_image.caption }}</div>
+                {% endif %}
+            </div>
+            {% endif %}
+
+            <!-- Author biographical details -->
+            {% if page.extra %}
+            <div class="metadata-box">
+                <h3>Biographical Details</h3>
+                
+                {% if page.extra.birth_date or page.extra.death_date %}
+                <div class="metadata-item">
+                    <span class="label">Lived</span>
+                    <div class="value">
+                        {% if page.extra.birth_date %}{{ page.extra.birth_date }}{% endif %}
+                        {% if page.extra.birth_date and page.extra.death_date %} - {% endif %}
+                        {% if page.extra.death_date %}{{ page.extra.death_date }}{% endif %}
+                    </div>
+                </div>
+                {% endif %}
+                
+                {% if page.extra.occupation %}
+                <div class="metadata-item">
+                    <span class="label">Worked as</span>
+                    <div class="value">
+                        {% for job in page.extra.occupation %}
+                            <span class="occupation-tag">{{ job }}</span>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endif %}
+                
+                {% if page.extra.locations %}
+                <div class="metadata-item">
+                    <span class="label">Worked in</span>
+                    <div class="value">
+                        {% for location in page.extra.locations %}
+                            {{ location }}{% if not loop.last %}<br>{% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endif %}
+                
+                {% if page.extra.notable_works %}
+                <div class="metadata-item">
+                    <span class="label">Notable Works</span>
+                    <div class="value">
+                        {% for work in page.extra.notable_works %}
+                            <em>{{ work.title }}</em> ({{ work.year }}){% if not loop.last %}<br>{% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+            
+            <!-- Enhanced Film statistics in sidebar -->
+            {% if page.extra.film_stats %}
+            <div class="metadata-box">
+                <h3>Film Adaptations Summary</h3>
+                
+                {% if page.extra.film_stats.total_adaptations %}
+                <div class="metadata-item">
+                    <span class="label">Total Films</span>
+                    <div class="value year-value">{{ page.extra.film_stats.total_adaptations }}</div>
+                </div>
+                {% endif %}
+                
+                {% if page.extra.film_stats.surviving_films %}
+                <div class="metadata-item">
+                    <span class="label">Surviving</span>
+                    <div class="value">{{ page.extra.film_stats.surviving_films }}</div>
+                </div>
+                {% endif %}
+                
+                {% if page.extra.film_stats.adaptation_span %}
+                <div class="metadata-item">
+                    <span class="label">Period</span>
+                    <div class="value">{{ page.extra.film_stats.adaptation_span }}</div>
+                </div>
+                {% endif %}
+                
+                {% if page.extra.film_stats.studios %}
+                <div class="metadata-item">
+                    <span class="label">Major Studios</span>
+                    <div class="value">
+                        {% for studio in page.extra.film_stats.studios %}
+                            {{ studio }}{% if not loop.last %}, {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+            {% endif %}
+            {% endif %}
+        </aside>
+    </div>
+</article>
+
+<script>
+// Enhanced JavaScript for expandable sections and smooth scrolling
+document.addEventListener('DOMContentLoaded', function() {
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('.nav-link, .action-links a[href^="#"]').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({ 
+                    behavior: 'smooth', 
+                    block: 'start',
+                    inline: 'nearest'
+                });
+            }
+        });
+    });
+    
+    // Auto-expand first filmography section
+    const firstSection = document.querySelector('.filmography-content');
+    if (firstSection && !firstSection.classList.contains('expanded')) {
+        firstSection.classList.add('expanded');
+    }
+});
+
+// Toggle function for expandable filmography sections
+function toggleSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    const icon = document.getElementById(sectionId.replace('-section', '-icon'));
+    
+    if (section && icon) {
+        section.classList.toggle('expanded');
+        icon.classList.toggle('expanded');
+        
+        // Smooth scroll to section if expanding
+        if (section.classList.contains('expanded')) {
+            setTimeout(() => {
+                section.scrollIntoView({ 
+                    behavior: 'smooth', 
+                    block: 'nearest' 
+                });
+            }, 200);
+        }
+    }
+}
+</script>
+
+{% endblock content %}

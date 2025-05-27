@@ -9,7 +9,7 @@ regions = ["Limberlost Indiana", "Rural Midwest"]
 studios = ["Paramount Pictures"]
 eras = ["early silent"]
 genres = ["Drama", "Romance"]
-availability = ["Lost"]
+survival = ["Lost"]
 directors = ["Marshall Neilan"]
 
 [extra]
@@ -25,7 +25,7 @@ production_company = "Lasky-Paramount"
 distributor = "Paramount Pictures"
 stars = ["Jack Pickford", "Louise Huff"]
 setting = "Limberlost Swamp, Indiana"
-survival_status = "Lost"
+availability = "Lost"
 duration = "Unknown"
 format = "Silent, B&W"
 filming_locations = ["Southern California (standing in for Indiana)"]

@@ -9,7 +9,7 @@ regions = ["Urban Northeast"]
 studios = ["Cosmopolitan Productions"]
 eras = ["early silent"]
 genres = ["Drama"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["Frank Borzage"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Fannie Hurst"
 director = "Frank Borzage"
 studio = "Cosmopolitan Productions"
 setting = "NYC"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags

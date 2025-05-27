@@ -9,7 +9,7 @@ regions = ["Southern California"]
 studios = ["Metro Pictures"]
 eras = ["early silent"]
 genres = ["Drama"]
-availability = ["Unknown"]
+survival = ["Unknown"]
 directors = ["Edwin Carewe"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Mary Wilkins Freeman"
 director = "Edwin Carewe"
 studio = "Metro Pictures"
 setting = "Northern California"
-survival_status = "Unknown"
+availability = "Unknown"
 format = "Unknown"
 
 # Content flags
@@ -35,7 +35,7 @@ show_citation = true
 **Director:** Edwin Carewe
 **Studio:** Metro Pictures
 **Setting:** Northern California
-**Availability:** Unknown
+**survival:** Unknown
 
 ## Plot Summary
 

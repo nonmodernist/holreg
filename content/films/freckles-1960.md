@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["20th Century Fox"]
 eras = ["studio system decline"]
 genres = ["Drama"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["Andrew McLaglen"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Gene Stratton-Porter"
 director = "Andrew McLaglen"
 studio = "20th Century Fox"
 setting = "Limberlost"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags
@@ -35,7 +35,7 @@ show_citation = true
 **Director:** Andrew McLaglen
 **Studio:** 20th Century Fox
 **Setting:** Limberlost
-**Availability:** Survives
+**survival:** Survives
 
 ## Plot Summary
 

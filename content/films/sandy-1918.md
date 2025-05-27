@@ -9,7 +9,7 @@ regions = ["Appalachian Kentucky"]
 studios = ["Paramount"]
 eras = ["early silent"]
 genres = ["Drama"]
-availability = ["Lost"]
+survival = ["Lost"]
 directors = ["George Melford"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Alice Hegan Rice"
 director = "George Melford"
 studio = "Paramount"
 setting = "Kentucky?"
-survival_status = "Lost"
+availability = "Lost"
 format = "Unknown"
 
 # Content flags
@@ -35,7 +35,7 @@ show_citation = true
 **Director:** George Melford
 **Studio:** Paramount
 **Setting:** Kentucky?
-**Availability:** Lost
+**survival:** Lost
 
 ## Plot Summary
 

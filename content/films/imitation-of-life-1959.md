@@ -9,7 +9,7 @@ regions = ["Urban Northeast"]
 studios = ["Universal"]
 eras = ["studio system decline"]
 genres = ["Drama", "Melodrama"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["Douglas Sirk"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Fannie Hurst"
 director = "Douglas Sirk"
 studio = "Universal"
 setting = "NYC"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags

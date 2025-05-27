@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["Warner Bros"]
 eras = ["pre-code"]
 genres = ["Drama"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["William A. Wellman"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Edna Ferber"
 director = "William A. Wellman"
 studio = "Warner Bros"
 setting = "Chicago"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags
@@ -35,7 +35,7 @@ show_citation = true
 **Director:** William A. Wellman
 **Studio:** Warner Bros
 **Setting:** Chicago
-**Availability:** Survives
+**survival:** Survives
 
 ## Plot Summary
 

@@ -1,13 +1,26 @@
-// Enhanced Typography and Color Variables
+// Enhanced Typography and Color Variables with Complementary Palette
 $serif-primary: 'Crimson Text', 'Times New Roman', serif;
 $serif-secondary: 'Lora', Georgia, serif;
 $sans-serif: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
 
+// Enhanced Color Palette with Complementary Colors
 $color-primary: #1a1a1a;
 $color-secondary: #333333;
-$color-accent: #8b4513; // Academic brown
-$color-accent-light: #d4af37; // Muted gold
+
+// Main accent colors
+$color-accent: #8b4513; // Academic brown (primary)
+$color-accent-gold: #d4af37; // Complementary gold
+$color-accent-blue: #4a6fa5; // Muted blue for variety
+$color-accent-teal: #5a9b9b; // Soft teal for accents
 $color-accent-purple: #8e44ad; // Purple for special links/actions
+$color-accent-light: #d4af37; // Muted gold
+
+// Semantic color assignments
+$color-accent-primary: $color-accent; // Brown for main elements
+$color-accent-secondary: $color-accent-gold; // Gold for highlights
+$color-accent-tertiary: $color-accent-blue; // Blue for variety
+$color-accent-quaternary: $color-accent-teal; // Teal for subtle accents
+
 $color-text: #2c2c2c;
 $color-text-light: #666666;
 $color-text-muted: #999999;
@@ -16,6 +29,14 @@ $color-background-alt: #f8f8f8;
 $color-background-sidebar: #f5f5f5;
 $color-border: #e0e0e0;
 $color-border-light: #f0f0f0;
+
+// Status colors with new palette
+$color-success: #2d5a2d;
+$color-success-bg: #e8f5e8;
+$color-warning: #8b6914;
+$color-warning-bg: #fff8e1;
+$color-error: #8b2635;
+$color-error-bg: #ffeaea;
 
 // Enhanced spacing system
 $spacing-xs: 0.25rem;

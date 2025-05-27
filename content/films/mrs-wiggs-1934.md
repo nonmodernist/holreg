@@ -9,7 +9,7 @@ regions = ["Appalachian Kentucky"]
 studios = ["Paramount"]
 eras = ["pre-code"]
 genres = ["Comedy", "Drama"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["Norman Taurog"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Alice Hegan Rice"
 director = "Norman Taurog"
 studio = "Paramount"
 setting = "Kentucky"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags
@@ -35,7 +35,7 @@ show_citation = true
 **Director:** Norman Taurog
 **Studio:** Paramount
 **Setting:** Kentucky
-**Availability:** DVD
+**survival:** DVD
 
 ## Plot Summary
 

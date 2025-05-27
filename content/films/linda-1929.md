@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["Mrs. Wallace Reid Productions"]
 eras = ["late silent"]
 genres = ["Melodrama"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["Dorothy Davenport"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Margaret Prescott Montague"
 director = "Dorothy Davenport"
 studio = "Mrs. Wallace Reid Productions"
 setting = "? lumber stuff"
-survival_status = "Available"
+availability = "Available"
 format = "Unknown"
 
 # Content flags
@@ -35,7 +35,7 @@ show_citation = true
 **Director:** Dorothy Davenport
 **Studio:** Mrs. Wallace Reid Productions
 **Setting:** ? lumber stuff
-**Availability:** Online
+**survival:** Online
 
 ## Plot Summary
 

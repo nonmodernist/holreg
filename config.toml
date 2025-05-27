@@ -15,7 +15,7 @@ taxonomies = [
     {name = "studios", feed = true},
     {name = "eras", feed = true},
     {name = "genres", feed = true},
-    {name = "availability", feed = true},
+    {name = "survival", feed = true},
     {name = "directors", feed = true}
 ]
 

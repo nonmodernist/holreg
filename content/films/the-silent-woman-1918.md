@@ -9,7 +9,7 @@ regions = ["Pacific Northwest"]
 studios = ["Metro Pictures"]
 eras = ["early silent"]
 genres = ["Drama"]
-availability = ["Lost"]
+survival = ["Lost"]
 directors = ["Herbert Blache"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Lois Zellner"
 director = "Herbert Blache"
 studio = "Metro Pictures"
 setting = "Pacific Northwest"
-survival_status = "Lost"
+availability = "Lost"
 format = "Unknown"
 
 # Content flags
@@ -35,7 +35,7 @@ show_citation = true
 **Director:** Herbert Blache
 **Studio:** Metro Pictures
 **Setting:** Pacific Northwest
-**Availability:** Lost
+**survival:** Lost
 
 ## Plot Summary
 

@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["Rolfe Photoplays"]
 eras = ["early silent"]
 genres = ["Drama"]
-availability = ["Available"]
+survival = ["Available"]
 directors = ["John W. Noble"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Margaret Deland"
 director = "John W. Noble"
 studio = "Rolfe Photoplays"
 setting = "Great Lakes Region - Western PA"
-survival_status = "Incomplete"
+availability = "Incomplete"
 format = "Unknown"
 
 # Content flags

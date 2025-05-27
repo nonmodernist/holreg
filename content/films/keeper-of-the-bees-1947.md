@@ -9,7 +9,7 @@ regions = ["Southern California"]
 studios = ["Columbia"]
 eras = ["classical hollywood"]
 genres = ["Drama"]
-availability = ["Unknown"]
+survival = ["Unknown"]
 directors = ["John Sturges"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Gene Stratton-Porter"
 director = "John Sturges"
 studio = "Columbia"
 setting = "Southern California"
-survival_status = "Unknown"
+availability = "Unknown"
 format = "Unknown"
 
 # Content flags

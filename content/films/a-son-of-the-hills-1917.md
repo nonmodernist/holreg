@@ -9,7 +9,7 @@ regions = ["Appalachian Kentucky"]
 studios = ["Vitagraph"]
 eras = ["early silent"]
 genres = ["Drama"]
-availability = ["Lost"]
+survival = ["Lost"]
 directors = ["Harry Davenport"]
 
 [extra]
@@ -21,7 +21,7 @@ story_author = "Harriet Comstock"
 director = "Harry Davenport"
 studio = "Vitagraph"
 setting = "Appalachia"
-survival_status = "Lost"
+availability = "Lost"
 format = "Unknown"
 
 # Content flags

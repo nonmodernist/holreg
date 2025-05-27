@@ -19,7 +19,6 @@ locations = ["Shelbyville, Kentucky", "Louisville, Kentucky"]
 # Content flags
 show_filmography = true
 show_citation = true
-show_related_films = true
 
 # Author portrait
 [extra.author_image]

@@ -9,7 +9,7 @@ regions = ["Southern California"]
 studios = ["Biograph"]
 eras = ["early silent"]
 genres = ["Drama", "Western"]
-availability = ["Available"]
+survival = ["Online"]
 directors = ["D.W. Griffith"]
 
 [extra]
@@ -21,8 +21,9 @@ story_author = "Helen Hunt Jackson"
 director = "D.W. Griffith"
 studio = "Biograph"
 setting = "Southern California"
-survival_status = "Available"
+availability = "Available"
 format = "Silent, B&W"
+duration = "16 minutes"
 
 # Content flags
 show_citation = true
