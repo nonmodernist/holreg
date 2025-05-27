@@ -9,10 +9,14 @@ regions = ["Appalachian Kentucky"]
 studios = ["MGM"]
 eras = ["late silent"]
 genres = ["Comedy", "Drama"]
-survival = ["Available"]
+survival = ["extant"] 
+access = ["restricted"]
 directors = ["King Baggot"]
 
 [extra]
+# Content flags
+show_citation = true
+
 # Film metadata for sidebar
 year = 1926
 original_story = "Lovey Mary"
@@ -21,23 +25,17 @@ story_author = "Alice Hegan Rice"
 director = "King Baggot"
 studio = "MGM"
 setting = "Kentucky"
-availability = "Incomplete"
-format = "Unknown"
+format = "Silent, B&W"
 
-# Content flags
-show_citation = true
+[extra.film_status]
+survival = "extant"
+completeness = "incomplete"
+access = "unknown"
+availability_type = "unknown"
+availability_notes = "According to the Library of Congress, the film survives incomplete - specific reels and runtime unknown"
+
 +++
 
-*Lovey Mary* (1926) is a film adaptation of "Lovey Mary" by Alice Hegan Rice (1903).
-
-## Production Details
-
-**Director:** King Baggot
-**Studio:** MGM
-**Setting:** Kentucky
-**survival:** Incomplete
-
-## Plot Summary
 
 [Add plot summary here]
 

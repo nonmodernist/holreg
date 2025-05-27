@@ -9,10 +9,14 @@ regions = ["Appalachian Kentucky"]
 studios = ["Paramount"]
 eras = ["classical hollywood"]
 genres = ["Comedy", "Drama"]
-survival = ["Available"]
+survival = ["complete"]
+access = ["restricted"]
 directors = ["Ralph Murphy"]
 
 [extra]
+# Content flags
+show_citation = true
+
 # Film metadata for sidebar
 year = 1942
 original_story = "Mrs. Wiggs of the Cabbage Patch"
@@ -21,21 +25,18 @@ story_author = "Alice Hegan Rice"
 director = "Ralph Murphy"
 studio = "Paramount"
 setting = "Kentucky"
-availability = "Available"
-format = "Unknown"
+format = "Sound, B&W"
 
-# Content flags
-show_citation = true
+[extra.film_status]
+survival = "extant"
+completeness = "complete"
+access = "restricted" 
+availability_type = "archive_only"
+restoration = "unrestored"
+availability_notes = "Held at UCLA Film Archive, researcher access only"
+
 +++
 
-*Mrs. Wiggs of the Cabbage Patch* (1942) is a film adaptation of "Mrs. Wiggs of the Cabbage Patch" by Alice Hegan Rice (1901).
-
-## Production Details
-
-**Director:** Ralph Murphy
-**Studio:** Paramount
-**Setting:** Kentucky
-**survival:** Survives
 
 ## Plot Summary
 

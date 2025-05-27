@@ -9,10 +9,14 @@ regions = ["Appalachian Kentucky"]
 studios = ["Famous Players-Lasky"]
 eras = ["early silent"]
 genres = ["Comedy", "Drama"]
-survival = ["Available"]
+survival = ["complete"]
+access = ["restricted"]
 directors = ["Charles Giblyn"]
 
 [extra]
+# Content flags
+show_citation = true
+
 # Film metadata for sidebar
 year = 1918
 original_story = "Calvary Alley"
@@ -21,23 +25,16 @@ story_author = "Alice Hegan Rice"
 director = "Charles Giblyn"
 studio = "Famous Players-Lasky"
 setting = "Kentucky?"
-availability = "Available"
-format = "Unknown"
+format = "Silent, B&W"
 
-# Content flags
-show_citation = true
+[extra.film_status]
+survival = "extant"
+completeness = "complete"
+access = "restricted" 
+availability_type = "archive_only"
+availability_notes = "Held at Centre National du Cinéma et de l’image animée [CNC] film archive"
+
 +++
-
-*Sunshine Nan* (1918) is a film adaptation of "Calvary Alley" by Alice Hegan Rice (1917).
-
-## Production Details
-
-**Director:** Charles Giblyn
-**Studio:** Famous Players-Lasky
-**Setting:** Kentucky?
-**survival:** Survives
-
-## Plot Summary
 
 [Add plot summary here]
 

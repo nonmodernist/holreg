@@ -16,6 +16,7 @@ taxonomies = [
     {name = "eras", feed = true},
     {name = "genres", feed = true},
     {name = "survival", feed = true},
+    {name = "access", feed = true},
     {name = "directors", feed = true}
 ]
 

@@ -9,7 +9,8 @@ regions = ["Rural America"]
 studios = ["Monogram"]
 eras = ["pre-code"]
 genres = ["Drama"]
-survival = ["Available"]
+survival = ["extant"]
+access = ["available"]
 directors = ["Christy Cabanne"]
 
 [extra]
@@ -21,11 +22,17 @@ story_author = "Gene Stratton-Porter"
 director = "Christy Cabanne"
 studio = "Monogram"
 setting = "Limberlost"
-availability = "Available"
 format = "Unknown"
 
 # Content flags
 show_citation = true
+
+[extra.film_status]  
+survival = "extant"
+completeness = "complete"
+access = "available"
+availability_type = "internet_archive"
+availability_notes = "Available for free streaming on Internet Archive"
 
 # Film image
 [extra.film_image]

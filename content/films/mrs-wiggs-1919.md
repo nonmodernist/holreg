@@ -9,10 +9,14 @@ regions = ["Appalachian Kentucky"]
 studios = ["Famous Players-Lasky"]
 eras = ["early silent"]
 genres = ["Comedy", "Drama"]
-survival = ["Available"]
+survival = ["complete"]
+access = ["available"]
 directors = ["Hugh Ford"]
 
 [extra]
+# Content flags
+show_citation = true 
+
 # Film metadata for sidebar
 year = 1919
 original_story = "Mrs. Wiggs of the Cabbage Patch"
@@ -24,8 +28,15 @@ setting = "Kentucky"
 availability = "Available"
 format = "Unknown"
 
-# Content flags
-show_citation = true
+[extra.film_status]
+survival = "extant"
+completeness = "complete" 
+access = "available"
+availability_type = "internet_archive"
+restoration = "unrestored"
+quality = "good"
+availability_notes = "Available for free streaming on Internet Archive"
+
 +++
 
 *Mrs. Wiggs of the Cabbage Patch* (1919) is a film adaptation of "Mrs. Wiggs of the Cabbage Patch" by Alice Hegan Rice (1901).

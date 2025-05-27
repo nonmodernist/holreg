@@ -9,11 +9,16 @@ regions = ["Limberlost Indiana", "Rural Midwest"]
 studios = ["Paramount Pictures"]
 eras = ["early silent"]
 genres = ["Drama", "Romance"]
-survival = ["Lost"]
+survival = ["lost"]
+access = ["unavailable"]
 directors = ["Marshall Neilan"]
 
 [extra]
 author_byline = "Alexandra Edwards"
+
+# Content flags
+show_citation = true
+
 # Film metadata for sidebar
 year = 1917
 original_story = "Freckles"
@@ -25,15 +30,15 @@ production_company = "Lasky-Paramount"
 distributor = "Paramount Pictures"
 stars = ["Jack Pickford", "Louise Huff"]
 setting = "Limberlost Swamp, Indiana"
-availability = "Lost"
 duration = "Unknown"
 format = "Silent, B&W"
 filming_locations = ["Southern California (standing in for Indiana)"]
 adaptation_notes = "First adaptation of Stratton-Porter's novel"
 
-
-# Content flags
-show_citation = true
+[extra.film_status]
+survival = "lost"
+access = "unavailable"
+availability_notes = "No known surviving copies"
 
 # Film image
 [extra.film_image]
@@ -41,11 +46,7 @@ url = "/images/sidebar-freckles1917.jpg"
 alt = "Jack Pickford and Louise Huff in Freckles (1917)"
 caption = "Jack Pickford and Louise Huff in an outdoor setting from the lost silent film Freckles (1917). Motography, June 1917."
 
-# Filmography data
 
-[[extra.dvd_sources]]
-title = "Early Stratton-Porter Adaptations Collection"
-details = "DVD collection containing surviving promotional materials and stills from the 1917 adaptation."
 +++
 
 *Freckles* was the first film adaptation of Gene Stratton-Porter's 1904 novel, marking the beginning of Hollywood's long engagement with her regionalist fiction. Despite being set in Indiana's Limberlost Swamp, the film was shot entirely in Southern California, establishing a pattern that would persist throughout the studio era.

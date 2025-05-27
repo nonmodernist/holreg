@@ -22,162 +22,116 @@
                 </div>
             </div>
 
-<!-- Filmography Section with Dual Status Indicators -->
-{% if page.extra.show_filmography %}
-<div class="section filmography">
-    <h2 class="section-title">Filmography</h2>
-    <div class="section-content">
-        
-        <!-- Enhanced legend for dual status system -->
-        <div class="filmography-legend">
-            <div class="legend-title">Film Status Guide</div>
-            <div class="legend-sections">
-                <div class="legend-group">
-                    <div class="legend-group-title">Survival Status (Left Border)</div>
-                    <div class="legend-items">
-                        <div class="legend-item">
-                            <div class="legend-color complete"></div>
-                            <span class="legend-label">Complete/Extant</span>
-                        </div>
-                        <div class="legend-item">
-                            <div class="legend-color incomplete"></div>
-                            <span class="legend-label">Incomplete/Partial</span>
-                        </div>
-                        <div class="legend-item">
-                            <div class="legend-color lost"></div>
-                            <span class="legend-label">Lost</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="legend-group">
-                    <div class="legend-group-title">Availability (Background Color)</div>
-                    <div class="legend-items">
-                        <div class="legend-item">
-                            <div class="legend-color available"></div>
-                            <span class="legend-label">Available to View</span>
-                        </div>
-                        <div class="legend-item">
-                            <div class="legend-color unavailable"></div>
-                            <span class="legend-label">Unavailable</span>
-                        </div>
-                        <div class="legend-item">
-                            <div class="legend-color unknown-availability"></div>
-                            <span class="legend-label">Unknown Availability</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Surviving Films (Complete + Incomplete) -->
-        {% if page.extra.extant_adaptations %}
-        <h3 class="complete-section available-section">Surviving Films</h3>
-        {% for film in page.extra.extant_adaptations %}
-        {% set survival_class = "complete" %}
-        {% if film.status and (film.status == "Incomplete" or film.status == "Partial") %}
-          {% set survival_class = "incomplete" %}
-        {% endif %}
-        
-        {% set availability_class = "unknown-availability" %}
-{% if film.availability %}
-  {% if film.availability == "On DVD" or film.availability == "Online" or film.availability == "Available" %}
-    {% set availability_class = "available" %}
-  {% elif film.availability == "Unavailable" or film.availability == "Restricted" or film.availability == "Lost" %}
-    {% set availability_class = "unavailable" %}
-  {% elif film.availability == "Unknown" %}
-  {% endif %}
-{% endif %}
-        
-        <div class="film-entry {{ survival_class }} {{ availability_class }}">
-            <div class="film-title">{{ film.title }}</div>
-            <div class="film-details">
-                Dir: {{ film.director }} ({{ film.studio }}, <span class="film-year">{{ film.year }}</span>). {{ film.format }}{% if film.duration %}, {{ film.duration }}{% endif %}. 
-                {% if film.status %}Status: <span class="survival-status {{ survival_class }}">{{ film.status }}</span>. {% endif %}
-                Availability: <span class="availability-status {{ availability_class }}">{{ film.availability }}</span>.
-            </div>
-        </div>
-        {% endfor %}
-        {% endif %}
-        
-        <!-- Lost Films -->
-        {% if page.extra.lost_adaptations %}
-        <h3 class="lost-section unavailable-section">Lost Films</h3>
-        {% for film in page.extra.lost_adaptations %}
-        <div class="film-entry lost unavailable">
-            <div class="film-title">{{ film.title }}</div>
-            <div class="film-details">
-                Dir: {{ film.director }} ({{ film.studio }}, <span class="film-year">{{ film.year }}</span>). {{ film.format }}{% if film.duration %}, {{ film.duration }}{% endif %}.
-                Status: <span class="survival-status lost">Lost</span>.
-            </div>
-        </div>
-        {% endfor %}
-        {% endif %}
-        
-        <!-- TV and Later Adaptations -->
-        {% if page.extra.tv_adaptations %}
-        <h3 class="complete-section">Television and Later Adaptations</h3>
-        {% for film in page.extra.tv_adaptations %}
-        {% set survival_class = "complete" %}
-        {% if film.status and (film.status == "Incomplete" or film.status == "Partial") %}
-          {% set survival_class = "incomplete" %}
-        {% endif %}
-        
-        {% set availability_class = "unknown-availability" %}
-        {% if film.availability %}
-          {% if film.availability | regex_match(pattern="(?i)(available|online)") %}
-            {% set availability_class = "available" %}
-          {% elif film.availability | regex_match(pattern="(?i)(unavailable|restricted|lost)") %}
-            {% set availability_class = "unavailable" %}
-          {% endif %}
-        {% endif %}
-        
-        <div class="film-entry {{ survival_class }} {{ availability_class }}">
-            <div class="film-title">{{ film.title }}</div>
-            <div class="film-details">
-                Dir: {{ film.director }} ({{ film.network_or_studio }}, <span class="film-year">{{ film.year }}</span>) {{ film.format }}{% if film.duration %}, {{ film.duration }}{% endif %}. 
-                {% if film.status %}Status: <span class="survival-status {{ survival_class }}">{{ film.status }}</span>. {% endif %}
-                Availability: <span class="availability-status {{ availability_class }}">{{ film.availability }}</span>.
-            </div>
-        </div>
-        {% endfor %}
-        {% endif %}
-        
-        {% if page.extra.dvd_sources %}
-        <h2>DVD and Digital Sources:</h2>
-        {% for dvd in page.extra.dvd_sources %}
-        <div class="dvd-entry">
-            <div class="dvd-title">{{ dvd.title }}</div>
-            <div>{{ dvd.details }}</div>
-        </div>
-        {% endfor %}
-        {% endif %}
-        
-        {% if page.extra.archive_collections %}
-        <h2>Archival Collections:</h2>
-        {% for collection in page.extra.archive_collections %}
-        <div class="archive-entry">
-            <div class="archive-name">{{ collection.title }}</div>
-            <div class="archive-details">{{ collection.details }}</div>
-        </div>
-        {% endfor %}
-        {% endif %}
-    </div>
-</div>
-{% endif %}
-
-            <!-- ! Bibliography Section - REPLACED BY ENDNOTES -->
-            <!-- {% if page.extra.show_bibliography %}
-            <div class="section bibliography">
-                <h2 class="section-title">Bibliography</h2>
+            <!-- STEP 6: Add legend and clean filmography -->
+            {% if page.extra.show_filmography %}
+            <div class="section filmography">
+                <h2 class="section-title">Filmography</h2>
                 <div class="section-content">
-                    {% if page.extra.bibliography_note %}
-                    <p>{{ page.extra.bibliography_note | safe }}</p>
-                    {% else %}
-                    <p>The bibliography for this essay is included in the "<a href="{{ get_url(path='@/about/bibliography.md') }}">Film Adaptations Bibliography</a>" overview essay.</p>
+                    
+                    <!-- Filmography Legend -->
+                    <div class="filmography-legend">
+                        <div class="legend-title">Film Availability Guide</div>
+                        <div class="legend-sections">
+                            <div class="legend-group">
+                                <div class="legend-group-title">Can I Watch This Film?</div>
+                                <div class="legend-items">
+                                    <div class="legend-item">
+                                        <div class="legend-color available"></div>
+                                        <span class="legend-label">Available to View</span>
+                                    </div>
+                                    <div class="legend-item">
+                                        <div class="legend-color restricted"></div>
+                                        <span class="legend-label">Archive Access Only</span>
+                                    </div>
+                                    <div class="legend-item">
+                                        <div class="legend-color unavailable"></div>
+                                        <span class="legend-label">Lost or Unavailable</span>
+                                    </div>
+                                    <div class="legend-item">
+                                        <div class="legend-color unknown"></div>
+                                        <span class="legend-label">Unknown Status</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Extant Films with Simplified Availability Classes -->
+                    {% if page.extra.film_references.extant %}
+                    <h3>Extant Films</h3>
+                    {% for film_slug in page.extra.film_references.extant %}
+                        {% set film_page = get_page(path="films/" ~ film_slug ~ ".md") %}
+                        {% if film_page %}
+                            <!-- Determine availability class only -->
+                            {% set availability_class = "unknown" %}
+                            
+                            {% if film_page.extra.film_status %}
+                                {% set film_status = film_page.extra.film_status %}
+                                
+                                {% if film_status.access == "available" %}
+                                    {% set availability_class = "available" %}
+                                {% elif film_status.access == "restricted" %}
+                                    {% set availability_class = "restricted" %}
+                                {% elif film_status.access == "unavailable" %}
+                                    {% set availability_class = "unavailable" %}
+                                {% endif %}
+                            {% endif %}
+                            
+                        <div class="film-entry {{ availability_class }}">
+                            <div class="film-title">
+                                <a href="{{ film_page.permalink }}">{{ film_page.title }}</a>
+                            </div>
+                            <div class="film-details">
+                                {% if film_page.extra.director %}Dir: {{ film_page.extra.director }}{% endif %}{% if film_page.extra.studio %} ({{ film_page.extra.studio }}{% if film_page.extra.year %}, <span class="film-year">{{ film_page.extra.year }}</span>{% endif %}){% endif %}{% if not film_page.extra.studio and film_page.extra.year %} ({{ film_page.extra.year }}){% endif %}.{% if film_page.extra.format %} {{ film_page.extra.format }}{% endif %}{% if film_page.extra.duration %}, {{ film_page.extra.duration }}{% endif %}.
+                                
+                                <!-- Clean status display without colored text -->
+                                {% if film_page.extra.film_status %}
+                                    <br>Survival: {% if film_page.extra.film_status.completeness %}{{ film_page.extra.film_status.completeness | title }}{% else %}{{ film_page.extra.film_status.survival | title }}{% endif %}. Availability: {% if film_page.extra.film_status.access == "available" %}Available{% if film_page.extra.film_status.availability_type == "internet_archive" %} (Free Online){% elif film_page.extra.film_status.availability_type == "dvd" %} (DVD){% elif film_page.extra.film_status.availability_type == "streaming" %} (Streaming){% endif %}{% elif film_page.extra.film_status.access == "restricted" %}Archive Access Only{% elif film_page.extra.film_status.access == "unavailable" %}Not Available{% else %}Unknown{% endif %}.
+                                    
+                                    <!-- Availability notes -->
+                                    {% if film_page.extra.film_status.availability_notes %}
+                                        <br><small>{{ film_page.extra.film_status.availability_notes }}</small>
+                                    {% endif %}
+                                {% else %}
+                                    <!-- Fallback if no film_status -->
+                                    <br>Survival: Extant.
+                                {% endif %}
+                            </div>
+                        </div>
+                        {% else %}
+                        <p>⚠️ Could not load: {{ film_slug }}</p>
+                        {% endif %}
+                    {% endfor %}
+                    {% endif %}
+
+                    <!-- Lost Films with Simplified Classes -->
+                    {% if page.extra.film_references.lost %}
+                    <h3>Lost Films</h3>
+                    {% for film_slug in page.extra.film_references.lost %}
+                        {% set film_page = get_page(path="films/" ~ film_slug ~ ".md") %}
+                        {% if film_page %}
+                        <div class="film-entry unavailable">
+                            <div class="film-title">
+                                <a href="{{ film_page.permalink }}">{{ film_page.title }}</a>
+                            </div>
+                            <div class="film-details">
+                                {% if film_page.extra.director %}Dir: {{ film_page.extra.director }}{% endif %}{% if film_page.extra.studio %} ({{ film_page.extra.studio }}{% if film_page.extra.year %}, <span class="film-year">{{ film_page.extra.year }}</span>{% endif %}){% endif %}{% if not film_page.extra.studio and film_page.extra.year %} ({{ film_page.extra.year }}){% endif %}.{% if film_page.extra.format %} {{ film_page.extra.format }}{% endif %}{% if film_page.extra.duration %}, {{ film_page.extra.duration }}{% endif %}.
+                                
+                                <br>Survival: Lost.
+                                
+                                {% if film_page.extra.film_status and film_page.extra.film_status.availability_notes %}
+                                    <br><small>{{ film_page.extra.film_status.availability_notes }}</small>
+                                {% endif %}
+                            </div>
+                        </div>
+                        {% else %}
+                        <p>⚠️ Could not load: {{ film_slug }}</p>
+                        {% endif %}
+                    {% endfor %}
                     {% endif %}
                 </div>
             </div>
-            {% endif %} -->
+            {% endif %}
 
             <!-- Citation Section -->
             {% if page.extra.show_citation %}
@@ -187,44 +141,6 @@
                     <p class="citation-text">
                         {% if page.extra.author_byline %}{{ page.extra.author_byline }}. {% endif %}"{{ page.title }}." In <i>{{ config.title }}: A Digital Archive of Film Adaptations from American Women's Regional Literature, 1910-1961</i>. Web. Accessed [DATE]. &lt;{{ page.permalink }}&gt;
                     </p>
-                    <!-- <div class="citation-url">&lt;{{ config.base_url }}{{ page.permalink }}&gt;</div> -->
-                </div>
-            </div>
-            {% endif %}
-
-            <!-- TODO FIX THIS Related Films Section -->
-            {% if page.extra.show_related_films %}
-            <div class="section">
-                <div class="section-title">Films Adapted from {{ page.title }}'s Work</div>
-                <div class="grid grid-2">
-                    {% set author_name = page.title %}
-                    {% set author_taxonomy = get_taxonomy(kind="authors", name=author_name) %}
-                    {% if author_taxonomy and author_taxonomy.pages %}
-                        {% for film_page in author_taxonomy.pages %}
-                        <div class="card">
-                            <h3 class="card-title">
-                                <a href="{{ film_page.permalink }}">{{ film_page.title }}</a>
-                            </h3>
-                            <div class="card-meta">
-                                {{ film_page.extra.year }}
-                                {% if film_page.extra.director %}<span class="separator">•</span>{{ film_page.extra.director }}{% endif %}
-                                {% if film_page.extra.studio %}<span class="separator">•</span>{{ film_page.extra.studio }}{% endif %}
-                            </div>
-                            {% if film_page.extra.survival_status %}
-                            <div style="margin: 1rem 0;">
-                                <span class="status {{ film_page.extra.survival_status | lower }}">
-                                    {{ film_page.extra.survival_status }}
-                                </span>
-                            </div>
-                            {% endif %}
-                            {% if film_page.summary %}
-                            <div class="card-content">{{ film_page.summary }}</div>
-                            {% endif %}
-                        </div>
-                        {% endfor %}
-                    {% else %}
-                        <div>No related films found.</div>
-                    {% endif %}
                 </div>
             </div>
             {% endif %}
@@ -232,14 +148,6 @@
 
         <!-- Author sidebar -->
         <aside class="author-sidebar">
-            <!-- TODO Action links - REVISE THIS -->
-            <!-- <div class="action-links">
-                {% if page.extra.show_bibliography %}<a href="#bibliography">Bibliography</a>{% endif %}
-                {% if page.extra.show_filmography %}<a href="#filmography">Filmography</a>{% endif %}
-                {% if page.extra.show_citation %}<a href="#citation" class="citation">Citation</a>{% endif %}
-                <a href="javascript:window.print()" class="print">Print</a>
-            </div> -->
-
             <!-- Author portrait if available -->
             {% if page.extra.author_image %}
             <div class="author-image-container">
@@ -299,45 +207,6 @@
                 </div>
                 {% endif %}
             </div>
-            
-            <!-- Film statistics -->
-            {% if page.extra.film_stats %}
-            <div class="metadata-box">
-                <h3>Film Adaptations</h3>
-                
-                {% if page.extra.film_stats.total_adaptations %}
-                <div class="metadata-item">
-                    <span class="label">Total Films</span>
-                    <div class="value">{{ page.extra.film_stats.total_adaptations }}</div>
-                </div>
-                {% endif %}
-                
-                {% if page.extra.film_stats.surviving_films %}
-                <div class="metadata-item">
-                    <span class="label">Surviving</span>
-                    <div class="value">{{ page.extra.film_stats.surviving_films }}</div>
-                </div>
-                {% endif %}
-                
-                {% if page.extra.film_stats.adaptation_span %}
-                <div class="metadata-item">
-                    <span class="label">Adaptation Period</span>
-                    <div class="value">{{ page.extra.film_stats.adaptation_span }}</div>
-                </div>
-                {% endif %}
-                
-                {% if page.extra.film_stats.studios %}
-                <div class="metadata-item">
-                    <span class="label">Major Studios</span>
-                    <div class="value">
-                        {% for studio in page.extra.film_stats.studios %}
-                            {{ studio }}{% if not loop.last %}, {% endif %}
-                        {% endfor %}
-                    </div>
-                </div>
-                {% endif %}
-            </div>
-            {% endif %}
             {% endif %}
         </aside>
     </div>

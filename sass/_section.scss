@@ -1,5 +1,4 @@
-
-// Section styling with enhanced bibliography and filmography sections
+// Section styling with simplified availability-focused film status system
 .section {
   margin-bottom: $spacing-xxl * 1.5;
   
@@ -39,77 +38,58 @@
           }
         }
       }
-// Enhanced film entry styling with dual indicators: survival status (border) + availability (background accent)
+
+// Simplified film entry styling with availability-focused color system
 .film-entry {
   background-color: rgba($color-background-alt, 0.3);
   padding: $spacing-lg;
   margin-bottom: $spacing-md;
   border-radius: 6px;
-  border-left: 4px solid $color-accent-light; // Default border
+  border-left: 4px solid $color-border; // Default border
   transition: all 0.3s ease;
   position: relative;
   
   &:hover {
-    background-color: rgba($color-accent, 0.05);
-   // transform: translateX(2px);
+  //  background-color: rgba($color-accent, 0.05);
+    transform: translateX(2px);
   }
   
-  // SURVIVAL STATUS - Left border colors
-  &.complete {
-    border-left-color: #2d5a2d; // Dark green for complete surviving films
-    
-    &:hover {
-      border-left-color: darken(#2d5a2d, 10%);
-    }
-  }
-  
-  &.incomplete {
-    border-left-color: #e67e22; // Orange for incomplete/partial films
-    
-    &:hover {
-      border-left-color: darken(#e67e22, 10%);
-    }
-  }
-  
-  &.lost {
-    border-left-color: #8b2635; // Dark red for lost films
-    
-    &:hover {
-      border-left-color: darken(#8b2635, 10%);
-    }
-  }
-  
-  // AVAILABILITY STATUS - Right border accent + background tint
+  // AVAILABILITY STATUS - Simplified left border colors only
   &.available {
-  //  border-right: 3px solid #27ae60; // Bright green right border for available
-    background-color: rgba(#27ae60, 0.03);
+    border-left-color: $color-success; // Green for available films
     
     &:hover {
-      background-color: rgba(#27ae60, 0.08);
+      border-left-color: lighten($color-success, 10%);
+    }
+  }
+  
+  &.restricted {
+    border-left-color: $color-warning; // Orange/yellow for restricted access
+    
+    &:hover {
+      border-left-color: lighten($color-warning, 10%);
     }
   }
   
   &.unavailable {
-   // border-right: 3px solid #c0392b; // Red right border for unavailable
-    background-color: rgba(#c0392b, 0.03);
+    border-left-color: $color-error; // Red for unavailable/lost films
     
     &:hover {
-      background-color: rgba(#c0392b, 0.08);
+      border-left-color: lighten($color-error, 10%);
     }
   }
   
-  &.unknown-availability {
-  //  border-right: 3px solid #f39c12; // Orange right border for unknown availability
-    background-color: rgba(#f39c12, 0.03);
+  &.unknown {
+    border-left-color: $color-text-muted; // Gray for unknown status
     
     &:hover {
-      background-color: rgba(#f39c12, 0.08);
+      border-left-color: lighten($color-text-muted, 10%);
     }
   }
   
   .film-title {
     font-family: $serif-primary;
-    font-size: $font-size-xl;
+    font-size: $font-size-2xl;
     font-weight: 600;
     color: $color-primary;
     margin-bottom: $spacing-xs;
@@ -123,6 +103,7 @@
     
     .film-year {
       font-weight: 600;
+    //  color: $color-accent;
     }
     
     .film-studio {
@@ -132,102 +113,10 @@
     .film-director {
       font-style: italic;
     }
-    
-    .survival-status {
-      font-weight: 600;
-      
-      &.complete {
-        color: #2d5a2d;
-      }
-      
-      &.incomplete {
-        color: #e67e22;
-      }
-      
-      &.lost {
-        color: #8b2635;
-      }
-    }
-    
-    .availability-status {
-      
-      
-      &.available {
-        color: #27ae60;
-        font-weight: 600;
-      }
-      
-      &.unavailable {
-        color: #c0392b;
-        font-weight: 600;
-      }
-      
-      // &.unknown-availability {
-      //   color: #f39c12;
-      // }
-    }
   }
 }
 
-// Section headers with dual indicators
-.filmography {
-  h3 {
-    position: relative;
-    padding-left: $spacing-xl;
-    
-    // Survival status indicator (left dot)
-    &::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background-color: $color-accent;
-    }
-    
-    // Availability indicator (right dot)  
-    &::after {
-      content: '';
-      position: absolute;
-      left: $spacing-md;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background-color: $color-accent-light;
-    }
-    
-    &.complete-section::before {
-      background-color: #2d5a2d;
-    }
-    
-    &.incomplete-section::before {
-      background-color: #e67e22;
-    }
-    
-    &.lost-section::before {
-      background-color: #8b2635;
-    }
-    
-    &.available-section::after {
-      background-color: #27ae60;
-    }
-    
-    &.unavailable-section::after {
-      background-color: #c0392b;
-    }
-    
-    &.unknown-availability-section::after {
-      background-color: #f39c12;
-    }
-  }
-}
-
-// Enhanced legend with dual indicators
+// Simplified legend with availability focus
 .filmography-legend {
   background-color: $color-background-alt;
   border: 1px solid $color-border;
@@ -247,12 +136,8 @@
   
   .legend-sections {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: $spacing-lg;
-    
-    @media (max-width: 768px) {
-      grid-template-columns: 1fr;
-    }
   }
   
   .legend-group {
@@ -281,30 +166,21 @@
           height: 12px;
           border-radius: 2px;
           
-          // Survival status colors
-          &.complete {
-            background-color: #2d5a2d;
-          }
-          
-          &.incomplete {
-            background-color: #e67e22;
-          }
-          
-          &.lost {
-            background-color: #8b2635;
-          }
-          
-          // Availability status colors
+          // Availability status colors using existing variables
           &.available {
-            background-color: #27ae60;
+            background-color: $color-success;
+          }
+          
+          &.restricted {
+            background-color: $color-warning;
           }
           
           &.unavailable {
-            background-color: #c0392b;
+            background-color: $color-error;
           }
           
-          &.unknown-availability {
-            background-color: #f39c12;
+          &.unknown {
+            background-color: $color-text-muted;
           }
         }
         

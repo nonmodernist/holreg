@@ -159,20 +159,62 @@
                     <div class="value">{{ page.extra.duration }}</div>
                 </div>
                 {% endif %}
-            
 
-            {% if page.extra.availability %}
-                <div class="metadata-item">
-                    <span class="label">Availability</span>
-                    <div class="value">
-                        <span class="status {{ page.extra.availability | lower }}">
-                            {{ page.extra.availability }}
-                        </span>
-                    </div>
-                </div>
+
+<!-- FILM STATUS SECTION - survival and availability -->
+    {% if page.extra.film_status %}
+{% set status = page.extra.film_status %}
+
+<!-- Survival Status - Always shown -->
+<div class="metadata-item">
+    <span class="label">Survival</span>
+    <div class="value">
+        <span class="status-survival status-{{ status.survival }}">
+            {% if status.survival == "extant" %}
+                {{ status.completeness | title }}
+            {% else %}
+                {{ status.survival | title }}
+            {% endif %}
+        </span>
+    </div>
+</div>
+
+<!-- Availability - Only for extant films -->
+{% if status.survival == "extant" %}
+<div class="metadata-item">
+    <span class="label">Availability</span>
+    <div class="value">
+        <span class="status-access status-{{ status.access }}">
+            {% if status.access == "available" %}
+                Available
+                {% if status.availability_type == "internet_archive" %}
+                    (Free Online)
+                {% elif status.availability_type == "dvd" %}
+                    (DVD)
+                {% elif status.availability_type == "streaming" %}
+                    (Streaming)
                 {% endif %}
-                </div>
+            {% elif status.access == "restricted" %}
+                Archive Access Only
+            {% else %}
+                Not Available
+            {% endif %}
+        </span>
+    </div>
+</div>
+{% endif %}
 
+<!-- Notes - Show if present -->
+{% if status.availability_notes %}
+<div class="metadata-item">
+    <span class="label">{% if status.survival == "extant" %}Availability Notes{% else %}Notes{% endif %}</span>
+    <div class="value">{{ status.availability_notes }}</div>
+</div>
+{% endif %}
+{% endif %}
+</div>
+
+<!-- SOURCE DETAILS BOX -->
             {% if page.extra.original_story %}
             <div class="metadata-box">
                 <h3>Source Details</h3>
@@ -202,7 +244,7 @@
             </div>
             {% endif %}
 
-            <!-- Production Details Box -->
+<!-- Production Details Box -->
             {% if page.extra.production_company or page.extra.distributor or page.extra.filming_locations %}
             <div class="metadata-box">
                 <h3>Production</h3>
@@ -234,7 +276,7 @@
             </div>
             {% endif %}
 
-            <!-- Additional Details Box (if any other metadata exists) -->
+<!-- Additional Details Box (if any other metadata exists) -->
             {% if page.extra.adaptation_notes %}
             <div class="metadata-box">
                 <h3>Notes</h3>

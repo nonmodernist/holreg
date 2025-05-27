@@ -254,10 +254,10 @@
                                 {% if film_page.extra.director %}<span class="separator">•</span>{{ film_page.extra.director }}{% endif %}
                                 {% if film_page.extra.studio %}<span class="separator">•</span>{{ film_page.extra.studio }}{% endif %}
                             </div>
-                            {% if film_page.extra.survival_status %}
+                            {% if film_page.extra.availability %}
                             <div style="margin: 1rem 0;">
-                                <span class="status {{ film_page.extra.survival_status | lower }}">
-                                    {{ film_page.extra.survival_status }}
+                                <span class="status {{ film_page.extra.availability | lower }}">
+                                    {{ film_page.extra.availability }}
                                 </span>
                             </div>
                             {% endif %}

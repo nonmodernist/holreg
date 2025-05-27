@@ -9,10 +9,15 @@ regions = ["Appalachian Kentucky"]
 studios = ["Paramount"]
 eras = ["pre-code"]
 genres = ["Comedy", "Drama"]
-survival = ["Available"]
+survival = ["complete"]
+access = ["dvd"]
 directors = ["Norman Taurog"]
 
 [extra]
+
+# Content flags
+show_citation = true
+
 # Film metadata for sidebar
 year = 1934
 original_story = "Mrs. Wiggs of the Cabbage Patch"
@@ -21,11 +26,15 @@ story_author = "Alice Hegan Rice"
 director = "Norman Taurog"
 studio = "Paramount"
 setting = "Kentucky"
-availability = "Available"
-format = "Unknown"
+format = "Sound, B&W"
 
-# Content flags
-show_citation = true
+
+[extra.film_status]
+survival = "extant"
+completeness = "complete"
+access = "available"
+availability_type = "dvd"
+availability_notes = "On DVD from Universal"
 +++
 
 *Mrs. Wiggs of the Cabbage Patch* (1934) is a film adaptation of "Mrs. Wiggs of the Cabbage Patch" by Alice Hegan Rice (1901).
