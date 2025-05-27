@@ -9,7 +9,7 @@ regions = ["Appalachian Kentucky"]
 studios = ["Famous Players-Lasky"]
 eras = ["early silent"]
 genres = ["Comedy", "Drama"]
-survival = ["complete"]
+survival = ["extant"]
 access = ["available"]
 directors = ["Hugh Ford"]
 

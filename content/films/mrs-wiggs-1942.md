@@ -9,7 +9,7 @@ regions = ["Appalachian Kentucky"]
 studios = ["Paramount"]
 eras = ["classical hollywood"]
 genres = ["Comedy", "Drama"]
-survival = ["complete"]
+survival = ["extant"]
 access = ["restricted"]
 directors = ["Ralph Murphy"]
 

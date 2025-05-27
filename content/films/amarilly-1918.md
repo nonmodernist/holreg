@@ -9,7 +9,8 @@ regions = ["Southern California"]
 studios = ["Artcraft Pictures Corporation"]
 eras = ["early silent"]
 genres = ["Comedy", "Romance"]
-survival = ["Available"]
+survival = ["extant"]
+access = ["available"]
 directors = ["Marshall Neilan"]
 
 [extra]
@@ -21,8 +22,7 @@ story_author = "Belle K. Maniates"
 director = "Marshall Neilan"
 studio = "Artcraft Pictures Corporation"
 setting = "northern california - SF"
-availability = "Available"
-format = "Unknown"
+format = "Silent, B&W"
 
 # Content flags
 show_citation = true

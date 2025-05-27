@@ -2,6 +2,7 @@
 title = "TEMPLATE"
 date = 2024-01-01
 template = "author.html"
+draft = true
 
 [taxonomies]
 regions = ["Southern California"]

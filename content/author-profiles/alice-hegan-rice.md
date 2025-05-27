@@ -4,7 +4,7 @@ date = 2024-01-01
 template = "author.html"
 
 [taxonomies]
-regions = ['Rural America', 'American South']
+regions = ["Appalachia", "American South"]
 
 [extra]
 author_byline = "Alexandra Edwards"
