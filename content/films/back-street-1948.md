@@ -9,7 +9,7 @@ regions = ["Southern California"]
 studios = ["Silver Light"]
 eras = ["classical hollywood"]
 genres = ["Drama"]
-survival = ["Lost"]
+survival = ["lost"]
 directors = ["Esther Eng"]
 
 [extra]

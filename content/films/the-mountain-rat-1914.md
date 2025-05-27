@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["Biograph"]
 eras = ["early silent"]
 genres = ["Western"]
-survival = ["Lost"]
+survival = ["lost"]
 directors = ["James Kirkwood Sr."]
 
 [extra]

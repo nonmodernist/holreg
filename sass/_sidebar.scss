@@ -188,7 +188,7 @@
   text-transform: uppercase;
   letter-spacing: 0.1em;
   
-  &.available {
+  &.available, &.extant {
     background-color: #e8f5e8;
     color: #2d5a2d;
     border: 1px solid #c3e6c3;

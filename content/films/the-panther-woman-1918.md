@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["Petrova Picture Company"]
 eras = ["early silent"]
 genres = ["Drama"]
-survival = ["Lost"]
+survival = ["lost"]
 directors = ["Ralph Ince"]
 
 [extra]

@@ -9,7 +9,7 @@ regions = ["Urban Northeast"]
 studios = ["Paramount"]
 eras = ["late silent"]
 genres = ["Drama"]
-survival = ["Lost"]
+survival = ["lost"]
 directors = ["Sidney Olcott"]
 
 [extra]

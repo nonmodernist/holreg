@@ -24,34 +24,89 @@
         {% set items = section.pages %}
     {% endif %}
     <div class="section">
-        <div class="section-title">All Films ({{ section.pages | length }})</div>
-        <div class="grid grid-3">
-            {% for page in items %}
-            <div class="card">
-                <h3 class="card-title">
-                    <a href="{{ page.permalink }}">{{ page.title }}</a>
-                </h3>
-                
-                <div class="card-meta">
-                    {% if page.extra.year %}{{ page.extra.year }}{% endif %}
-                    {% if page.taxonomies.authors %}<span class="separator">•</span>{{ page.taxonomies.authors[0] }}{% endif %}
-                    {% if page.extra.director %}<span class="separator">•</span>{{ page.extra.director }}{% endif %}
+        {% if section.path == "/author-profiles/" %}
+            <div class="section-title">All Authors ({{ section.pages | length }})</div>
+            <div class="grid grid-2">
+                {% for page in items %}
+                <div class="card">
+                    <div class="card-content-wrapper">
+                        <h3 class="card-title">
+                            <a href="{{ page.permalink }}">{{ page.title }}</a>
+                        </h3>
+                        
+                        <div class="card-meta">
+                            {% if page.extra.author_dates %}
+                                {{ page.extra.author_dates }}
+                            {% endif %}
+                            {% if page.extra.occupation %}
+                                <span class="separator">•</span>
+                                {% for job in page.extra.occupation %}
+                                    {{ job }}{% if not loop.last %}, {% endif %}
+                                {% endfor %}
+                            {% endif %}
+                        </div>
+                        
+                        {% if page.summary %}
+                        <div class="card-content">{{ page.summary }}</div>
+                        {% endif %}
+                    </div>
+                    
+                    {% if page.extra.author_image %}
+                    <div class="card-image">
+                        <img src="{{ page.extra.author_image.url }}" alt="{{ page.extra.author_image.alt | default(value=page.title) }}">
+                    </div>
+                    {% endif %}
                 </div>
-                
-                {% if page.extra.availability %}
-                <div style="margin: 1rem 0;">
-                    <span class="status {{ page.extra.availability | lower }}">
-                        {{ page.extra.availability }}
-                    </span>
-                </div>
-                {% endif %}
-
-                {% if page.summary %}
-                <div class="card-content">{{ page.summary }}</div>
-                {% endif %}
+                {% endfor %}
             </div>
-            {% endfor %}
-        </div>
+        {% else %}
+            <div class="section-title">All Films ({{ section.pages | length }})</div>
+            <div class="grid grid-2">
+                {% for page in items %}
+                <div class="card">
+                    <h3 class="card-title">
+                        <a href="{{ page.permalink }}">{{ page.title }}</a>
+                    </h3>
+                    
+                    <div class="card-meta">
+                        {% if page.extra.year %}{{ page.extra.year }}{% endif %}
+                        {% if page.taxonomies.authors %}<span class="separator">•</span>{{ page.taxonomies.authors[0] }}{% endif %}
+                        {% if page.extra.director %}<span class="separator">•</span>{{ page.extra.director }}{% endif %}
+                    </div>
+                    
+                    <!-- Enhanced survival status display -->
+                    {% if page.taxonomies.survival %}
+                        {% set survival_status = page.taxonomies.survival[0] %}
+                        <div class="film-status">
+                            <span class="status {{ survival_status }}">
+                                {% if survival_status == "extant" %}
+                                    Survives
+                                {% else %}
+                                    {% if survival_status == "lost" %}
+                                        Lost
+                                    {% else %}
+                                        {% if survival_status == "unknown" %}
+                                            Presumed Lost
+                                        {% else %}
+                                            {{ survival_status | title }}
+                                        {% endif %}
+                                    {% endif %}
+                                {% endif %}
+                            </span>
+                        </div>
+                    {% else %}
+                        <div class="film-status">
+                            <span class="status unknown">Presumed Lost</span>
+                        </div>
+                    {% endif %}
+
+                    {% if page.summary %}
+                    <div class="card-content">{{ page.summary }}</div>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+        {% endif %}
     </div>
 </div>
 {% endblock content %}

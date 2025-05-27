@@ -15,9 +15,9 @@ taxonomies = [
     {name = "studios", feed = true},
     {name = "eras", feed = true},
     {name = "genres", feed = true},
+    {name = "directors", feed = true},
     {name = "survival", feed = true},
     {name = "access", feed = true},
-    {name = "directors", feed = true}
 ]
 
 [markdown]

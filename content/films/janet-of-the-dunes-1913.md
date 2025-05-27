@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["Edison Company"]
 eras = ["early silent"]
 genres = ["Drama"]
-survival = ["Unknown"]
+survival = ["unknown"]
 directors = ["Richard Ridgely"]
 
 [extra]

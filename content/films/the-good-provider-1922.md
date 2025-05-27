@@ -9,7 +9,7 @@ regions = ["Urban Northeast"]
 studios = ["Cosmopolitan Productions"]
 eras = ["late silent"]
 genres = ["Melodrama"]
-survival = ["Unknown"]
+survival = ["unknown"]
 directors = ["Frank Borzage"]
 
 [extra]

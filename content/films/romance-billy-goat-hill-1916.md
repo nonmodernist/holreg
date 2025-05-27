@@ -9,7 +9,7 @@ regions = ["Deep South"]
 studios = ["Universal"]
 eras = ["early silent"]
 genres = ["Drama"]
-survival = ["Unknown"]
+survival = ["unknown"]
 directors = ["Lynn Reynolds"]
 
 [extra]

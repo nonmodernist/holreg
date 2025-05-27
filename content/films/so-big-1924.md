@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["First National"]
 eras = ["late silent"]
 genres = ["Drama"]
-survival = ["Lost"]
+survival = ["lost"]
 directors = ["Charles Brabin"]
 
 [extra]

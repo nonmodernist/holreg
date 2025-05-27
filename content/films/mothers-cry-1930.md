@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["First National"]
 eras = ["pre-code"]
 genres = ["Drama"]
-survival = ["Unknown"]
+survival = ["unknown"]
 directors = ["Hobart Henley"]
 
 [extra]

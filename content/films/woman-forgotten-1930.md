@@ -9,7 +9,7 @@ regions = ["Rural Midwest"]
 studios = ["States Cinema"]
 eras = ["pre-code"]
 genres = ["Drama"]
-survival = ["Unknown"]
+survival = ["unknown"]
 directors = ["Richard Thomas"]
 
 [extra]

@@ -9,7 +9,7 @@ regions = ["Appalachian Kentucky"]
 studios = ["Vitagraph"]
 eras = ["early silent"]
 genres = ["Drama"]
-survival = ["Lost"]
+survival = ["lost"]
 directors = ["Harry Davenport"]
 
 [extra]

@@ -9,7 +9,7 @@ regions = ["Appalachia"]
 studios = ["Bluebird Photoplays"]
 eras = ["early silent"]
 genres = ["Drama"]
-survival = ["Lost"]
+survival = ["lost"]
 directors = ["Lynn Reynolds"]
 
 [extra]

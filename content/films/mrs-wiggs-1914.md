@@ -9,7 +9,7 @@ regions = ["Appalachian Kentucky"]
 studios = ["California Motion Picture Co"]
 eras = ["early silent"]
 genres = ["Drama"]
-survival = ["Lost"]
+survival = ["lost"]
 directors = ["Harold Entwistle"]
 
 [extra]

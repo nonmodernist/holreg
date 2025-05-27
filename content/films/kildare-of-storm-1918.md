@@ -9,7 +9,7 @@ regions = ["Appalachian Kentucky"]
 studios = ["Metro Pictures"]
 eras = ["early silent"]
 genres = ["Drama"]
-survival = ["Lost"]
+survival = ["lost"]
 directors = ["Harry L. Franklin"]
 
 [extra]

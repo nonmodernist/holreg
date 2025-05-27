@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["Norma Talmadge Film Corporation"]
 eras = ["early silent"]
 genres = ["Drama"]
-survival = ["Lost"]
+survival = ["lost"]
 directors = ["Charles Miller"]
 
 [extra]

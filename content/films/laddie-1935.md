@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["RKO"]
 eras = ["classical hollywood"]
 genres = ["Comedy", "Drama"]
-survival = ["Unknown"]
+survival = ["unknown"]
 directors = ["George Stevens"]
 
 [extra]

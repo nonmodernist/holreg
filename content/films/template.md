@@ -10,7 +10,7 @@ regions = ["REGION1", "REGION2"]
 studios = ["STUDIO"]
 eras = ["early silent", "late silent", "pre-code", "classical Hollywood", "studio system decline"]
 genres = ["Drama", "Romance"]
-survival = ["Unknown"]
+survival = ["unknown"]
 directors = ["DIRECTOR"]
 
 [extra]

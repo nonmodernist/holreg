@@ -9,7 +9,7 @@ regions = ["Southern California"]
 studios = ["Columbia"]
 eras = ["classical hollywood"]
 genres = ["Drama"]
-survival = ["Unknown"]
+survival = ["unknown"]
 directors = ["John Sturges"]
 
 [extra]

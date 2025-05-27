@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["Robertson-Cole Pictures Corp"]
 eras = ["late silent"]
 genres = ["Drama", "Romance"]
-survival = ["Lost"]
+survival = ["lost"]
 directors = ["James Leo Meehan"]
 
 [extra]

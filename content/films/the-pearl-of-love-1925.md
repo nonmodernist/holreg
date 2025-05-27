@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["Paul W. Whitcombe Productions"]
 eras = ["late silent"]
 genres = ["Melodrama"]
-survival = ["Lost"]
+survival = ["lost"]
 directors = ["Leon E. Danmun"]
 
 [extra]

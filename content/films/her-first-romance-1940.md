@@ -9,7 +9,7 @@ regions = ["Southern California"]
 studios = ["Monogram"]
 eras = ["classical hollywood"]
 genres = ["Drama"]
-survival = ["Unknown"]
+survival = ["unknown"]
 directors = ["Edward Dmytryk"]
 
 [extra]

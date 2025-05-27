@@ -9,7 +9,7 @@ regions = ["Deep South"]
 studios = ["Famous Players-Lasky"]
 eras = ["early silent"]
 genres = ["Drama"]
-survival = ["Lost"]
+survival = ["lost"]
 directors = ["J. Searle Dawley"]
 
 [extra]

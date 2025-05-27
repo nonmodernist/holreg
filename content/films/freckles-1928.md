@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["Film Booking Office"]
 eras = ["late silent"]
 genres = ["Drama"]
-survival = ["Lost"]
+survival = ["lost"]
 directors = ["James Leo Meehan"]
 
 [extra]

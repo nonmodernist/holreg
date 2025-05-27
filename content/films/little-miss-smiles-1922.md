@@ -9,7 +9,7 @@ regions = ["Urban Northeast"]
 studios = ["Fox Film Corporation"]
 eras = ["late silent"]
 genres = ["Drama"]
-survival = ["Lost"]
+survival = ["lost"]
 directors = ["John Ford"]
 
 [extra]

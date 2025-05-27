@@ -9,7 +9,7 @@ regions = ["Appalachian Kentucky"]
 studios = ["Signal Film Corp."]
 eras = ["early silent"]
 genres = ["Drama"]
-survival = ["Lost"]
+survival = ["lost"]
 directors = ["J.P. McGowan"]
 
 [extra]

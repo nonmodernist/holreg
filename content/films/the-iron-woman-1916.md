@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["Popular Plays and Players"]
 eras = ["early silent"]
 genres = ["Drama"]
-survival = ["Lost"]
+survival = ["lost"]
 directors = ["Carl Harbaugh"]
 
 [extra]

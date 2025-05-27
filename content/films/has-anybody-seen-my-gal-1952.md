@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["Universal"]
 eras = ["studio system decline"]
 genres = ["Comedy"]
-survival = ["Unknown"]
+survival = ["unknown"]
 directors = ["Douglas Sirk"]
 
 [extra]

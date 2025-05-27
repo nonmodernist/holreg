@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["Columbia"]
 eras = ["classical hollywood"]
 genres = ["Drama"]
-survival = ["Unknown"]
+survival = ["unknown"]
 directors = ["Mel Ferrer"]
 
 [extra]

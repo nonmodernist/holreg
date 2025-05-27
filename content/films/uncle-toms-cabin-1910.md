@@ -9,7 +9,7 @@ regions = ["Deep South"]
 studios = ["Thanhauser"]
 eras = ["early silent"]
 genres = ["Drama"]
-survival = ["Lost"]
+survival = ["lost"]
 directors = ["Barry O'Neil"]
 
 [extra]

@@ -9,7 +9,7 @@ regions = ["Deep South"]
 studios = ["Feature Productions/United Artists"]
 eras = ["late silent"]
 genres = ["Drama"]
-survival = ["Available"]
+survival = ["extant"]
 directors = ["Del Lord"]
 
 [extra]

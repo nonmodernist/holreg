@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["Realart Pictures Corporation"]
 eras = ["early silent"]
 genres = ["Drama"]
-survival = ["Lost"]
+survival = ["lost"]
 directors = ["William Desmond Taylor"]
 
 [extra]

@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["Gene Stratton Porter Productions"]
 eras = ["late silent"]
 genres = ["Melodrama"]
-survival = ["Lost"]
+survival = ["lost"]
 directors = ["James Leo Meehan"]
 
 [extra]

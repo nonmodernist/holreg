@@ -9,7 +9,7 @@ regions = ["Unknown"]
 studios = ["Jesse Lasky"]
 eras = ["early silent"]
 genres = ["Drama"]
-survival = ["Lost"]
+survival = ["lost"]
 directors = ["Robert Leonard"]
 
 [extra]

@@ -29,17 +29,6 @@ format = "Unknown"
 show_citation = true
 +++
 
-*Uncle Tom's Cabin parts 1-3* (1910) is a film adaptation of "Uncle Tom's Cabin" by Harriet Beecher Stowe (1852).
-
-## Production Details
-
-**Director:** Frederick A. Thomson
-**Studio:** Vitagraph
-**Setting:** Deep South
-**survival:** Incomplete
-
-## Plot Summary
-
 [Add plot summary here]
 
 ## Adaptation Analysis

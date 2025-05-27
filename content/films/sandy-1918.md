@@ -9,7 +9,7 @@ regions = ["Appalachian Kentucky"]
 studios = ["Paramount"]
 eras = ["early silent"]
 genres = ["Drama"]
-survival = ["Lost"]
+survival = ["lost"]
 directors = ["George Melford"]
 
 [extra]

@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["R-C Pictures"]
 eras = ["late silent"]
 genres = ["Melodrama"]
-survival = ["Lost"]
+survival = ["lost"]
 directors = ["Louis Gasnier"]
 
 [extra]

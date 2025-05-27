@@ -9,7 +9,7 @@ regions = ["Southern California"]
 studios = ["Metro Pictures"]
 eras = ["early silent"]
 genres = ["Drama"]
-survival = ["Unknown"]
+survival = ["unknown"]
 directors = ["Edwin Carewe"]
 
 [extra]

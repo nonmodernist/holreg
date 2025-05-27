@@ -9,7 +9,7 @@ regions = ["Pacific Northwest"]
 studios = ["Metro Pictures"]
 eras = ["early silent"]
 genres = ["Drama"]
-survival = ["Lost"]
+survival = ["lost"]
 directors = ["Herbert Blache"]
 
 [extra]

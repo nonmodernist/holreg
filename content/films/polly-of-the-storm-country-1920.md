@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["Chaplin-Mayer Pictures Company"]
 eras = ["early silent"]
 genres = ["Drama"]
-survival = ["Lost"]
+survival = ["lost"]
 directors = ["Arthur Rossen"]
 
 [extra]

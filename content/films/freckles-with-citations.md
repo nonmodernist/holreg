@@ -9,7 +9,7 @@ regions = ["Limberlost Indiana", "Rural Midwest"]
 studios = ["Paramount Pictures"]
 eras = ["early silent"]
 genres = ["Drama", "Romance"]
-survival = ["Lost"]
+survival = ["lost"]
 directors = ["Marshall Neilan"]
 
 [extra]

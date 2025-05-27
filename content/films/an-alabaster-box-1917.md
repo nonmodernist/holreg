@@ -9,7 +9,7 @@ regions = ["Rural America"]
 studios = ["Vitagraph"]
 eras = ["early silent"]
 genres = ["Drama"]
-survival = ["Lost"]
+survival = ["lost"]
 directors = ["Chester Withey"]
 
 [extra]

@@ -122,3 +122,60 @@
     }
   }
 }
+
+
+
+
+
+// Card image styling for author profile cards with portrait layout
+.card {
+  // Use flexbox for author cards
+  display: flex;
+  gap: $spacing-lg;
+  align-items: flex-start;
+}
+
+.card-image {
+  flex-shrink: 0;
+  width: 120px;
+  
+  img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    
+    // Slightly desaturated/sepia effect for historical photos
+    filter: sepia(10%) contrast(1.05);
+    
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    width: 100px;
+    
+    img {
+      height: 140px;
+    }
+  }
+}
+
+// Content area takes remaining space
+.card-content-wrapper {
+  flex-grow: 1;
+  
+  .card-title,
+  .card-meta,
+  .card-content {
+    margin-bottom: $spacing-md;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

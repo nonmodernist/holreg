@@ -2,7 +2,7 @@
 
 {% block content %}
 <div class="taxonomy-single-page">
-    <header class="page-header">
+    <div class="page-header">
         {% if taxonomy.name == "authors" %}
         <h1>Films by {{ term.name }}</h1>
         <p class="page-description">Film adaptations of {{ term.name }}'s novels and short stories.</p>
@@ -23,7 +23,7 @@
         <h1>{{ term.name | title }}</h1>
         <p class="page-description">Films categorized under {{ term.name }}.</p>
         {% endif %}
-    </header>
+    </div>
 
     <div class="section">
         <div class="section-title">All Films ({{ term.pages | length }})</div>
@@ -39,13 +39,33 @@
                     {% if page.extra.director %}<span class="separator">•</span>{{ page.extra.director }}{% endif %}
                     {% if page.extra.studio %}<span class="separator">•</span>{{ page.extra.studio }}{% endif %}
                 </div>
-                {% if page.extra.availability %}
-                <div style="margin: 1rem 0;">
-                    <span class="status {{ page.extra.availability | lower }}">
-                        {{ page.extra.availability }}
-                    </span>
-                </div>
+                
+                <!-- Enhanced survival status display -->
+                {% if page.taxonomies.survival %}
+                    {% set survival_status = page.taxonomies.survival[0] %}
+                    <div class="film-status">
+                        <span class="status {{ survival_status }}">
+                            {% if survival_status == "extant" %}
+                                Survives
+                            {% else %}
+                                {% if survival_status == "lost" %}
+                                    Lost
+                                {% else %}
+                                    {% if survival_status == "unknown" %}
+                                        Presumed Lost
+                                    {% else %}
+                                        {{ survival_status | title }}
+                                    {% endif %}
+                                {% endif %}
+                            {% endif %}
+                        </span>
+                    </div>
+                {% else %}
+                    <div class="film-status">
+                        <span class="status unknown">Presumed Lost</span>
+                    </div>
                 {% endif %}
+                
                 {% if page.summary %}
                 <div class="card-content">{{ page.summary }}</div>
                 {% endif %}
