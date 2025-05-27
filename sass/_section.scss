@@ -81,7 +81,7 @@
   
   // AVAILABILITY STATUS - Right border accent + background tint
   &.available {
-    border-right: 3px solid #27ae60; // Bright green right border for available
+  //  border-right: 3px solid #27ae60; // Bright green right border for available
     background-color: rgba(#27ae60, 0.03);
     
     &:hover {
@@ -99,7 +99,7 @@
   }
   
   &.unknown-availability {
-    border-right: 3px solid #f39c12; // Orange right border for unknown availability
+  //  border-right: 3px solid #f39c12; // Orange right border for unknown availability
     background-color: rgba(#f39c12, 0.03);
     
     &:hover {
