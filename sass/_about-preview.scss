@@ -2,7 +2,7 @@
 // About preview section
 .about-preview {
   background: linear-gradient(135deg, rgba($color-accent, 0.03) 0%, rgba($color-accent-light, 0.03) 100%);
-  border-radius: 12px;
+ // border-radius: 12px;
   padding: $spacing-xxl;
   border: 1px solid rgba($color-accent, 0.1);
   
@@ -18,7 +18,7 @@
       color: white;
       background: linear-gradient(135deg, $color-accent 0%, darken($color-accent, 10%) 100%);
       padding: $spacing-md $spacing-xl;
-      border-radius: 25px;
+    //  border-radius: 25px;
       text-decoration: none;
       letter-spacing: 0.02em;
       transition: all 0.3s ease;

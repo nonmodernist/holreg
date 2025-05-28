@@ -149,6 +149,12 @@ After Stratton-Porter's death in a car accident in 1924, Hollywood studios conti
 
 Films like Monogram's *A Girl of the Limberlost* (1934) and Republic's *The Harvester* (1936) retained the romantic plots but transformed nature from a complex ecosystem worthy of protection into mere scenic backdrop for melodrama.
 
+
+<div style=" padding: 2rem 0;"> <div style="display: flex; align-items: center; justify-content: center;"> <div style="flex: 1; height: 1px; background: linear-gradient(to right, transparent, #1a1a1a); opacity: 0.6;"></div> <div style="padding: 0 1rem; display: flex; align-items: center;"> <svg width="36" height="36" viewBox="0 0 64 64" fill="#1a1a1a" xmlns="http://www.w3.org/2000/svg"> <circle cx="18" cy="18" r="10" fill="#1a1a1a"/> <circle cx="38" cy="18" r="10" fill="#1a1a1a"/> <rect x="10" y="25" width="44" height="24" rx="3" fill="#1a1a1a"/> <polygon points="54,30 64,25 64,39 54,34" fill="#1a1a1a"/> <rect x="15" y="50" width="10" height="3" fill="#1a1a1a"/> <rect x="25" y="49" width="14" height="5" fill="#1a1a1a"/> </svg> </div> <div style="flex: 1; height: 1px; background: linear-gradient(to left, transparent, #1a1a1a); opacity: 0.6;"></div> </div> </div>
+
+
+<div class="midwest-divider"> <hr class="line"> <svg class="symbol" viewBox="0 0 100 20" preserveAspectRatio="xMidYMid meet"> <rect x="0" y="9" width="100" height="2" fill="#888"/> <rect x="45" y="6" width="10" height="8" fill="#444"/> </svg> <hr class="line"> </div> <style> .midwest-divider { display: flex; align-items: center; justify-content: center; margin: 4rem 0; } .line { flex: 1; border: none; border-top: 1px solid #bbb; margin: 0 1rem; opacity: 0.6; } .symbol { width: 60px; height: 20px; opacity: 0.8; } </style>
+
 ## Legacy and Environmental Literature
 
 Gene Stratton-Porter's dual career as novelist and filmmaker illuminates the complex relationship between American literary regionalism and early Hollywood. Her attempt to use film as a vehicle for environmental education anticipates later traditions of nature documentary.

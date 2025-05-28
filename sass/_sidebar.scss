@@ -3,7 +3,7 @@
 .author-sidebar {
   background-color: $color-background-sidebar;
   padding: $spacing-xl;
-  border-radius: 8px;
+//  border-radius: 8px;
   
   @media (max-width: 1024px) {
     order: -1;
@@ -19,7 +19,7 @@
     img {
       width: 100%;
       height: auto;
-      border-radius: 6px;
+    //  border-radius: 6px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     }
     
@@ -36,7 +36,7 @@
   .metadata-box {
     background-color: white;
     border: 1px solid $color-border;
-    border-radius: 6px;
+  //  border-radius: 6px;
     padding: $spacing-lg;
     margin-bottom: $spacing-lg;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
@@ -181,7 +181,7 @@
 .status {
   display: inline-block;
   padding: $spacing-sm $spacing-md;
-  border-radius: 16px;
+  border-radius: 12px;
   font-family: $sans-serif;
   font-size: $font-size-sm;
   font-weight: 700;
