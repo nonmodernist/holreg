@@ -2,6 +2,7 @@
 title = "Ramona"
 date = 2024-01-01
 weight = 1910
+description = "The first of four adaptations of the novel"
 
 [taxonomies]
 authors = ["Helen Hunt Jackson"]

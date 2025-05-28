@@ -2,6 +2,7 @@
 title = "Alice Hegan Rice"
 date = 2024-01-01
 template = "author.html"
+description = "Nine adaptations between 1914 and 1942. Compassionate portrayals of working-class Kentucky life."
 
 [taxonomies]
 regions = ["Appalachia", "American South"]

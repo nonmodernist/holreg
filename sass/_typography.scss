@@ -7,7 +7,7 @@
 
 body {
   font-family: $serif-secondary;
-  font-size: $font-size-lg;
+  font-size: $font-size-base;
   line-height: $line-height-relaxed;
   font-weight: $font-weight-normal;
   color: $color-text;
@@ -69,7 +69,7 @@ h2 {
     bottom: -$spacing-xs;
     left: 0;
     width: 100%;
-    height: 2px;
+    height: 1.5px;
     background: linear-gradient(90deg, $color-accent-tertiary 0%, $color-accent-quaternary 100%);
     border-radius: 2px;
   }
@@ -96,7 +96,7 @@ h2 {
 h3 {
   font-size: $font-size-2xl;
   font-weight: $font-weight-semibold;
-  margin-top: $spacing-xl;
+  margin-top: $spacing-sm;
   color: $color-secondary;
   line-height: $line-height-snug;
 }
@@ -135,13 +135,13 @@ p {
   }
   
   // Lead paragraph styling
-  &.lead {
-    font-size: $font-size-xl;
-    font-weight: $font-weight-medium;
-    line-height: $line-height-normal;
-    color: $color-secondary;
-    margin-bottom: $spacing-xl;
-  }
+  // &.lead {
+  //   font-size: $font-size-xl;
+  //   font-weight: $font-weight-medium;
+  //   line-height: $line-height-normal;
+  //   color: $color-secondary;
+  //   margin-bottom: $spacing-xl;
+  // }
   
   // Film description paragraphs
   &.film-description {

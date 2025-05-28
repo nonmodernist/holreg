@@ -45,8 +45,8 @@
                                 {% endif %}
                             </div>
                             
-                            {% if page.summary %}
-                            <div class="card-content">{{ page.summary }}</div>
+                            {% if page.description %}
+                            <div class="card-content">{{ page.description }}</div>
                             {% endif %}
                         </div>
                         
@@ -70,8 +70,8 @@
                             
                             <div class="card-meta">
                                 {% if page.extra.year %}{{ page.extra.year }}{% endif %}
-                                {% if page.taxonomies.authors %}<span class="separator">•</span>{{ page.taxonomies.authors[0] }}{% endif %}
-                                {% if page.extra.director %}<span class="separator">•</span>{{ page.extra.director }}{% endif %}
+                                {% if page.taxonomies.authors %}<span class="separator">•</span>Based on the work of {{ page.taxonomies.authors[0] }}{% endif %}
+                                {% if page.extra.director %}<span class="separator">•</span>Directed by {{ page.extra.director }}{% endif %}
                             </div>
                             
                             <!-- Enhanced survival status display -->
@@ -100,8 +100,8 @@
                                 </div>
                             {% endif %}
 
-                            {% if page.summary %}
-                            <div class="card-content">{{ page.summary }}</div>
+                            {% if page.description %}
+                            <div class="card-content">{{ page.description }}</div>
                             {% endif %}
                         </div>
                         
