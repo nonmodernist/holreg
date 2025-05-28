@@ -13,11 +13,10 @@ author_byline = "Alexandra Edwards"
 author_dates = "1863-1924"
 birth_date = "August 17, 1863"
 death_date = "December 6, 1924"
-occupation = ["novelist", "naturalist", "photographer", "conservationist", "filmmaker", "women's club organizer"]
+occupation = ["novelist", "photographer", "filmmaker"]
 locations = ["Geneva, Indiana", "Rome City, Indiana", "Los Angeles, California"]
 
 # Content flags
-show_bibliography = false
 show_filmography = true
 show_citation = true
 show_related_films = true
@@ -55,192 +54,46 @@ year = 1925
 
 # Film adaptation statistics
 [extra.film_stats]
-total_adaptations = 21
-surviving_films = 6
+total_adaptations = 22
+surviving_films = 10
+lost_films = 12
 adaptation_span = "1917-1960"
 studios = ["Paramount", "Gene Stratton-Porter Productions", "RKO", "Monogram", "Republic", "Columbia", "20th Century Fox"]
 
-# Extant Adaptations
-[[extra.extant_adaptations]]
-title = "A Girl of the Limberlost"
-director = "Christy Cabanne"
-studio = "Monogram Pictures"
-year = 1934
-format = "Sound, B&W"
-status = "survives"
-availability = "Available online"
-
-[[extra.extant_adaptations]]
-title = "The Keeper of the Bees"
-director = "Christy Cabanne"
-studio = "Monogram Pictures"
-year = 1935
-format = "Sound, B&W"
-status = "survives"
-availability = "Available online"
-
-[[extra.extant_adaptations]]
-title = "Romance of the Limberlost"
-director = "William Nigh"
-studio = "Monogram Pictures"
-year = 1938
-format = "Sound, B&W"
-status = "survives"
-availability = "Available online"
-
-[[extra.extant_adaptations]]
-title = "Her First Romance"
-director = "Edward Dmytryk"
-studio = "Monogram Pictures"
-year = 1940
-format = "Sound, B&W"
-status = "survives"
-availability = "Available online"
-
-[[extra.extant_adaptations]]
-title = "Laddie"
-director = "Jack Hively"
-studio = "RKO"
-year = 1940
-format = "Sound, B&W"
-status = "survives"
-availability = "Available online"
-
-[[extra.extant_adaptations]]
-title = "Freckles"
-director = "Andrew McLaglen"
-studio = "20th Century Fox"
-year = 1960
-format = "CinemaScope, Color"
-status = "survives"
-availability = "Available via Fox Movie Channel"
-
-# Lost Adaptations
-[[extra.lost_adaptations]]
-title = "Freckles"
-director = "Marshall Neilan"
-studio = "Lasky-Paramount"
-year = 1917
-format = "Silent, B&W"
-status = "Lost"
-
-[[extra.lost_adaptations]]
-title = "Michael O'Halloran"
-director = "James Leo Meehan"
-studio = "Gene Stratton-Porter Productions"
-year = 1923
-format = "Silent, B&W"
-status = "Lost"
-
-[[extra.lost_adaptations]]
-title = "A Girl of the Limberlost"
-director = "James Leo Meehan"
-studio = "Gene Stratton-Porter Productions"
-year = 1924
-format = "Silent, B&W"
-status = "Lost"
-
-[[extra.lost_adaptations]]
-title = "The Keeper of the Bees"
-director = "James Leo Meehan"
-studio = "Gene Stratton-Porter Productions"
-year = 1925
-format = "Silent, B&W"
-status = "Lost"
-
-[[extra.lost_adaptations]]
-title = "Laddie"
-director = "James Leo Meehan"
-studio = "Gene Stratton-Porter Productions"
-year = 1926
-format = "Silent, B&W"
-status = "Lost"
-
-[[extra.lost_adaptations]]
-title = "The Magic Garden"
-director = "James Leo Meehan"
-studio = "Gene Stratton-Porter Productions"
-year = 1927
-format = "Silent, B&W"
-status = "Lost"
-
-[[extra.lost_adaptations]]
-title = "The Harvester"
-director = "James Leo Meehan"
-studio = "Gene Stratton-Porter Productions"
-year = 1927
-format = "Silent, B&W"
-status = "Lost"
-
-[[extra.lost_adaptations]]
-title = "Freckles"
-director = "James Leo Meehan"
-studio = "FBO"
-year = 1928
-format = "Silent, B&W"
-status = "Lost"
-
-[[extra.lost_adaptations]]
-title = "Freckles"
-director = "Edward Killy & William Hamilton"
-studio = "RKO"
-year = 1935
-format = "Sound, B&W"
-status = "Lost"
-
-[[extra.lost_adaptations]]
-title = "Laddie"
-director = "George Stevens"
-studio = "RKO"
-year = 1935
-format = "Sound, B&W"
-status = "Lost"
-
-[[extra.lost_adaptations]]
-title = "The Harvester"
-director = "Joseph Santley"
-studio = "Republic Pictures"
-year = 1936
-format = "Sound, B&W"
-status = "Lost"
-
-[[extra.lost_adaptations]]
-title = "Michael O'Halloran"
-director = "Karl Brown"
-studio = "Republic Pictures"
-year = 1937
-format = "Sound, B&W"
-status = "Lost"
-
-[[extra.lost_adaptations]]
-title = "A Girl of the Limberlost"
-director = "Mel Ferrer"
-studio = "Columbia Pictures"
-year = 1945
-format = "Sound, B&W"
-status = "Lost"
-
-[[extra.lost_adaptations]]
-title = "Keeper of the Bees"
-director = "John Sturges"
-studio = "Columbia Pictures"
-year = 1947
-format = "Sound, B&W"
-status = "Lost"
-
-[[extra.lost_adaptations]]
-title = "Michael O'Halloran"
-director = "John Rawlins"
-studio = "Windsor Pictures/Monogram"
-year = 1948
-format = "Sound, B&W"
-status = "Lost"
+# Film Adaptations
+[extra.film_references]
+lost = [
+    "freckles-1917",
+    "michael-ohalloran-1923",
+    "a-girl-of-the-limberlost-1924",
+    "the-keeper-of-the-bees-1925",
+    "laddie-1926",
+    "the-harvester-1927",
+    "the-magic-garden-1927",
+    "freckles-1928",
+    "laddie-1935",
+    "her-first-romance-1940",
+    "a-girl-of-the-limberlost-1945",
+    "keeper-of-the-bees-1947",
+]
+extant = [
+    "a-girl-of-the-limberlost-1934",
+    "freckles-1935", # private collection
+    "the-keeper-of-the-bees-1935",
+    "the-harvester-1936", # at ucla
+    "michael-ohalloran-1937", # private collection, incomplete
+    "romance-of-the-limberlost-1938",
+    "laddie-1940",
+   # "freckles-comes-home-1942", # JPM sequel book
+    "michael-ohalloran-1948",
+    "freckles-1960"
+]
 
 
 # DVD and streaming sources
 [[extra.dvd_sources]]
 title = "Internet Archive Collection"
-details = "Five Stratton-Porter adaptations available for free viewing: A Girl of the Limberlost (1934), The Keeper of the Bees (1935), Romance of the Limberlost (1938), Her First Romance (1940), and Laddie (1940)."
+details = "Five Stratton-Porter adaptations available for free viewing: <i>A Girl of the Limberlost</i> (1934), <i>The Keeper of the Bees</i> (1935), <i>Romance of the Limberlost</i> (1938), <i>Laddie</i> (1940), and <i>Freckles Comes Home</i> (1942)."
 
 # Archival collections
 [[extra.archive_collections]]

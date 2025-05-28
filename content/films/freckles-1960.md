@@ -22,23 +22,20 @@ story_author = "Gene Stratton-Porter"
 director = "Andrew McLaglen"
 studio = "20th Century Fox"
 setting = "Limberlost"
-availability = "Available"
-format = "Unknown"
+format = "Sound, De Luxe Color, CinemaScope"
+duration = "83 minutes"
 
 # Content flags
 show_citation = true
+
+[extra.film_status]  
+survival = "extant"
+completeness = "complete"
+access = "available"
+availability_type = "DVD"
+availability_notes = "Available on DVD-R from various online merchants"
+
 +++
-
-*Freckles* (1960) is a film adaptation of "Freckles" by Gene Stratton-Porter (1904).
-
-## Production Details
-
-**Director:** Andrew McLaglen
-**Studio:** 20th Century Fox
-**Setting:** Limberlost
-**survival:** Survives
-
-## Plot Summary
 
 [Add plot summary here]
 

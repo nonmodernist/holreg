@@ -10,7 +10,7 @@ studios = ["Republic"]
 eras = ["classical hollywood"]
 genres = ["Melodrama"]
 survival = ["extant"]
-access = ["available"]
+access = ["unavailable"]
 directors = ["Karl Brown"]
 
 [extra]
@@ -27,6 +27,13 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+
+[extra.film_status]  
+survival = "extant"
+completeness = "incomplete"
+access = "unavailable"
+availability_type = "private_collection"
+availability_notes = "Held in a private collection, missing one reel; screened at CineFest 2006"
 +++
 
 *Michael O'Halloran* (1937) is a film adaptation of "Michael O'Halloran" by Gene Stratton-Porter (1915).

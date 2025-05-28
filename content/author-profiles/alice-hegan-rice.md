@@ -49,7 +49,7 @@ adaptation_span = "1914-1942"
 studios = ["Paramount", "MGM", "Universal"]
 
 
-# NEW STRUCTURE: Film references by category
+# Film references by category
 [extra.film_references]
 lost = [
     "mrs-wiggs-1914",

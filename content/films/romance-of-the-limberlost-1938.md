@@ -22,11 +22,18 @@ story_author = "Gene Stratton-Porter"
 director = "William Nigh"
 studio = "Monogram"
 setting = "Limberlost"
-availability = "Available"
 format = "Unknown"
 
 # Content flags
 show_citation = true
+
+[extra.film_status]  
+survival = "extant"
+completeness = "complete"
+access = "available"
+availability_type = "internet_archive"
+availability_notes = "Available for free streaming on Internet Archive"
+
 
 # Film image
 [extra.film_image]

@@ -27,18 +27,15 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+
+[extra.film_status]  
+survival = "extant"
+completeness = "incomplete"
+access = "restricted"
+availability_type = "archive"
+availability_notes = "Held at UCLA"
 +++
 
-*Michael O'Halloran* (1948) is a film adaptation of "Michael O'Halloran" by Gene Stratton-Porter (1915).
-
-## Production Details
-
-**Director:** John Rawlins
-**Studio:** Windsor Pictures Corp. (distributed by Monogram)
-**Setting:** Limberlost
-**survival:** Survives
-
-## Plot Summary
 
 [Add plot summary here]
 

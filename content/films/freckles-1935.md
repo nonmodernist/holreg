@@ -10,7 +10,7 @@ studios = ["RKO"]
 eras = ["classical hollywood"]
 genres = ["Drama"]
 survival = ["extant"]
-access = ["available"]
+access = ["restricted"]
 directors = ["Edward Killy and William Hamilton"]
 
 [extra]
@@ -22,23 +22,20 @@ story_author = "Gene Stratton-Porter"
 director = "Edward Killy and William Hamilton"
 studio = "RKO"
 setting = "Limberlost"
-availability = "Available"
-format = "Unknown"
+format = "Sound, B&W"
 
 # Content flags
 show_citation = true
+
+[extra.film_status]  
+survival = "extant"
+access = "unavailable"
+completeness = "complete"
+availability_type = "private_collection"
+availability_notes = "Held in a private collection; screened at CineFest 2010."
+
 +++
 
-*Freckles* (1935) is a film adaptation of "Freckles" by Gene Stratton-Porter (1904).
-
-## Production Details
-
-**Director:** Edward Killy and William Hamilton
-**Studio:** RKO
-**Setting:** Limberlost
-**survival:** Survives
-
-## Plot Summary
 
 [Add plot summary here]
 

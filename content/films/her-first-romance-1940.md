@@ -21,11 +21,14 @@ story_author = "Gene Stratton-Porter"
 director = "Edward Dmytryk"
 studio = "Monogram"
 setting = "Southern California"
-availability = "Unknown"
-format = "Unknown"
+format = "Sound, B&W"
 
 # Content flags
 show_citation = true
+
+[extra.film_status]  
+survival = "unknown"
+
 # Film image
 [extra.film_image]
 url = "/images/sidebar-herfirstromance.jpg"

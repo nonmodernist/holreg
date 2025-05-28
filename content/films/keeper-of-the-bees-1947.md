@@ -27,6 +27,13 @@ format = "Unknown"
 # Content flags
 show_citation = true
 
+[extra.film_status]  
+survival = "unknown"
+completeness = "unknown"
+access = "unknown"
+availability_notes = "May be held in a private collection"
+
+
 # Film image
 [extra.film_image]
 url = "/images/sidebar-keeper1947.jpg"

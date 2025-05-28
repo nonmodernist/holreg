@@ -21,11 +21,14 @@ story_author = "Gene Stratton-Porter"
 director = "James Leo Meehan"
 studio = "Gene Stratton Porter Productions"
 setting = "Limberlost"
-availability = "Lost"
+
 format = "Unknown"
 
 # Content flags
 show_citation = true
+
+
+
 +++
 
 *Michael O'Halloran* (1923) is a film adaptation of "Michael O'Halloran" by Gene Stratton-Porter (1915).

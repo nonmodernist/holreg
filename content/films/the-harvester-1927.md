@@ -21,7 +21,6 @@ story_author = "Gene Stratton-Porter"
 director = "James Leo Meehan"
 studio = "Robertson-Cole Pictures Corp"
 setting = "Limberlost"
-availability = "Lost"
 format = "Unknown"
 
 # Content flags

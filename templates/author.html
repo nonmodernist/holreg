@@ -86,15 +86,15 @@
                                 
                                 <!-- Clean status display without colored text -->
                                 {% if film_page.extra.film_status %}
-                                    <br>Survival: {% if film_page.extra.film_status.completeness %}{{ film_page.extra.film_status.completeness | title }}{% else %}{{ film_page.extra.film_status.survival | title }}{% endif %}. Availability: {% if film_page.extra.film_status.access == "available" %}Available{% if film_page.extra.film_status.availability_type == "internet_archive" %} (Free Online){% elif film_page.extra.film_status.availability_type == "dvd" %} (DVD){% elif film_page.extra.film_status.availability_type == "streaming" %} (Streaming){% endif %}{% elif film_page.extra.film_status.access == "restricted" %}Archive Access Only{% elif film_page.extra.film_status.access == "unavailable" %}Not Available{% else %}Unknown{% endif %}.
+                                    <br>Status: {% if film_page.extra.film_status.completeness %}{{ film_page.extra.film_status.completeness | title }}{% else %}{{ film_page.extra.film_status.survival | title }}{% endif %}. Availability: {% if film_page.extra.film_status.access == "available" %}Available{% if film_page.extra.film_status.availability_type == "internet_archive" %} (Free Online){% elif film_page.extra.film_status.availability_type == "dvd" %} (DVD){% elif film_page.extra.film_status.availability_type == "streaming" %} (Streaming){% endif %}{% elif film_page.extra.film_status.access == "restricted" %}Archive Access Only{% elif film_page.extra.film_status.access == "unavailable" %}Not Available{% else %}Unknown{% endif %}.
                                     
                                     <!-- Availability notes -->
                                     {% if film_page.extra.film_status.availability_notes %}
-                                        <br><small>{{ film_page.extra.film_status.availability_notes }}</small>
+                                        <br><small><i>{{ film_page.extra.film_status.availability_notes }}</i></small>
                                     {% endif %}
                                 {% else %}
                                     <!-- Fallback if no film_status -->
-                                    <br>Survival: Extant.
+                                    <br>Status: Extant.
                                 {% endif %}
                             </div>
                         </div>
@@ -117,7 +117,7 @@
                             <div class="film-details">
                                 {% if film_page.extra.director %}Dir: {{ film_page.extra.director }}{% endif %}{% if film_page.extra.studio %} ({{ film_page.extra.studio }}{% if film_page.extra.year %}, <span class="film-year">{{ film_page.extra.year }}</span>{% endif %}){% endif %}{% if not film_page.extra.studio and film_page.extra.year %} ({{ film_page.extra.year }}){% endif %}.{% if film_page.extra.format %} {{ film_page.extra.format }}{% endif %}{% if film_page.extra.duration %}, {{ film_page.extra.duration }}{% endif %}.
                                 
-                                <br>Survival: Lost.
+                                <br>Status: Lost.
                                 
                                 {% if film_page.extra.film_status and film_page.extra.film_status.availability_notes %}
                                     <br><small>{{ film_page.extra.film_status.availability_notes }}</small>
@@ -133,6 +133,32 @@
             </div>
             {% endif %}
 
+<!-- DVD section -->
+            {% if page.extra.dvd_sources %}
+                <div class="section">
+                    <h2 class="section-title">DVD and Streaming Sources</h2>
+                    {% for source in page.extra.dvd_sources %}
+                        <div class="dvd-entry">
+                        <p class="dvd-title">{{ source.title }}</p>
+                        <p>{{ source.details | safe }}</p>
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+
+<!-- Archives Section -->
+                        {% if page.extra.archive_collections %}
+                <div class="section">
+                    <h2 class="section-title">Archive Collections</h2>
+                    {% for source in page.extra.archive_collections %}
+                        <div class="archive-entry">
+                        <p class="archive-name">{{ source.title }}</p>
+                        <p class="archive-details">{{ source.details | safe }}</p>
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+
             <!-- Citation Section -->
             {% if page.extra.show_citation %}
             <div class="section citation">
@@ -144,6 +170,7 @@
                 </div>
             </div>
             {% endif %}
+            
         </div>
 
         <!-- Author sidebar -->
@@ -210,12 +237,6 @@
             {% endif %}
 
 
-
-
-
-
- 
-
 <!-- Film statistics from manual frontmatter -->
 {% if page.extra.film_stats %}
 <div class="metadata-box">
@@ -275,14 +296,7 @@
     {% endif %}
 </div>
 {% endif %}
-
-
-
-
-
-
-
-            
+  
         </aside>
     </div>
 </article>

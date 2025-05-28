@@ -10,7 +10,6 @@ studios = ["Paramount Pictures"]
 eras = ["early silent"]
 genres = ["Drama", "Romance"]
 survival = ["lost"]
-access = ["unavailable"]
 directors = ["Marshall Neilan"]
 
 [extra]

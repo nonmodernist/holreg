@@ -22,23 +22,19 @@ story_author = "Gene Stratton-Porter"
 director = "Joseph Santley"
 studio = "Republic"
 setting = "Limberlost"
-availability = "Available"
-format = "Unknown"
+format = "Sound, B&W"
 
 # Content flags
 show_citation = true
+
+[extra.film_status]  
+survival = "extant"
+completeness = "complete"
+access = "restricted"
+availability_type = "archive"
+availability_notes = "Held at UCLA Film Archive"
 +++
 
-*The Harvester* (1936) is a film adaptation of "The Harvester" by Gene Stratton-Porter (1911).
-
-## Production Details
-
-**Director:** Joseph Santley
-**Studio:** Republic
-**Setting:** Limberlost
-**survival:** Survives
-
-## Plot Summary
 
 [Add plot summary here]
 

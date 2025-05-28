@@ -21,23 +21,17 @@ story_author = "Gene Stratton-Porter"
 director = "Mel Ferrer"
 studio = "Columbia"
 setting = "Limberlost"
-availability = "Unknown"
 format = "Unknown"
 
 # Content flags
 show_citation = true
+
+[extra.film_status]  
+survival = "unknown"
+
+
 +++
 
-*A Girl of the Limberlost* (1945) is a film adaptation of "A Girl of the Limberlost" by Gene Stratton-Porter (1909).
-
-## Production Details
-
-**Director:** Mel Ferrer
-**Studio:** Columbia
-**Setting:** Limberlost
-**survival:** Unknown
-
-## Plot Summary
 
 [Add plot summary here]
 

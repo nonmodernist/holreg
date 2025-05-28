@@ -1,4 +1,4 @@
-// Enhanced Cards with better content organization
+// Enhanced Cards with improved description styling
 .card {
   background-color: $color-background;
   border: 1px solid $color-border;
@@ -9,12 +9,6 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  
-  // &:hover {
-  //   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-  //   border-color: $color-accent-secondary;
-  //   transform: translateY(-2px);
-  // }
   
   // Only apply horizontal flexbox when card has an image
   &.has-image {
@@ -32,23 +26,17 @@
     font-family: $serif-primary;
     font-size: $font-size-xl;
     font-weight: 600;
-    margin-bottom: $spacing-md;
-    
-    // a {
-    //   color: $color-primary;
-    //   text-decoration: none;
-      
-    //   &:hover {
-    //     color: $color-accent;
-    //   }
-   // }
+    margin-bottom: $spacing-sm; // Reduced from $spacing-md
+    line-height: 1.3;
+    color: $color-primary;
   }
   
   .card-meta {
     font-family: $sans-serif;
     font-size: $font-size-sm;
     color: $color-text-light;
-    margin-bottom: $spacing-lg;
+    margin-bottom: $spacing-md;
+    line-height: 1.4;
     
     .separator {
       margin: 0 $spacing-xs;
@@ -56,20 +44,64 @@
     }
   }
   
+  // ENHANCED CARD CONTENT/DESCRIPTION STYLING
   .card-content {
     flex-grow: 1;
     line-height: 1.6;
+    font-size: $font-size-base;
+    color: $color-text;
+    
+    // Improved typography for descriptions
+    font-family: $serif-secondary;
     
     p {
-      margin-bottom: $spacing-md;
+      margin-bottom: $spacing-sm; // Tighter spacing for card context
+      text-align: left; // Override justify for better readability in narrow cards
       
       &:last-child {
         margin-bottom: 0;
       }
+      
+      // Handle long descriptions gracefully
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+    
+    // Style for author descriptions with stats/numbers
+    &.author-description {
+      // Numbers and statistics should stand out
+      strong {
+        font-weight: 600;
+        color: $color-primary;
+      }
+      
+      // Highlight specific phrases like "Nine adaptations" or "Compassionate portrayals"
+      &::first-line {
+        font-weight: 500;
+        color: $color-secondary;
+      }
+    }
+    
+    // Style for film descriptions
+    &.film-description {
+      font-style: italic;
+      color: $color-text-light;
+      
+      // De-emphasize "The first of four adaptations" type phrases
+      &.adaptation-note {
+        font-size: $font-size-sm;
+        font-style: normal;
+        color: $color-text-muted;
+        background-color: rgba($color-accent, 0.05);
+        padding: $spacing-xs $spacing-sm;
+        border-radius: 4px;
+        margin-top: $spacing-sm;
+      }
     }
   }
   
-  // Enhanced featured items styling
+  // Enhanced featured items styling (for homepage cards)
   .featured-items {
     margin-top: $spacing-lg;
     
@@ -135,7 +167,76 @@
   }
 }
 
-// Card image styling with different sizes for different content types
+// SPECIAL STYLING FOR DIFFERENT CARD TYPES
+
+// Author cards - emphasize the biographical summary
+.card.author-card {
+  .card-content {
+    // First sentence or phrase should be more prominent
+    p:first-child::first-line {
+      font-weight: 500;
+      color: $color-secondary;
+    }
+    
+    // Handle statistics elegantly (like "Nine adaptations between...")
+    p:first-child {
+      strong, 
+      .stat-highlight {
+        color: $color-accent;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+// Film cards - more subtle, focus on plot/adaptation info
+.card.film-card {
+  .card-content {
+    color: $color-text-light;
+    
+    // Adaptation notes should be subtle
+    &.adaptation-summary {
+      font-size: $font-size-sm;
+      font-style: italic;
+      color: $color-text-muted;
+      background-color: rgba($color-accent-light, 0.05);
+      padding: $spacing-sm;
+      border-radius: 4px;
+      border-left: 2px solid $color-accent-light;
+    }
+  }
+}
+
+// Card Link Styles - ensure descriptions remain readable
+.card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+    
+    .card {
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+      border-color: $color-accent-tertiary;
+      
+      // Subtle enhancement of text on hover
+      .card-content {
+        color: $color-text; // Slightly darken text on hover for better readability
+      }
+    }
+  }
+  
+  &:focus {
+    outline: 2px solid $color-accent;
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+}
+
+// CARD IMAGE STYLING - Preserving original sizing
 .card-image {
   flex-shrink: 0;
   order: 2; // Place image on the right side
@@ -143,13 +244,11 @@
   img {
     width: 100%;
     object-fit: cover;
-  //  border-radius: 2px;
+    border-radius: 2px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  //  transition: all 0.3s ease;
     
     // Slightly desaturated/sepia effect for historical photos
     filter: sepia(10%) contrast(1.05);
-    
   }
   
   @media (max-width: 768px) {
@@ -209,57 +308,39 @@
   }
 }
 
-// Card Link Styles - Add to _cards.scss
+// UTILITY CLASSES FOR MANUAL STYLING
 
-// Make entire cards clickable
-.card-link {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-  transition: all 0.3s ease;
-  
-  &:hover {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  &:focus {
-    outline: 2px solid $color-accent;
-    outline-offset: 2px;
-    border-radius: 2px;
-  }
-  
-  // Override default link hover behavior for card content
-  .card {
-    &:hover {
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-      border-color: $color-accent-tertiary;
-      // Remove the transform from the card since it's now on the link
-      transform: none;
-    }
-  }
-  
-  // Ensure card titles don't have link styling
-  .card-title {
-    color: $color-primary;
-  }
-  
-  // Override any nested link styles to prevent conflicts
-  .card-meta,
-  .card-content {
-    a {
-      color: $color-accent;
-      
-      &:hover {
-        color: darken($color-accent, 10%);
-        text-decoration: underline;
-      }
-    }
-  }
+// For highlighting key phrases in descriptions
+.highlight-stat {
+  font-weight: 600;
+  color: $color-accent;
 }
 
-// Special handling for status indicators within clickable cards
-.card-link .film-status .status {
-  // Ensure status badges maintain their styling within clickable cards
-  pointer-events: none; // Prevent them from interfering with the link
+.highlight-period {
+  font-weight: 500;
+  color: $color-secondary;
+}
+
+// For de-emphasizing boilerplate text
+.subtle-text {
+  font-size: $font-size-sm;
+  color: $color-text-muted;
+  font-style: italic;
+}
+
+// For adaptation counts and similar stats
+.adaptation-count {
+  font-weight: 600;
+  color: $color-accent;
+  
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    background-color: $color-accent;
+    border-radius: 50%;
+    margin-right: $spacing-xs;
+    vertical-align: middle;
+  }
 }

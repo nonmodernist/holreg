@@ -28,6 +28,13 @@ format = "Unknown"
 # Content flags
 show_citation = true
 
+[extra.film_status]  
+survival = "extant"
+completeness = "complete"
+access = "available"
+availability_type = "internet_archive"
+availability_notes = "Available for free streaming on the Internet Archive"
+
 # Film image
 [extra.film_image]
 url = "/images/sidebar-keeper1935.jpg"
