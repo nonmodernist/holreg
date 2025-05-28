@@ -18,11 +18,7 @@
     {% endif %}
 
     <!-- Enhanced film grid -->
-    {% if section.pages | filter(attribute="extra.year") | length > 0 %}
-        {% set items = section.pages | sort(attribute="extra.year", default=0) %}
-    {% else %}
         {% set items = section.pages %}
-    {% endif %}
     <div class="section">
         {% if section.path == "/author-profiles/" %}
             <div class="section-title">All Authors ({{ section.pages | length }})</div>

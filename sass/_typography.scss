@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: $font-weight-bold;
   line-height: $line-height-tight;
   color: $color-primary;
-  margin: 0 0 $spacing-lg 0;
+  margin-bottom: $spacing-lg;
   letter-spacing: $letter-spacing-tight;
 }
 
@@ -57,7 +57,7 @@ h1 {
 h2 {
   font-size: $font-size-3xl;
   font-weight: $font-weight-bold;
-  margin-top: $spacing-sm;
+  margin-top: $spacing-3xl;
   margin-bottom: $spacing-lg;
   color: $color-primary;
   position: relative;
@@ -87,6 +87,21 @@ h2 {
       display: none; // Remove the accent line for section titles
     }
   }
+
+    // Citation box titles get different styling
+  &.citation-box-title {
+    font-size: $font-size-2xl;
+    font-weight: $font-weight-semibold;
+    color: $color-primary;
+    margin-bottom: $spacing-lg;
+    padding-bottom: $spacing-sm;
+    border-bottom: 2px solid $color-border;
+    margin-top: 0;
+    
+    &::after {
+      display: none; // Remove the accent line for section titles
+    }
+  }
   
   @media (max-width: 768px) {
     font-size: $font-size-2xl;
@@ -96,7 +111,7 @@ h2 {
 h3 {
   font-size: $font-size-2xl;
   font-weight: $font-weight-semibold;
-  margin-top: $spacing-sm;
+  margin-top: $spacing-xxl;
   color: $color-secondary;
   line-height: $line-height-snug;
 }
@@ -206,7 +221,7 @@ blockquote {
     font-family: $serif-primary;
     font-size: $font-size-6xl;
     font-weight: $font-weight-bold;
-    color: rgba($color-accent, 0.2);
+    color: rgba($color-accent-tertiary, 0.2);
     position: absolute;
     top: $spacing-sm;
     left: $spacing-md;

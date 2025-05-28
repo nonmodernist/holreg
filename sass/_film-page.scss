@@ -187,8 +187,8 @@
         font-style: italic;
         margin: $spacing-xl 0;
         padding: $spacing-lg;
-        background-color: rgba($color-accent, 0.05);
-        border-left: 4px solid $color-accent;
+        background-color: rgba($color-accent-secondary, 0.05);
+        border-left: 4px solid $color-accent-secondary;
         font-size: $font-size-base;
         
         p:last-child {

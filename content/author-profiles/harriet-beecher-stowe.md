@@ -2,6 +2,7 @@
 title = "Harriet Beecher Stowe"
 date = 2024-01-01
 template = "author.html"
+weight = 191523
 
 [taxonomies]
 regions = ['Rural America', 'American South']

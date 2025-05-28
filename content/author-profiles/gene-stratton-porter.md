@@ -2,9 +2,8 @@
 title = "Gene Stratton-Porter"
 date = 2024-01-01
 template = "author.html"
+weight = 160915
 
-[taxonomies]
-regions = ["Limberlost Indiana", "Rural Midwest", "Southern California"]
 
 [extra]
 author_byline = "Alexandra Edwards"
@@ -24,8 +23,8 @@ show_related_films = true
 # Author portrait
 [extra.author_image]
 url = "/images/author-gsp.jpg"
-alt = "Gene Stratton-Porter portrait"
-caption = "Gene Stratton-Porter. cpation needed."
+alt = "Portrait of Gene Stratton-Porter holding large butterflies."
+caption = "Portrait of Gene Stratton-Porter."
 
 # Notable literary works
 [[extra.notable_works]]
@@ -103,13 +102,14 @@ details = "Rome City, Indiana. Houses manuscripts, photographs, and production m
 [[extra.archive_collections]]
 title = "Indiana State Library"
 details = "Manuscript collection includes correspondence with film producers and screenplay drafts."
+
 +++
 
-In her sixty years on earth, Gene Stratton-Porter was many things: a women's club organizer, nature photographer, naturalist, conservationist, best-selling novelist, and a burgeoning film producer who died just as her film studio began to realize her mission of adapting her novels into movies that could further her education and conservation efforts. By 1960, eight of her books had been turned into twenty-one films—silent and sound, black and white and color, from Poverty Row studios to members of the Big Five.
+Gene Stratton-Porter spent her life connected to the natural world of eastern Indiana's Limberlost Swamp, where she developed her skills as a naturalist, nature photographer, and conservationist. Her knowledge of this wetland ecosystem and her advocacy for its preservation became central themes in her enormously popular novels, which sold millions of copies and attracted a devoted readership among women's club members nationwide.
 
-## Early Life and Literary Career
+Stratton-Porter's prolific career spanned nature writing, best-selling novels, and film production. Frustrated with how Lasky-Paramount adapted her novel *Freckles* in 1917, she moved to Hollywood and established Gene Stratton-Porter Productions to maintain creative control over her work. Her novels were continuously adapted by major and minor studios alike. *Freckles* was filmed multiple times (1917, 1928, 1935, 1960), while Hollywood also brought to screen *A Girl of the Limberlost* (1924, 1934, 1938, 1945), *Michael O'Halloran* (1923, 1937, 1948), *The Harvester* (1927, 1936), *Laddie* (1926, 1935, 1940), *The Keeper of the Bees* (1925, 1935, 1947), *Her Father’s Daughter* (1940), and *The Magic Garden* (1927). By 1960, eight of her books had been turned into twenty-two films, making her one of the most frequently adapted American authors of the studio era.
 
-Born Geneva Grace Stratton in Wabash County, Indiana, on August 17, 1863, she grew up in a family that encouraged her love of nature. Her father, Mark Stratton, was a farmer and Methodist minister who taught her to observe and respect the natural world. After marrying Charles Darwin Porter in 1886, she moved to Geneva, Indiana, where she founded the local women's club and began her serious work as a naturalist and photographer.
+## Literary Career
 
 Stratton-Porter's literary career began with nature essays and photographs published in national magazines like *Recreation* and *Outing*. Her first novel, *The Song of the Cardinal* (1903), established her as a voice for conservation activism wrapped in romantic fiction. But it was *Freckles* (1904) that brought her national fame and introduced readers to the Limberlost Swamp that would become central to her literary identity.
 
@@ -117,7 +117,7 @@ Stratton-Porter's literary career began with nature essays and photographs publi
 
 The Limberlost Swamp in eastern Indiana was both Stratton-Porter's home and her laboratory. This 13,000-acre wetland ecosystem provided the setting for her most famous novels and served as her primary site for nature photography and study. Her work documenting the flora and fauna of the Limberlost coincided with the rapid environmental destruction of the region due to oil drilling and agricultural development.
 
-> "I have lived my life in the outdoors. I have photographed, written about, and preserved what I could of its beauty and its inhabitants. Now I see it all disappearing, drained and destroyed for commercial gain."
+> I have lived my life in the outdoors. I have photographed, written about, and preserved what I could of its beauty and its inhabitants. Now I see it all disappearing, drained and destroyed for commercial gain.
 
 This environmental crisis drove Stratton-Porter's increasingly urgent conservation activism. Through her novels, magazine essays, and public speaking, she advocated for wetland preservation and wildlife protection. Her 1924 essay "All Together, Heave" became a rallying cry for the women's club conservation movement of the early twentieth century.
 
@@ -137,8 +137,8 @@ These later adaptations reveal how the studio system appropriated her successful
 
 ## Legacy and Impact
 
-Gene Stratton-Porter's dual career as novelist and filmmaker illuminates the complex relationship between American literary regionalism and early Hollywood. Her attempt to use film as a vehicle for environmental education anticipates later traditions of nature documentary, while her business model—author-controlled production companies creating adaptations of their own work—would inspire other writer-filmmakers.
+Gene Stratton-Porter's dual career as novelist and filmmaker illuminates the complex relationship between American literary regionalism and early Hollywood. Her attempt to use film as a vehicle for environmental education anticipates later traditions of nature documentary, while her business model—author-controlled production companies creating adaptations of their own work—was unique.
 
 Though her novels fell out of popular favor after World War II, Stratton-Porter's influence on environmental literature and regional filmmaking persists. Her integration of conservation activism with popular entertainment established patterns that continue to shape how American culture represents the relationship between human communities and natural environments.
 
-The twenty-one film adaptations of her work, spanning from the silent era through the end of the classical Hollywood period, provide a unique case study in how the film industry engaged with environmental themes during the first half of the twentieth century. While most of these films are now lost, their production histories reveal both the possibilities and limitations of using popular media to advance conservation causes.
+The twenty-two film adaptations of her work, spanning from the silent era through the end of the classical Hollywood period, provide a unique case study in how the film industry engaged with environmental themes during the first half of the twentieth century. While most of these films are now lost or unavailable for home viewing, their production histories reveal both the possibilities and limitations of using popular media to advance conservation causes.

@@ -3,6 +3,7 @@ title = "TEMPLATE"
 date = 2024-01-01
 template = "author.html"
 draft = true
+weight = 99999999
 
 [taxonomies]
 regions = ["Southern California"]
@@ -58,6 +59,7 @@ studio = "STUDIO"
 year = 1900
 format = "Sound, B&W"
 status = "Lost"
+
 
 
 # DVD and streaming sources

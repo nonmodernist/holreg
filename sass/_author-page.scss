@@ -10,7 +10,7 @@
     }
   }
   
-  .main-content {
+.main-content {
     min-width: 0;
     
     .author-title {
@@ -72,11 +72,11 @@
       
       blockquote {
         font-style: italic;
-        margin: $spacing-xl 0;
-        padding: $spacing-lg;
+        // margin: $spacing-xl 0;
+        // padding: $spacing-lg;
         background-color: rgba($color-accent-tertiary, 0.05);
         border-left: 4px solid $color-accent-tertiary;
-        font-size: $font-size-base;
+        // font-size: $font-size-base;
       //  border-radius: 0 8px 8px 0;
         
         p:last-child {

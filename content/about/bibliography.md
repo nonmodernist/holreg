@@ -2,6 +2,7 @@
 title = "Bibliography"
 description = "Selected sources on American literary regionalism, film adaptation, and early Hollywood history"
 template = "ref-page.html"
+weight = 99999999
 +++
 
 <div class="bibliography-section">

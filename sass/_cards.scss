@@ -29,7 +29,14 @@
     margin-bottom: $spacing-sm; // Reduced from $spacing-md
     line-height: 1.3;
     color: $color-primary;
+
+    
   }
+
+  .card-title,
+h3.card-title {
+  margin-top: 0;
+}
   
   .card-meta {
     font-family: $sans-serif;

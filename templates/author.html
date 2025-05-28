@@ -33,7 +33,7 @@
                         <div class="legend-title">Film Availability Guide</div>
                         <div class="legend-sections">
                             <div class="legend-group">
-                                <div class="legend-group-title">Can I Watch This Film?</div>
+                                <!-- <div class="legend-group-title">Can I Watch This Film?</div> -->
                                 <div class="legend-items">
                                     <div class="legend-item">
                                         <div class="legend-color available"></div>
@@ -159,10 +159,10 @@
                 </div>
             {% endif %}
 
-            <!-- Citation Section -->
+<!-- Citation Section -->
             {% if page.extra.show_citation %}
             <div class="section citation">
-                <h2 class="section-title">How to Cite This Page</h2>
+                <h2 class="citation-box-title">How to Cite This Page</h2>
                 <div class="section-content">
                     <p class="citation-text">
                         {% if page.extra.author_byline %}{{ page.extra.author_byline }}. {% endif %}"{{ page.title }}." In <i>{{ config.title }}: A Digital Archive of Film Adaptations from American Women's Regional Literature, 1910-1961</i>. Web. Accessed [DATE]. &lt;{{ page.permalink }}&gt;
