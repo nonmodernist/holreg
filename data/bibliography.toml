@@ -3,6 +3,23 @@
 # For print sources, include a "quote" field with the relevant passage
 # For online sources, include a "url" field
 
+# Sources for Gone with the Wind
+
+[afi_1181_gone]
+type = "online"
+title = "Gone with the Wind"
+source = "AFI Catalog"
+url = "https://catalog.afi.com/Film/1181-GONE-WITHTHEWIND"
+accessed = "2025-05-28"
+
+[wikipedia_gone]
+type = "online"
+title = "Gone with the Wind"
+source = "Wikipedia"
+url = "https://en.wikipedia.org/wiki/Gone_with_the_Wind_(film)"
+accessed = "2025-05-28"
+
+
 # Example entries showing different source types
 
 [afi_hollywood_reporter_1944]
@@ -12,6 +29,8 @@ source = "Hollywood Reporter"
 date = "May 19, 1944"
 page = "3"
 quote = "The elaborate four-story tenement set featured mechanically complex elevator-mounted cameras that allowed for unprecedented vertical tracking shots through multiple floors of the building."
+
+
 
 [castro_district_wiki]
 type = "online"
