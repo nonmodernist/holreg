@@ -110,6 +110,7 @@ directors = ["[Director Name]"]
 # Core film metadata for sidebar
 year = [Year]
 original_story = "[Exact Source Title]"
+story_type = "[novel/short story/other]"
 story_year = [Publication Year]
 story_author = "[Author Name]"
 director = "[Director Name]"
@@ -125,11 +126,15 @@ duration = "[Runtime if known]"
 survival = "extant/lost/unknown"
 completeness = "complete/incomplete" # Only if extant
 access = "available/restricted/unavailable"
+restoration = "restored/unrestored"
+quality = "excellent/good/fair/poor"
+restoration_notes = "[notes about most recent restoration]"
 availability_type = "internet_archive/dvd/streaming/archive_only" # If available
 availability_notes = "[Specific availability details]"
 
 # Content flags
 show_citation = true
+author_byline = "[Name of webpage author]"
 
 # Film image (if available)
 [extra.film_image]

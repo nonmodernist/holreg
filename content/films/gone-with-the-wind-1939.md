@@ -17,11 +17,16 @@ directors = ["Victor Fleming"]
 # Film metadata for sidebar
 year = 1939
 original_story = "Gone with the Wind"
+story_type = "novel"
 story_year = 1936
 story_author = "Margaret Mitchell"
 director = "Victor Fleming"
 studio = "Selznick International"
-setting = "Deep South (Georgia)"
+setting = "Georgia"
+filming_locations = [
+    "Big Bear, CA",
+    "Busch Gardens in Pasadena, CA", "Chico, CA", "Culver City, CA", "Malibu, CA", "Triunfo, CA",
+    ]
 availability = "Available"
 format = "Sound, Technicolor"
 duration = "220 minutes"
@@ -35,6 +40,9 @@ author_byline = "Alexandra Edwards"
 survival = "extant"
 completeness = "complete" # Only if extant
 access = "available"
+restoration = "restored"
+quality = "excellent"
+restoration_notes = "The most recent documented major restoration was a 4K digital restoration released in the United Kingdom in 2013 to coincide with Vivien Leigh's centenary."
 availability_type = "streaming" # If available
 availability_notes = "Available to stream on HBO Max; also on DVD"
 
@@ -42,7 +50,7 @@ availability_notes = "Available to stream on HBO Max; also on DVD"
 # Film image
 [extra.film_image]
 url = "/images/sidebar-gonewith.jpg"
-alt = "ALT TEXT"
+alt = "Two silhouetted figures look at a distant plantation house."
 caption = "CAPTION."
 
 +++
@@ -71,3 +79,4 @@ Despite being set in Civil War-era Georgia, the film was shot entirely in Califo
 ## Notes
 
 1. **Filming locations:** Information about filming locations comes from {{ cite(id="afi_1181_gone") }}
+2. **Use of Technicolor:** For extensive research and information about the film's use of Technicolor, see {{ cite(id="filmcolors_gone") }}

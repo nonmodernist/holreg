@@ -19,6 +19,15 @@ source = "Wikipedia"
 url = "https://en.wikipedia.org/wiki/Gone_with_the_Wind_(film)"
 accessed = "2025-05-28"
 
+[filmcolors_gone]
+type = "online"
+author = "Barbara Flueckiger"
+title = "Technicolor No. IV: Three-strip"
+source = "The Timeline of Historical Film Colors"
+url = "https://filmcolors.org/timeline-entry/1301/"
+accessed = "2025-05-28"
+
+
 
 # Example entries showing different source types
 
