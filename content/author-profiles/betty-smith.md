@@ -4,8 +4,6 @@ date = 2024-01-01
 template = "author.html"
 weight = 191309  # Sorts by: Smith
 
-[taxonomies]
-regions = ['Rural America']
 
 [extra]
 author_byline = "Alexandra Edwards"
@@ -24,9 +22,9 @@ show_related_films = true
 
 # Author portrait
 [extra.author_image]
-url = "/images/betty-smith-portrait.jpg"
-alt = "Betty Smith portrait"
-caption = "Betty Smith. Caption needed."
+# url = "/images/betty-smith-portrait.jpg"
+# alt = "Betty Smith portrait"
+# caption = "Betty Smith. Caption needed."
 
 # Notable literary works - ADD MANUALLY
 [[extra.notable_works]]

@@ -4,9 +4,6 @@ date = 2024-01-01
 template = "author.html"
 weight = 180123  # Sorts by: Rawlings
 
-[taxonomies]
-regions = ['Rural America']
-
 [extra]
 author_byline = "Alexandra Edwards"
 

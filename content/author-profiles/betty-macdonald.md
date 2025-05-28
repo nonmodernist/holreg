@@ -4,9 +4,6 @@ date = 2024-01-01
 template = "author.html"
 weight = 130103  # Sorts by: MacDonald
 
-[taxonomies]
-regions = ['American West']
-
 [extra]
 author_byline = "Alexandra Edwards"
 
@@ -24,9 +21,9 @@ show_related_films = true
 
 # Author portrait
 [extra.author_image]
-url = "/images/betty-macdonald-portrait.jpg"
-alt = "Betty MacDonald portrait"
-caption = "Betty MacDonald. Caption needed."
+# url = "/images/betty-macdonald-portrait.jpg"
+# alt = "Betty MacDonald portrait"
+# caption = "Betty MacDonald. Caption needed."
 
 # Notable literary works - ADD MANUALLY
 [[extra.notable_works]]

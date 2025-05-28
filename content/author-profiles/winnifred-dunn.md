@@ -4,9 +4,6 @@ date = 2024-01-01
 template = "author.html"
 weight = 42114  # Sorts by: Dunn
 
-[taxonomies]
-regions = ['American South']
-
 [extra]
 author_byline = "Alexandra Edwards"
 
@@ -24,9 +21,9 @@ show_related_films = true
 
 # Author portrait
 [extra.author_image]
-url = "/images/winnifred-dunn-portrait.jpg"
-alt = "Winnifred Dunn portrait"
-caption = "Winnifred Dunn. Caption needed."
+# # url = "/images/winnifred-dunn-portrait.jpg"
+# # alt = "Winnifred Dunn portrait"
+# # caption = "Winnifred Dunn. Caption needed."
 
 # Notable literary works - ADD MANUALLY
 [[extra.notable_works]]

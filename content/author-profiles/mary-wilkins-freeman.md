@@ -4,8 +4,6 @@ date = 2024-01-01
 template = "author.html"
 weight = 61805  # Sorts by: Freeman
 
-[taxonomies]
-regions = ['New England', 'Southern California']
 
 [extra]
 author_byline = "Alexandra Edwards"
@@ -24,9 +22,9 @@ show_related_films = true
 
 # Author portrait
 [extra.author_image]
-url = "/images/mary-wilkins-freeman-portrait.jpg"
-alt = "Mary Wilkins Freeman portrait"
-caption = "Mary Wilkins Freeman. Caption needed."
+# url = "/images/mary-wilkins-freeman-portrait.jpg"
+# alt = "Mary Wilkins Freeman portrait"
+# caption = "Mary Wilkins Freeman. Caption needed."
 
 # Notable literary works - ADD MANUALLY
 [[extra.notable_works]]

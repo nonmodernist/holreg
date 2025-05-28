@@ -4,9 +4,6 @@ date = 2024-01-01
 template = "author.html"
 weight = 130103  # Sorts by: MacGowan
 
-[taxonomies]
-regions = ['Rural America']
-
 [extra]
 author_byline = "Alexandra Edwards"
 

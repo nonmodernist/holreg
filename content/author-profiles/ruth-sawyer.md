@@ -4,8 +4,6 @@ date = 2024-01-01
 template = "author.html"
 weight = 190123  # Sorts by: Sawyer
 
-[taxonomies]
-regions = []
 
 [extra]
 author_byline = "Alexandra Edwards"
@@ -24,9 +22,9 @@ show_related_films = true
 
 # Author portrait
 [extra.author_image]
-url = "/images/ruth-sawyer-portrait.jpg"
-alt = "Ruth Sawyer portrait"
-caption = "Ruth Sawyer. Caption needed."
+# url = "/images/ruth-sawyer-portrait.jpg"
+# alt = "Ruth Sawyer portrait"
+# caption = "Ruth Sawyer. Caption needed."
 
 # Notable literary works - ADD MANUALLY
 [[extra.notable_works]]

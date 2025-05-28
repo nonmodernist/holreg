@@ -4,9 +4,6 @@ date = 2024-01-01
 template = "author.html"
 weight = 21519  # Sorts by: Bosher
 
-[taxonomies]
-regions = ['Rural America']
-
 [extra]
 author_byline = "Alexandra Edwards"
 
@@ -24,9 +21,9 @@ show_related_films = true
 
 # Author portrait
 [extra.author_image]
-url = "/images/kate-langley-bosher-portrait.jpg"
-alt = "Kate Langley Bosher portrait"
-caption = "Kate Langley Bosher. Caption needed."
+# url = "/images/kate-langley-bosher-portrait.jpg"
+# alt = "Kate Langley Bosher portrait"
+# caption = "Kate Langley Bosher. Caption needed."
 
 # Notable literary works - ADD MANUALLY
 [[extra.notable_works]]

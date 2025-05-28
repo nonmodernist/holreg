@@ -4,9 +4,6 @@ date = 2024-01-01
 template = "author.html"
 weight = 130303  # Sorts by: McCullers
 
-[taxonomies]
-regions = ['American South']
-
 [extra]
 author_byline = "Alexandra Edwards"
 
@@ -24,9 +21,9 @@ show_related_films = true
 
 # Author portrait
 [extra.author_image]
-url = "/images/carson-mccullers-portrait.jpg"
-alt = "Carson McCullers portrait"
-caption = "Carson McCullers. Caption needed."
+# url = "/images/carson-mccullers-portrait.jpg"
+# alt = "Carson McCullers portrait"
+# caption = "Carson McCullers. Caption needed."
 
 # Notable literary works - ADD MANUALLY
 [[extra.notable_works]]

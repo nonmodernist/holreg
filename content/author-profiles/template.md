@@ -5,8 +5,6 @@ template = "author.html"
 draft = true
 weight = 99999999
 
-[taxonomies]
-regions = ["Southern California"]
 
 [extra]
 author_byline = "Alexandra Edwards"
@@ -24,9 +22,9 @@ show_related_films = true
 
 # Author portrait
 [extra.author_image]
-url = "/images/IMAGE.jpg"
-alt = "ALT TEXT"
-caption = "CAPTION."
+# url = "/images/IMAGE.jpg"
+# alt = "ALT TEXT"
+# caption = "CAPTION."
 
 # Notable literary works
 [[extra.notable_works]]

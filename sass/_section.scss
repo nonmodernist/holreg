@@ -223,10 +223,10 @@
 
 // DVD sources
       .dvd-entry {
-        background-color: rgba($color-accent, 0.05);
+        background-color: rgba($color-accent-tertiary, 0.05);
         padding: $spacing-md;
         margin: $spacing-md 0;
-        border-left: 4px solid $color-accent;
+        border-left: 4px solid $color-accent-tertiary;
         
         .dvd-title {
           font-style: italic;
@@ -238,10 +238,10 @@
       
       // Archive collections
       .archive-entry {
-        background-color: rgba($color-accent-light, 0.08);
+        background-color: rgba($color-accent-quaternary, 0.08);
         padding: $spacing-md;
         margin: $spacing-md 0;
-        border-left: 4px solid $color-accent-light;
+        border-left: 4px solid $color-accent-quaternary;
         
         .archive-name {
           font-weight: 600;

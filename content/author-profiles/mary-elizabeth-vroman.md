@@ -4,9 +4,6 @@ date = 2024-01-01
 template = "author.html"
 weight = 221815  # Sorts by: Vroman
 
-[taxonomies]
-regions = ['American South']
-
 [extra]
 author_byline = "Alexandra Edwards"
 

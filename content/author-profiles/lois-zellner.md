@@ -4,9 +4,6 @@ date = 2024-01-01
 template = "author.html"
 weight = 260512  # Sorts by: Zellner
 
-[taxonomies]
-regions = ['American West']
-
 [extra]
 author_byline = "Alexandra Edwards"
 
@@ -24,9 +21,9 @@ show_related_films = true
 
 # Author portrait
 [extra.author_image]
-url = "/images/lois-zellner-portrait.jpg"
-alt = "Lois Zellner portrait"
-caption = "Lois Zellner. Caption needed."
+# url = "/images/lois-zellner-portrait.jpg"
+# alt = "Lois Zellner portrait"
+# caption = "Lois Zellner. Caption needed."
 
 # Notable literary works - ADD MANUALLY
 [[extra.notable_works]]

@@ -4,8 +4,6 @@ date = 2024-01-01
 template = "author.html"
 weight = 131514  # Sorts by: Montague
 
-[taxonomies]
-regions = ['Rural America']
 
 [extra]
 author_byline = "Alexandra Edwards"
@@ -24,9 +22,9 @@ show_related_films = true
 
 # Author portrait
 [extra.author_image]
-url = "/images/margaret-prescott-montague-portrait.jpg"
-alt = "Margaret Prescott Montague portrait"
-caption = "Margaret Prescott Montague. Caption needed."
+# url = "/images/margaret-prescott-montague-portrait.jpg"
+# alt = "Margaret Prescott Montague portrait"
+# caption = "Margaret Prescott Montague. Caption needed."
 
 # Notable literary works - ADD MANUALLY
 [[extra.notable_works]]

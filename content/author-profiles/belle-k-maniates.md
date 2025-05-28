@@ -4,8 +4,6 @@ date = 2024-01-01
 template = "author.html"
 weight = 130114  # Sorts by: Maniates
 
-[taxonomies]
-regions = ['Southern California']
 
 [extra]
 author_byline = "Alexandra Edwards"
@@ -24,9 +22,9 @@ show_related_films = true
 
 # Author portrait
 [extra.author_image]
-url = "/images/belle-k-maniates-portrait.jpg"
-alt = "Belle K. Maniates portrait"
-caption = "Belle K. Maniates. Caption needed."
+# url = "/images/belle-k-maniates-portrait.jpg"
+# alt = "Belle K. Maniates portrait"
+# caption = "Belle K. Maniates. Caption needed."
 
 # Notable literary works - ADD MANUALLY
 [[extra.notable_works]]

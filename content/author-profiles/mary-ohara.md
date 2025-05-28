@@ -4,9 +4,6 @@ date = 2024-01-01
 template = "author.html"
 weight = 150008  # Sorts by: O'Hara
 
-[taxonomies]
-regions = ['Rural America']
-
 [extra]
 author_byline = "Alexandra Edwards"
 
@@ -24,9 +21,9 @@ show_related_films = true
 
 # Author portrait
 [extra.author_image]
-url = "/images/mary-ohara-portrait.jpg"
-alt = "Mary O'Hara portrait"
-caption = "Mary O'Hara. Caption needed."
+# url = "/images/mary-ohara-portrait.jpg"
+# alt = "Mary O'Hara portrait"
+# caption = "Mary O'Hara. Caption needed."
 
 # Notable literary works - ADD MANUALLY
 [[extra.notable_works]]

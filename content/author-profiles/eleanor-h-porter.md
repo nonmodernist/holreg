@@ -4,9 +4,6 @@ date = 2024-01-01
 template = "author.html"
 weight = 161518  # Sorts by: Porter
 
-[taxonomies]
-regions = ['Rural America']
-
 [extra]
 author_byline = "Alexandra Edwards"
 
@@ -24,9 +21,9 @@ show_related_films = true
 
 # Author portrait
 [extra.author_image]
-url = "/images/eleanor-h-porter-portrait.jpg"
-alt = "Eleanor H. Porter portrait"
-caption = "Eleanor H. Porter. Caption needed."
+# url = "/images/eleanor-h-porter-portrait.jpg"
+# alt = "Eleanor H. Porter portrait"
+# caption = "Eleanor H. Porter. Caption needed."
 
 # Notable literary works - ADD MANUALLY
 [[extra.notable_works]]

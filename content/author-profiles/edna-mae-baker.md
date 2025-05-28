@@ -21,9 +21,9 @@ show_related_films = true
 
 # Author portrait
 [extra.author_image]
-url = "/images/edna-mae-baker-portrait.jpg"
-alt = "Edna Mae Baker portrait"
-caption = "Edna Mae Baker. Caption needed."
+# url = "/images/edna-mae-baker-portrait.jpg"
+# alt = "Edna Mae Baker portrait"
+# caption = "Edna Mae Baker. Caption needed."
 
 # Notable literary works - ADD MANUALLY
 [[extra.notable_works]]

@@ -21,9 +21,9 @@ show_citation = true
 
 # Author portrait
 [extra.author_image]
-url = "/images/fannie-hurst-portrait.jpg"
-alt = "Fannie Hurst portrait"
-caption = "Fannie Hurst, one of America's highest-paid writers in the 1920s."
+# url = "/images/fannie-hurst-portrait.jpg"
+# alt = "Fannie Hurst portrait"
+# caption = "Fannie Hurst, one of America's highest-paid writers in the 1920s."
 
 # Notable literary works
 [[extra.notable_works]]

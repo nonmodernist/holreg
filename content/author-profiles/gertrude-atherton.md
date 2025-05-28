@@ -4,9 +4,6 @@ date = 2024-01-01
 template = "author.html"
 weight = 12008  # Sorts by: Atherton
 
-[taxonomies]
-regions = ['Rural America']
-
 [extra]
 author_byline = "Alexandra Edwards"
 
@@ -24,9 +21,9 @@ show_related_films = true
 
 # Author portrait
 [extra.author_image]
-url = "/images/gertrude-atherton-portrait.jpg"
-alt = "Gertrude Atherton portrait"
-caption = "Gertrude Atherton. Caption needed."
+# url = "/images/gertrude-atherton-portrait.jpg"
+# alt = "Gertrude Atherton portrait"
+# caption = "Gertrude Atherton. Caption needed."
 
 # Notable literary works - ADD MANUALLY
 [[extra.notable_works]]

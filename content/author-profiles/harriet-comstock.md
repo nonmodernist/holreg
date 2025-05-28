@@ -4,8 +4,6 @@ date = 2024-01-01
 template = "author.html"
 weight = 31513  # Sorts by: Comstock
 
-[taxonomies]
-regions = ['Rural America']
 
 [extra]
 author_byline = "Alexandra Edwards"

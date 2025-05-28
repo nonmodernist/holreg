@@ -4,9 +4,6 @@ date = 2024-01-01
 template = "author.html"
 weight = 180904  # Sorts by: Rider
 
-[taxonomies]
-regions = ['American West', 'Rural America']
-
 [extra]
 author_byline = "Alexandra Edwards"
 
@@ -24,9 +21,9 @@ show_related_films = true
 
 # Author portrait
 [extra.author_image]
-url = "/images/mary-rider-portrait.jpg"
-alt = "Mary Rider portrait"
-caption = "Mary Rider. Caption needed."
+# url = "/images/mary-rider-portrait.jpg"
+# alt = "Mary Rider portrait"
+# caption = "Mary Rider. Caption needed."
 
 # Notable literary works - ADD MANUALLY
 [[extra.notable_works]]

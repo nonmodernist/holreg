@@ -4,8 +4,6 @@ date = 2024-01-01
 template = "author.html"
 weight = 230912  # Sorts by: Williams
 
-[taxonomies]
-regions = ['Rural America']
 
 [extra]
 author_byline = "Alexandra Edwards"
@@ -24,9 +22,9 @@ show_related_films = true
 
 # Author portrait
 [extra.author_image]
-url = "/images/rebecca-yancey-williams-portrait.jpg"
-alt = "Rebecca Yancey Williams portrait"
-caption = "Rebecca Yancey Williams. Caption needed."
+# url = "/images/rebecca-yancey-williams-portrait.jpg"
+# alt = "Rebecca Yancey Williams portrait"
+# caption = "Rebecca Yancey Williams. Caption needed."
 
 # Notable literary works - ADD MANUALLY
 [[extra.notable_works]]

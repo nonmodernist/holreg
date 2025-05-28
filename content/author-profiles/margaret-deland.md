@@ -4,8 +4,6 @@ date = 2024-01-01
 template = "author.html"
 weight = 40512  # Sorts by: Deland
 
-[taxonomies]
-regions = ['American West']
 
 [extra]
 author_byline = "Alexandra Edwards"
@@ -24,9 +22,9 @@ show_related_films = true
 
 # Author portrait
 [extra.author_image]
-url = "/images/margaret-deland-portrait.jpg"
-alt = "Margaret Deland portrait"
-caption = "Margaret Deland. Caption needed."
+# url = "/images/margaret-deland-portrait.jpg"
+# alt = "Margaret Deland portrait"
+# caption = "Margaret Deland. Caption needed."
 
 # Notable literary works - ADD MANUALLY
 [[extra.notable_works]]

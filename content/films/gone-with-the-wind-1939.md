@@ -8,7 +8,7 @@ authors = ["Margaret Mitchell"]
 regions = ["Deep South"]
 studios = ["Selznick International"]
 eras = ["classical hollywood"]
-genres = ["Romance"]
+genres = [ "Epic", "Romance" ]
 survival = ["extant"]
 access = ["available"]
 directors = ["Victor Fleming"]
@@ -36,14 +36,3 @@ caption = "CAPTION."
 
 +++
 
-## Plot Summary
-
-[Add plot summary here]
-
-## Adaptation Analysis
-
-[Add analysis of how the film adapts the source material]
-
-## Historical Context
-
-[Add information about the film's place in Hollywood history and regional representation]

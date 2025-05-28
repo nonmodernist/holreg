@@ -4,9 +4,6 @@ title = "Edna Ferber"
 template = "author.html"
 weight = 60518  # Sorts by: Ferber
 
-[taxonomies]
-regions = ['Rural America', 'Texas']
-
 [extra]
 author_byline = "Alexandra Edwards"
 

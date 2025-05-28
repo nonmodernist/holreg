@@ -4,9 +4,6 @@ date = 2024-01-01
 template = "author.html"
 weight = 230907  # Sorts by: Wiggin
 
-[taxonomies]
-regions = ['Rural America']
-
 [extra]
 author_byline = "Alexandra Edwards"
 
@@ -24,9 +21,9 @@ show_related_films = true
 
 # Author portrait
 [extra.author_image]
-url = "/images/kate-douglas-wiggin-portrait.jpg"
-alt = "Kate Douglas Wiggin portrait"
-caption = "Kate Douglas Wiggin. Caption needed."
+# url = "/images/kate-douglas-wiggin-portrait.jpg"
+# alt = "Kate Douglas Wiggin portrait"
+# caption = "Kate Douglas Wiggin. Caption needed."
 
 # Notable literary works - ADD MANUALLY
 [[extra.notable_works]]

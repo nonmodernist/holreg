@@ -4,8 +4,6 @@ date = 2024-01-01
 template = "author.html"
 weight = 11204  # Sorts by: Aldrich
 
-[taxonomies]
-regions = ['American West', 'Rural America', 'Rural Midwest']
 
 [extra]
 author_byline = "Alexandra Edwards"

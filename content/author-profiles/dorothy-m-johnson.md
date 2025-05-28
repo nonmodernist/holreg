@@ -4,9 +4,6 @@ date = 2024-01-01
 template = "author.html"
 weight = 101508  # Sorts by: Johnson
 
-[taxonomies]
-regions = ['Rural America']
-
 [extra]
 author_byline = "Alexandra Edwards"
 
@@ -24,9 +21,9 @@ show_related_films = true
 
 # Author portrait
 [extra.author_image]
-url = "/images/dorothy-m-johnson-portrait.jpg"
-alt = "Dorothy M. Johnson portrait"
-caption = "Dorothy M. Johnson. Caption needed."
+# url = "/images/dorothy-m-johnson-portrait.jpg"
+# alt = "Dorothy M. Johnson portrait"
+# caption = "Dorothy M. Johnson. Caption needed."
 
 # Notable literary works - ADD MANUALLY
 [[extra.notable_works]]

@@ -4,9 +4,6 @@ date = 2024-01-01
 template = "author.html"
 weight = 181502  # Sorts by: Roberts
 
-[taxonomies]
-regions = ['Rural America']
-
 [extra]
 author_byline = "Alexandra Edwards"
 
@@ -24,9 +21,9 @@ show_related_films = true
 
 # Author portrait
 [extra.author_image]
-url = "/images/edith-roberts-portrait.jpg"
-alt = "Edith Roberts portrait"
-caption = "Edith Roberts. Caption needed."
+# url = "/images/edith-roberts-portrait.jpg"
+# alt = "Edith Roberts portrait"
+# caption = "Edith Roberts. Caption needed."
 
 # Notable literary works - ADD MANUALLY
 [[extra.notable_works]]

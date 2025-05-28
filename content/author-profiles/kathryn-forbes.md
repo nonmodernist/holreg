@@ -4,9 +4,6 @@ date = 2024-01-01
 template = "author.html"
 weight = 61518  # Sorts by: Forbes
 
-[taxonomies]
-regions = ['Southern California']
-
 [extra]
 author_byline = "Alexandra Edwards"
 
@@ -24,9 +21,9 @@ show_related_films = true
 
 # Author portrait
 [extra.author_image]
-url = "/images/kathryn-forbes-portrait.jpg"
-alt = "Kathryn Forbes portrait"
-caption = "Kathryn Forbes. Caption needed."
+# url = "/images/kathryn-forbes-portrait.jpg"
+# alt = "Kathryn Forbes portrait"
+# caption = "Kathryn Forbes. Caption needed."
 
 # Notable literary works - ADD MANUALLY
 [[extra.notable_works]]

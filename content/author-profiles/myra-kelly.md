@@ -4,8 +4,6 @@ date = 2024-01-01
 template = "author.html"
 weight = 110512  # Sorts by: Kelly
 
-[taxonomies]
-regions = ['Rural America']
 
 [extra]
 author_byline = "Alexandra Edwards"
@@ -24,9 +22,9 @@ show_related_films = true
 
 # Author portrait
 [extra.author_image]
-url = "/images/myra-kelly-portrait.jpg"
-alt = "Myra Kelly portrait"
-caption = "Myra Kelly. Caption needed."
+# url = "/images/myra-kelly-portrait.jpg"
+# alt = "Myra Kelly portrait"
+# caption = "Myra Kelly. Caption needed."
 
 # Notable literary works - ADD MANUALLY
 [[extra.notable_works]]

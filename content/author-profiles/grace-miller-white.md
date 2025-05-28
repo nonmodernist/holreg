@@ -30,14 +30,6 @@ title = "Tess of the Storm Country"
 year = 1909
 
 [[extra.notable_works]]
-title = "From the Valley of the Missing"
-year = 1911
-
-[[extra.notable_works]]
-title = "Rose O' Paradise"
-year = 1915
-
-[[extra.notable_works]]
 title = "Storm Country Polly"
 year = 1920
 
@@ -80,6 +72,8 @@ details = "Special Collections hold materials related to Ithaca authors and regi
 title = "History Center in Tompkins County"
 details = "Local history materials about Ithaca authors and the regional squatter communities depicted in White's novels."
 +++
+
+<!-- TODO REWRITE NEEDED -->
 
 Grace Miller White (1868–1957) emerged from a life of hardship to become one of early twentieth-century America's most widely adapted regional novelists. Born Mary Esther Miller in Ithaca, New York, she overcame childhood disability, early widowhood, and poverty to create melodramatic novels that brought working-class women's struggles to national attention through both print and film.
 

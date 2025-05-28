@@ -4,8 +4,6 @@ date = 2024-01-01
 template = "author.html"
 weight = 192113  # Sorts by: Sumner
 
-[taxonomies]
-regions = ['American South']
 
 [extra]
 author_byline = "Alexandra Edwards"
@@ -24,9 +22,9 @@ show_related_films = true
 
 # Author portrait
 [extra.author_image]
-url = "/images/cid-ricketts-sumner-portrait.jpg"
-alt = "Cid Ricketts Sumner portrait"
-caption = "Cid Ricketts Sumner. Caption needed."
+# url = "/images/cid-ricketts-sumner-portrait.jpg"
+# alt = "Cid Ricketts Sumner portrait"
+# caption = "Cid Ricketts Sumner. Caption needed."
 
 # Notable literary works - ADD MANUALLY
 [[extra.notable_works]]
