@@ -2,7 +2,7 @@
 title = "Mary Wilkins Freeman"
 date = 2024-01-01
 template = "author.html"
-weight = 99999999
+weight = 61805  # Sorts by: Freeman
 
 [taxonomies]
 regions = ['New England', 'Southern California']

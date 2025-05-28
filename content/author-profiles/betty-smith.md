@@ -2,7 +2,7 @@
 title = "Betty Smith"
 date = 2024-01-01
 template = "author.html"
-weight = 99999999
+weight = 191309  # Sorts by: Smith
 
 [taxonomies]
 regions = ['Rural America']

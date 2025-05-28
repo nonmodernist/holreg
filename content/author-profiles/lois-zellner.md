@@ -2,7 +2,7 @@
 title = "Lois Zellner"
 date = 2024-01-01
 template = "author.html"
-weight = 99999999
+weight = 260512  # Sorts by: Zellner
 
 [taxonomies]
 regions = ['American West']

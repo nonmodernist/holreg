@@ -2,7 +2,7 @@
 title = "Eleanor Mercein Kelly"
 date = 2024-01-01
 template = "author.html"
-weight = 99999999
+weight = 110512  # Sorts by: Kelly
 
 [taxonomies]
 regions = ['Rural America']

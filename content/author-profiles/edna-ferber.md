@@ -2,7 +2,7 @@
 title = "Edna Ferber"
 # date = 2024-01-01
 template = "author.html"
-weight = 60518
+weight = 60518  # Sorts by: Ferber
 
 [taxonomies]
 regions = ['Rural America', 'Texas']

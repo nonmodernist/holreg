@@ -2,7 +2,7 @@
 title = "Mary O'Hara"
 date = 2024-01-01
 template = "author.html"
-weight = 99999999
+weight = 150008  # Sorts by: O'Hara
 
 [taxonomies]
 regions = ['Rural America']

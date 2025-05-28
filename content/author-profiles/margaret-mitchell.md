@@ -2,7 +2,7 @@
 title = "Margaret Mitchell"
 date = 2024-01-01
 template = "author.html"
-weight = 130920
+weight = 130920  # Sorts by: Mitchell
 
 [taxonomies]
 regions = ['American South']

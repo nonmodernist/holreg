@@ -2,7 +2,7 @@
 title = "Anzia Yezierska"
 date = 2024-01-01
 template = "author.html"
-weight = 99999999
+weight = 250526  # Sorts by: Yezierska
 
 [taxonomies]
 regions = ['Rural America']

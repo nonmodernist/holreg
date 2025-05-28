@@ -2,7 +2,7 @@
 title = "Margaret Deland"
 date = 2024-01-01
 template = "author.html"
-weight = 99999999
+weight = 40512  # Sorts by: Deland
 
 [taxonomies]
 regions = ['American West']

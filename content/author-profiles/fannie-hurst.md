@@ -2,7 +2,7 @@
 title = "Fannie Hurst"
 # date = 2024-01-01
 template = "author.html"
-weight = 80921 
+weight = 82118  # Sorts by: Hurst
 
 [extra]
 author_byline = "Alexandra Edwards"

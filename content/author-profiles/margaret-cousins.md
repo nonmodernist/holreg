@@ -2,7 +2,7 @@
 title = "Margaret Cousins"
 date = 2024-01-01
 template = "author.html"
-weight = 99999999
+weight = 31521  # Sorts by: Cousins
 
 [taxonomies]
 regions = ['Texas']

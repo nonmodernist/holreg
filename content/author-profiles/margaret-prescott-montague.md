@@ -2,7 +2,7 @@
 title = "Margaret Prescott Montague"
 date = 2024-01-01
 template = "author.html"
-weight = 99999999
+weight = 131514  # Sorts by: Montague
 
 [taxonomies]
 regions = ['Rural America']

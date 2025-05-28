@@ -2,7 +2,7 @@
 title = "Betty MacDonald"
 date = 2024-01-01
 template = "author.html"
-weight = 99999999
+weight = 130103  # Sorts by: MacDonald
 
 [taxonomies]
 regions = ['American West']

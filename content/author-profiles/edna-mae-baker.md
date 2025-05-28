@@ -2,10 +2,7 @@
 title = "Edna Mae Baker"
 date = 2024-01-01
 template = "author.html"
-weight = 99999999
-
-[taxonomies]
-regions = ['Rural America']
+weight = 20111  # Sorts by: Baker
 
 [extra]
 author_byline = "Alexandra Edwards"

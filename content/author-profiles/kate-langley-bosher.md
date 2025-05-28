@@ -2,7 +2,7 @@
 title = "Kate Langley Bosher"
 date = 2024-01-01
 template = "author.html"
-weight = 99999999
+weight = 21519  # Sorts by: Bosher
 
 [taxonomies]
 regions = ['Rural America']

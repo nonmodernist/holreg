@@ -2,7 +2,7 @@
 title = "Winnifred Dunn"
 date = 2024-01-01
 template = "author.html"
-weight = 99999999
+weight = 42114  # Sorts by: Dunn
 
 [taxonomies]
 regions = ['American South']

@@ -2,7 +2,7 @@
 title = "Gene Stratton-Porter"
 date = 2024-01-01
 template = "author.html"
-weight = 160915
+weight = 192018  # Sorts by: Stratton-Porter
 
 
 [extra]

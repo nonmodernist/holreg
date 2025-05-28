@@ -2,7 +2,7 @@
 title = "Eleanor H. Porter"
 date = 2024-01-01
 template = "author.html"
-weight = 99999999
+weight = 161518  # Sorts by: Porter
 
 [taxonomies]
 regions = ['Rural America']

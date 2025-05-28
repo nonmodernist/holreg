@@ -2,7 +2,7 @@
 title = "Grace Miller White"
 date = 2024-01-01
 template = "author.html"
-weight = 99999999
+weight = 230809  # Sorts by: White
 
 [extra]
 author_byline = "Alexandra Edwards"
@@ -38,12 +38,12 @@ title = "Rose O' Paradise"
 year = 1915
 
 [[extra.notable_works]]
-title = "The Secret of the Storm Country"
-year = 1924
-
-[[extra.notable_works]]
 title = "Storm Country Polly"
 year = 1920
+
+[[extra.notable_works]]
+title = "The Secret of the Storm Country"
+year = 1924
 
 # Film adaptation statistics
 [extra.film_stats]

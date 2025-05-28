@@ -2,7 +2,7 @@
 title = "Kate Douglas Wiggin"
 date = 2024-01-01
 template = "author.html"
-weight = 99999999
+weight = 230907  # Sorts by: Wiggin
 
 [taxonomies]
 regions = ['Rural America']

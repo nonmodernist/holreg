@@ -2,7 +2,7 @@
 title = "Ellen Glasgow"
 date = 2024-01-01
 template = "author.html"
-weight = 99999999
+weight = 71201  # Sorts by: Glasgow
 
 [taxonomies]
 regions = ['Rural America']
