@@ -90,5 +90,5 @@ Producer David O. Selznick's determination to secure Clark Gable for Rhett Butle
 1. **Romanticized view of the South:** Multiple Black writers of the era compared the film to D. W. Griffith's 1915 epic *Birth of a Nation*: 
     - Playwright Carlton Moss, writing in *The Daily Worker*, wrote that while the earlier epic had been a "frontal attack on American history and the Negro people," *Gone with the Wind* was "a rear attack...sugar-smeared and blurred by a boresome Hollywood love story." {{ cite(id="moss_1940") }} 
     - Poet Melvin B. Tolson wrote, "*Birth of a Nation* was such a barefaced lie that a moron could see through it. *Gone with the Wind* is such a subtle lie that it will be swallowed as truth by millions of whites and blacks alike." {{ cite(id="tolson_undated") }}
-2. **Filming locations and production context:** Information about the production comes from {{ cite(id="afi_1181_gone") }}
+2. **Filming locations and production context:** Information about the production comes from {{ cite(id="afi_gone_with") }}
 3. **Use of Technicolor:** For extensive research and information about the film's use of Technicolor, see {{ cite(id="filmcolors_gone") }}

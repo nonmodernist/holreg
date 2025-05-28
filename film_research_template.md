@@ -113,6 +113,8 @@ author_byline = "[Name of webpage author]"
 
 
 # Core film metadata for sidebar
+significance = ["essential"]  # or "hidden_gem" or omit for standard films
+significance_note = "[Explain why the film is essential or a hidden gem]"
 year = [Year]
 original_story = "[Exact Source Title]"
 story_type = "[novel/short story/other]"

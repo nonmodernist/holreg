@@ -5,10 +5,10 @@
 
 # Sources for Gone with the Wind
 
-[afi_1181_gone]
+[afi_gone_with]
 type = "online"
 title = "Gone with the Wind"
-source = "AFI Catalog"
+source = "AFI Catalog of Feature Films"
 url = "https://catalog.afi.com/Film/1181-GONE-WITHTHEWIND"
 accessed = "2025-05-28"
 
@@ -39,6 +39,46 @@ type = "online"
 author = "Melvin B. Tolson"
 source = "Washington Tribune, qtd. in Time Magazine"
 url = "https://time.com/5852362/gone-with-the-wind-film-history/"
+accessed = "2025-05-28"
+
+# Sources for Giant
+
+[ff_giant]
+type = "online"
+title = "Notes on Film and Restoration"
+source = "The Film Foundation"
+url = "https://www.film-foundation.org/giant-kj"
+accessed = "2025-05-28"
+
+[jones_giant_2022]
+type = "print"
+author = "Kent Jones"
+title = "Notes on Film & Restoration" 
+source = "The Film Foundation"
+url = "https://www.film-foundation.org/giant-kj"
+accessed = "2025-05-26"
+quote = "In A Place in the Sun, Shane and Giant, Stevens chose narratives in which contentment and melancholy, fulfillment and tragedy, freedom and entrenched exploitation, abundance of space and human immediacy, communal cooperation and the violent exercise of power always go hand in hand, one always shadowing the other. The many dramatic shifts in scale in those films and the frequent use of the optically-achieved long dissolve as a transitional device embody Stevens' wider perspective on ever-changing reality."
+
+[afi_giant_1956]
+type = "online"
+title = "Giant"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/53655-GIANT"
+accessed = "2025-05-28"
+
+[wikipedia_giant]
+type = "online"
+title = "Giant (film)"
+source = "Wikipedia"
+url = "https://en.wikipedia.org/wiki/Giant_(film)"
+accessed = "2025-05-28"
+
+[filmcolors_giant]
+type = "online"
+author = "Barbara Flueckiger"
+title = "Eastmancolor"
+source = "The Timeline of Historical Film Colors"
+url = "https://filmcolors.org/timeline-entry/1310/"
 accessed = "2025-05-28"
 
 
