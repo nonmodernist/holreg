@@ -51,19 +51,20 @@ availability_notes = "Available to stream on HBO Max; also on DVD"
 [extra.film_image]
 url = "/images/sidebar-gonewith.jpg"
 alt = "Two silhouetted figures look at a distant plantation house."
-caption = "CAPTION."
+caption = "One of the film's many effects shots portraying an invented locale composited from various pieces."
 
 +++
 
-Scarlett O'Hara, a headstrong Southern belle, lives on a Georgia plantation during the Civil War. Obsessed with Ashley Wilkes, who marries his cousin Melanie, she marries Melanie's brother out of spite but is soon widowed.
-
-As war devastates the South, Scarlett fights to save her family's plantation from poverty. She's pursued by Rhett Butler, a roguish man who genuinely loves her despite her manipulative nature. Desperate for money, she marries wealthy Frank Kennedy, but he's later killed during Reconstruction.
-
-Scarlett eventually marries Rhett and they have a daughter, but her continued obsession with Ashley drives Rhett away. The story ends with Scarlett vowing to win back Rhett, declaring "Tomorrow is another day" as she resolves to rebuild her life.
+Scarlett O'Hara's romantic obsessions and impulsive decisions unfold in an idealized vision of the Deep South rooted in Lost Cause mythology.
 
 ## Regional Context
 
-Set in Georgia during the 1860s-1870s, the film portrays the antebellum South’s plantation society and its transformation through the Civil War and Reconstruction. The story centers on the rural Cotton Belt region, where large plantations like Tara relied on enslaved labor to sustain the Southern aristocratic lifestyle. The narrative depicts the collapse of this plantation economy, the devastation of Sherman’s March to the Sea through Georgia, and the social upheaval of Reconstruction. However, the film presents a romanticized view of the Old South that glosses over the brutal realities of slavery while portraying the antebellum period as a lost golden age of genteel Southern culture.
+Set in Georgia during the 1860s-1870s, the film constructs the Deep South as a region of gracious living and natural harmony disrupted by Northern aggression.  
+
+The story centers on the rural Cotton Belt region, where large plantations like Tara relied on the labor of enslaved people to sustain the Southern aristocratic lifestyle. The narrative depicts the collapse of this plantation economy, the devastation of Sherman’s March to the Sea through Georgia, and the social upheaval of Reconstruction. However, the film presents a romanticized view of the Old South that glosses over the brutal realities of slavery and stereotypes its Black characters, while portraying the antebellum period as a lost golden age of genteel Southern culture.
+
+As war destroys this mythologized plantation world, Scarlett's determination to restore "Tara" becomes a quest to resurrect an imagined regional identity that never truly existed. The story concludes with Scarlett's vow to rebuild, reflecting the film's broader project of reconstructing the Deep South as a space of romantic nostalgia rather than confronting the region's actual history of racial violence and economic inequality.
+
 
 ## Filming Locations
 
@@ -71,6 +72,13 @@ Despite being set in Civil War-era Georgia, the film was shot entirely in Califo
 
 ## Production Context
 
+*Gone with the Wind* represents the apotheosis of Hollywood's engagement with Southern regionalist literature, marking a decisive shift from the intimate adaptations of the 1910s and 1920s to the sweeping, nationally-oriented epics of the late studio era. 
+
+Unlike earlier regionalist adaptations that often featured recurring creative personnel like Mary Pickford or screenwriter Frances Marion working on multiple projects from the same geographic tradition, Selznick's production operated as a prestige standalone project designed to transcend regional boundaries and appeal to national audiences. The film's approach to the American South differed markedly from the more authentic, location-specific treatments seen in earlier adaptations of authors like Gene Stratton-Porter or Alice Hegan Rice, instead creating a romanticized, studio-manufactured version of the antebellum and Reconstruction South that prioritized spectacle over regional authenticity. 
+
+Producer David O. Selznick's determination to secure Clark Gable for Rhett Butler and his extensive creative control over the screenplay revisions reflected the era's shift toward producer-driven projects that transformed regional source material into blockbuster entertainment properties.
+
+ While Margaret Mitchell's novel was her only published work, preventing the kind of sustained author-studio relationships that characterized earlier regionalist cycles, *Gone with the Wind*'s massive success established a template for how major studios would approach prestigious literary adaptations in the 1940s and beyond, emphasizing production values and star power over the intimate regional authenticity that had defined Hollywood's earlier encounters with American women's regional fiction.
 
 
 
@@ -78,5 +86,8 @@ Despite being set in Civil War-era Georgia, the film was shot entirely in Califo
 
 ## Notes
 
-1. **Filming locations:** Information about filming locations comes from {{ cite(id="afi_1181_gone") }}
-2. **Use of Technicolor:** For extensive research and information about the film's use of Technicolor, see {{ cite(id="filmcolors_gone") }}
+1. **Romanticized view of the South:** Multiple Black writers of the era compared the film to D. W. Griffith's 1915 epic *Birth of a Nation*: 
+    - Playwright Carlton Moss, writing in *The Daily Worker*, wrote that while the earlier epic had been a "frontal attack on American history and the Negro people," *Gone with the Wind* was "a rear attack...sugar-smeared and blurred by a boresome Hollywood love story." {{ cite(id="moss_1940") }} 
+    - Poet Melvin B. Tolson wrote, "*Birth of a Nation* was such a barefaced lie that a moron could see through it. *Gone with the Wind* is such a subtle lie that it will be swallowed as truth by millions of whites and blacks alike." {{ cite(id="tolson_undated") }}
+2. **Filming locations and production context:** Information about the production comes from {{ cite(id="afi_1181_gone") }}
+3. **Use of Technicolor:** For extensive research and information about the film's use of Technicolor, see {{ cite(id="filmcolors_gone") }}

@@ -27,6 +27,20 @@ source = "The Timeline of Historical Film Colors"
 url = "https://filmcolors.org/timeline-entry/1301/"
 accessed = "2025-05-28"
 
+[moss_1940]
+type = "print"
+author = "Carlton Moss"
+title = "An Open Letter to Mr. Selznick"
+source = "The Daily Worker"
+date = "January 9, 1940"
+
+[tolson_undated]
+type = "online"
+author = "Melvin B. Tolson"
+source = "Washington Tribune, qtd. in Time Magazine"
+url = "https://time.com/5852362/gone-with-the-wind-film-history/"
+accessed = "2025-05-28"
+
 
 
 # Example entries showing different source types
