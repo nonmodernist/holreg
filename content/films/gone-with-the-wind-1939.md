@@ -22,6 +22,7 @@ story_year = 1936
 story_author = "Margaret Mitchell"
 director = "Victor Fleming"
 studio = "Selznick International"
+distributor = "Loew's/MGM"
 setting = "Georgia"
 filming_locations = [
     "Big Bear, CA",
@@ -51,7 +52,7 @@ availability_notes = "Available to stream on HBO Max; also on DVD"
 [extra.film_image]
 url = "/images/sidebar-gonewith.jpg"
 alt = "Two silhouetted figures look at a distant plantation house."
-caption = "One of the film's many effects shots portraying an invented locale composited from various pieces."
+caption = "One of the film's many effects shots portraying an imaginary locale constructed from various composite pieces."
 
 +++
 

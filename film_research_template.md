@@ -90,7 +90,7 @@
 ## Content Organization Template
 
 ### Standard Frontmatter Structure:
-```toml
+
 +++
 title = "[Exact Film Title]"
 date = 2024-01-01
@@ -107,6 +107,11 @@ access = ["available/restricted/unavailable"] # Only if survival = "extant"
 directors = ["[Director Name]"]
 
 [extra]
+# Content flags
+show_citation = true
+author_byline = "[Name of webpage author]"
+
+
 # Core film metadata for sidebar
 year = [Year]
 original_story = "[Exact Source Title]"
@@ -132,23 +137,15 @@ restoration_notes = "[notes about most recent restoration]"
 availability_type = "internet_archive/dvd/streaming/archive_only" # If available
 availability_notes = "[Specific availability details]"
 
-# Content flags
-show_citation = true
-author_byline = "[Name of webpage author]"
-
 # Film image (if available)
 [extra.film_image]
 url = "/images/[filename]"
 alt = "[Alt text description]"
 caption = "[Caption with source attribution]"
 +++
-```
 
 ### Content Structure Template:
-```markdown
-*[Film Title]* ([Year]) is a film adaptation of "[Source Title]" by [Author] ([Source Year]). [One-sentence contextual statement about significance or notable aspects.]
 
-## Plot Summary
 [Brief, factual plot summary - 2-3 sentences focusing on regional elements]
 
 ## Regional Context
@@ -169,7 +166,7 @@ caption = "[Caption with source attribution]"
 1. **[Topic/theme]:** [Detailed explanation or context]. {{ cite(id="source_id") }}
 
 2. **[Another topic]:** [More detail with source attribution]. {{ cite(id="another_source") }}
-```
+
 
 ### Section Guidelines:
 
