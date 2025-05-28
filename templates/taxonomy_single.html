@@ -30,54 +30,54 @@
         <div class="grid grid-2">
             {% set films_with_year = term.pages | filter(attribute="extra.year") %}
             {% for page in films_with_year | sort(attribute="extra.year") %}
-            <div class="card film-card{% if page.extra.film_image %} has-image{% endif %}">
-                <div class="card-content-wrapper">
-                    <h3 class="card-title">
-                        <a href="{{ page.permalink }}">{{ page.title }}</a>
-                    </h3>
-                    <div class="card-meta">
-                        {% if page.extra.year %}{{ page.extra.year }}{% endif %}
-                        {% if page.extra.director %}<span class="separator">•</span>{{ page.extra.director }}{% endif %}
-                        {% if page.extra.studio %}<span class="separator">•</span>{{ page.extra.studio }}{% endif %}
-                    </div>
-                    
-                    <!-- Enhanced survival status display -->
-                    {% if page.taxonomies.survival %}
-                        {% set survival_status = page.taxonomies.survival[0] %}
-                        <div class="film-status">
-                            <span class="status {{ survival_status }}">
-                                {% if survival_status == "extant" %}
-                                    Survives
-                                {% else %}
-                                    {% if survival_status == "lost" %}
-                                        Lost
+            <a href="{{ page.permalink }}" class="card-link">
+                <div class="card film-card{% if page.extra.film_image %} has-image{% endif %}">
+                    <div class="card-content-wrapper">
+                        <h3 class="card-title">{{ page.title }}</h3>
+                        <div class="card-meta">
+                            {% if page.extra.year %}{{ page.extra.year }}{% endif %}
+                            {% if page.extra.director %}<span class="separator">•</span>{{ page.extra.director }}{% endif %}
+                            {% if page.extra.studio %}<span class="separator">•</span>{{ page.extra.studio }}{% endif %}
+                        </div>
+                        
+                        <!-- Enhanced survival status display -->
+                        {% if page.taxonomies.survival %}
+                            {% set survival_status = page.taxonomies.survival[0] %}
+                            <div class="film-status">
+                                <span class="status {{ survival_status }}">
+                                    {% if survival_status == "extant" %}
+                                        Survives
                                     {% else %}
-                                        {% if survival_status == "unknown" %}
-                                            Presumed Lost
+                                        {% if survival_status == "lost" %}
+                                            Lost
                                         {% else %}
-                                            {{ survival_status | title }}
+                                            {% if survival_status == "unknown" %}
+                                                Presumed Lost
+                                            {% else %}
+                                                {{ survival_status | title }}
+                                            {% endif %}
                                         {% endif %}
                                     {% endif %}
-                                {% endif %}
-                            </span>
-                        </div>
-                    {% else %}
-                        <div class="film-status">
-                            <span class="status unknown">Presumed Lost</span>
-                        </div>
-                    {% endif %}
+                                </span>
+                            </div>
+                        {% else %}
+                            <div class="film-status">
+                                <span class="status unknown">Presumed Lost</span>
+                            </div>
+                        {% endif %}
+                        
+                        {% if page.summary %}
+                        <div class="card-content">{{ page.summary }}</div>
+                        {% endif %}
+                    </div>
                     
-                    {% if page.summary %}
-                    <div class="card-content">{{ page.summary }}</div>
+                    {% if page.extra.film_image %}
+                    <div class="card-image">
+                        <img src="{{ page.extra.film_image.url }}" alt="{{ page.extra.film_image.alt | default(value=page.title) }}">
+                    </div>
                     {% endif %}
                 </div>
-                
-                {% if page.extra.film_image %}
-                <div class="card-image">
-                    <img src="{{ page.extra.film_image.url }}" alt="{{ page.extra.film_image.alt | default(value=page.title) }}">
-                </div>
-                {% endif %}
-            </div>
+            </a>
             {% endfor %}
         </div>
     </div>
