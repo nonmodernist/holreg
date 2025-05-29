@@ -89,11 +89,10 @@
 
 ## Content Organization Template
 
-### Standard Frontmatter Structure:
+### Standard Film Entry Structure:
 
 +++
 title = "[Exact Film Title]"
-date = 2024-01-01
 weight = [Year] # For chronological sorting
 
 [taxonomies]
@@ -113,7 +112,7 @@ author_byline = "[Name of webpage author]"
 
 
 # Core film metadata for sidebar
-significance = ["essential"]  # or "hidden_gem" or omit for standard films
+significance = "essential"  # or "hidden_gem" or omit for standard films
 significance_note = "[Explain why the film is essential or a hidden gem]"
 year = [Year]
 original_story = "[Exact Source Title]"
@@ -121,7 +120,7 @@ story_type = "[novel/short story/other]"
 story_year = [Publication Year]
 story_author = "[Author Name]"
 director = "[Director Name]"
-screenwriter = "[Screenwriter Name]" # Especially important for adaptation analysis
+screenwriter = "[Screenwriter Name]" # if important for adaptation analysis
 studio = "[Studio Name]"
 setting = "[Geographic Setting as Depicted]"
 filming_locations = ["[Actual Filming Location]"] # Array format for multiple locations
@@ -146,24 +145,27 @@ alt = "[Alt text description]"
 caption = "[Caption with source attribution]"
 +++
 
-### Content Structure Template:
+[Clean, focused plot summary emphasizing regional/cultural elements]
 
-[Brief, factual plot summary - 2-3 sentences focusing on regional elements]
-
-## Regional Context
+## Regional Focus
 
 Set in {{region}} during {{historical period}}. 
 
 [Analysis of how the film represents the source's regional setting and themes. Discussion of authenticity vs. adaptation choices. Connection to broader patterns in Hollywood regionalism.]
 
-## Filming Locations
+## Production Strategy / Hollywood's Approach [Flexible Production Section]
+
+### Filming Locations
 [Discussion of where filmed vs. where set. Analysis of location choices and their impact on regional authenticity.]
 
-## Production Context
+### Production and Adaptation
 [How this film fits into the larger landscape of regionalist adaptations. Studio context, recurring personnel (Mary Pickford, Frances Marion, etc.), connection to other adaptations of same author or region.]
 
-### Adaptation Analysis
 [How the film transforms the source material. Key changes made for cinematic adaptation. Screenwriter's approach to the source. - Include as subsection under Production Context]
+
+## [Patterns or connections to other films] # Optional section, to be titled while writing
+
+[Include if not covered in the above sections]
 
 ## Notes
 [Numbered scholarly endnotes with citation shortcodes, following this format:]
@@ -176,10 +178,10 @@ Set in {{region}} during {{historical period}}.
 ### Section Guidelines:
 
 **Plot Summary**: Keep factual and brief - focus on elements relevant to regionalism
-**Regional Context**: Your key analytical section - connect to larger argument about regionalism
-**Filming Locations**: Immediately follows regional context - analyze authenticity choices
-**Production Context**: Broader industry patterns, recurring figures, studio context
-  - **Adaptation Analysis**: Subsection focusing on source-to-screen transformation
+**Regional Focus**: Key analytical section - connect to larger argument about regionalism
+**Production Strategy**: 
+- "Filming Locations" (when location substitution is key to the argument)
+- "Production and Adaptation" (when studio practices/author control is central and/or when technical/aesthetic innovations serve the analysis)  
 **Notes**: Numbered format with bolded topic headers and citation shortcodes
 
 ### Image Requirements:

@@ -1,13 +1,171 @@
-# Bibliography Data File for Hollywood Regionalism
+# =============================================================================
+# HOLLYWOOD REGIONALISM BIBLIOGRAPHY
+# =============================================================================
+# Organized by film/author for easier research workflow
+# Use Ctrl+F to search, folding arrows to collapse sections
 # Each entry should have a unique ID and contain all necessary citation information
 # For print sources, include a "quote" field with the relevant passage
 # For online sources, include a "url" field
 
+
 # =============================================================================
-# CITATIONS
+# 🌟  GIANT (1956) - Edna Ferber
 # =============================================================================
 
-# Sources for Imitation of Life (1959)
+[michael_npr_2015]
+type = "online"
+author = "Tom Michael"
+title = "Marfa's Mexican-Americans Remember 'Giant' And Southwest Segregation"
+source = "NPR"
+url = "https://www.npr.org/2015/04/24/401967121/marfa-s-mexican-americans-remember-giant-and-southwest-segregation"
+accessed = "2025-05-29"
+
+[nelson_2020]
+type = "online"
+author = "Bruce Nelson"
+title = "Edna Ferber, Giant, & James Dean"
+source = "Easton Courier"
+url = "https://eastoncourier.news/2020/11/07/edna-ferber-giant-james-dean/"
+accessed = "2025-05-29"
+
+[ff_giant]
+type = "online"
+title = "Notes on Film and Restoration"
+source = "The Film Foundation"
+url = "https://www.film-foundation.org/giant-kj"
+accessed = "2025-05-28"
+
+[jones_giant_2022]
+type = "online"
+author = "Kent Jones"
+title = "Notes on Film & Restoration" 
+source = "The Film Foundation"
+date = "2022"
+page = "np"
+url = "https://www.film-foundation.org/giant-kj"
+accessed = "2025-05-26"
+quote = """In *A Place in the Sun*, *Shane* and *Giant*, Stevens chose narratives in which contentment and melancholy, fulfillment and tragedy, freedom and entrenched exploitation, abundance of space and human immediacy, communal cooperation and the violent exercise of power always go hand in hand, one always shadowing the other. The many dramatic shifts in scale in those films and the frequent use of the optically-achieved long dissolve as a transitional device embody Stevens' wider perspective on ever-changing reality."""
+
+[afi_giant_1956]
+type = "online"
+title = "Giant"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/53655-GIANT"
+accessed = "2025-05-28"
+
+[wikipedia_giant]
+type = "online"
+title = "Giant (film)"
+source = "Wikipedia"
+url = "https://en.wikipedia.org/wiki/Giant_(film)"
+accessed = "2025-05-28"
+
+[filmcolors_giant]
+type = "online"
+author = "Barbara Flueckiger"
+title = "Eastmancolor"
+source = "The Timeline of Historical Film Colors"
+url = "https://filmcolors.org/timeline-entry/1310/#/infobox/25551"
+accessed = "2025-05-28"
+
+[smyth_2009_ferber_hollywood_192]
+type = "print"
+author = "J. E. Smyth"
+title = "Edna Ferber's Hollywood: American Fictions of Gender, Race, and History"
+publisher = "University of Texas Press"
+year = "2009"
+location = "Austin"
+url = "http://ebookcentral.proquest.com/lib/tcu/detail.action?docID=3443441"
+accessed = "2025-05-29"
+page = "192, 202"
+quote = """As both an educated woman and an easternborn outsider, Leslie functions as Ferber's constant critical voice... 
+
+While Ferber's novel, via the perspective of her heroine, Leslie, attacks the mythology of the traditional masculine, western narrative, Hendler and others have claimed that director George Stevens's film adaptation made some effort to rehabilitate Bick's racism and bolster the patriarchy (thus making it more acceptable to Texas and national viewers). Although Hendler's contrasting readings of the novel and film are persuasive, she ignores two of Ferber's most fundamental themes: the woman in the West as narrator and critic of history, and the protagonist as a racial and gender hybrid. Like Cimarron's Sabra Cravat and especially Ferber herself, Leslie comes to question the male-dominated frontier. But more than Sabra, Leslie is interested in the intersections of race and gender in this masculine space. An outsider, she is strangely drawn to another Texas hybrid who first alerts her to the racial injustice on Reata, the poor white cowhand Jett Rink. 
+
+George Stevens would also pursue the film's gender and racial issues, most memorably in showing Leslie (Elizabeth Taylor) actively bettering the living conditions for Mexican Americans on Reata and in visualizing the racial otherness of Jett Rink (James Dean). Yet Stevens's deployment of Ferber's critique was in the end more palatable to Texas and national audiences. It was not simply that the film softens Ferber's muckraking criticism, in particular by eliminating many of her overt connections between African American and Mexican American Jim Crow laws. Leslie's introspective character and her critical perspective on Texas racism and chauvinism are marginalized by the epic icons of more traditional western cinema— boots and saddles, lone cowboys, cattle, expansive empires, wealth, and sheer bigness. These images dominate the screen and even Leslie's critical voice. [...]
+
+[Stevens] made extensive notes on his copy [of the novel], highlighting the scenes of racial prejudice against Mexican Americans, including the near ejection of a Latin American ambassador from Jett's hotel (later cut), Leslie's comparisons between the Mexican shantytowns and those for African Americans in the South (never used by the screenwriters), Angel's emerging pachuco (Mexican American youth) identity (also cut), and Leslie's inflammatory comment to Jett that the Mexican Americans at Reata were “more American than you [and her husband] are.” But Stevens was also in love with the West and the western hero; his last film, *Shane* (1953), proved as much. His desire to condemn racism and enshrine the old-style toughness of the western hero would result in a deeply conflicted western. [...]
+
+Leslie’s abortive attempts in the novel to improve the living and working conditions of the Mexican Americans attached to the Reata ranch economy were actually made realities in the script. It is Leslie who first works with Dr. Guerra on the Nopal settlements, not her son, Jordy. Whereas Ferber’s Leslie was thwarted at every turn, Stevens invested her with more traditional frontier ingenuity and success. However, as a result, the few Mexican American characters appear far more powerless and victimized than in Ferber’s novel. In *Giant*, Ferber briefly discusses the rise of LULAC (League of United Latin American Citizens) and postwar– Latin American activism and chronicles the friendship between Jordy and Angel Obregon. However, Stevens made the white Leslie the instigator of social change."""
+
+[smyth_2009_ferber_hollywood_200]
+type = "print"
+author = "J. E. Smyth"
+source = "Edna Ferber's Hollywood: American Fictions of Gender, Race, and History"
+date = "2009"
+page = "200"
+quote = """Margaret Cousins, the managing editor of Good Housekeeping, explained much of this vicious, misogynistic criticism to Ferber: "If Texans had been able to be objective about this book, your whole thesis would have been belied. To an extent, their foaming at the mouth about it simply bore out what you had to say about them. They are still in the middle of frontier growing pains of which chauvinism is so much a part, but I cannot but be amused by the fierceness and passion of their reactions." """
+
+[smyth_2009_ferber_hollywood_201]
+type = "print"
+author = "J. E. Smyth"
+source = "Edna Ferber's Hollywood: American Fictions of Gender, Race, and History"
+date = "2009"
+page = "201"
+quote = """*Daily Variety* gloated in mid-May, “Edna Ferber denies film studios peek at her new novel,” and mentioned that “there's considerably less interest in the new Ernest Hemingway yarn, *The Old Man and Sea*”; the public and the studios cared more about Ferber's work."""
+
+[smyth_2009_ferber_hollywood_202]
+type = "print"
+author = "J. E. Smyth"
+source = "Edna Ferber's Hollywood: American Fictions of Gender, Race, and History"
+date = "2009"
+page = "202-203"
+quote = """Ferber may have suspected that Stevens would not adopt all her book's incisive critique. When MGM remade *Show Boat*, it excised much of her original attack on southern racism and antimiscegenation laws. So she kept an eye on Stevens. When she sold the film rights in 1952, Ferber retained her usual copyright reversion and television rights, but also acquired a percentage in Giant Productions. She, Stevens, and producer Henry Ginsberg were the three heads of Giant Productions. It was almost unprecedented for a writer, even a historical novelist of Ferber's national stature, to acquire this kind of powersharing deal in a film production. As *Variety* noted, “The G-S-F setup will also embrace future filming of previous Ferber works, including remakes of some of her past film successes, rights to which have reverted [to her].”
+
+But Ferber wanted more than executive privileges and a percentage of the profits. Preserving *Giant*'s critique of frontier racism was important, and she wanted to help construct the screenplay, particularly after she saw Moffat and Guiol's first draft. “I want to work as an unsalaried writer,” she wrote to Ginsberg.
+
+All told, she spent eleven weeks in Hollywood working on the script, advising on technical issues, and meeting with the cast and crew in Texas. [...]
+
+In spite of her status as coproducer, most of Ferber's script comments were ignored. It was not an experience she liked. As she later wrote to her editor at Doubleday, “I got myself into something really grisly when, in my youth and innocence, I came out here to write the Giant dialogue... The script dialogue was beyond belief at that time. I never would have permitted it to be used. For eight weeks, at exactly nothing a week, I've been working with a young man named Ivan Moffett [sic].” Of Moffat's and Hollywood's taste in writers in general, she was scathing: “He is 36, charming, talented, sensitive; he has taste, a feeling for words; he can't write worth a damn, he is indolent and can't do a real day's work. He knows as much about Texas as I know about Iran. Less.” She continued, “If I get out of this town without killing him it will be the greatest known triumph of restraint against honest impulse.”
+"""
+
+
+# =============================================================================
+# 🌬 GONE WITH THE WIND (1939) - Margaret Mitchell
+# =============================================================================
+
+[afi_gone_with]
+type = "online"
+title = "Gone with the Wind"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/1181-GONE-WITHTHEWIND"
+accessed = "2025-05-28"
+
+[wikipedia_gone]
+type = "online"
+title = "Gone with the Wind"
+source = "Wikipedia"
+url = "https://en.wikipedia.org/wiki/Gone_with_the_Wind_(film)"
+accessed = "2025-05-28"
+
+[filmcolors_gone]
+type = "online"
+author = "Barbara Flueckiger"
+title = "Technicolor No. IV: Three-strip"
+source = "The Timeline of Historical Film Colors"
+url = "https://filmcolors.org/timeline-entry/1301/"
+accessed = "2025-05-28"
+
+[moss_1940]
+type = "print"
+author = "Carlton Moss"
+title = "An Open Letter to Mr. Selznick"
+source = "The Daily Worker"
+date = "January 9, 1940"
+
+[tolson_undated]
+type = "online"
+author = "Melvin B. Tolson"
+source = "Washington Tribune, qtd. in Time Magazine"
+url = "https://time.com/5852362/gone-with-the-wind-film-history/"
+accessed = "2025-05-28"
+
+
+
+# =============================================================================
+# 💄 IMITATION OF LIFE (1959) - Fannie Hurst
+# =============================================================================
+
 
 [afi_imitation_1959]
 type = "online"
@@ -49,7 +207,7 @@ accessed = "2025-05-28"
 [higgins_chromodrama]
 type = "print"
 author = "Scott Higgins"
-title = "Chromo-Drama: Innovation and Convention in Douglas Sirk’s Color Designs."
+title = "Chromo-Drama: Innovation and Convention in Douglas Sirk's Color Designs."
 source = "Color and the Moving Image: History, Theory, Aesthetics, Archive"
 publisher = "Routledge"
 location = "New York"
@@ -74,177 +232,23 @@ year = "2012"
 page = "433-462"
 quote = """Melodrama is iconographically fixed by the claustrophobic atmosphere of the bourgeois home and/or the small-town setting; its emotional pattern is that of panic and latent hysteria, reinforced stylistically by a complex handling of space in interiors (Sirk, Ray, and Losey particularly excel in this) to the point where the world seems totally predetermined and pervaded by “meaning” and interpretable signs. [...]
 
-In Hollywood melodrama characters made for operettas play out the human tragedies (which is how they experience the contradictions of American civilization). Small wonder they are constantly baffled and amazed, as Lana Turner is in *Imitation of Life*, about what is going on around them and within them. The tensions of seeming and being, of intention and result, register as a perplexing frustration, and an everincreasing gap opens between the emotions and the reality they seek to reach. What strikes one as the true pathos is the very mediocrity of the human beings involved, putting such high demands upon themselves, trying to live up to an exalted vision of the human being, but instead living out the impossible contradictions that have turned the American dream into its proverbial nightmare. It makes the best American melodramas of the fifties not only critical social documents but genuine tragedies, despite or rather because of the happy ending: they record some of the agonies that have accompanied the demise of the "affirmative culture.""""
+In Hollywood melodrama characters made for operettas play out the human tragedies (which is how they experience the contradictions of American civilization). Small wonder they are constantly baffled and amazed, as Lana Turner is in *Imitation of Life*, about what is going on around them and within them. The tensions of seeming and being, of intention and result, register as a perplexing frustration, and an everincreasing gap opens between the emotions and the reality they seek to reach. What strikes one as the true pathos is the very mediocrity of the human beings involved, putting such high demands upon themselves, trying to live up to an exalted vision of the human being, but instead living out the impossible contradictions that have turned the American dream into its proverbial nightmare. It makes the best American melodramas of the fifties not only critical social documents but genuine tragedies, despite or rather because of the happy ending: they record some of the agonies that have accompanied the demise of the "affirmative culture." """
 
 
 
-# Sources for Gone with the Wind
 
-[afi_gone_with]
-type = "online"
-title = "Gone with the Wind"
-source = "AFI Catalog of Feature Films"
-url = "https://catalog.afi.com/Film/1181-GONE-WITHTHEWIND"
-accessed = "2025-05-28"
-
-[wikipedia_gone]
-type = "online"
-title = "Gone with the Wind"
-source = "Wikipedia"
-url = "https://en.wikipedia.org/wiki/Gone_with_the_Wind_(film)"
-accessed = "2025-05-28"
-
-[filmcolors_gone]
-type = "online"
-author = "Barbara Flueckiger"
-title = "Technicolor No. IV: Three-strip"
-source = "The Timeline of Historical Film Colors"
-url = "https://filmcolors.org/timeline-entry/1301/"
-accessed = "2025-05-28"
-
-[moss_1940]
-type = "print"
-author = "Carlton Moss"
-title = "An Open Letter to Mr. Selznick"
-source = "The Daily Worker"
-date = "January 9, 1940"
-
-[tolson_undated]
-type = "online"
-author = "Melvin B. Tolson"
-source = "Washington Tribune, qtd. in Time Magazine"
-url = "https://time.com/5852362/gone-with-the-wind-film-history/"
-accessed = "2025-05-28"
-
-# Sources for Giant
-
-[ff_giant]
-type = "online"
-title = "Notes on Film and Restoration"
-source = "The Film Foundation"
-url = "https://www.film-foundation.org/giant-kj"
-accessed = "2025-05-28"
-
-[jones_giant_2022]
-type = "print"
-author = "Kent Jones"
-title = "Notes on Film & Restoration" 
-source = "The Film Foundation"
-url = "https://www.film-foundation.org/giant-kj"
-accessed = "2025-05-26"
-quote = "In A Place in the Sun, Shane and Giant, Stevens chose narratives in which contentment and melancholy, fulfillment and tragedy, freedom and entrenched exploitation, abundance of space and human immediacy, communal cooperation and the violent exercise of power always go hand in hand, one always shadowing the other. The many dramatic shifts in scale in those films and the frequent use of the optically-achieved long dissolve as a transitional device embody Stevens' wider perspective on ever-changing reality."
-
-[afi_giant_1956]
-type = "online"
-title = "Giant"
-source = "AFI Catalog of Feature Films"
-url = "https://catalog.afi.com/Film/53655-GIANT"
-accessed = "2025-05-28"
-
-[wikipedia_giant]
-type = "online"
-title = "Giant (film)"
-source = "Wikipedia"
-url = "https://en.wikipedia.org/wiki/Giant_(film)"
-accessed = "2025-05-28"
-
-[filmcolors_giant]
-type = "online"
-author = "Barbara Flueckiger"
-title = "Eastmancolor"
-source = "The Timeline of Historical Film Colors"
-url = "https://filmcolors.org/timeline-entry/1310/"
-accessed = "2025-05-28"
+# =============================================================================
+#  A TREE GROWS IN BROOKLYN (1945) - Betty Smith
+# =============================================================================
 
 
 
-# Example entries showing different source types
-
-[afi_hollywood_reporter_1944]
-type = "print"
-title = "Production Notes"
-source = "Hollywood Reporter"
-date = "May 19, 1944"
-page = "3"
-quote = "The elaborate four-story tenement set featured mechanically complex elevator-mounted cameras that allowed for unprecedented vertical tracking shots through multiple floors of the building."
 
 
 
-[castro_district_wiki]
-type = "online"
-title = "Castro District, San Francisco"
-source = "Wikipedia"
-url = "https://en.wikipedia.org/wiki/Castro_District,_San_Francisco"
-accessed = "2024-01-15"
-
-[exhibitors_herald_1917]
-type = "print"
-author = ""
-title = "Freckles Production Notes"
-source = "Exhibitors Herald"
-date = "June 2, 1917"
-page = "15"
-quote = "The company moved to Southern California for the filming, as the western atmosphere demands a typical California setting for the Limberlost scenes."
-
-[gaines_2018]
-type = "print"
-author = "Jane Gaines"
-source = "Pink-Slipped: What Happened to the Women in the Silent Film Industries?"
-publisher = "University of Illinois Press"
-location = "Champaign"
-year = "2018"
-page = "72-75"
-quote = "The extant film print itself is no final proof of the existence of past events and therefore the surviving object alone may not put an end to questions about what actually happened behind or in front of the camera loaded with light-sensitive film stock."
-
-[motography_1917]
-type = "print"
-title = "Jack Pickford Has Gone West"
-source = "Motography"
-date = "February 10, 1917"
-page = "234"
-quote = "Jack Pickford followed Louise Huff to California in February for the production of Freckles, though they were not traveling to Indiana but to Southern California."
-
-[fetterley_pryse_2003]
-type = "print"
-author = "Judith Fetterley and Marjorie Pryse"
-source = "Writing Out of Place: Regionalism, Women, and American Literary Culture"
-publisher = "University of Illinois Press"
-location = "Champaign"
-year = "2003"
-page = "18"
-quote = "American women's regionalism offered unconventional, noncanonical, and counterhegemonic stories of female (and male) development across the life cycle."
-
-[stratton_porter_1924]
-type = "print"
-author = "Gene Stratton-Porter"
-title = "All Together, Heave"
-source = "Izaak Walton League Monthly"
-volume = "2"
-number = "7"
-date = "December 1924"
-page = "cover"
-quote = "The time has come for all nature lovers to unite in a great campaign to save what remains of our natural heritage."
-
-[armitage_2012]
-type = "print"
-author = "Kevin Armitage"
-title = "On Gene Stratton Porter's Conservation Aesthetic"
-source = "Environmental History"
-volume = "17"
-number = "3"
-date = "2012"
-page = "537"
-quote = "Stratton-Porter's conservation message was bound up in problematically genteel modes of activism that failed to acknowledge the complicity of capitalism and racism in environmental degradation."
-
-[long_1990]
-type = "print"
-author = "Judith Reick Long"
-source = "Gene Stratton-Porter: Novelist and Naturalist"
-publisher = "Indiana Historical Society"
-location = "Indianapolis"
-year = "1990"
-page = "156"
-quote = "Stratton-Porter moved to Hollywood in 1923, purchasing a bungalow between Second and Third Streets, almost at the heart of the developing studio district."
+# =============================================================================
+# 🎬 FRECKLES (1917) - Gene Stratton-Porter
+# =============================================================================
 
 [meehan_1927]
 type = "print"
@@ -256,67 +260,38 @@ year = "1927"
 page = "243"
 quote = "She had allowed a well-known company to do one of her early books. They had invited her to approve the adaptation and continuity and make suggestions; all of which she did. But when they made the picture, they ignored all of her ideas and suggestions."
 
-[afi_catalog_freckles]
-type = "online"
-title = "Freckles (1917)"
-source = "AFI Catalog of Feature Films"
-url = "https://catalog.afi.com/Catalog/moviedetails/16906"
-accessed = "2024-01-20"
-
-[variety_1924]
-type = "print"
-title = "A Girl of the Limberlost Review"
-source = "Variety"
-date = "May 7, 1924"
-page = "22"
-quote = "Gene Stratton-Porter Productions has created a film that stays true to the naturalist elements of the source novel while making necessary adaptations for the screen."
-
-[moving_picture_world_1925]
-type = "print"
-title = "The Magic Garden in Production"
-source = "Moving Picture World"
-date = "March 15, 1925"
-page = "234"
-quote = "The company took a herd of goats to San Clemente Island, sixty miles off the coast, where they filmed sequences requiring remote wilderness settings that could not be achieved on studio backlots."
-
-[film_daily_1924]
-type = "print"
-title = "Listen to Me a Minute, Mr. Exhibitor"
-source = "Film Daily"
-date = "May 2, 1924"
-page = "5"
-quote = "Gene Stratton-Porter Productions presents films that are an example of how entertaining pictures could be made and be censorproof."
+# =============================================================================
+# 👩‍💼 GENE STRATTON-PORTER - Author Biography Sources
+# =============================================================================
 
 
 
 
 
 # =============================================================================
-# RESEARCH NOTES (New section)
+# 🎭 GENERAL THEORY - Cross-Film Sources
 # =============================================================================
 
-# Research Note Format:
-# [unique_id] - use format: [topic]_[film]_[date] or similar
-# type = "research_note" 
-# topic = "Main theme/subject"
-# films = ["film-slug-1", "film-slug-2"] # Array of related films
-# sources = ["source_id_1", "source_id_2"] # References to citation IDs above
-# finding = "The specific research finding or pattern discovered"
-# priority = "high" | "medium" | "low"
-# potential_placement = "Where this might be used in the site"
-# status = "captured" | "in_progress" | "applied" | "archived"
-# date_added = "2025-01-15" # When you discovered this
-# follow_up = "Any action items or leads to pursue" (optional)
+
+
+
+
+
+
+
+# =============================================================================
+# 🔬 PROJECT RESEARCH NOTES
+# =============================================================================
 
 [cross_film_pattern_women_directors]
 type = "research_note"
 topic = "Women Directors and Regionalist Material"
-films = ["freckles-1917", "mrs-wiggs-1919", "a-girl-of-limberlost-1924"]
-sources = ["women_film_pioneers_database", "afi_catalog_multiple"]
-finding = "Several early regionalist adaptations had women directors or significant female creative input (Dorothy Davenport, Lois Weber involved in some productions). This may have affected how women's regionalist literature was translated to screen vs. male-directed adaptations."
+films = []
+sources = []
+finding = "Which early regionalist adaptations had women directors or significant female creative input (Dorothy Davenport, Lois Weber involved in some productions)? This may have affected how women's regionalist literature was translated to screen vs. male-directed adaptations."
 priority = "high"
 potential_placement = "Could be major thematic analysis across multiple film pages, possible dedicated essay"
-status = "in_progress"
+status = "captured"
 date_added = "2025-01-15"
 follow_up = "Systematic survey of director gender across all regionalist adaptations. Look for patterns in adaptation choices, regional authenticity, character development."
 
@@ -325,7 +300,7 @@ follow_up = "Systematic survey of director gender across all regionalist adaptat
 type = "research_note"
 topic = "Comparative Analysis Opportunity"
 films = ["gone-with-the-wind-1939", "giant-1956"]
-sources = ["ferber_papers_preliminary"]
+sources = []
 finding = "Both GWTW and Giant are epic regionalist adaptations dealing with American mythologies (Old South vs. New West). Both authors were strong personalities who engaged with Hollywood. Could be rich comparative study."
 priority = "low"
 potential_placement = "Future comparative essay, or enhanced analysis in both film pages"
@@ -334,37 +309,23 @@ date_added = "2025-01-15"
 follow_up = "After completing individual film pages, consider if there's enough material for dedicated comparative analysis."
 
 
-[smyth_2009_ferber_hollywood]
-type = "print"
-author = "J. E. Smyth"
-title = "Edna Ferber's Hollywood: American Fictions of Gender, Race, and History"
-publisher = "University of Texas Press"
-year = "2009"
-location = "Austin"
-url = "http://ebookcentral.proquest.com/lib/tcu/detail.action?docID=3443441"
-accessed = "2025-05-29"
-page = "192"
-quote = """As both an educated woman and an easternborn outsider, Leslie functions as Ferber's constant critical voice... While Ferber’s novel, via the perspective of her heroine, Leslie, attacks the mythology of the traditional masculine, western narrative, Hendler and others have claimed that director George Stevens’s film adaptation made some effort to rehabilitate Bick’s racism and bolster the patriarchy (thus making it more acceptable to Texas and national viewers). Although Hendler’s contrasting readings of the novel and film are persuasive, she ignores two of Ferber’s most fundamental themes: the woman in the West as narrator and critic of history, and the protagonist as a racial and gender hybrid. Like Cimarron ’s Sabra Cravat and especially Ferber herself, Leslie comes to question the male-dominated frontier. But more than Sabra, Leslie is interested in the intersections of race and gender in this masculine space. An outsider, she is strangely drawn to another Texas hybrid who first alerts her to the racial injustice on Reata, the poor white cowhand Jett Rink. 
-
-George Stevens would also pursue the film’s gender and racial issues, most memorably in showing Leslie (Elizabeth Taylor) actively bettering the living conditions for Mexican Americans on Reata and in visualizing the racial otherness of Jett Rink (James Dean). Yet Stevens’s deployment of Ferber’s critique was in the end more palatable to Texas and national audiences. It was not simply that the film softens Ferber’s muckraking criticism, in particular by eliminating many of her overt connections between African American and Mexican American Jim Crow laws. Leslie’s introspective character and her critical perspective on Texas racism and chauvinism are marginalized by the epic icons of more traditional western cinema— boots and saddles, lone cowboys, cattle, expansive empires, wealth, and sheer bigness. These images dominate the screen and even Leslie’s critical voice."""
-
 [outsider_voice_regionalism_giant]
 type = "research_note"
 topic = "Outsider Narrative Voice in Regionalist Literature/Film"
 films = ["giant-1956"]
-sources = ["smyth_2009_ferber_hollywood"]
+sources = ["smyth_2009_ferber_hollywood_192"]
 finding = "Smyth identifies Leslie in Giant as functioning as 'Ferber's constant critical voice' - an educated, eastern-born outsider observing Texas culture. This connects to broader pattern in regionalist literature where eastern observers record regional lifeways almost ethnographically (cf. Rawlings in Cross Creek). This outsider/insider tension is central to regionalism vs. local color debate in literary studies."
 priority = "high"
 potential_placement = "Major methodological discussion for project scope/about page, Giant film analysis, possible future essay on observer/participant dynamics in regionalist adaptations"
 status = "captured"
 date_added = "2025-05-29"
-follow_up = "Survey other regionalist films for outsider observer characters. Check if this pattern holds across multiple adaptations. Research regionalism vs local color scholarly debate for theoretical framework. Consider: does film medium change this dynamic?"
+follow_up = "Survey other regionalist films for outsider observer characters. Check if this pattern holds across multiple adaptations. Research regionalism vs local color scholarly debate for theoretical framework. Consider: does film medium change this dynamic? Smyth suggests it does."
 
 [methodology_regionalism_localcolor]
 type = "research_note"
 topic = "Project Methodology - Regionalism vs Local Color Distinction"
 films = []  # This applies broadly, not to specific films
-sources = ["smyth_2009_ferber_hollywood"]
+sources = ["smyth_2009_ferber_hollywood_192"]
 finding = "Giant example raises important theoretical question about project scope: how does regionalism (insiders writing about their own regions) differ from or overlap with local color (outsiders writing about exotic/foreign regions)? The outsider narrative voice in Giant suggests some 'regionalist' works may actually be local color—but film complicates this."
 priority = "high"
 potential_placement = "About page methodology section, project introduction, scope definition"
@@ -372,18 +333,29 @@ status = "captured"
 date_added = "2025-05-29"
 follow_up = "Need to research scholarly definitions of regionalism vs local color. Review project film list to identify which authors were insider vs outsider to their depicted regions. May need to refine project scope or acknowledge this complexity explicitly."
 
-# =============================================================================
-# CITATION TEMPLATES FOR RESEARCH NOTES
-# =============================================================================
-# When you find sources while researching, add them here following your existing format:
 
-# [selznick_papers_1938]
-# type = "archival"
-# author = "David O. Selznick"
-# title = "Production correspondence regarding Gone with the Wind"
-# source = "David O. Selznick Collection"
-# location = "Harry Ransom Center, University of Texas at Austin"
-# date = "1938-1939"
-# box = "Box 45, Folder 12"
-# quote = "Mitchell must approve all script changes per contract clause 7(b)"
+[texas_networks_women]  
+type = "research_note"
+topic = "Author Networks"
+films = ["giant-1956", "lucy-gallant-1955"]  # Use your existing film page slugs
+sources = ["smyth_2009_ferber_hollywood_200"]  # Reference citation IDs from bibliography
+finding = "Margaret Cousins and Edna Ferber corresponded about Giant. I think Cousins also wrote to GSP's daughter? I remember finding stuff when I visited the Ransom Center"
+priority = "high"  # How important/urgent is this?
+potential_placement = "Author profile for Cousins, also potential future essay/book chapter"
+status = "captured"  # captured/in_progress/applied/archived
+date_added = "2025-05-29"
+follow_up = "Can I find my archive photos from that Ransom Center visit? I could also go back down there with a specific plan to research Cousins more deeply."
+
+
+[women_writers_popularity]
+type = "research_note"
+topic = "Cultural Significance of Women Writers"
+films = ["giant-1956"] 
+sources = ["smyth_2009_ferber_hollywood_201"]  # Reference citation IDs from bibliography
+finding = "Novel of Giant was more sought after by Hollywood than Hemingway's Old Man and the Sea. Reminds me of Loos's GPB and Great Gatsby"
+priority = "medium"  # How important/urgent is this?
+potential_placement = "Ferber's author page, potential book thread about historical forgetting of significant women writers"
+status = "captured"  # captured/in_progress/applied/archived
+date_added = "2025-05-29"
+follow_up = "Stay on the lookout for other direct comparisons" # Optional
 
