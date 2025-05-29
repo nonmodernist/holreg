@@ -45,7 +45,7 @@ restoration = "restored"
 quality = "excellent"
 restoration_notes = "The most recent documented major restoration was a 4K digital restoration released in the United Kingdom in 2013 to coincide with Vivien Leigh's centenary."
 availability_type = "streaming" # If available
-availability_notes = "Available to stream on HBO Max; also on DVD"
+availability_notes = "Streaming on HBO Max; also on home video"
 
 
 # Film image
@@ -60,11 +60,11 @@ Scarlett O'Hara's romantic obsessions and impulsive decisions unfold in an ideal
 
 ## Regional Context
 
-Set in Georgia during the 1860s-1870s, the film constructs the Deep South as a region of gracious living and natural harmony disrupted by Northern aggression.  
+Set in Georgia during the 1860s-1870s, the film constructs the [Deep South](/regions/deep-south) as a region of gracious living and natural harmony disrupted by Northern aggression.  
 
-The story centers on the rural Cotton Belt region, where large plantations like Tara relied on the labor of enslaved people to sustain the Southern aristocratic lifestyle. The narrative depicts the collapse of this plantation economy, the devastation of Sherman’s March to the Sea through Georgia, and the social upheaval of Reconstruction. However, the film presents a romanticized view of the Old South that glosses over the brutal realities of slavery and stereotypes its Black characters, while portraying the antebellum period as a lost golden age of genteel Southern culture.
+The story centers on the rural Cotton Belt region, where large plantations like the fictional Tara relied on the labor of enslaved people to sustain the Southern aristocratic lifestyle. The narrative depicts the collapse of this plantation economy, the devastation of Sherman’s March to the Sea through Georgia, and the social upheaval of Reconstruction. However, the film presents a romanticized view of the Old South that glosses over the brutal realities of slavery and stereotypes its Black characters, while portraying the antebellum period as a lost golden age of genteel Southern culture.
 
-As war destroys this mythologized plantation world, Scarlett's determination to restore "Tara" becomes a quest to resurrect an imagined regional identity that never truly existed. The story concludes with Scarlett's vow to rebuild, reflecting the film's broader project of reconstructing the Deep South as a space of romantic nostalgia rather than confronting the region's actual history of racial violence and economic inequality.
+As war destroys this mythologized plantation world, Scarlett's determination to restore Tara becomes a quest to resurrect an imagined regional identity that never truly existed. The story concludes with Scarlett's vow to rebuild, reflecting the film's broader project of reconstructing the Deep South as a space of romantic nostalgia rather than confronting the region's actual history of racial violence and economic inequality.
 
 
 ## Filming Locations
@@ -73,13 +73,11 @@ Despite being set in Civil War-era Georgia, the film was shot entirely in Califo
 
 ## Production Context
 
-*Gone with the Wind* represents the apotheosis of Hollywood's engagement with Southern regionalist literature, marking a decisive shift from the intimate adaptations of the 1910s and 1920s to the sweeping, nationally-oriented epics of the late studio era. 
+*Gone with the Wind* represents the apotheosis of Hollywood's engagement with Southern literature, marking a shift from the intimate regionalism of the 1910s and 1920s to the sweeping, nationally-oriented epics of the late studio era. 
 
-Unlike earlier regionalist adaptations that often featured recurring creative personnel like Mary Pickford or screenwriter Frances Marion working on multiple projects from the same geographic tradition, Selznick's production operated as a prestige standalone project designed to transcend regional boundaries and appeal to national audiences. The film's approach to the American South differed markedly from the more authentic, location-specific treatments seen in earlier adaptations of authors like Gene Stratton-Porter or Alice Hegan Rice, instead creating a romanticized, studio-manufactured version of the antebellum and Reconstruction South that prioritized spectacle over regional authenticity. 
+Unlike earlier regionalist adaptations that often featured recurring creative personnel like producer/actress Mary Pickford or screenwriter Frances Marion working on multiple projects from the same geographic tradition, David O. Selznick's production operated as a prestige standalone project designed to transcend regional boundaries and appeal to national audiences. The film's approach to the American South differed markedly from the more authentic, location-specific treatments seen in earlier adaptations of authors like [Gene Stratton-Porter](@/author-profiles/gene-stratton-porter.md) or [Grace Miller White](@/author-profiles/grace-miller-white.md), instead creating a romanticized, studio-manufactured version of the antebellum and Reconstruction South that prioritized spectacle over regional authenticity or local color. Selznick's extensive creative control over the screenplay revisions and day-to-day production reflected the era's shift toward producer-driven projects that transformed regional source material into blockbuster entertainment properties.
 
-Producer David O. Selznick's determination to secure Clark Gable for Rhett Butler and his extensive creative control over the screenplay revisions reflected the era's shift toward producer-driven projects that transformed regional source material into blockbuster entertainment properties.
-
- While Margaret Mitchell's novel was her only published work, preventing the kind of sustained author-studio relationships that characterized earlier regionalist cycles, *Gone with the Wind*'s massive success established a template for how major studios would approach prestigious literary adaptations in the 1940s and beyond, emphasizing production values and star power over the intimate regional authenticity that had defined Hollywood's earlier encounters with American women's regional fiction.
+ While Margaret Mitchell's novel was her only published work, preventing the kind of sustained author-studio relationships that characterized earlier regionalist cycles, *Gone with the Wind*'s massive success established a template for how major studios would approach prestigious literary adaptations in the 1940s and beyond, emphasizing production values and star power over the intimate regional authenticity that had defined many of Hollywood's earlier encounters with American women's regional fiction.
 
 
 

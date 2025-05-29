@@ -151,6 +151,9 @@ caption = "[Caption with source attribution]"
 [Brief, factual plot summary - 2-3 sentences focusing on regional elements]
 
 ## Regional Context
+
+Set in {{region}} during {{historical period}}. 
+
 [Analysis of how the film represents the source's regional setting and themes. Discussion of authenticity vs. adaptation choices. Connection to broader patterns in Hollywood regionalism.]
 
 ## Filming Locations

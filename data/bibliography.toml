@@ -3,6 +3,10 @@
 # For print sources, include a "quote" field with the relevant passage
 # For online sources, include a "url" field
 
+# =============================================================================
+# CITATIONS
+# =============================================================================
+
 # Sources for Imitation of Life (1959)
 
 [afi_imitation_1959]
@@ -282,3 +286,104 @@ source = "Film Daily"
 date = "May 2, 1924"
 page = "5"
 quote = "Gene Stratton-Porter Productions presents films that are an example of how entertaining pictures could be made and be censorproof."
+
+
+
+
+
+# =============================================================================
+# RESEARCH NOTES (New section)
+# =============================================================================
+
+# Research Note Format:
+# [unique_id] - use format: [topic]_[film]_[date] or similar
+# type = "research_note" 
+# topic = "Main theme/subject"
+# films = ["film-slug-1", "film-slug-2"] # Array of related films
+# sources = ["source_id_1", "source_id_2"] # References to citation IDs above
+# finding = "The specific research finding or pattern discovered"
+# priority = "high" | "medium" | "low"
+# potential_placement = "Where this might be used in the site"
+# status = "captured" | "in_progress" | "applied" | "archived"
+# date_added = "2025-01-15" # When you discovered this
+# follow_up = "Any action items or leads to pursue" (optional)
+
+[cross_film_pattern_women_directors]
+type = "research_note"
+topic = "Women Directors and Regionalist Material"
+films = ["freckles-1917", "mrs-wiggs-1919", "a-girl-of-limberlost-1924"]
+sources = ["women_film_pioneers_database", "afi_catalog_multiple"]
+finding = "Several early regionalist adaptations had women directors or significant female creative input (Dorothy Davenport, Lois Weber involved in some productions). This may have affected how women's regionalist literature was translated to screen vs. male-directed adaptations."
+priority = "high"
+potential_placement = "Could be major thematic analysis across multiple film pages, possible dedicated essay"
+status = "in_progress"
+date_added = "2025-01-15"
+follow_up = "Systematic survey of director gender across all regionalist adaptations. Look for patterns in adaptation choices, regional authenticity, character development."
+
+
+[loose_thread_giant_comparison]
+type = "research_note"
+topic = "Comparative Analysis Opportunity"
+films = ["gone-with-the-wind-1939", "giant-1956"]
+sources = ["ferber_papers_preliminary"]
+finding = "Both GWTW and Giant are epic regionalist adaptations dealing with American mythologies (Old South vs. New West). Both authors were strong personalities who engaged with Hollywood. Could be rich comparative study."
+priority = "low"
+potential_placement = "Future comparative essay, or enhanced analysis in both film pages"
+status = "captured"
+date_added = "2025-01-15"
+follow_up = "After completing individual film pages, consider if there's enough material for dedicated comparative analysis."
+
+
+[smyth_2009_ferber_hollywood]
+type = "print"
+author = "J. E. Smyth"
+title = "Edna Ferber's Hollywood: American Fictions of Gender, Race, and History"
+publisher = "University of Texas Press"
+year = "2009"
+location = "Austin"
+url = "http://ebookcentral.proquest.com/lib/tcu/detail.action?docID=3443441"
+accessed = "2025-05-29"
+page = "192"
+quote = """As both an educated woman and an easternborn outsider, Leslie functions as Ferber's constant critical voice... While Ferber’s novel, via the perspective of her heroine, Leslie, attacks the mythology of the traditional masculine, western narrative, Hendler and others have claimed that director George Stevens’s film adaptation made some effort to rehabilitate Bick’s racism and bolster the patriarchy (thus making it more acceptable to Texas and national viewers). Although Hendler’s contrasting readings of the novel and film are persuasive, she ignores two of Ferber’s most fundamental themes: the woman in the West as narrator and critic of history, and the protagonist as a racial and gender hybrid. Like Cimarron ’s Sabra Cravat and especially Ferber herself, Leslie comes to question the male-dominated frontier. But more than Sabra, Leslie is interested in the intersections of race and gender in this masculine space. An outsider, she is strangely drawn to another Texas hybrid who first alerts her to the racial injustice on Reata, the poor white cowhand Jett Rink. 
+
+George Stevens would also pursue the film’s gender and racial issues, most memorably in showing Leslie (Elizabeth Taylor) actively bettering the living conditions for Mexican Americans on Reata and in visualizing the racial otherness of Jett Rink (James Dean). Yet Stevens’s deployment of Ferber’s critique was in the end more palatable to Texas and national audiences. It was not simply that the film softens Ferber’s muckraking criticism, in particular by eliminating many of her overt connections between African American and Mexican American Jim Crow laws. Leslie’s introspective character and her critical perspective on Texas racism and chauvinism are marginalized by the epic icons of more traditional western cinema— boots and saddles, lone cowboys, cattle, expansive empires, wealth, and sheer bigness. These images dominate the screen and even Leslie’s critical voice."""
+
+[outsider_voice_regionalism_giant]
+type = "research_note"
+topic = "Outsider Narrative Voice in Regionalist Literature/Film"
+films = ["giant-1956"]
+sources = ["smyth_2009_ferber_hollywood"]
+finding = "Smyth identifies Leslie in Giant as functioning as 'Ferber's constant critical voice' - an educated, eastern-born outsider observing Texas culture. This connects to broader pattern in regionalist literature where eastern observers record regional lifeways almost ethnographically (cf. Rawlings in Cross Creek). This outsider/insider tension is central to regionalism vs. local color debate in literary studies."
+priority = "high"
+potential_placement = "Major methodological discussion for project scope/about page, Giant film analysis, possible future essay on observer/participant dynamics in regionalist adaptations"
+status = "captured"
+date_added = "2025-05-29"
+follow_up = "Survey other regionalist films for outsider observer characters. Check if this pattern holds across multiple adaptations. Research regionalism vs local color scholarly debate for theoretical framework. Consider: does film medium change this dynamic?"
+
+[methodology_regionalism_localcolor]
+type = "research_note"
+topic = "Project Methodology - Regionalism vs Local Color Distinction"
+films = []  # This applies broadly, not to specific films
+sources = ["smyth_2009_ferber_hollywood"]
+finding = "Giant example raises important theoretical question about project scope: how does regionalism (insiders writing about their own regions) differ from or overlap with local color (outsiders writing about exotic/foreign regions)? The outsider narrative voice in Giant suggests some 'regionalist' works may actually be local color—but film complicates this."
+priority = "high"
+potential_placement = "About page methodology section, project introduction, scope definition"
+status = "captured"
+date_added = "2025-05-29"
+follow_up = "Need to research scholarly definitions of regionalism vs local color. Review project film list to identify which authors were insider vs outsider to their depicted regions. May need to refine project scope or acknowledge this complexity explicitly."
+
+# =============================================================================
+# CITATION TEMPLATES FOR RESEARCH NOTES
+# =============================================================================
+# When you find sources while researching, add them here following your existing format:
+
+# [selznick_papers_1938]
+# type = "archival"
+# author = "David O. Selznick"
+# title = "Production correspondence regarding Gone with the Wind"
+# source = "David O. Selznick Collection"
+# location = "Harry Ransom Center, University of Texas at Austin"
+# date = "1938-1939"
+# box = "Box 45, Folder 12"
+# quote = "Mitchell must approve all script changes per contract clause 7(b)"
+
