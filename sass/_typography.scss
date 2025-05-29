@@ -215,18 +215,20 @@ blockquote {
   border-left: 4px solid $color-accent;
  // border-radius: 0 8px 8px 0;
   position: relative;
+
   
-  &::before {
-    content: '"';
-    font-family: $serif-primary;
-    font-size: $font-size-6xl;
-    font-weight: $font-weight-bold;
-    color: rgba($color-accent-tertiary, 0.2);
-    position: absolute;
-    top: $spacing-sm;
-    left: $spacing-md;
-    line-height: 1;
-  }
+  // &::before {
+  //   content: '"';
+  //   font-family: $serif-primary;
+  //   font-size: $font-size-6xl;
+  //   font-weight: $font-weight-bold;
+  //   color: rgba($color-accent-tertiary, 0.2);
+    
+  //   position: absolute;
+  //   top: $spacing-sm;
+  //   left: $spacing-md;
+  //   line-height: 1;
+  // }
   
   p {
     margin-bottom: $spacing-md;

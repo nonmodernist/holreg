@@ -42,6 +42,35 @@ source = "martinturnbull.com"
 url = "https://martinturnbull.com/2022/01/24/frank-sennes-moulin-rouge-nightclub-6230-sunset-blvd-los-angeles-circa-mid-1950s-2/"
 accessed = "2025-05-28"
 
+[higgins_chromodrama]
+type = "print"
+author = "Scott Higgins"
+title = "Chromo-Drama: Innovation and Convention in Douglas Sirk’s Color Designs."
+source = "Color and the Moving Image: History, Theory, Aesthetics, Archive"
+publisher = "Routledge"
+location = "New York"
+year = "2013"
+page = "170–178"
+quote = """Douglas Sirk's cycle of 1950s melodramas earned him recognition as one of Hollywood's preeminent colorists. Along with Vincente Minnelli and perhaps Nicholas Ray, Sirk raised the aesthetic profile of the domestic melodrama in the 1950s by innovating expressive forms of color lighting and mise-en-scène. These qualities were understood by the first wave of Sirk's auteur critics as generating a distancing, self-conscious artifice... Sirk's colors do ring of artifice, but at the same time they exact emotion. Following Barbara Klinger's seminal observations on melodrama (1994), I want to suggest that the modernist argument can obscure the affective power of Sirk's color designs, the way that color answered the overt expressive demands of mid-century melodrama.
+
+My goal in this chapter is to begin placing Sirk's work in a formal history of color aesthetics. I argue that against the background of Technicolor design, what stood out as opaque artifice to Sirk's late champions was also a nuanced engagement with craft practice. This is not to claim that Sirk's designs, the careful matching of costume and mise-en-scène or the intensive colored lighting were ever perceived as "natural." Rather, the kind of artifice they represent is part of a larger tradition. Attention to formal context allows us to better specify the nature of Sirk's innovations.
+
+Sirk's color design tactics often draw on earlier models for deploying overt and determined organizations of color in melodramatic situations. [...]
+
+To gain depth and specificity, I will focus on one of the most notable chromatic instruments in Sirk's color orchestration, colored illumination. Cinematographer Russell Metty's experiments with blue, gold, and multicolored light in *All that Heaven Allows* are the best-known examples of projected color in Sirk's canon, though the practice persists in *Written on the Wind* (1956) and *Imitation of Life*. Mary Beth Haralovich suggests that Metty's lighting is both expressive and obtrusive. She notes that colored light intrudes "on the realist narrative space" and "functions as a signifier of the psychic and sexual energy that cannot be contained or expressed by the narrative in the usual ways" (Haralovich 1990: 66, 69). Russell Merritt echoes Camper and Willemen, concluding, "the blue swatches feel entirely cut off from the referenced world, operating entirely within the framework of ... genre pastiche... Light itself ... is 'light' only in an approximate sense – an approximation of sunlight and an approximation of reading light" (Merritt 2008: 12)."""
+
+[elsaesser_2012]
+type = "print"
+author = "Thomas Elsaesser"
+title = "Tales of Sound and Fury: Observations on the Family Melodrama"
+source = "Film Genre Reader IV"
+publisher = "University of Texas Press"
+location = "Austin"
+year = "2012"
+page = "433-462"
+quote = """Melodrama is iconographically fixed by the claustrophobic atmosphere of the bourgeois home and/or the small-town setting; its emotional pattern is that of panic and latent hysteria, reinforced stylistically by a complex handling of space in interiors (Sirk, Ray, and Losey particularly excel in this) to the point where the world seems totally predetermined and pervaded by “meaning” and interpretable signs. [...]
+
+In Hollywood melodrama characters made for operettas play out the human tragedies (which is how they experience the contradictions of American civilization). Small wonder they are constantly baffled and amazed, as Lana Turner is in *Imitation of Life*, about what is going on around them and within them. The tensions of seeming and being, of intention and result, register as a perplexing frustration, and an everincreasing gap opens between the emotions and the reality they seek to reach. What strikes one as the true pathos is the very mediocrity of the human beings involved, putting such high demands upon themselves, trying to live up to an exalted vision of the human being, but instead living out the impossible contradictions that have turned the American dream into its proverbial nightmare. It makes the best American melodramas of the fifties not only critical social documents but genuine tragedies, despite or rather because of the happy ending: they record some of the agonies that have accompanied the demise of the "affirmative culture.""""
 
 
 

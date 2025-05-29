@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="{{ get_url(path='style.css') }}">
     
 </head>
+
 <body>
     <header>
         <nav>
@@ -42,7 +43,7 @@
     <!-- Load bibliography data as JSON -->
     <script type="application/json" id="bibliography-data">
         {{ load_data(path="data/bibliography.toml") | json_encode(pretty=true) | safe }}
-    </script>
+    </script> 
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -111,14 +112,37 @@
                 return formatted;
             }
             
+            function processMarkdown(text) {
+                return text
+                    // Bold: **text** or __text__
+                    .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+                    .replace(/__([^_]+)__/g, '<strong>$1</strong>')
+        
+                    // Italics: *text* or _text_
+                    .replace(/\*([^*]+)\*/g, '<em>$1</em>')
+                    .replace(/_([^_]+)_/g, '<em>$1</em>')
+        
+                    // Code: `text`
+                    .replace(/`([^`]+)`/g, '<code>$1</code>')
+        
+                    // Simple links: [text](url)
+                    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>')
+
+                    // Line breaks: double space at end of line OR explicit \n
+                    .replace(/  \n/g, '<br>')
+                    .replace(/\n/g, '<br>');
+            }
+
             function openModal(citationId) {
                 const citation = bibliography[citationId];
-                
+    
                 if (!citation || !citation.quote) {
-                    return;
-                }
+                return;
+            }
                 
-                modalQuote.textContent = citation.quote;
+                // Process markdown and display
+                const processedQuote = processMarkdown(citation.quote);
+                modalQuote.innerHTML = processedQuote;
                 modalCitation.innerHTML = formatCitation(citation);
                 modal.classList.add('active');
                 modal.setAttribute('aria-hidden', 'false');

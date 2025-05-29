@@ -33,6 +33,18 @@ filming_locations = ["Los Angeles, CA"]
 format = "Sound, Eastmancolor"
 duration = "125 minutes"
 
+# Film status details (using new metadata structure)
+[extra.film_status]
+survival = "extant"
+completeness = "complete" 
+access = "available"
+restoration = "restored"
+quality = "excellent"
+restoration_notes = "Given a 4K restoration in 2015."
+availability_type = "dvd" # If available
+availability_notes = "The 1934 and 1959 versions of the film are available together on Blu-ray from Universal."
+
+
 
 # Film image
 [extra.film_image]
@@ -58,5 +70,15 @@ The story reflects the Great Migration’s legacy, as African Americans like Ann
 
 Filmed primarily in Los Angeles, utilizing both studio and practical locations to create its New York and Hollywood settings. The production used Warner Bros. studio facilities, the United Methodist Church in Hollywood, California, and the Moulin Rouge nightclub in Los Angeles, which served as the seedy venue where Sarah Jane performs as a chorus girl.
 
+## Production Context
+
+Sirk's film demonstrates how the studio system's engagement with both regionalist literature and melodrama evolved to serve the aesthetic and ideological demands of the 1950s, transforming Hurst's Depression-era social realism into a critique of postwar American prosperity. Where [John Stahl's 1934 adaptation](@/films/imitation-of-life-1934.md) remained closer to the novel's economic survivalism, Sirk's remake reflects melodrama's turn towards what Thomas Elsaesser termed "tales of sound and fury," using the mode's emphasis on emotional excess and visual spectacle to expose the contradictions underlying mid-century domestic ideology.
+
+Sirk's collaboration with cinematographer Russell Metty on *Imitation of Life* represents a crucial moment in the transition from Technicolor's three-strip process to single-strip color photography, utilizing Eastmancolor to achieve chromatic effects in the service of melodramatic expression. The film's color design builds upon Metty's earlier experiments with artificial illumination in Sirk's Technicolor productions, but the flexibility of Eastmancolor stock allowed for more nuanced manipulation of color temperature and saturation that enhanced what Scott Higgins identifies as Sirk's strategy of using "overt and determined organizations of color in melodramatic situations." 
+
+Unlike the standardized color palette imposed by Technicolor's laboratory processes, Eastmancolor enabled Sirk and Metty to create what contemporary critics recognized as a distinctly "European" approach to Hollywood color design—one that employed chromatic artifice not merely for decorative purposes but as a systematic method of visual commentary on American social contradictions.
+
 ## Notes
 1. **Filming locations:** Information about the filming locations from {{ cite(id="afi_imitation_1959") }} This was the one of the first of many films to feature the United Methodist Church in Hollywood. {{ cite(id="latimes_imitation_1959") }} When not a filming location, the Moulin Rouge nightclub hosted Vegas-style shows. {{ cite(id="turnbull_moulin_rouge") }}
+2. **Elsaesser's theory of the family melodrama:** Elsaesser's influential essay "Tales of Sound and Fury" established the theoretical framework for understanding how 1950s melodrama functioned as ideological critique. The essay also suggests how it can be that regionalism and melodrama intersect—in the "claustrophobic atmosphere of the bourgeois home and/or the small-town setting." {{ cite(id="elsaesser_2012") }}
+2. **Eastmancolor and melodrama:** Scott Higgins' "Chromo-Drama" provides essential technical and aesthetic context for understanding Sirk's color innovations, arguing against earlier critics who emphasized only the "distancing" effects of his artificial color schemes. {{ cite(id="higgins_chromodrama") }}
