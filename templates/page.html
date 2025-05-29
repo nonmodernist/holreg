@@ -5,10 +5,16 @@
     <div class="content-wrapper">
         <div class="main-content">
             <h1 class="film-title">{{ page.title }}</h1>
-
+            
             {% if page.extra.original_story and page.extra.story_author %}
             <div class="film-description">
                 <p><em>Adapted from</em> "{{ page.extra.original_story }}" <em>by</em> {{ page.extra.story_author }}{% if page.extra.story_year %} ({{ page.extra.story_year }}){% endif %}</p>
+            </div>
+            {% endif %}
+
+            {% if page.extra.author_byline %}
+            <div class="author-byline">
+                by <span class="contributor-name">{{ page.extra.author_byline }}</span>
             </div>
             {% endif %}
 

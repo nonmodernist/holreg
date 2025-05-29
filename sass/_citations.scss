@@ -3,24 +3,26 @@
 @import 'variables';
 @import 'typography';
 
-// Citation button styling
+// Citation button styling 
 .view-quote-btn {
   display: inline;
-  background: none;
-  border: none;
-  color: $color-accent;
+  background-color: lighten($color-accent-secondary, 10%);
+  border: 1px solid darken($color-accent-secondary, 10%);
+  color: lighten($color-background, 10%);
   font-family: $sans-serif;
   font-size: inherit;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
-  padding: 0;
-  margin: 0;
+  padding: .1rem $spacing-md;
+  margin: 0 .1rem;
   text-decoration: none;
+  border-radius: 12px;
   transition: all 0.3s ease;
   
   &:hover {
-    color: darken($color-accent, 10%);
-    text-decoration: underline;
+    color: lighten($color-accent-secondary, 10%);
+    background-color: $color-background;
+    text-decoration: none;
   }
   
   &:focus {
@@ -51,7 +53,7 @@
   .quote-modal-content {
     background-color: $color-background;
     border: 1px solid $color-border;
-    border-radius: 8px;
+    border-radius: 4px;
     padding: $spacing-xxl;
     max-width: 700px;
     width: 90%;
@@ -117,8 +119,8 @@
     padding: $spacing-xl;
     background-color: $color-background-alt;
     border-left: 4px solid $color-accent;
-    border-radius: 4px;
-    font-style: italic;
+    border-radius: 2px;
+    font-style: normal;
   }
   
   .quote-modal-citation {
