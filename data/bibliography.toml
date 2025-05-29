@@ -3,6 +3,48 @@
 # For print sources, include a "quote" field with the relevant passage
 # For online sources, include a "url" field
 
+# Sources for Imitation of Life (1959)
+
+[afi_imitation_1959]
+type = "online"
+title = "Imitation of Life (1959)"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/53583-IMITATION-OFLIFE"
+accessed = "2025-05-28"
+
+[wikipedia_imitation_1959]
+type = "online"
+title = "Imitation of Life (1959 film)"
+source = "Wikipedia"
+url = "https://en.wikipedia.org/wiki/Imitation_of_Life_(1959_film)"
+accessed = "2025-05-28"
+
+[filmcolors_imitation_1959]
+type = "online"
+author = "Barbara Flueckiger"
+title = "Eastmancolor"
+source = "The Timeline of Historical Film Colors"
+url = "https://filmcolors.org/timeline-entry/1310/"
+accessed = "2025-05-28"
+
+[latimes_imitation_1959]
+type = "online"
+url = "https://www.latimes.com/entertainment/envelope/la-xpm-2013-sep-25-la-fi-ct-onlocation-20130925-story.html"
+title = "Hollywood United Methodist Church puts its faith in filming"
+source = "Los Angeles Times"
+accessed = "2025-05-28"
+
+[turnbull_moulin_rouge]
+type = "online"
+author = "Martin Turnbull"
+title = "Frank Sennes' Moulin Rouge nightclub, 6230 Sunset Blvd, Los Angeles, circa mid-1950s"
+source = "martinturnbull.com"
+url = "https://martinturnbull.com/2022/01/24/frank-sennes-moulin-rouge-nightclub-6230-sunset-blvd-los-angeles-circa-mid-1950s-2/"
+accessed = "2025-05-28"
+
+
+
+
 # Sources for Gone with the Wind
 
 [afi_gone_with]
