@@ -29,6 +29,13 @@ format = "Silent, B&W"
 # Content flags
 show_citation = true
 
+[extra.film_status]
+survival = "extant"
+completeness = "complete"
+access = "available"
+availability_type = "internet_archive"
+
+
 [extra.internet_archive]
 available = true
 identifier = "silent-amarilly-of-clothes-line-alley"
