@@ -34,6 +34,14 @@ url = "/images/sidebar-ramona1928.jpg"
 alt = "ALT TEXT"
 caption = "CAPTION."
 
+
+[extra.internet_archive]
+available = true
+identifier = "1928-ramona-edwin-carewe"
+title_on_ia = "Ramona (1928)"
+watch_url = "https://archive.org/details/1928-ramona-edwin-carewe"
+embed_url = "https://archive.org/embed/1928-ramona-edwin-carewe"
+last_checked = "2025-05-30"
 +++
 
 ## Plot Summary

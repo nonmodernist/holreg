@@ -27,6 +27,14 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+
+[extra.internet_archive]
+available = true
+identifier = "humoresque-1946_202501"
+title_on_ia = "Humoresque ( 1946)"
+watch_url = "https://archive.org/details/humoresque-1946_202501"
+embed_url = "https://archive.org/embed/humoresque-1946_202501"
+last_checked = "2025-05-30"
 +++
 
 *Humoresque* (1946) is a film adaptation of "Humoresque" by Fannie Hurst (1919).

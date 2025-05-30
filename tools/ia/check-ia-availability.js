@@ -269,16 +269,25 @@ class SimpleIAChecker {
         }
         
         // Creator matching - Director or Studio (0-30 points)
-        const creators = (doc.creator || '').toLowerCase();
+        // Handle creator being either a string or array
+        let creatorsStr = '';
+        if (doc.creator) {
+            if (Array.isArray(doc.creator)) {
+                creatorsStr = doc.creator.join(' ').toLowerCase();
+            } else {
+                creatorsStr = doc.creator.toLowerCase();
+            }
+        }
+        
         let creatorScore = 0;
         const creatorMatches = [];
         
-        if (filmInfo.director && creators.includes(filmInfo.director.toLowerCase())) {
+        if (filmInfo.director && creatorsStr.includes(filmInfo.director.toLowerCase())) {
             creatorScore += 20;
             creatorMatches.push(`Director: ${filmInfo.director}`);
         }
         
-        if (filmInfo.studio && creators.includes(filmInfo.studio.toLowerCase())) {
+        if (filmInfo.studio && creatorsStr.includes(filmInfo.studio.toLowerCase())) {
             creatorScore += 15;
             creatorMatches.push(`Studio: ${filmInfo.studio}`);
         }

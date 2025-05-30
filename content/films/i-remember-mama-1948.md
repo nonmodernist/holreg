@@ -34,6 +34,14 @@ url = "/images/sidebar-mama1948.jpg"
 alt = "ALT TEXT"
 caption = "CAPTION."
 
+
+[extra.internet_archive]
+available = true
+identifier = "i-remember-mama-1948-irene-dunne-full-movie"
+title_on_ia = "🎥 I Remember Mama 1948 Irene Dunne 🎥 FULL MOVIE"
+watch_url = "https://archive.org/details/i-remember-mama-1948-irene-dunne-full-movie"
+embed_url = "https://archive.org/embed/i-remember-mama-1948-irene-dunne-full-movie"
+last_checked = "2025-05-30"
 +++
 
 ## Plot Summary
