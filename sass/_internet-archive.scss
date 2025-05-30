@@ -65,6 +65,8 @@
     }
   }
   
+// style button to go to internet archive
+
   .ia-btn-watch {
     background-color: $color-accent-blue;
     color: white;
@@ -83,16 +85,17 @@
     }
   }
   
+  // style button to watch film in popup modal
   .ia-btn-embed {
-    background-color: transparent;
-    color: $color-accent-blue;
-    border-color: $color-accent-blue;
+    background-color: $color-success-bg;
+    color: $color-success;
+    border-color: #c3e6c3;
     
     &:hover {
-      background-color: $color-accent-blue;
+      background-color: $color-success;
       color: white;
       transform: translateY(-1px);
-      box-shadow: 0 4px 8px rgba($color-accent-blue, 0.2);
+      box-shadow: 0 4px 8px rgba($color-success, 0.2);
     }
     
     &:active {

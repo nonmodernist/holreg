@@ -38,7 +38,7 @@
             {% endif %}
         </div>
 
-        <!-- Enhanced sidebar with action links and metadata -->
+        <!-- SIDEBAR - Enhanced sidebar with action links and metadata -->
         <aside class="film-sidebar">
             <!-- Action links like WFP -->
             <div class="action-links">
@@ -166,15 +166,20 @@
                     <div class="value">{{ page.extra.duration }}</div>
                 </div>
                 {% endif %}
+    </div>
 
 
-<!-- FILM STATUS SECTION - survival and availability -->
-    {% if page.extra.film_status %}
+<!-- FILM STATUS BOX - survival and availability -->
+<!-- Only show availability details if there's no Internet Archive section -->
+{% if page.extra.film_status %}
 {% set status = page.extra.film_status %}
+            
+            <div class="metadata-box">
+                <h3>Availability</h3>
 
 <!-- Survival Status - Always shown -->
 <div class="metadata-item">
-    <span class="label">Survival</span>
+    <span class="label">Survival Status</span>
     <div class="value">
         <span class="status-survival status-{{ status.survival }}">
             {% if status.survival == "extant" %}
@@ -186,33 +191,32 @@
     </div>
 </div>
 
-<!-- Availability - Only for extant films -->
-{% if status.survival == "extant" %}
+<!-- Availability - Only show if no Internet Archive AND film is extant -->
+{% if not page.extra.internet_archive and status.survival == "extant" %}
 <div class="metadata-item">
     <span class="label">Availability</span>
     <div class="value">
         <span class="status-access status-{{ status.access }}">
             {% if status.access == "available" %}
-                Available
                 {% if status.availability_type == "internet_archive" %}
-                    (Free Online)
+                    Free online
                 {% elif status.availability_type == "dvd" %}
-                    (DVD)
+                    Home video
                 {% elif status.availability_type == "streaming" %}
-                    (Streaming)
+                    Streaming
                 {% endif %}
             {% elif status.access == "restricted" %}
-                Archive Access Only
+                Archive access only
             {% else %}
-                Not Available
+                Not available
             {% endif %}
         </span>
     </div>
 </div>
 {% endif %}
 
-<!-- Notes - Show if present -->
-{% if status.availability_notes %}
+<!-- Notes - Show if present AND no Internet Archive -->
+{% if status.availability_notes and not page.extra.internet_archive %}
 <div class="metadata-item">
     <span class="label">{% if status.survival == "extant" %}Availability Notes{% else %}Notes{% endif %}</span>
     <div class="value">{{ status.availability_notes }}</div>
@@ -220,13 +224,10 @@
 {% endif %}
 {% endif %}
 
-
+<!-- Internet Archive Section - replaces availability info when present -->
 {{ ia::internet_archive_availability(page=page) }}
 
 </div>
-
-
-
 
 <!-- SOURCE DETAILS BOX -->
             {% if page.extra.original_story %}
