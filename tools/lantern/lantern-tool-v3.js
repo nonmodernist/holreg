@@ -648,6 +648,15 @@ class LanternResearchToolV3 {
             });
         }
 
+        // UPDATED: Create reports directory structure and save to it
+        const reportsDir = path.join('reports', 'lantern-reports');
+        if (!fs.existsSync('reports')) {
+            fs.mkdirSync('reports');
+        }
+        if (!fs.existsSync(reportsDir)) {
+            fs.mkdirSync(reportsDir, { recursive: true });
+        }
+
         // Save detailed report
         const report = {
             summary: {
@@ -674,7 +683,7 @@ class LanternResearchToolV3 {
             }))
         };
 
-        const reportPath = 'lantern-report-v3.json';
+        const reportPath = path.join(reportsDir, 'lantern-report-v3.json');
         fs.writeFileSync(reportPath, JSON.stringify(report, null, 2));
         console.log(`\n💾 Report saved to: ${reportPath}`);
 

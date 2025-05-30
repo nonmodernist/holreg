@@ -5,7 +5,24 @@ const fs = require('fs');
 const path = require('path');
 
 class LanternReportGenerator {
-    constructor(resultsPath = 'lantern-report-v3.json') {
+    constructor(resultsPath = null) {
+        // Look for the report in the new location first, then fallback to old location
+        if (!resultsPath) {
+            const newPath = path.join('reports', 'lantern-reports', 'lantern-report-v3.json');
+            const oldPath = 'lantern-report-v3.json';
+            
+            if (fs.existsSync(newPath)) {
+                resultsPath = newPath;
+            } else if (fs.existsSync(oldPath)) {
+                resultsPath = oldPath;
+            } else {
+                console.error('❌ No lantern report found. Expected at:');
+                console.error(`   ${newPath}`);
+                console.error(`   or ${oldPath}`);
+                process.exit(1);
+            }
+        }
+        
         this.resultsPath = resultsPath;
         this.data = this.loadResults();
         this.reportDate = new Date().toISOString().split('T')[0];
@@ -461,14 +478,19 @@ class LanternReportGenerator {
         return patterns;
     }
 
-    // Main report generation - FIXED VERSION
+    // UPDATED: Main report generation with new directory structure
     generateAllReports() {
-        const outputDir = 'lantern-reports';
+        // Create the reports directory structure
+        const outputDir = path.join('reports', 'lantern-reports');
+        if (!fs.existsSync('reports')) {
+            fs.mkdirSync('reports');
+        }
         if (!fs.existsSync(outputDir)) {
-            fs.mkdirSync(outputDir);
+            fs.mkdirSync(outputDir, { recursive: true });
         }
 
         console.log('📝 Generating Lantern Research Reports...\n');
+        console.log(`📁 Output directory: ${outputDir}/\n`);
 
         // Individual film reports
         const filmReports = [];
