@@ -138,6 +138,14 @@ restoration_notes = "[notes about most recent restoration]"
 availability_type = "internet_archive/dvd/streaming/archive_only" # If available
 availability_notes = "[Specific availability details]"
 
+[extra.internet_archive]
+available = true
+identifier = "UNIQUE_ID"
+title_on_ia = "FILM TITLE"
+watch_url = "https://archive.org/details/UNIQUE_ID"
+embed_url = "https://archive.org/embed/UNIQUE_ID"
+last_checked = "[date]"
+
 # Film image (if available)
 [extra.film_image]
 url = "/images/[filename]"
