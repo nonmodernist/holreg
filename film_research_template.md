@@ -99,7 +99,7 @@ weight = [Year] # For chronological sorting
 authors = ["[Author Name]"]
 regions = ["[Specific Region]", "[Broader Region if applicable]"]
 studios = ["[Studio Name]"]
-eras = ["[Era: early silent/late silent/pre-code/classical hollywood/studio system decline]"]
+eras = ["[Era: early silent/late silent/pre-code/classical hollywood/post-classical hollywood]"]
 genres = ["[Primary Genre]", "[Secondary Genre if applicable]"]
 survival = ["extant/lost/unknown"]
 access = ["available/restricted/unavailable"] # Only if survival = "extant"
