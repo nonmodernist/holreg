@@ -1,0 +1,39 @@
+{% macro internet_archive_availability(page) %}
+{% if page.extra.internet_archive and page.extra.internet_archive.available %}
+<div class="metadata-item">
+    <span class="label">Internet Archive</span>
+    <div class="value">
+        <div class="ia-availability-section">
+            <div class="ia-status-badge">
+                <span class="ia-indicator">🎬</span>
+                <span class="ia-text">Available Free Online</span>
+            </div>
+            
+            <div class="ia-actions">
+                <a href="{{ page.extra.internet_archive.watch_url }}" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="ia-btn ia-btn-watch">
+                    Watch on IA
+                </a>
+                
+                <button type="button"
+                        class="ia-btn ia-btn-embed"
+                        data-film-slug="{{ page.slug }}"
+                        data-embed-url="{{ page.extra.internet_archive.embed_url }}"
+                        data-film-title="{{ page.title }}"
+                        data-film-year="{{ page.extra.year }}">
+                    Embed Player
+                </button>
+            </div>
+            
+            <div class="ia-metadata">
+                <small>
+                    Archive ID: <code>{{ page.extra.internet_archive.identifier }}</code>
+                </small>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+{% endmacro %}

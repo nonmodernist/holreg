@@ -179,5 +179,233 @@
             });
         });
     </script>
+
+    <script>
+// Internet Archive Modal Player
+// Accessible modal with keyboard navigation and mobile optimization
+
+let currentIAModal = null;
+
+// Initialize event listeners when DOM is ready
+document.addEventListener('DOMContentLoaded', function() {
+    // Event delegation for embed buttons
+    document.addEventListener('click', function(e) {
+        if (e.target.classList.contains('ia-btn-embed')) {
+            e.preventDefault();
+            
+            const filmSlug = e.target.dataset.filmSlug;
+            const embedUrl = e.target.dataset.embedUrl;
+            const filmTitle = e.target.dataset.filmTitle;
+            const filmYear = e.target.dataset.filmYear;
+            
+            openIAModal(filmSlug, embedUrl, filmTitle, filmYear);
+        }
+    });
+});
+
+function openIAModal(filmSlug, embedUrl, filmTitle, filmYear) {
+    // Close any existing modal
+    closeIAModal();
+    
+    // Create modal HTML
+    const modalHTML = `
+        <div class="ia-modal-overlay clickable-overlay" id="ia-modal" aria-modal="true" role="dialog" aria-labelledby="ia-modal-title">
+            <div class="ia-modal-content" role="document">
+                <div class="ia-modal-header">
+                    <div>
+                        <h2 class="ia-modal-title" id="ia-modal-title">${filmTitle}</h2>
+                        <p class="ia-modal-subtitle">Internet Archive Player (${filmYear})</p>
+                    </div>
+                    <button class="ia-modal-close" aria-label="Close player" data-action="close-modal">
+                        ×
+                    </button>
+                </div>
+                
+                <div class="ia-modal-player">
+                    <iframe 
+                        src="${embedUrl}" 
+                        title="Internet Archive player for ${filmTitle}"
+                        allowfullscreen
+                        loading="lazy">
+                    </iframe>
+                </div>
+                
+                <div class="ia-modal-footer">
+                    <div class="ia-modal-links">
+                        <a href="${embedUrl.replace('/embed/', '/details/')}" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           class="ia-external-link">
+                            View on Internet Archive
+                        </a>
+                        <p class="ia-modal-note">
+                            Streaming provided by Internet Archive
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+    
+    // Add to document
+    document.body.insertAdjacentHTML('beforeend', modalHTML);
+    currentIAModal = document.getElementById('ia-modal');
+    
+    // Prevent body scroll
+    document.body.classList.add('ia-modal-open');
+    
+    // Add event listeners
+    setupModalEventListeners();
+    
+    // Focus management for accessibility
+    const closeButton = currentIAModal.querySelector('.ia-modal-close');
+    if (closeButton) {
+        closeButton.focus();
+    }
+    
+    // Trigger enter animation
+    requestAnimationFrame(() => {
+        if (currentIAModal) {
+            currentIAModal.classList.add('active');
+        }
+    });
+}
+
+function closeIAModal() {
+    if (!currentIAModal) return;
+    
+    // Exit animation
+    currentIAModal.classList.remove('active');
+    
+    setTimeout(() => {
+        if (currentIAModal && currentIAModal.parentNode) {
+            currentIAModal.parentNode.removeChild(currentIAModal);
+        }
+        currentIAModal = null;
+        document.body.classList.remove('ia-modal-open');
+    }, 300); // Match CSS transition duration
+}
+
+function setupModalEventListeners() {
+    if (!currentIAModal) return;
+    
+    // Close button click
+    const closeButton = currentIAModal.querySelector('[data-action="close-modal"]');
+    if (closeButton) {
+        closeButton.addEventListener('click', closeIAModal);
+    }
+    
+    // Close on overlay click (but not on content click)
+    currentIAModal.addEventListener('click', (e) => {
+        if (e.target === currentIAModal) {
+            closeIAModal();
+        }
+    });
+    
+    // Prevent content clicks from bubbling to overlay
+    const modalContent = currentIAModal.querySelector('.ia-modal-content');
+    if (modalContent) {
+        modalContent.addEventListener('click', (e) => {
+            e.stopPropagation();
+        });
+    }
+    
+    // Keyboard navigation
+    document.addEventListener('keydown', handleModalKeyDown);
+    
+    // Trap focus within modal
+    trapFocusInModal();
+}
+
+function handleModalKeyDown(e) {
+    if (!currentIAModal) return;
+    
+    // Close on Escape
+    if (e.key === 'Escape') {
+        e.preventDefault();
+        closeIAModal();
+        return;
+    }
+    
+    // Tab key focus trapping is handled by trapFocusInModal
+}
+
+function trapFocusInModal() {
+    if (!currentIAModal) return;
+    
+    const focusableElements = currentIAModal.querySelectorAll(
+        'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+    );
+    
+    const firstFocusable = focusableElements[0];
+    const lastFocusable = focusableElements[focusableElements.length - 1];
+    
+    function handleTabKey(e) {
+        if (e.key !== 'Tab') return;
+        
+        if (e.shiftKey) {
+            // Shift + Tab
+            if (document.activeElement === firstFocusable) {
+                e.preventDefault();
+                lastFocusable.focus();
+            }
+        } else {
+            // Tab
+            if (document.activeElement === lastFocusable) {
+                e.preventDefault();
+                firstFocusable.focus();
+            }
+        }
+    }
+    
+    currentIAModal.addEventListener('keydown', handleTabKey);
+}
+
+// Clean up when navigating away
+window.addEventListener('beforeunload', () => {
+    if (currentIAModal) {
+        document.removeEventListener('keydown', handleModalKeyDown);
+        closeIAModal();
+    }
+});
+
+// Handle browser back button
+window.addEventListener('popstate', () => {
+    if (currentIAModal) {
+        closeIAModal();
+    }
+});
+
+// Mobile-specific optimizations
+function isMobile() {
+    return window.innerWidth <= 768 || /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+
+// Adjust modal behavior for mobile
+if (isMobile()) {
+    // On mobile, make the modal take up more screen space
+    document.addEventListener('DOMContentLoaded', () => {
+        const style = document.createElement('style');
+        style.textContent = `
+            @media (max-width: 768px) {
+                .ia-modal-content {
+                    max-width: 95vw;
+                    max-height: 95vh;
+                    margin: auto;
+                }
+                
+                .ia-modal-overlay {
+                    padding: ${window.innerHeight < 600 ? '0.5rem' : '1rem'};
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    });
+}
+
+
+
+
+    </script>
 </body>
 </html>

@@ -25,7 +25,6 @@ story_author = "Helen Hunt Jackson"
 director = "D.W. Griffith"
 studio = "Biograph"
 setting = "Southern California"
-availability = "Available"
 format = "Silent, B&W"
 duration = "16 minutes"
 
@@ -39,6 +38,14 @@ alt = "Woman with dark hair looks through barred window with concerned expressio
 
 caption = "Scene still from the 1910 film adaptation \"Ramona\" showing the protagonist, played by Mary Pickford, confined behind a barred window."
 
+survival = ["extant"]
+access = ["available"]
+
+[extra.film_status]
+survival = "extant"
+completeness = "complete"
+access = "available"
+availability_type = "internet_archive"
 
 [extra.internet_archive]
 available = true
@@ -60,3 +67,6 @@ last_checked = "2025-05-30"
 ## Historical Context
 
 [Add information about the film's place in Hollywood history and regional representation]
+
+
+
