@@ -262,6 +262,7 @@ The report includes detailed information for each film:
 
 ## Future Enhancements
 
+- [ ] Create workflow for manual review
 - [ ] Support for re-checking specific films only
 - [ ] Integration with other archives beyond Internet Archive
 - [ ] Batch operations for updating significance ratings
