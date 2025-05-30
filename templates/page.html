@@ -218,7 +218,204 @@
 </div>
 {% endif %}
 {% endif %}
+<!-- Add this to your page.html template in the film sidebar, after the Film Details box -->
+
+<!-- Internet Archive Availability -->
+{% if page.extra.internet_archive and page.extra.internet_archive.available %}
+<div class="metadata-box ia-availability">
+    <h3>🎬 Watch Online</h3>
+    
+    <div class="ia-badge-container">
+        <span class="ia-badge">Free on Internet Archive</span>
+    </div>
+    
+    <div class="ia-actions">
+        <a href="{{ page.extra.internet_archive.watch_url }}" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="ia-watch-btn">
+            ▶️ Watch Now
+        </a>
+        
+        <button onclick="toggleIAEmbed('{{ page.slug }}')" 
+                class="ia-embed-btn">
+            📺 Embed Player
+        </button>
+    </div>
+    
+    <div class="ia-details">
+        <small>
+            <strong>Archive ID:</strong> {{ page.extra.internet_archive.identifier }}<br>
+            <strong>Last checked:</strong> {{ page.extra.internet_archive.last_checked }}
+        </small>
+    </div>
+    
+    <!-- Embedded player (hidden by default) -->
+    <div id="ia-embed-{{ page.slug }}" class="ia-embed-container" style="display: none;">
+        <div class="embed-header">
+            <span>Internet Archive Player</span>
+            <button onclick="toggleIAEmbed('{{ page.slug }}')" class="embed-close">✕</button>
+        </div>
+        <iframe src="{{ page.extra.internet_archive.embed_url }}" 
+                width="100%" 
+                height="480" 
+                frameborder="0" 
+                webkitallowfullscreen="true" 
+                mozallowfullscreen="true" 
+                allowfullscreen>
+        </iframe>
+    </div>
 </div>
+{% endif %}
+
+<!-- Add CSS styles -->
+<style>
+.ia-availability {
+    background: linear-gradient(135deg, #f8f9ff 0%, #e8f4fd 100%);
+    border-left: 4px solid #4a90e2;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.ia-badge-container {
+    margin-bottom: 1rem;
+}
+
+.ia-badge {
+    display: inline-block;
+    background: #4a90e2;
+    color: white;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.ia-actions {
+    display: flex;
+    gap: 0.75rem;
+    margin: 1rem 0;
+    flex-wrap: wrap;
+}
+
+.ia-watch-btn, .ia-embed-btn {
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.ia-watch-btn {
+    background: #28a745;
+    color: white;
+    box-shadow: 0 2px 4px rgba(40, 167, 69, 0.3);
+}
+
+.ia-watch-btn:hover {
+    background: #218838;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(40, 167, 69, 0.4);
+}
+
+.ia-embed-btn {
+    background: #6c757d;
+    color: white;
+    box-shadow: 0 2px 4px rgba(108, 117, 125, 0.3);
+}
+
+.ia-embed-btn:hover {
+    background: #5a6268;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(108, 117, 125, 0.4);
+}
+
+.ia-details {
+    color: #666;
+    line-height: 1.4;
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid #ddd;
+}
+
+.ia-embed-container {
+    margin: 1rem 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.embed-header {
+    background: #f8f9fa;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.embed-close {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #666;
+    padding: 0;
+    line-height: 1;
+}
+
+.embed-close:hover {
+    color: #333;
+}
+
+.ia-embed-container iframe {
+    display: block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .ia-actions {
+        flex-direction: column;
+    }
+    
+    .ia-watch-btn, .ia-embed-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+</style>
+
+<!-- JavaScript for embed toggle -->
+<script>
+function toggleIAEmbed(filmSlug) {
+    const container = document.getElementById('ia-embed-' + filmSlug);
+    const iframe = container.querySelector('iframe');
+    
+    if (container.style.display === 'none') {
+        container.style.display = 'block';
+        // Scroll to the player
+        container.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    } else {
+        container.style.display = 'none';
+    }
+}
+</script>
+
+</div>
+
+
+
 
 <!-- SOURCE DETAILS BOX -->
             {% if page.extra.original_story %}

@@ -16,6 +16,8 @@ directors = ["John M. Stahl"]
 [extra]
 # Film metadata for sidebar
 year = 1932
+significance = "hidden_gem"
+significance_note = "Pre-Code era adaptation of Fannie Hurst's work, freely viewable on Internet Archive."
 original_story = "Back Street"
 story_year = 1931
 story_author = "Fannie Hurst"
@@ -33,6 +35,14 @@ show_citation = true
 url = "/images/sidebar-backstreet1932.jpg"
 alt = "2 people sit close together, woman in feathery wrap and man in suit with hat, looking at each other against lattice background."
 caption = "Scene still from the 1932 film \"Back Street\" showing a couple in an intimate conversation."
+
+[extra.internet_archive]
+available = true
+identifier = "back-street-1932-film-noir-drama"
+title_on_ia = "Back Street (1932 Film Noir, Drama)"
+watch_url = "https://archive.org/details/back-street-1932-film-noir-drama"
+embed_url = "https://archive.org/embed/back-street-1932-film-noir-drama"
+last_checked = "2025-05-30"
 +++
 
 ## Plot Summary

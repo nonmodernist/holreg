@@ -34,6 +34,14 @@ url = "/images/sidebar-tess.jpg"
 alt = "ALT TEXT"
 caption = "CAPTION."
 
+
+[extra.internet_archive]
+available = true
+identifier = "silent-tess-of-the-storm-country"
+title_on_ia = "Tess of the Storm Country"
+watch_url = "https://archive.org/details/silent-tess-of-the-storm-country"
+embed_url = "https://archive.org/embed/silent-tess-of-the-storm-country"
+last_checked = "2025-05-30"
 +++
 
 ## Plot Summary

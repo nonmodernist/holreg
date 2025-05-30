@@ -33,6 +33,14 @@ url = "/images/sidebar-pollyanna1920.jpg"
 alt = "ALT TEXT"
 caption = "CAPTION."
 
+
+[extra.internet_archive]
+available = true
+identifier = "silent-pollyanna"
+title_on_ia = "Pollyanna"
+watch_url = "https://archive.org/details/silent-pollyanna"
+embed_url = "https://archive.org/embed/silent-pollyanna"
+last_checked = "2025-05-30"
 +++
 
 ## Plot Summary

@@ -17,6 +17,8 @@ directors = ["D.W. Griffith"]
 [extra]
 # Film metadata for sidebar
 year = 1910
+significance = "hidden_gem"
+significance_note = "Rare surviving silent film from 1910, available free on Internet Archive."
 original_story = "Ramona"
 story_year = 1884
 story_author = "Helen Hunt Jackson"
@@ -37,6 +39,14 @@ alt = "Woman with dark hair looks through barred window with concerned expressio
 
 caption = "Scene still from the 1910 film adaptation \"Ramona\" showing the protagonist, played by Mary Pickford, confined behind a barred window."
 
+
+[extra.internet_archive]
+available = true
+identifier = "silent-ramona"
+title_on_ia = "Ramona"
+watch_url = "https://archive.org/details/silent-ramona"
+embed_url = "https://archive.org/embed/silent-ramona"
+last_checked = "2025-05-30"
 +++
 
 ## Plot Summary
