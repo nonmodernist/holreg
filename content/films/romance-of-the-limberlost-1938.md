@@ -41,6 +41,14 @@ url = "/images/sidebar-romancelimberlost.jpg"
 alt = "ALT TEXT"
 caption = "CAPTION."
 
+
+[extra.internet_archive]
+available = true
+identifier = "Romance_of_the_Limberlost_1938"
+title_on_ia = "Romance of the Limberlost"
+watch_url = "https://archive.org/details/Romance_of_the_Limberlost_1938"
+embed_url = "https://archive.org/embed/Romance_of_the_Limberlost_1938"
+last_checked = "2025-05-30"
 +++
 
 ## Plot Summary

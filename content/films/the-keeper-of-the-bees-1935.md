@@ -41,6 +41,14 @@ url = "/images/sidebar-keeper1935.jpg"
 alt = "ALT TEXT"
 caption = "CAPTION."
 
+
+[extra.internet_archive]
+available = true
+identifier = "Keeper_of_the_Bees_1935"
+title_on_ia = "The Keeper of the Bees"
+watch_url = "https://archive.org/details/Keeper_of_the_Bees_1935"
+embed_url = "https://archive.org/embed/Keeper_of_the_Bees_1935"
+last_checked = "2025-05-30"
 +++
 
 ## Plot Summary

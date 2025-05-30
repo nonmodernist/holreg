@@ -41,6 +41,14 @@ url = "/images/sidebar-laddie1940.jpg"
 alt = "ALT TEXT"
 caption = "CAPTION."
 
+
+[extra.internet_archive]
+available = true
+identifier = "Laddie_1940"
+title_on_ia = "Laddie"
+watch_url = "https://archive.org/details/Laddie_1940"
+embed_url = "https://archive.org/embed/Laddie_1940"
+last_checked = "2025-05-30"
 +++
 
 ## Plot Summary

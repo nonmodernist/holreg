@@ -15,9 +15,31 @@
     "title": "A Girl of the Limberlost",
     "year": 1934,
     "author": "Gene Stratton-Porter",
-    "foundOnIA": false,
-    "iaResults": [],
-    "bestMatch": null
+    "foundOnIA": true,
+    "iaResults": [
+      {
+        "identifier": "AGirlOfTheLimberlost1934",
+        "title": "A Girl of the Limberlost",
+        "creator": [
+          "Gene Stratton-Porter",
+          "Christy Cabanne"
+        ],
+        "year": 1934,
+        "watchUrl": "https://archive.org/details/AGirlOfTheLimberlost1934",
+        "embedUrl": "https://archive.org/embed/AGirlOfTheLimberlost1934"
+      }
+    ],
+    "bestMatch": {
+        "identifier": "AGirlOfTheLimberlost1934",
+        "title": "A Girl of the Limberlost",
+        "creator": [
+          "Gene Stratton-Porter",
+          "Christy Cabanne"
+        ],
+        "year": 1934,
+        "watchUrl": "https://archive.org/details/AGirlOfTheLimberlost1934",
+        "embedUrl": "https://archive.org/embed/AGirlOfTheLimberlost1934"
+      }
   },
   {
     "filePath": "/Users/akedwards/websites/zola/holreg/content/films/a-girl-of-the-limberlost-1945.md",
@@ -165,9 +187,31 @@
     "title": "Cheers for Miss Bishop",
     "year": 1941,
     "author": "Bess Streeter Aldrich",
-    "foundOnIA": false,
-    "iaResults": [],
-    "bestMatch": null
+    "foundOnIA": true,
+    "iaResults": [
+      {
+        "identifier": "cheers_for_miss_bishop",
+        "title": "Cheers for Miss Bishop",
+        "creator": [
+          "Bess Streeter Aldrich",
+          "Tay Garnett"
+        ],
+        "year": 1941,
+        "watchUrl": "https://archive.org/details/cheers_for_miss_bishop",
+        "embedUrl": "https://archive.org/embed/cheers_for_miss_bishop"
+      }
+    ],
+    "bestMatch": {
+        "identifier": "cheers_for_miss_bishop",
+        "title": "Cheers for Miss Bishop",
+        "creator": [
+          "Bess Streeter Aldrich",
+          "Tay Garnett"
+        ],
+        "year": 1941,
+        "watchUrl": "https://archive.org/details/cheers_for_miss_bishop",
+        "embedUrl": "https://archive.org/embed/cheers_for_miss_bishop"
+      }
   },
   {
     "filePath": "/Users/akedwards/websites/zola/holreg/content/films/cimarron-1932.md",
@@ -505,9 +549,32 @@
     "title": "Laddie",
     "year": 1940,
     "author": "Gene Stratton-Porter",
-    "foundOnIA": false,
-    "iaResults": [],
-    "bestMatch": null
+    "foundOnIA": true,
+    "iaResults": [
+{
+        "identifier": "Laddie_1940",
+        "title": "Laddie",
+        "creator": [
+          "Gene Stratton-Porter",
+          "Jack Hively"
+        ],
+        "year": 1940,
+        "watchUrl": "https://archive.org/details/Laddie_1940",
+        "embedUrl": "https://archive.org/embed/Laddie_1940"
+      }
+
+    ],
+    "bestMatch": {
+        "identifier": "Laddie_1940",
+        "title": "Laddie",
+        "creator": [
+          "Gene Stratton-Porter",
+          "Jack Hively"
+        ],
+        "year": 1940,
+        "watchUrl": "https://archive.org/details/Laddie_1940",
+        "embedUrl": "https://archive.org/embed/Laddie_1940"
+      }
   },
   {
     "filePath": "/Users/akedwards/websites/zola/holreg/content/films/linda-1929.md",
@@ -653,9 +720,41 @@
     "title": "Mrs. Wiggs of the Cabbage Patch",
     "year": 1919,
     "author": "Alice Hegan Rice",
-    "foundOnIA": false,
-    "iaResults": [],
-    "bestMatch": null
+    "foundOnIA": true,
+    "iaResults": [
+{
+        "identifier": "mrs-wiggs-of-the-cabbage-patch-paramount-1919",
+        "title": "Mrs. Wiggs of the Cabbage Patch",
+        "creator": [
+          "Alice Hegan Rice",
+          "Hugh Ford",
+          "Marguerite Clark", 
+          "Mary Carr", "Vivia Ogden", "Gladys Valerie", "Alma Rubens", "Gareth Hughes", "Jack McLean", "Maud Hosford", "Lawrence Johnson", "May McAvoy",
+          "Anne Crawford Flexner", "Eve Unsell",
+          "Adolph Zukor",
+          "William Marshall"
+        ],
+        "year": 1920,
+        "watchUrl": "https://archive.org/details/mrs-wiggs-of-the-cabbage-patch-paramount-1919",
+        "embedUrl": "https://archive.org/embed/mrs-wiggs-of-the-cabbage-patch-paramount-1919"
+      }
+    ],
+    "bestMatch": {
+        "identifier": "mrs-wiggs-of-the-cabbage-patch-paramount-1919",
+        "title": "Mrs. Wiggs of the Cabbage Patch",
+        "creator": [
+          "Alice Hegan Rice",
+          "Hugh Ford",
+          "Marguerite Clark", 
+          "Mary Carr", "Vivia Ogden", "Gladys Valerie", "Alma Rubens", "Gareth Hughes", "Jack McLean", "Maud Hosford", "Lawrence Johnson", "May McAvoy",
+          "Anne Crawford Flexner", "Eve Unsell",
+          "Adolph Zukor",
+          "William Marshall"
+        ],
+        "year": 1920,
+        "watchUrl": "https://archive.org/details/mrs-wiggs-of-the-cabbage-patch-paramount-1919",
+        "embedUrl": "https://archive.org/embed/mrs-wiggs-of-the-cabbage-patch-paramount-1919"
+      }
   },
   {
     "filePath": "/Users/akedwards/websites/zola/holreg/content/films/mrs-wiggs-1934.md",
@@ -903,9 +1002,32 @@
     "title": "Romance of the Limberlost",
     "year": 1938,
     "author": "Gene Stratton-Porter",
-    "foundOnIA": false,
-    "iaResults": [],
-    "bestMatch": null
+    "foundOnIA": true,
+    "iaResults": [
+{
+        "identifier": "Romance_of_the_Limberlost_1938",
+        "title": "Romance of the Limberlost",
+        "creator": [
+          "Gene Stratton-Porter",
+          "William Nigh"
+        ],
+        "year": 1938,
+        "watchUrl": "https://archive.org/details/Romance_of_the_Limberlost_1938",
+        "embedUrl": "https://archive.org/embed/Romance_of_the_Limberlost_1938"
+      }
+
+    ],
+    "bestMatch": {
+        "identifier": "Romance_of_the_Limberlost_1938",
+        "title": "Romance of the Limberlost",
+        "creator": [
+          "Gene Stratton-Porter",
+          "William Nigh"
+        ],
+        "year": 1938,
+        "watchUrl": "https://archive.org/details/Romance_of_the_Limberlost_1938",
+        "embedUrl": "https://archive.org/embed/Romance_of_the_Limberlost_1938"
+      }
   },
   {
     "filePath": "/Users/akedwards/websites/zola/holreg/content/films/salome-tenaments-1925.md",
@@ -998,24 +1120,39 @@
     "bestMatch": null
   },
   {
-    "filePath": "/Users/akedwards/websites/zola/holreg/content/films/template.md",
-    "fileName": "template.md",
-    "title": "TEMPLATE",
-    "year": 1900,
-    "author": "TEMPLATE",
-    "foundOnIA": false,
-    "iaResults": [],
-    "bestMatch": null
-  },
-  {
     "filePath": "/Users/akedwards/websites/zola/holreg/content/films/tess-of-the-storm-country-1914.md",
     "fileName": "tess-of-the-storm-country-1914.md",
     "title": "Tess of the Storm Country",
     "year": 1914,
     "author": "Grace Miller White",
-    "foundOnIA": false,
-    "iaResults": [],
-    "bestMatch": null
+    "foundOnIA": true,
+    "iaResults": [
+{
+        "identifier": "TESSOFTHESTORMCOUNTRY1914MaryPickfordDir.ByEdwinS.Porter",
+        "title": "Tess of the Storm Country",
+        "creator": [
+          "Edwin S. Porter",
+          "Mary Pickford",
+          "Grace Miller White"
+        ],
+        "year": 1914,
+        "watchUrl": "https://archive.org/details/TESSOFTHESTORMCOUNTRY1914MaryPickfordDir.ByEdwinS.Porter",
+        "embedUrl": "https://archive.org/embed/TESSOFTHESTORMCOUNTRY1914MaryPickfordDir.ByEdwinS.Porter"
+      }
+
+    ],
+    "bestMatch": {
+        "identifier": "TESSOFTHESTORMCOUNTRY1914MaryPickfordDir.ByEdwinS.Porter",
+        "title": "Tess of the Storm Country",
+        "creator": [
+          "Edwin S. Porter",
+          "Mary Pickford",
+          "Grace Miller White"
+        ],
+        "year": 1914,
+        "watchUrl": "https://archive.org/details/TESSOFTHESTORMCOUNTRY1914MaryPickfordDir.ByEdwinS.Porter",
+        "embedUrl": "https://archive.org/embed/TESSOFTHESTORMCOUNTRY1914MaryPickfordDir.ByEdwinS.Porter"
+      }
   },
   {
     "filePath": "/Users/akedwards/websites/zola/holreg/content/films/tess-of-the-storm-country-1922.md",
@@ -1177,9 +1314,31 @@
     "title": "The Keeper of the Bees",
     "year": 1935,
     "author": "Gene Stratton-Porter",
-    "foundOnIA": false,
-    "iaResults": [],
-    "bestMatch": null
+    "foundOnIA": true,
+    "iaResults": [
+{
+        "identifier": "Keeper_of_the_Bees_1935",
+        "title": "The Keeper of the Bees",
+        "creator": [
+          "Gene Stratton-Porter",
+          "Christy Cabanne"
+        ],
+        "year": 1935,
+        "watchUrl": "https://archive.org/details/Keeper_of_the_Bees_1935",
+        "embedUrl": "https://archive.org/embed/Keeper_of_the_Bees_1935"
+      }
+    ],
+    "bestMatch": {
+        "identifier": "Keeper_of_the_Bees_1935",
+        "title": "The Keeper of the Bees",
+        "creator": [
+          "Gene Stratton-Porter",
+          "Christy Cabanne"
+        ],
+        "year": 1935,
+        "watchUrl": "https://archive.org/details/Keeper_of_the_Bees_1935",
+        "embedUrl": "https://archive.org/embed/Keeper_of_the_Bees_1935"
+      }
   },
   {
     "filePath": "/Users/akedwards/websites/zola/holreg/content/films/the-magic-garden-1927.md",

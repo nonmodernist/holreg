@@ -33,6 +33,14 @@ show_citation = true
 url = "/images/sidebar-cheersformissbishop.jpg"
 alt = "2 people in conversation outdoors; man in apron and suspenders, woman in checkered dress with curled hair."
 caption = "Scene still from the 1941 film \"Cheers for Miss Bishop\" showing two characters in a rural setting."
+
+[extra.internet_archive]
+available = true
+identifier = "cheers_for_miss_bishop"
+title_on_ia = "Cheers for Miss Bishop"
+watch_url = "https://archive.org/details/cheers_for_miss_bishop"
+embed_url = "https://archive.org/embed/cheers_for_miss_bishop"
+last_checked = "2025-05-30"
 +++
 
 ## Plot Summary
