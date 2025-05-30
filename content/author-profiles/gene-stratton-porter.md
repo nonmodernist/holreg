@@ -72,7 +72,7 @@ lost = [
     "freckles-1928",
     "laddie-1935",
     "her-first-romance-1940",
-    "a-girl-of-the-limberlost-1945",
+    "girl-of-the-limberlost-1945",
     "keeper-of-the-bees-1947",
 ]
 extant = [

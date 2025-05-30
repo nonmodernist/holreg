@@ -27,6 +27,14 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+
+[extra.internet_archive]
+available = true
+identifier = "shirley-temple-.-rebecca-of-sunnybrook-farm-1938-classic-color-well-done-classic-film-channel"
+title_on_ia = "Shirley Temple . Rebecca Of Sunnybrook Farm (1938 Classic Color Well Done!)"
+watch_url = "https://archive.org/details/shirley-temple-.-rebecca-of-sunnybrook-farm-1938-classic-color-well-done-classic-film-channel"
+embed_url = "https://archive.org/embed/shirley-temple-.-rebecca-of-sunnybrook-farm-1938-classic-color-well-done-classic-film-channel"
+last_checked = "2025-05-30"
 +++
 
 *Rebecca of Sunnybrook Farm* (1938) is a film adaptation of "Rebecca of Sunnybrook Farm" by Kate Douglas Wiggin (1903).

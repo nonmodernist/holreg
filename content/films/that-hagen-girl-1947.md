@@ -27,6 +27,14 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+
+[extra.internet_archive]
+available = true
+identifier = "TheHagenGirl34"
+title_on_ia = "That Hagen Girl"
+watch_url = "https://archive.org/details/TheHagenGirl34"
+embed_url = "https://archive.org/embed/TheHagenGirl34"
+last_checked = "2025-05-30"
 +++
 
 *That Hagen Girl* (1947) is a film adaptation of "That Hagen Girl" by Edith Roberts (1946).

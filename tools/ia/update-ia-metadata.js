@@ -5,7 +5,11 @@ const fs = require('fs');
 const path = require('path');
 
 class IAMetadataUpdater {
-    constructor(reportPath = 'ia-availability-report.json') {
+    constructor(reportPath = null) {
+        // Use new reports directory structure
+        if (!reportPath) {
+            reportPath = path.join(process.cwd(), 'reports', 'ia-reports', 'ia-availability-report.json');
+        }
         this.reportPath = reportPath;
         this.results = this.loadReport();
         this.updated = 0;
@@ -19,6 +23,7 @@ class IAMetadataUpdater {
         } catch (error) {
             console.error(`❌ Could not load report from ${this.reportPath}`);
             console.error('Make sure you ran check-ia-availability.js first!');
+            console.error('Expected location: reports/ia-reports/ia-availability-report.json');
             process.exit(1);
         }
     }
@@ -105,6 +110,10 @@ last_checked = "${today}"`;
     isHiddenGem(filmResult) {
         // Available, not super famous, from interesting periods
         const year = filmResult.year;
+        const title = filmResult.title.toLowerCase();
+        const author = filmResult.author?.toLowerCase() || '';
+        const director = filmResult.director?.toLowerCase() || '';
+        const screenwriter = filmResult.screenwriter?.toLowerCase() || '';
         
         // Early silent films (pre-1920) are often hidden gems
         if (year <= 1920) return true;
@@ -113,8 +122,19 @@ last_checked = "${today}"`;
         if (year >= 1929 && year <= 1934) return true;
         
         // Fannie Hurst adaptations that aren't widely known
-        if (filmResult.author === 'Fannie Hurst' && 
-            !filmResult.title.toLowerCase().includes('imitation of life')) {
+        if (author.includes('fannie hurst') && 
+            !title.includes('imitation of life')) {
+            return true;
+        }
+        
+        // Mary Pickford films (actress/producer - check film metadata more broadly)
+        if (title.includes('pickford')) {
+            return true;
+        }
+        
+        // Frances Marion films (as screenwriter or director)
+        if (director.includes('frances marion') || 
+            screenwriter.includes('frances marion')) {
             return true;
         }
         
@@ -150,8 +170,21 @@ significance_note = "${significanceNote}"`;
         const title = filmResult.title;
         const year = filmResult.year;
         const author = filmResult.author;
+        const director = filmResult.director?.toLowerCase() || '';
+        const screenwriter = filmResult.screenwriter?.toLowerCase() || '';
 
         if (significance === 'hidden_gem') {
+            // Mary Pickford or Frances Marion connection
+            if (title.toLowerCase().includes('pickford')) {
+                return `Mary Pickford film available for free viewing on Internet Archive.`;
+            }
+            
+            if (director.includes('frances marion') || 
+                screenwriter.includes('frances marion')) {
+                return `Film with Frances Marion involvement, available free on Internet Archive.`;
+            }
+            
+            // Other categories
             if (year <= 1920) {
                 return `Rare surviving silent film from ${year}, available free on Internet Archive.`;
             } else if (year >= 1929 && year <= 1934) {
@@ -213,6 +246,19 @@ significance_note = "${significanceNote}"`;
             console.log(`   Title: "${filmResult.title}" (${filmResult.year})`);
             console.log(`   IA ID: ${filmResult.bestMatch.identifier}`);
             console.log(`   Watch: ${filmResult.bestMatch.watchUrl}`);
+            
+            // Check significance eligibility
+            const isEssential = this.isEssentialFilm(filmResult);
+            const isHiddenGem = this.isHiddenGem(filmResult);
+            
+            if (isEssential) {
+                console.log(`   Significance: ⭐ Essential (no change)`);
+            } else if (isHiddenGem) {
+                console.log(`   Significance: 💎 Would mark as hidden gem`);
+                console.log(`   Reason: ${this.generateSignificanceNote(filmResult, 'hidden_gem')}`);
+            } else {
+                console.log(`   Significance: 📽️ Standard film`);
+            }
             
             const content = fs.readFileSync(filmResult.filePath, 'utf8');
             if (content.includes('[extra.internet_archive]')) {

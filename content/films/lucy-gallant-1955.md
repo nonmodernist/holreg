@@ -27,6 +27,14 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+
+[extra.internet_archive]
+available = true
+identifier = "lucy-gallant-1955"
+title_on_ia = "Lucy Gallant 1955 Jane Wyman Widescreen HD!"
+watch_url = "https://archive.org/details/lucy-gallant-1955"
+embed_url = "https://archive.org/embed/lucy-gallant-1955"
+last_checked = "2025-05-30"
 +++
 
 *Lucy Gallant* (1955) is a film adaptation of "The Life of Lucy Gallant/"The Longest Day of the Year"" by Margaret Cousins (1953).

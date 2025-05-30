@@ -33,6 +33,14 @@ url = "/images/sidebar-silentyears-1921.jpg"
 alt = "ALT TEXT"
 caption = "CAPTION."
 
+
+[extra.internet_archive]
+available = true
+identifier = "the-silent-years-2"
+title_on_ia = "The Silent Years"
+watch_url = "https://archive.org/details/the-silent-years-2"
+embed_url = "https://archive.org/embed/the-silent-years-2"
+last_checked = "2025-05-30"
 +++
 
 ## Plot Summary

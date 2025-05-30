@@ -34,6 +34,14 @@ url = "/images/sidebar-memberwedding.jpg"
 alt = "ALT TEXT"
 caption = "CAPTION."
 
+
+[extra.internet_archive]
+available = true
+identifier = "tmotw555871"
+title_on_ia = "The Member of the Wedding"
+watch_url = "https://archive.org/details/tmotw555871"
+embed_url = "https://archive.org/embed/tmotw555871"
+last_checked = "2025-05-30"
 +++
 
 ## Plot Summary

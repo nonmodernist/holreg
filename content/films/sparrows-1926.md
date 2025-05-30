@@ -27,6 +27,14 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+
+[extra.internet_archive]
+available = true
+identifier = "sparrows-1926-by-william-beaudine"
+title_on_ia = "Sparrows (1926)"
+watch_url = "https://archive.org/details/sparrows-1926-by-william-beaudine"
+embed_url = "https://archive.org/embed/sparrows-1926-by-william-beaudine"
+last_checked = "2025-05-30"
 +++
 
 *Sparrows* (1926) is a film adaptation by Winnifred Dunn.
