@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% import "macros/internet_archive.html" as ia %}
+{% import "macros/featured_sources.html" as sources %}
 
 {% block content %}
 <article class="film-page">
@@ -24,6 +25,9 @@
                     {{ page.content | safe }}
                 </div>
             </div>
+
+            {{ sources::featured_sources(page=page) }}
+
 
             <!-- Citation Section -->
             {% if page.extra.show_citation %}

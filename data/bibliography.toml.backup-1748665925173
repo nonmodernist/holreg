@@ -663,30 +663,3 @@ accessed = "2025-05-30"
 # Lantern ID: movpicwor431movi_0162
 quote = """being 'The Moonshine Trail' and 'Dawn,' the latter adapted from a novel by Eleanor H"""
 
-# =============================================================================
-# 🎬 LANTERN SOURCES - Added 2025-05-31
-# =============================================================================
-
-# A Girl of the Limberlost (1934)
-# ------------------------------------------------------------
-
-[filmdaily_a_girl_of_the_limber_1934_mention]
-type = "lantern"
-title = "A Girl of the Limberlost - mention"
-source = "film daily"
-date = "1934"
-url = "http://archive.org/stream/filmdailyvolume666newy#page/n467/"
-accessed = "2025-05-31"
-featured = true
-featured_note = "Testing out the featured source integration!"
-page_image_url = "https://archive.org/download/filmdailyvolume666newy/page/n467_medium.jpg"
-# Film: A Girl of the Limberlost (1934)
-# Content type: mention
-# Relevance score: 7
-# Lantern ID: filmdailyvolume666newy_0468
-contentType = "mention"
-film = "A Girl of the Limberlost"
-filmYear = 1934
-lanternId = "filmdailyvolume666newy_0468"
-quote = """in Monogram's 'A Girl of the Limberlost' two hefty porkers are seen in their pig sty"""
-
