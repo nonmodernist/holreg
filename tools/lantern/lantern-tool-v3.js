@@ -487,7 +487,7 @@ class LanternResearchToolV3 {
         // Filter by year proximity if we have a date
         if (result.parsedYear && targetYear) {
             const yearDiff = Math.abs(result.parsedYear - targetYear);
-            if (yearDiff > 3) { // Allow 3-year window
+            if (yearDiff > 2) { // ! Allow 2-year window - TESTING 2 YEAR WINDOW instead of 3
                 return false;
             }
         }

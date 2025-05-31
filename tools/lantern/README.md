@@ -4,8 +4,7 @@ A suite of Node.js tools for researching film adaptations of American women's re
 
 ## Overview
 
-These tools automate the process of searching historical film industry publications for mentions of specific films, helping researchers gather evidence about production, reception, and distribution from trade papers and fan magazines. While designed for the Hollywood Regionalism project, they can be adapted for other film history research.
-
+These tools automate the process of searching historical film industry publications for mentions of specific films, helping researchers gather evidence about production, reception, and distribution from trade papers and fan magazines. The suite includes search tools, report generators, and a visual research dashboard to track progress across a corpus of films.
 ## Prerequisites
 
 - Node.js (tested with v22.11.0, but should work with most recent versions)
@@ -32,7 +31,9 @@ your-project/
 ├── tools/
 │   └── lantern/
 │       ├── lantern-tool-v3.js
-│       └── lantern-report-generator.js
+│       ├── lantern-report-generator.js
+│       ├── lantern-research-dashboard.js
+│       └── add-to-bibliography.js
 ```
 
 ## Film Markdown Format
@@ -91,6 +92,33 @@ This creates:
 - Individual film reports: `reports/lantern-reports/film-title-year.md`
 - Combined report: `reports/lantern-reports/combined-report.md`
 
+### Step 3: View Research Dashboard
+
+Generate an interactive dashboard to track your research progress:
+
+```bash
+node tools/lantern/lantern-research-dashboard.js
+```
+
+This creates:
+- `reports/lantern-reports/research-dashboard.html` - Open in your browser for interactive dashboard
+- `reports/lantern-reports/research-status.json` - Raw data for further analysis
+
+### Step 4: Add Sources to Bibliography
+
+Use the interactive tool to add selected Lantern sources to your bibliography.toml:
+
+```bash
+node tools/lantern/add-to-bibliography.js
+```
+
+This tool:
+- Shows all sources for each film with scores and excerpts
+- Lets you select which sources to add (by number, "all", or "none")
+- Automatically generates citation IDs
+- Tracks which sources you've reviewed/rejected
+- Updates the Lantern report with review status
+
 ## What the Tools Do
 
 ### lantern-tool-v3.js
@@ -106,15 +134,44 @@ This creates:
 - Identifies high-priority sources for further research
 - Provides research recommendations and next steps
 
-## Understanding the Reports
+### lantern-research-dashboard.js
+- Creates an interactive HTML dashboard showing research progress
+- Generates smart recommendations for which films to research next
+- Visualizes coverage with heatmaps and progress bars
+- Identifies gaps in your research (missing reviews, production news, etc.)
 
-Each film report includes:
-- **Coverage Summary**: Number of sources, score ranges, and publication breakdown
-- **Content Analysis**: Types of coverage found (reviews, production news, etc.)
-- **High-Priority Sources**: Most relevant results with excerpts and links
-- **Key Findings**: Patterns in the coverage
-- **Research Notes**: Observations about the film's documentation
-- **Next Steps**: Suggestions for follow-up research
+### add-to-bibliography.js
+- Interactive command-line tool for reviewing Lantern results
+- Displays sources for each film with scores and excerpts
+- Allows selective addition of sources to bibliography.toml
+- Automatically generates proper citation IDs following your naming conventions
+- Tracks review decisions (added/rejected) in the Lantern report
+- Creates backups before modifying bibliography.toml
+
+## Understanding the Dashboard
+
+The research dashboard provides several key views:
+
+### Overview Statistics
+- Total films in your project
+- Number fully researched, partially researched, and not started
+- Total Lantern sources found
+- Average sources per film
+
+### Smart Recommendations
+- **High-Value Films**: Films with good sources (3+) that aren't fully researched
+- **Quick Wins**: Films with 1-2 excellent sources for rapid processing
+- **Deep Dive Candidates**: Films with 15+ sources worth comprehensive review
+
+### Coverage Heatmap
+- Visual grid of all films color-coded by number of sources
+- Click any film to see details
+- Quickly identify which films have rich documentation
+
+### Gap Analysis
+- Films with sources but no reviews
+- Films with sources but no production news
+- Films with no Lantern coverage at all
 
 ## Example Output
 
@@ -128,6 +185,26 @@ strong screen material...
 - IA Link: [View Full Page](https://archive.org/stream/...)
 ```
 
+## Research Workflow
+
+1. **Initial Search**: Run `lantern-tool-v3.js` to find all available sources
+2. **Review Dashboard**: Open the HTML dashboard to see overall progress
+3. **Pick Next Film**: Use smart recommendations to choose high-value targets
+4. **Deep Dive**: Read the individual film report for your chosen film
+5. **Add to Bibliography**: Use `add-to-bibliography.js` to selectively add sources
+6. **Update Film Page**: Add citations and notes to your Zola content
+7. **Repeat**: Dashboard will reflect your progress on next run
+
+## Key Features of the Bibliography Tool
+
+The `add-to-bibliography.js` tool helps manage the crucial step of converting research findings into citable sources:
+
+- **Review Status Tracking**: Remembers which sources you've already reviewed/rejected
+- **Smart ID Generation**: Creates consistent citation IDs like `variety_imitation_of_life_1934`
+- **Batch Processing**: Review all films or select specific ones to work through
+- **Safe Editing**: Creates automatic backups before modifying bibliography.toml
+- **Progress Persistence**: Updates the Lantern JSON report with review decisions
+
 ## API Limits and Etiquette
 
 Per Media History Digital Library guidelines:
@@ -140,6 +217,7 @@ The generated reports are research materials, not intended for direct publicatio
 - Reference findings when writing film page content
 - Copy relevant quotes and citations into your film markdown files
 - Use the data to populate bibliographies or source notes
+- Track which films have been fully researched vs. need attention
 
 ## Customization
 
@@ -148,6 +226,7 @@ To adapt these tools for other research:
 2. Adjust the scoring algorithm in `calculateScore()`
 3. Update content patterns in `contentPatterns` for your research focus
 4. Customize report generation in `lantern-report-generator.js`
+5. Adjust dashboard categories in `lantern-research-dashboard.js`
 
 ## Troubleshooting
 
@@ -166,17 +245,23 @@ To adapt these tools for other research:
 - Check that your films are in `content/films/`
 - Verify files have `.md` extension
 
+**Dashboard not updating?**
+- Make sure you've run the search tool first
+- Check that `lantern-report-v3.json` exists
+- Verify your film files have proper frontmatter
+
 ## Credits
 
 These tools utilize the [Lantern](https://lantern.mediahist.org/) search platform provided by the Media History Digital Library. The MHDL is a collaborative initiative between leading libraries and archives to digitize and make accessible historical media materials.
 
 ## Future Enhancements
 
+- Direct integration with Zola content files
 - Export to CSV for spreadsheet analysis
-- Integration with other film databases (AFI Catalog, IMDb)
-- Visualization of coverage patterns
+- Integration with other film databases?
+- Visualization of coverage patterns over time
 - Batch processing improvements
-- Direct integration with Zola data files
+- Cross-reference detection between films
 
 ## Notes for Future Me
 
@@ -185,6 +270,7 @@ These tools utilize the [Lantern](https://lantern.mediahist.org/) search platfor
 - Score calculation prioritizes: publication quality > content type > title match > author mention
 - The 3-year window for date filtering can be adjusted in `isValidResult()`
 - Reports are saved separately from Zola content to avoid cluttering the site build
+- Dashboard determines "fully researched" by checking for both Lantern data AND citations in the film file
 
 ---
 
