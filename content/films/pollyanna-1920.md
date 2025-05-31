@@ -38,9 +38,9 @@ duration = "58 minutes"
 
 # Film image
 [extra.film_image]
-url = "/images/sidebar-pollyanna1920.jpg"
+url = "/images/sidebar-pollyanna1920-1.jpg"
 alt = "A young girl sits in a tiny makeshift wagon that is being pulled by a dog."
-caption = "CAPTION NEEDED."
+caption = "Pollyanna's makeshift transportation reflects the film's contrast between childhood ingenuity and adult rigidity, a key theme in Porter's exploration of small-town social dynamics."
 
 [extra.film_status]
 survival = "extant"
@@ -62,18 +62,25 @@ After her missionary father's death in the Ozarks, Pollyanna Whittier is sent to
 
 When Pollyanna is struck by a car while saving a child, she becomes paralyzed. The accident forces Aunt Polly to confront her feelings and reconcile with Dr. Tom, her former love who can treat Pollyanna. With Dr. Tom’s help, Pollyanna recovers, Aunt Polly reunites with the doctor, and Jimmy is adopted by neighbor John Pendleton.
 
-# Regional Focus
+## Regional Focus
 
-The film’s setting on a “New England plantation” (likely a large estate) highlights the region’s wealth and social hierarchies, while Pollyanna’s origins in the Ozarks represent the simpler, more spiritual values of America’s interior. The contrast between these two regional identities—Western frontier evangelicalism versus Eastern sophistication—drives much of the narrative tension and reflects broader national conversations about traditional versus modern American values during the post-World War I period.
+Set in a small Vermont town in the early 20th cenutry, the film captures New England's particular blend of material prosperity and emotional austerity. Vermont, with its Puritan heritage and small-town social hierarchies, represents a region caught between tradition and modernity in the film's post-World War I era. Pollyanna's origins in the Ozarks—associated with frontier evangelicalism and simple faith—provide a sharp contrast to the established wealth and social rigidity of her New England relatives. 
 
-# Production Strategy
+This regional tension between Western openness and Eastern reserve, between heartland spirituality and Northeastern sophistication, drives the narrative and reflects broader national conversations about American values during the 1920s. The film's fictional small town Vermont shows a prosperous but emotionally constrained community that needs the spiritual renewal Pollyanna brings from America's interior.
+
+## Hollywood's Approach
+
+### Filming Locations
+
+While specific filming locations are not documented in available sources, the production was likely shot at the Pickford-Fairbanks Studio in Hollywood, with sets constructed to represent a quintessential New England town.
+
+### Production and Adaptation
 
 *Pollyanna* was produced by Mary Pickford’s own company in partnership with [United Artists](/studios/united-artists), the distribution company she co-founded in 1919 with Charlie Chaplin, Douglas Fairbanks, and [D.W. Griffith](/directors/d-w-griffith) to give artists greater creative and financial control over their work. 
 
-As one of the most powerful figures in early Hollywood, Pickford had the autonomy to choose her own projects and collaborators, as well as the money to pursue expensive screen rights—she reportedly paid $40,000 for Porter's 1913 novel. She frequently worked with screenwriter Frances Marion, one of the highest-paid and most successful screenwriters of the silent era, who specialized in crafting strong female protagonists and adapting literary works for the screen. Marion’s expertise in literary adaptation made her an ideal choice for bringing Eleanor H. Porter’s beloved regional novel to film [HOW MANY ADAPTATIONS HAD SHE DONE???], while Pickford’s star power and production control ensured that this New England story would reach national audiences. Their collaboration represents the kind of creative partnership that allowed literary regionalism to flourish in early Hollywood, with women creators at both the production and writing levels shaping how regional American stories were told on screen.
+As one of the most powerful figures in early Hollywood, Pickford had the autonomy to choose her own projects and collaborators, as well as the money to pursue expensive screen rights—she reportedly paid $40,000 for Porter's 1913 novel. She frequently worked with the film's screenwriter, Frances Marion, who was one of the highest-paid and most successful screenwriters of the silent era, and who specialized in crafting strong female protagonists and adapting literary works for the screen. Marion’s expertise in literary adaptation made her an ideal choice for bringing Eleanor H. Porter’s beloved regional novel to film, while Pickford’s star power and production control ensured that this New England story would reach national audiences. Their collaboration represents the kind of creative partnership that allowed literary regionalism to flourish in early Hollywood, with women creators at both the production and writing levels shaping how regional American stories were told on screen.
 
 ## Notes
 
-1. **Post-war Pollyanna:** {{ cite(id="brouwers_pollyanna_2014_210") }} 
-2. **Pickford's power:** According to the *Exhibitor's Herald*, "Under her new arrangement, from script to screen, [Pickford] has had at her disposal every resource and aid available, absolute freedom for the full expression of her own inimitable personality, and unlimited financial means." {{ cite(id="exhibitorsherald_pollyanna_1920_production") }}
+1. **Pickford's power:** According to the *Exhibitor's Herald*, "Under her new arrangement, from script to screen, [Pickford] has had at her disposal every resource and aid available, absolute freedom for the full expression of her own inimitable personality, and unlimited financial means." {{ cite(id="exhibitorsherald_pollyanna_1920_production") }} Also see: {{ cite(id="brouwers_pollyanna_2014_210") }} 
 2. **$40,000:** The contemporary press repeated this figure every chance they could. See, for example: {{ cite(id="variety_pollyanna_1920") }} {{ cite(id="exhibitorsherald_pollyanna_1920") }}
