@@ -1,0 +1,120 @@
+{# Flexible image shortcode for static/images #}
+<figure class="image-figure {% if align %}align-{{ align }}{% endif %} {% if class %}{{ class }}{% endif %}" 
+        {% if width %}style="max-width: {{ width }};"{% endif %}>
+    {% if link %}
+    <a href="{{ link }}" {% if link_target %}target="{{ link_target }}"{% endif %}>
+    {% endif %}
+        <img src="/images/{{ src }}" 
+            alt="{{ alt }}"
+            {% if title %}title="{{ title }}"{% endif %}
+            {% if loading %}loading="{{ loading }}"{% else %}loading="lazy"{% endif %}
+            {% if sizes %}sizes="{{ sizes }}"{% endif %}>
+    {% if link %}
+    </a>
+    {% endif %}
+    {% if caption %}
+    <figcaption>{{ caption | safe }}</figcaption>
+    {% endif %}
+</figure>
+
+<style>
+.image-figure {
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.image-figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.image-figure figcaption {
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+    text-align: center;
+}
+
+/* Alignment options */
+.align-left {
+    float: left;
+    margin: 0 2rem 1rem 0;
+    text-align: left;
+}
+
+.align-right {
+    float: right;
+    margin: 0 0 1rem 2rem;
+    text-align: right;
+}
+
+.align-center {
+    display: block;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.align-full {
+    margin: 2rem -2rem;
+    max-width: calc(100% + 4rem);
+    width: calc(100% + 4rem);
+}
+
+/* Size presets */
+.size-small {
+    max-width: 300px;
+}
+
+.size-medium {
+    max-width: 600px;
+}
+
+.size-large {
+    max-width: 900px;
+}
+
+/* Style variations */
+.rounded img {
+    border-radius: 8px;
+}
+
+.shadow img {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.border img {
+    border: 1px solid #ddd;
+}
+
+.polaroid {
+    background: white;
+    padding: 0.5rem 0.5rem 3rem 0.5rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.polaroid img {
+    margin-bottom: 0;
+}
+
+/* Clear floats */
+.clear {
+    clear: both;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .align-left, .align-right {
+        float: none;
+        margin: 2rem auto;
+    }
+    
+    .align-full {
+        margin: 2rem 0;
+        max-width: 100%;
+        width: 100%;
+    }
+}
+</style>

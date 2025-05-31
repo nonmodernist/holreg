@@ -56,9 +56,7 @@ caption = "The imposing Benedict family mansion dominates the Texas landscape in
 
 Texas cattle rancher Bick Benedict marries Eastern socialite Leslie Lynnton and brings her to his vast Reata Ranch. Leslie struggles to adapt to the harsh landscape and clashes with the entrenched racial hierarchies of South Texas. When ambitious ranch hand Jett Rink discovers oil on his small plot of land, the Benedict family watches their cattle empire transform as oil wealth reshapes the region's power structures. 
 
-The rivalry between Bick and the newly wealthy Jett intensifies as both men represent different visions of Texas's future, while Leslie fights to instill her more progressive values in the next generation.
-
-<!-- TODO insert image -->
+The rivalry between Bick and the newly wealthy Jett intensifies over the years as both men represent different visions of Texas's future, while Leslie fights to instill her more progressive values in the next generation.
 
 ## Regional Focus
 Set in South Texas during the early-to-mid 20th century transformation from ranching empire to oil economy (1920s-1950s). *Giant* portrays the twilight of the vast cattle ranch culture established by Anglo settlers in the late 19th century, where enormous spreads like the fictional Reata Ranch dominated hundreds of thousands of acres. 
@@ -70,6 +68,8 @@ The discovery of oil beneath grazing land represents the seismic economic shift 
 ## Hollywood's Approach
 
 ### Filming Locations
+
+{{ image(src="giant-production.jpg", alt="Production still from Giant", caption="Rock Hudson films a scene in West Texas", class="rounded shadow size-medium") }}
 
 Shot on location at the Worth Evans Ranch, twenty-one miles from Marfa, Texas, where the imposing Benedict family home facade—built at the Warner Bros. prop department and shipped to Texas—still stands today. The landscape of West Texas provided the sweeping vistas of rangeland that define the film’s visual representation of cattle empire grandeur, though key elements like the oil derricks were also constructed in Hollywood and transported to the remote Texas location. Nearby Valentine served as the setting for the film’s Mexican village sequences, utilizing the area’s existing Hispanic community and architecture to represent the cross-cultural dynamics central to the story. 
 

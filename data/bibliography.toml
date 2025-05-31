@@ -8,6 +8,19 @@
 # For online sources, include a "url" field
 
 # =============================================================================
+# 📚 BIBLIOGRAPHY TABLE OF CONTENTS
+# =============================================================================
+# Giant (1956) - Lines 25-85
+# Gone with the Wind (1939) - Lines 132-170
+# Imitation of Life (1959) - Lines 174-245
+# A Tree Grows in Brooklyn (1945) - Lines 249
+# Freckles (1917) - Lines 259-270
+# Research Notes - Lines 276-354
+# Lantern Sources - Lines 360 - 
+# AFI Catalog Entries - Lines 700-end
+# =============================================================================
+
+# =============================================================================
 #  POLLYANNA (1920) - ELEANOR PORTER
 # =============================================================================
 
@@ -325,24 +338,6 @@ year = "1927"
 page = "243"
 quote = "She had allowed a well-known company to do one of her early books. They had invited her to approve the adaptation and continuity and make suggestions; all of which she did. But when they made the picture, they ignored all of her ideas and suggestions."
 
-# =============================================================================
-# 👩‍💼 GENE STRATTON-PORTER - Author Biography Sources
-# =============================================================================
-
-
-
-
-
-# =============================================================================
-# 🎭 GENERAL THEORY - Cross-Film Sources
-# =============================================================================
-
-
-
-
-
-
-
 
 # =============================================================================
 # 🔬 PROJECT RESEARCH NOTES
@@ -553,11 +548,20 @@ source = "exhibitors herald"
 date = "1920"
 url = "http://archive.org/stream/exhibitorsherald10exhi#page/n298/"
 accessed = "2025-05-30"
+featured = true
+featured_note = ""
+page_image_url = "https://archive.org/download/exhibitorsherald10exhi/page/n298_medium.jpg"
 # Film: Pollyanna (1920)
 # Content type: production
 # Relevance score: 10
 # Lantern ID: exhibitorsherald10exhi_0299
-# quote = """"Pollyanna" will give to Miss Pickford the greater opportunities she sought. Miss Pickford has taken an unusually long time to finish "Pollyanna." Under her new arrangement, from script to screen, she has had at her disposal every resource and aid available, absolute freedom for the full expression of her own inimitable personality, and unlimited financial means."""
+quote = """"Pollyanna" will give to Miss Pickford the greater opportunities she sought. Miss Pickford has taken an unusually long time to finish "Pollyanna." Under her new arrangement, from script to screen, she has had at her disposal every resource and aid available, absolute freedom for the full expression of her own inimitable personality, and unlimited financial means."""
+contentType = "production"
+film = "Pollyanna"
+filmYear = 1920
+lanternId = "exhibitorsherald10exhi_0299"
+
+
 
 [exhibitorsherald_pollyanna_1920_production_2]
 type = "lantern"
@@ -756,3 +760,786 @@ filmYear = 1934
 lanternId = "filmdailyvolume666newy_0468"
 quote = """in Monogram's 'A Girl of the Limberlost' two hefty porkers are seen in their pig sty"""
 
+
+
+
+# =============================================================================
+# 📚 AFI CATALOG ENTRIES - Generated 2025-05-31
+# =============================================================================
+# NOTE: Replace XXXXX in URLs with actual AFI Catalog IDs
+
+# 1910s Films
+# ------------------------------------------------------------
+
+[afi_ramona_1910]
+type = "online"
+title = "Ramona"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/40029-RAMONA?sid=2cf388ca-c6f1-4525-beb4-678d1a0e5e3b&sr=0.16478254&cp=1&pos=2"
+accessed = "2025-05-31"
+
+[afi_mrs_wiggs_of_the_cabbage_patch_1914]
+type = "online"
+title = "Mrs. Wiggs of the Cabbage Patch"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/18181-MRS-WIGGSOFTHECABBAGEPATCH?sid=29aadb85-afce-4488-99e9-3ab4851e0eb5&sr=0.1790539&cp=1&pos=1"
+accessed = "2025-05-31"
+
+[afi_judith_of_the_cumberlands_1916]
+type = "online"
+title = "Judith of the Cumberlands"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/16746-JUDITH-OFTHECUMBERLANDS?sid=bd9efd00-15e0-457f-bff9-57b5eb088a62&sr=0.17123091&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_ramona_1916]
+type = "online"
+title = "Ramona"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/1879-RAMONA?sid=2cf388ca-c6f1-4525-beb4-678d1a0e5e3b&sr=0.16508907&cp=1&pos=1"
+accessed = "2025-05-31"
+
+[afi_a_son_of_the_hills_1917]
+type = "online"
+title = "A Son of the Hills"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/17753-A-SONOFTHEHILLS?sid=bac15606-a819-4f63-977f-997fe0f0c359&sr=0.11849715&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_an_alabaster_box_1917]
+type = "online"
+title = "An Alabaster Box"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/16823-AN-ALABASTERBOX?sid=b207522c-7406-4c59-bff8-42b6a993fac9&sr=0.18779472&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_freckles_1917]
+type = "online"
+title = "Freckles"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/16906-FRECKLES?sid=40576b79-61c0-459f-9740-5750acdbd268&sr=0.1614889&cp=1&pos=2"
+accessed = "2025-05-31"
+
+[afi_mr__opp_1917]
+type = "online"
+title = "Mr. Opp"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/17649-MR-OPP?sid=0657e6f0-2905-4599-9310-bcdcaa27b53a&sr=0.1606134&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_the_curse_of_quon_gwon_1917]
+type = "online"
+title = "The Curse of Quon Gwon"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/54896-THE-CURSEOFQUONGWON?sid=2b7297ac-ed9d-43b5-8635-0ca8539de60e&sr=0.2106728&cp=1&pos=0"
+accessed = "2025-05-31"
+
+
+[afi_amarilly_of_clothes_line_alley_1918]
+type = "online"
+title = "Amarilly of Clothes-Line Alley"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/1924-AMARILLY-OFCLOTHES-LINEALLEY?sid=33e73012-87db-4337-99db-bd88838a8a2d&sr=0.06767442&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_kildare_of_storm_1918]
+type = "online"
+title = "Kildare of Storm"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/17147-KILDARE-OFSTORM?sid=6f3e56d4-153c-4e52-a17e-1196996033f9&sr=0.16670758&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_dawn_1919]
+type = "online"
+title = "Dawn"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/17335-DAWN?sid=a88638e7-e13f-4a3c-9cbf-efb60ac004b7&sr=0.12258268&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_false_evidence_1919]
+type = "online"
+title = "False Evidence"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/2011-FALSE-EVIDENCE?sid=dd878003-07ba-445c-985c-e216877d52e9&sr=0.17350559&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_mrs__wiggs_of_the_cabbage_patch_1919]
+type = "online"
+title = "Mrs. Wiggs of the Cabbage Patch"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/18124-MRS-WIGGSOFTHECABBAGEPATCH?sid=29aadb85-afce-4488-99e9-3ab4851e0eb5&sr=0.1734102&cp=1&pos=3"
+accessed = "2025-05-31"
+
+
+# 1920s Films
+# ------------------------------------------------------------
+
+[afi_humoresque_1920]
+type = "online"
+title = "Humoresque"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/2080-HUMORESQUE?sid=204c645f-fd71-4034-8d7b-5115b37185d8&sr=0.17343217&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_judy_of_rogue_s_harbor_1920]
+type = "online"
+title = "Judy of Rogue’s Harbor"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/17625-JUDY-OFROGUESHARBOR?sid=54fac487-6652-4cfa-9bb2-b282221bbbef&sr=0.11592425&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_polly_of_the_storm_country_1920]
+type = "online"
+title = "Polly of the Storm Country"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/16086-POLLY-OFTHESTORMCOUNTRY?sid=a1c53910-d4d3-4745-850b-c0dcca3b5696&sr=0.16008735&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_just_around_the_corner_1921]
+type = "online"
+title = "Just Around the Corner"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/10040-JUST-AROUNDTHECORNER?sid=5402fad9-3196-448e-90be-3721c4b115e8&sr=0.17803918&cp=1&pos=1"
+accessed = "2025-05-31"
+
+[afi_nobody_s_kid_1921]
+type = "online"
+title = "Nobody's Kid"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/11009-NOBODYS-KID?sid=ee588097-7614-44d3-8160-1631d760d945&sr=0.055513885&cp=1&pos=1"
+accessed = "2025-05-31"
+
+[afi_hungry_hearts_1922]
+type = "online"
+title = "Hungry Hearts"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/1518-HUNGRY-HEARTS?sid=e6760005-e711-4fa3-b51e-597ac8019b53&sr=0.16569532&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_little_miss_smiles_1922]
+type = "online"
+title = "Little Miss Smiles"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/1558-LITTLE-MISSSMILES?sid=85e6ea04-bcd0-4b33-a0dc-deec12cc9603&sr=0.18242462&cp=1&pos=0"
+accessed = "2025-05-31"
+
+
+[afi_michael_o_halloran_1923]
+type = "online"
+title = "Michael O'Halloran"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/10741-MICHAEL-OHALLORAN?sid=a3453f56-afeb-4636-b769-f48bf0f73d38&sr=0.08617224&cp=1&pos=1"
+accessed = "2025-05-31"
+
+[afi_a_girl_of_the_limberlost_1924]
+type = "online"
+title = "A Girl of the Limberlost"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/6581-A-GIRLOFTHELIMBERLOST?sid=19c1b6d9-9b63-4b29-a6e0-1444cfc52117&sr=0.12677206&cp=1&pos=0"
+accessed = "2025-05-31"
+
+
+[afi_laddie_1926]
+type = "online"
+title = "Laddie"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/1546-LADDIE?sid=ebbcfa7e-e623-4b8b-8075-b562e88c9710&sr=0.15291747&cp=1&pos=2"
+accessed = "2025-05-31"
+
+[afi_lovey_mary_1926]
+type = "online"
+title = "Lovey Mary"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/10460-LOVEY-MARY?sid=a9c6d2bc-6a56-490e-b655-ee24049ac370&sr=0.17892948&cp=1&pos=0"
+accessed = "2025-05-31"
+
+
+[afi_freckles_1928]
+type = "online"
+title = "Freckles"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/9236-FRECKLES?sid=40576b79-61c0-459f-9740-5750acdbd268&sr=0.15907086&cp=1&pos=3"
+accessed = "2025-05-31"
+
+[afi_ramona_1928]
+type = "online"
+title = "Ramona"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/1638-RAMONA?sid=2cf388ca-c6f1-4525-beb4-678d1a0e5e3b&sr=0.17086053&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_linda_1929]
+type = "online"
+title = "Linda"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/10290-LINDA?sid=86c90872-03c5-47ac-bca1-0ccf11aed3a2&sr=0.17705572&cp=1&pos=0"
+accessed = "2025-05-31"
+
+
+# 1930s Films
+# ------------------------------------------------------------
+
+[afi_mother_s_cry_1930]
+type = "online"
+title = "Mother's Cry"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/10866-MOTHERS-CRY?sid=5e3a709e-a529-430b-85d4-ca43cf2e4b2b&sr=0.063706905&cp=1&pos=0"
+accessed = "2025-05-31"
+
+
+[afi_back_street_1932]
+type = "online"
+title = "Back Street"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/7328-BACK-STREET?sid=23c4262e-4dae-4893-9180-343ae5e4d985&sr=0.14023718&cp=1&pos=2"
+accessed = "2025-05-31"
+
+[afi_cimarron_1932]
+type = "online"
+title = "Cimarron"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/899-CIMARRON?sid=a869dd88-a76d-49c6-a6b4-738999a1153f&sr=0.17050613&cp=1&pos=1"
+accessed = "2025-05-31"
+
+
+[afi_a_girl_of_the_limberlost_1934]
+type = "online"
+title = "A Girl of the Limberlost"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/6581-A-GIRLOFTHELIMBERLOST?sid=cd318912-790d-456a-a783-1047465e940a&sr=0.12950104&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_imitation_of_life_1934]
+type = "online"
+title = "Imitation of Life"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/1130-IMITATION-OFLIFE?sid=c8a7916c-da1c-42b2-8a2e-02b77176858a&sr=0.13370857&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_mrs__wiggs_of_the_cabbage_patch_1934]
+type = "online"
+title = "Mrs. Wiggs of the Cabbage Patch"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/5672-MRS-WIGGSOFTHECABBAGEPATCH?sid=29aadb85-afce-4488-99e9-3ab4851e0eb5&sr=0.1758046&cp=1&pos=2"
+accessed = "2025-05-31"
+
+[afi_freckles_1935]
+type = "online"
+title = "Freckles"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/5863-FRECKLES?sid=40576b79-61c0-459f-9740-5750acdbd268&sr=0.18639177&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_laddie_1935]
+type = "online"
+title = "Laddie"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/6903-LADDIE?sid=ebbcfa7e-e623-4b8b-8075-b562e88c9710&sr=0.13610253&cp=1&pos=3"
+accessed = "2025-05-31"
+
+[afi_ramona_1936]
+type = "online"
+title = "Ramona"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/1087-RAMONA?sid=2cf388ca-c6f1-4525-beb4-678d1a0e5e3b&sr=0.15853424&cp=1&pos=3"
+accessed = "2025-05-31"
+
+
+[afi_michael_o_halloran_1937]
+type = "online"
+title = "Michael O'Halloran"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/8001-MICHAEL-OHALLORAN?sid=a3453f56-afeb-4636-b769-f48bf0f73d38&sr=0.06934106&cp=1&pos=2"
+accessed = "2025-05-31"
+
+
+
+# 1940s Films
+# ------------------------------------------------------------
+
+[afi_her_first_romance_1940]
+type = "online"
+title = "Her First Romance"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/6083-HER-FIRSTROMANCE?sid=b4388181-2004-4930-a1b9-26a373b1d463&sr=0.1617376&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_laddie_1940]
+type = "online"
+title = "Laddie"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/6148-LADDIE?sid=ebbcfa7e-e623-4b8b-8075-b562e88c9710&sr=0.17362015&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_back_street_1941]
+type = "online"
+title = "Back Street"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/26603-BACK-STREET?sid=343db1b1-afa4-436f-a245-3d4f67d2155b&sr=0.1563938&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_cheers_for_miss_bishop_1941]
+type = "online"
+title = "Cheers for Miss Bishop"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/26645-CHEERS-FORMISSBISHOP?sid=f24de629-dab4-4934-bc11-14be808fc5b3&sr=0.22763482&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_in_this_our_life_1942]
+type = "online"
+title = "In This Our Life"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/27278-IN-THISOURLIFE?sid=5ad5fb7c-a93b-4d9e-a5a9-c48cf0af868f&sr=0.17297567&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_mrs_wiggs_of_the_cabbage_patch_1942]
+type = "online"
+title = "Mrs. Wiggs of the Cabbage Patch"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/27361-MRS-WIGGSOFTHECABBAGEPATCH?sid=29aadb85-afce-4488-99e9-3ab4851e0eb5&sr=0.1832269&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_humoresque_1946]
+type = "online"
+title = "Humoresque"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/24826-HUMORESQUE?sid=204c645f-fd71-4034-8d7b-5115b37185d8&sr=0.15867272&cp=1&pos=1"
+accessed = "2025-05-31"
+
+
+[afi_keeper_of_the_bees_1947]
+type = "online"
+title = "Keeper of the Bees"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/25224-KEEPER-OFTHEBEES?sid=6ebe59ff-b77e-485d-99da-2664c1198904&sr=0.15056205&cp=1&pos=0"
+accessed = "2025-05-31"
+
+
+[afi_i_remember_mama_1948]
+type = "online"
+title = "I Remember Mama"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/25582-I-REMEMBERMAMA?sid=504e5a76-77e5-4842-9e7c-cb6a4de82c84&sr=0.18655702&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_michael_o_halloran_1948]
+type = "online"
+title = "Michael O'Halloran"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/25638-MICHAEL-OHALLORAN?sid=a3453f56-afeb-4636-b769-f48bf0f73d38&sr=0.09112066&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_pinky_1949]
+type = "online"
+title = "Pinky"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/25485-PINKY?sid=f9fa808f-580f-4947-a637-3f566eba3e43&sr=0.16417435&cp=1&pos=0"
+accessed = "2025-05-31"
+
+
+# 1950s Films
+# ------------------------------------------------------------
+
+[afi_has_anybody_seen_my_gal_1952]
+type = "online"
+title = "Has Anybody Seen My Gal"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/50504-HAS-ANYBODYSEENMYGAL?sid=02aaa659-1a76-4404-9266-db25162fde6f&sr=0.26041022&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_bright_road_1953]
+type = "online"
+title = "Bright Road"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/53505-BRIGHT-ROAD?sid=213c201c-ed9a-4ed6-a1ce-3afe78695e20&sr=0.16467854&cp=1&pos=0"
+accessed = "2025-05-31"
+
+
+[afi_lucy_gallant_1955]
+type = "online"
+title = "Lucy Gallant"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/51572-LUCY-GALLANT?sid=64ea612d-d213-43f0-b19c-90e275d64eb3&sr=0.19614403&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_imitation_of_life_1959]
+type = "online"
+title = "Imitation of Life"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/53583-IMITATION-OFLIFE?sid=c8a7916c-da1c-42b2-8a2e-02b77176858a&sr=0.12574877&cp=1&pos=1"
+accessed = "2025-05-31"
+
+
+
+# 1960s Films
+# ------------------------------------------------------------
+
+[afi_cimarron_1960]
+type = "online"
+title = "Cimarron"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/53484-CIMARRON?sid=7c09e77e-7bb4-49d8-ad75-addd7c27ff05&sr=0.18848896&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_freckles_1960]
+type = "online"
+title = "Freckles"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/53149-FRECKLES?sid=40576b79-61c0-459f-9740-5750acdbd268&sr=0.17086053&cp=1&pos=1"
+accessed = "2025-05-31"
+
+[afi_pollyanna_1960]
+type = "online"
+title = "Pollyanna"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/53251-POLLYANNA?sid=42da5e46-39d2-4320-a3bc-cbc85bb2c950&sr=0.17086053&cp=1&pos=0"
+accessed = "2025-05-31"
+
+
+[afi_back_street_1961]
+type = "online"
+title = "Back Street"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/22474-BACK-STREET?sid=94652f40-3d79-4ebc-b0eb-feb2288ed59a&sr=0.14520161&cp=1&pos=1"
+accessed = "2025-05-31"
+
+
+# =============================================================================
+# 📚 AFI CATALOG ENTRIES - Added 2025-05-31
+# =============================================================================
+
+[afi_uncle_toms_cabin_1910]
+type = "online"
+title = "Uncle Tom's Cabin"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/40640-UNCLE-TOMSCABIN?sid=9b974d94-2dda-437b-a8cd-150d8de41956&sr=0.10284426&cp=1&pos=6"
+accessed = "2025-05-31"
+
+[afi_uncle_toms_cabin_parts_13_1910]
+type = "online"
+title = "Uncle Tom's Cabin parts 1-3"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/40641-UNCLE-TOMSCABINPART1?sid=7b148690-4a44-4c41-9ec6-3cd1dcc98ec5&sr=0.03185006&cp=1&pos=9"
+accessed = "2025-05-31"
+
+[afi_tess_of_the_storm_country_1914]
+type = "online"
+title = "Tess of the Storm Country"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/16453-TESS-OFTHESTORMCOUNTRY?sid=6a4e2309-626d-4c02-b3c1-17f3efa72fa3&sr=0.14653035&cp=1&pos=3"
+accessed = "2025-05-31"
+
+[afi_the_mountain_rat_1914]
+type = "online"
+title = "The Mountain Rat"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/13779-THE-MOUNTAINRAT?sid=7cd67936-4a52-4462-9783-39725f54cca0&sr=0.14972281&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_uncle_toms_cabin_1914]
+type = "online"
+title = "Uncle Tom's Cabin"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/2113-UNCLE-TOMSCABIN?sid=7b15cf94-44a2-4899-b0af-2e0fa4ab622e&sr=0.09851073&cp=1&pos=7"
+accessed = "2025-05-31"
+
+[afi_a_romance_of_billygoat_hill_1916]
+type = "online"
+title = "A Romance of Billy-Goat Hill"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/16806-A-ROMANCEOFBILLYGOATHILL?sid=39d8c355-5a1e-4dcb-b65c-dfdc5c32c8e1&sr=0.0694424&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_the_awakening_of_helena_richie_1916]
+type = "online"
+title = "The Awakening of Helena Richie"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/16826-THE-AWAKENINGOFHELENARICHIE?sid=8a0b08de-e937-4962-8fe7-166b254c6787&sr=0.18235984&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_the_iron_woman_1916]
+type = "online"
+title = "The Iron Woman"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/16741-THE-IRONWOMAN?sid=5bcbe4b5-ce4d-4563-91e5-57d5657d6ff6&sr=0.11404303&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_the_place_beyond_the_winds_1916]
+type = "online"
+title = "The Place Beyond the Winds"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/16785-THE-PLACEBEYONDTHEWINDS?sid=20e94d31-a5b0-444e-9d00-1961b148bcb9&sr=0.16488445&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_rebecca_of_sunnybrook_farm_1917]
+type = "online"
+title = "Rebecca of Sunnybrook Farm"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/18216-REBECCA-OFSUNNYBROOKFARM?sid=d9e79d39-ef34-4a67-bdb8-163fa4e006c3&sr=0.20337118&cp=1&pos=1"
+accessed = "2025-05-31"
+
+[afi_the_primrose_ring_1917]
+type = "online"
+title = "The Primrose Ring"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/17716-THE-PRIMROSERING?sid=8ced7674-df02-46a9-af0e-30f02a5a14af&sr=0.14588916&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_the_secret_of_the_storm_countr_1917]
+type = "online"
+title = "The Secret of the Storm Country"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/17749-THE-SECRETOFTHESTORMCOUNTRY?sid=64bdd8be-fb0a-4bb0-9005-7a4f690baeb4&sr=0.13006987&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_sandy_1918]
+type = "online"
+title = "Sandy"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/1996-SANDY?sid=fa489d81-0e77-4d70-9f08-58ea17ad9756&sr=0.15853424&cp=1&pos=2"
+accessed = "2025-05-31"
+
+[afi_sunshine_nan_1918]
+type = "online"
+title = "Sunshine Nan"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/17262-SUNSHINE-NAN?sid=6380562a-2df3-4d89-8ac4-6b50e71df69f&sr=0.18254212&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_the_panther_woman_1918]
+type = "online"
+title = "The Panther Woman"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/17225-THE-PANTHERWOMAN?sid=7e1c4b95-95ae-47b8-9551-a86369ed7e17&sr=0.1269022&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_the_silent_woman_1918]
+type = "online"
+title = "The Silent Woman"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/15171-THE-SILENTWOMAN?sid=f00c4cd7-dc4d-42fe-9f22-7ea940bb537a&sr=0.11596313&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_uncle_toms_cabin_1918]
+type = "online"
+title = "Uncle Tom’s Cabin"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/2112-UNCLE-TOMSCABIN?sid=24d6fc1e-94e7-44d9-bf46-86143e89e5ba&sr=0.10512912&cp=1&pos=4"
+accessed = "2025-05-31"
+
+[afi_pollyanna_1920]
+type = "online"
+title = "Pollyanna"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/18280-POLLYANNA?sid=d3dadd4f-9f8d-430f-9287-fe69e5ddb7f6&sr=0.16453947&cp=1&pos=1"
+accessed = "2025-05-31"
+
+[afi_silent_years_1921]
+type = "online"
+title = "Silent Years"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/12115-SILENT-YEARS?sid=8a263963-c8cf-4852-803e-ca77335ee665&sr=0.16631606&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_tess_of_the_storm_country_1922]
+type = "online"
+title = "Tess of the Storm Country"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/12586-TESS-OFTHESTORMCOUNTRY?sid=6a4e2309-626d-4c02-b3c1-17f3efa72fa3&sr=0.17018586&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_the_good_provider_1922]
+type = "online"
+title = "The Good Provider"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/1484-THE-GOODPROVIDER?sid=85c248a8-3e68-4e35-ab00-735304d0c02b&sr=0.14093363&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_so_big_1924]
+type = "online"
+title = "So Big"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/1690-SO-BIG?sid=e4b134b5-769a-425b-ae28-b1f5a3c3fa6f&sr=0.14347452&cp=1&pos=2"
+accessed = "2025-05-31"
+
+[afi_salome_of_the_tenements_1925]
+type = "online"
+title = "Salome of the Tenements"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/1657-SALOME-OFTHETENEMENTS?sid=3cbecea6-5c61-49e5-bf71-101fa3ca4295&sr=0.16888599&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_the_keeper_of_the_bees_1925]
+type = "online"
+title = "The Keeper of the Bees"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/10055-THE-KEEPEROFTHEBEES?sid=ae4dd2aa-4125-4c14-a9d8-45999368323e&sr=0.14380749&cp=1&pos=1"
+accessed = "2025-05-31"
+
+[afi_the_pearl_of_love_1925]
+type = "online"
+title = "The Pearl of Love"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/11310-THE-PEARLOFLOVE?sid=f98a9687-45cf-4fa0-bf88-042109b7c5f3&sr=0.12968296&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_sparrows_1926]
+type = "online"
+title = "Sparrows"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/12324-SPARROWS?sid=e42164a1-231d-45cb-9c57-27fc25269198&sr=0.17287877&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_the_harvester_1927]
+type = "online"
+title = "The Harvester"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/9579-THE-HARVESTER?sid=a8546440-46a4-4351-818b-cb787abd05f1&sr=0.119288355&cp=1&pos=1"
+accessed = "2025-05-31"
+
+[afi_the_magic_garden_1927]
+type = "online"
+title = "The Magic Garden"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/10517-THE-MAGICGARDEN?sid=4d11e8ed-9cf3-41b3-b2f8-4e2bb73f39dc&sr=0.1498844&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_topsy_and_eva_1927]
+type = "online"
+title = "Topsy and Eva"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/1734-TOPSY-ANDEVA?sid=c4601507-96f7-429f-bd63-f106adb72e7f&sr=0.16372563&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_the_woman_who_was_forgotten_1930]
+type = "online"
+title = "The Woman Who Was Forgotten"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/13450-THE-WOMANWHOWASFORGOTTEN?sid=4baea650-a918-4492-b937-88a750c0316f&sr=0.17107078&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_so_big_1932]
+type = "online"
+title = "So Big"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/1124-SO-BIG?sid=e4b134b5-769a-425b-ae28-b1f5a3c3fa6f&sr=0.14499871&cp=1&pos=1"
+accessed = "2025-05-31"
+
+[afi_tess_of_the_storm_country_1932]
+type = "online"
+title = "Tess of the Storm Country"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/6439-TESS-OFTHESTORMCOUNTRY?sid=6a4e2309-626d-4c02-b3c1-17f3efa72fa3&sr=0.14653035&cp=1&pos=2"
+accessed = "2025-05-31"
+
+[afi_the_keeper_of_the_bees_1935]
+type = "online"
+title = "The Keeper of the Bees"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/7497-THE-KEEPEROFTHEBEES?sid=ae4dd2aa-4125-4c14-a9d8-45999368323e&sr=0.13645157&cp=1&pos=2"
+accessed = "2025-05-31"
+
+[afi_the_harvester_1936]
+type = "online"
+title = "The Harvester"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/6297-THE-HARVESTER?sid=a8546440-46a4-4351-818b-cb787abd05f1&sr=0.11934432&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_rebecca_of_sunnybrook_farm_1938]
+type = "online"
+title = "Rebecca of Sunnybrook Farm"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/7593-REBECCA-OFSUNNYBROOKFARM?sid=d9e79d39-ef34-4a67-bdb8-163fa4e006c3&sr=0.20909096&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_romance_of_the_limberlost_1938]
+type = "online"
+title = "Romance of the Limberlost"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/5737-ROMANCE-OFTHELIMBERLOST?sid=49f8239b-2102-4a8d-9080-14713d9d3bd6&sr=0.13541238&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_the_vanishing_virginian_1942]
+type = "online"
+title = "The Vanishing Virginian"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/26975-THE-VANISHINGVIRGINIAN?sid=e4f3239c-7770-4df1-9a4a-10a568253ccc&sr=0.15002319&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_a_tree_grows_in_brooklyn_1945]
+type = "online"
+title = "A Tree Grows in Brooklyn"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/24635-A-TREEGROWSINBROOKLYN?sid=7b7a2bc5-e58c-44ef-909b-0557545511ce&sr=0.22891553&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_girl_of_the_limberlost_1945]
+type = "online"
+title = "Girl of the Limberlost"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/24427-THE-GIRLOFTHELIMBERLOST?sid=cead83fe-61f2-42dc-ae12-89beb44d98da&sr=0.1121404&cp=1&pos=1"
+accessed = "2025-05-31"
+
+[afi_the_yearling_1946]
+type = "online"
+title = "The Yearling"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/25058-THE-YEARLING?sid=281750aa-a385-4f2e-8b7e-0ba134661755&sr=0.12145292&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_that_hagen_girl_1947]
+type = "online"
+title = "That Hagen Girl"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/25380-THAT-HAGENGIRL?sid=be19f389-7ea0-47d2-8213-3153a525b340&sr=0.18317714&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_the_egg_and_i_1947]
+type = "online"
+title = "The Egg and I"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/25153-THE-EGGANDI?sid=8085772c-c7fa-4920-a66e-7d76565cdb69&sr=0.1395699&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_the_sun_comes_up_1949]
+type = "online"
+title = "The Sun Comes Up"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/26133-THE-SUNCOMESUP?sid=39f0cc31-e0e1-42d0-93d5-6b761e4ce548&sr=0.18199652&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_so_big_1953]
+type = "online"
+title = "So Big"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/53422-SO-BIG?sid=e4b134b5-769a-425b-ae28-b1f5a3c3fa6f&sr=0.14499871&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_the_member_of_the_wedding_1953]
+type = "online"
+title = "The Member of the Wedding"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/53458-THE-MEMBEROFTHEWEDDING?sid=ddfb8267-2285-4b7c-9e00-501f5abf384a&sr=0.13480529&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_tammy_and_the_bachelor_1957]
+type = "online"
+title = "Tammy and the Bachelor"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/52389-TAMMY-ANDTHEBACHELOR?sid=6a16fa09-158c-4cb6-bfe3-429cc2e534fe&sr=0.16353565&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_the_hanging_tree_1959]
+type = "online"
+title = "The Hanging Tree"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/53715-THE-HANGINGTREE?sid=32fb16bd-316b-4dc1-915f-cac57a889f34&sr=0.16195345&cp=1&pos=0"
+accessed = "2025-05-31"
+
+[afi_tess_of_the_storm_country_1960]
+type = "online"
+title = "Tess of the Storm Country"
+source = "AFI Catalog of Feature Films"
+url = "https://catalog.afi.com/Film/53310-TESS-OFTHESTORMCOUNTRY?sid=6a4e2309-626d-4c02-b3c1-17f3efa72fa3&sr=0.16437614&cp=1&pos=1"
+accessed = "2025-05-31"
