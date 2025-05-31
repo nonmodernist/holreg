@@ -27,6 +27,14 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+
+[extra.internet_archive]
+available = true
+identifier = "in-this-our-life-1942.1080p-web-dl"
+title_on_ia = "In This Our Life (1942) [1080p] WEB-DL.DD1.0.H.264"
+watch_url = "https://archive.org/details/in-this-our-life-1942.1080p-web-dl"
+embed_url = "https://archive.org/embed/in-this-our-life-1942.1080p-web-dl"
+last_checked = "2025-05-30"
 +++
 
 *In This Our Life* (1942) is a film adaptation of "In This Our Life" by Ellen Glasgow (1941).

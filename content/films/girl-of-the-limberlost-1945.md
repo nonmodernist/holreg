@@ -1,6 +1,5 @@
 +++
-title = "A Girl of the Limberlost"
-date = 2024-01-01
+title = "Girl of the Limberlost"
 weight = 1945
 
 [taxonomies]

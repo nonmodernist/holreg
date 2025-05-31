@@ -33,6 +33,11 @@ url = "/images/sidebar-hills.jpg"
 alt = "ALT TEXT"
 caption = "CAPTION."
 
+[extra.film_status]
+survival = "lost"
+
+
+
 +++
 
 ## Plot Summary

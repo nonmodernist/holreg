@@ -189,14 +189,14 @@
   letter-spacing: 0.1em;
   
   &.available, &.extant {
-    background-color: #e8f5e8;
-    color: #2d5a2d;
+    background-color: $color-success-bg;
+    color: $color-success;
     border: 1px solid #c3e6c3;
   }
   
   &.lost {
-    background-color: #ffeaea;
-    color: #8b2635;
+    background-color: $color-error-bg;
+    color: $color-error;
     border: 1px solid #f5c2c7;
   }
   

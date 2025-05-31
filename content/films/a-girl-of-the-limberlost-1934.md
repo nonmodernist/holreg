@@ -16,6 +16,8 @@ directors = ["Christy Cabanne"]
 [extra]
 # Film metadata for sidebar
 year = 1934
+significance = "hidden_gem"
+significance_note = "Pre-Code era adaptation of Gene Stratton-Porter's work, freely viewable on Internet Archive."
 original_story = "A Girl of the Limberlost"
 story_year = 1909
 story_author = "Gene Stratton-Porter"
@@ -39,6 +41,14 @@ availability_notes = "Available for free streaming on Internet Archive"
 url = "/images/sidebar-limberlost1934.jpg"
 alt = "ALT TEXT"
 caption = "CAPTION."
+
+[extra.internet_archive]
+available = true
+identifier = "AGirlOfTheLimberlost1934"
+title_on_ia = "A Girl of the Limberlost"
+watch_url = "https://archive.org/details/AGirlOfTheLimberlost1934"
+embed_url = "https://archive.org/embed/AGirlOfTheLimberlost1934"
+last_checked = "2025-05-30"
 +++
 
 *A Girl of the Limberlost* (1934) is a film adaptation of "A Girl of the Limberlost" by Gene Stratton-Porter (1909).

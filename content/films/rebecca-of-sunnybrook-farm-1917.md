@@ -34,6 +34,14 @@ url = "/images/sidebar-rebecca1917.jpg"
 alt = "ALT TEXT"
 caption = "CAPTION."
 
+
+[extra.internet_archive]
+available = true
+identifier = "silent-rebecca-of-sunnybrook-farm"
+title_on_ia = "Rebecca of Sunnybrook Farm"
+watch_url = "https://archive.org/details/silent-rebecca-of-sunnybrook-farm"
+embed_url = "https://archive.org/embed/silent-rebecca-of-sunnybrook-farm"
+last_checked = "2025-05-30"
 +++
 
 ## Plot Summary

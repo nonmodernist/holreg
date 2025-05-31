@@ -16,6 +16,8 @@ directors = ["Marshall Neilan"]
 [extra]
 # Film metadata for sidebar
 year = 1918
+significance = "hidden_gem"
+significance_note = "Rare surviving silent film from 1918, available free on Internet Archive."
 original_story = "Amarilly of Clothes-Line Alley"
 story_year = 1915
 story_author = "Belle K. Maniates"
@@ -26,6 +28,21 @@ format = "Silent, B&W"
 
 # Content flags
 show_citation = true
+
+[extra.film_status]
+survival = "extant"
+completeness = "complete"
+access = "available"
+availability_type = "internet_archive"
+
+
+[extra.internet_archive]
+available = true
+identifier = "silent-amarilly-of-clothes-line-alley"
+title_on_ia = "Amarilly of Clothes-Line Alley"
+watch_url = "https://archive.org/details/silent-amarilly-of-clothes-line-alley"
+embed_url = "https://archive.org/embed/silent-amarilly-of-clothes-line-alley"
+last_checked = "2025-05-30"
 +++
 
 *Amarilly of Clothes-Line Alley* (1918) is a film adaptation of "Amarilly of Clothes-Line Alley" by Belle K. Maniates (1915).

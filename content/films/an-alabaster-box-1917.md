@@ -21,7 +21,6 @@ story_author = "Mary Wilkins Freeman"
 director = "Chester Withey"
 studio = "Vitagraph"
 setting = "New England"
-availability = "Lost"
 format = "Unknown"
 
 # Content flags

@@ -16,6 +16,8 @@ directors = ["Frank Borzage"]
 [extra]
 # Film metadata for sidebar
 year = 1920
+significance = "hidden_gem"
+significance_note = "Rare surviving silent film from 1920, available free on Internet Archive."
 original_story = "Humoresque"
 story_year = 1919
 story_author = "Fannie Hurst"
@@ -34,6 +36,14 @@ url = "/images/sidebar-humoresque-1920-2.jpg"
 alt = "ALT TEXT"
 caption = "CAPTION."
 
+
+[extra.internet_archive]
+available = true
+identifier = "silent-humoresque"
+title_on_ia = "Humoresque"
+watch_url = "https://archive.org/details/silent-humoresque"
+embed_url = "https://archive.org/embed/silent-humoresque"
+last_checked = "2025-05-30"
 +++
 
 ## Plot Summary

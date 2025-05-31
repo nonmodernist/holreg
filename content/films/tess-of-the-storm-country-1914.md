@@ -16,6 +16,8 @@ directors = ["Edwin S. Porter"]
 [extra]
 # Film metadata for sidebar
 year = 1914
+significance = "hidden_gem"
+significance_note = "Rare surviving silent film from 1914, available free on Internet Archive."
 original_story = "Tess of the Storm Country"
 story_year = 1909
 story_author = "Grace Miller White"
@@ -34,6 +36,14 @@ url = "/images/sidebar-tess1914.jpg"
 alt = "ALT TEXT"
 caption = "CAPTION."
 
+
+[extra.internet_archive]
+available = true
+identifier = "TESSOFTHESTORMCOUNTRY1914MaryPickfordDir.ByEdwinS.Porter"
+title_on_ia = "Tess of the Storm Country"
+watch_url = "https://archive.org/details/TESSOFTHESTORMCOUNTRY1914MaryPickfordDir.ByEdwinS.Porter"
+embed_url = "https://archive.org/embed/TESSOFTHESTORMCOUNTRY1914MaryPickfordDir.ByEdwinS.Porter"
+last_checked = "2025-05-30"
 +++
 
 ## Plot Summary

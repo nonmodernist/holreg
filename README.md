@@ -27,14 +27,19 @@ This site is built with [Zola](https://www.getzola.org/), a fast static site gen
 
 ### Project Structure
 ```
-├── content/
-│   ├── films/                 # Individual film entries
-│   ├── author-profiles/       # Author biographical pages
+├── content/                  # Where Zola site content lives
+│   ├── films/                # Individual film entries
+│   ├── author-profiles/      # Author biographical pages
 │   └── regions/              # Regional literature contexts
+├── docs/                     # API docs and content templates
 ├── templates/                # Zola templates
+├── tools/                    # Python and JS tools for research & content creation
+│   ├── ia/                   # Internet Archive checker for site integration
+│   ├── lantern/              # Lantern querying tools for research
+│   └── research/             # Misc tools (setting author weights for site, generating research reports from bibliography.toml
 ├── data/
 │   └── bibliography.toml     # Structured citation data
-└── static/                   # Images and assets
+└── static/                   # Site images and assets
 ```
 
 ### Data Organization

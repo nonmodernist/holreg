@@ -1,0 +1,12 @@
+{
+  "name": "holreg",
+  "version": "1.0.0",
+  "description": "**A Digital Archive of Film Adaptations from American Women's Regional Literature, 1910-1961**",
+  "main": "check_ia_availability.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

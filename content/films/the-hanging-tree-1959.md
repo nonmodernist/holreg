@@ -34,6 +34,14 @@ url = "/images/sidebar-hanging-tree.jpg"
 alt = "ALT TEXT"
 caption = "CAPTION."
 
+
+[extra.internet_archive]
+available = true
+identifier = "the.-hanging.-tree.-1959.1080p.-blu-ray.x-264-yts.-am"
+title_on_ia = "The Hanging Tree (1959)"
+watch_url = "https://archive.org/details/the.-hanging.-tree.-1959.1080p.-blu-ray.x-264-yts.-am"
+embed_url = "https://archive.org/embed/the.-hanging.-tree.-1959.1080p.-blu-ray.x-264-yts.-am"
+last_checked = "2025-05-30"
 +++
 
 ## Plot Summary

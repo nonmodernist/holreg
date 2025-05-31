@@ -27,6 +27,14 @@ format = "Unknown"
 
 # Content flags
 show_citation = true
+
+[extra.internet_archive]
+available = true
+identifier = "the-egg-and-i_202504"
+title_on_ia = "The Egg And I (1947)"
+watch_url = "https://archive.org/details/the-egg-and-i_202504"
+embed_url = "https://archive.org/embed/the-egg-and-i_202504"
+last_checked = "2025-05-30"
 +++
 
 *The Egg and I* (1947) is a film adaptation of "The Egg and I" by Betty MacDonald (1945).

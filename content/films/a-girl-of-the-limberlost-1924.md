@@ -1,6 +1,5 @@
 +++
 title = "A Girl of the Limberlost"
-date = 2024-01-01
 weight = 1924
 
 [taxonomies]
@@ -22,6 +21,16 @@ screenwriter = "Gene Stratton-Porter"
 studio = "Gene Stratton Porter Productions"
 format = "Silent, B&W"
 show_citation = true
+
+[extra.film_status]
+survival = "lost"
+
+[extra.film_image]
+url = "/images/filename.jpg"
+alt = "Descriptive alt text"
+caption = "Caption with source attribution"
+
+
 +++
 
 Elnora Comstock, a sensitive and intelligent girl living near the Limberlost swamp in Indiana, struggles with poverty and her mother’s coldness following her father’s death. Despite these hardships, Elnora is determined to get an education and dreams of attending high school. She collects and sells rare moths and artifacts from the Limberlost to pay for her schooling. Along the way, she finds support from kind neighbors and eventually wins her mother’s love and understanding. The story follows Elnora’s journey of self-discovery, resilience, and hope as she overcomes adversity and finds her place in the world.
