@@ -1,0 +1,148 @@
+{# Shortcode to display a single featured source inline #}
+{% set bib = load_data(path="data/bibliography.toml") %}
+{% set source = bib[id] %}
+
+{% if source %}
+<div class="featured-source-inline">
+    {% if style == "compact" %}
+        {# Compact version - just image with hover info #}
+        {% if source.page_image_url %}
+        <figure class="source-figure-compact">
+            <a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">
+                <img src="{{ source.page_image_url }}" 
+                     alt="{{ source.source }} - {{ source.date }}"
+                     title="Click to view on Internet Archive">
+                <figcaption>
+                    <span class="source-label">{{ source.source | title }}, {{ source.date }}</span>
+                </figcaption>
+            </a>
+        </figure>
+        {% endif %}
+    {% else %}
+        {# Full version with text #}
+        <div class="featured-source-box">
+            {% if source.page_image_url %}
+            <div class="source-image-small">
+                <a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">
+                    <img src="{{ source.page_image_url }}" 
+                         alt="{{ source.source }} - {{ source.date }}">
+                </a>
+            </div>
+            {% endif %}
+            <div class="source-text">
+                <h4 class="source-inline-title">
+                    {{ source.source | title }} - {{ source.date }}
+                    {% if source.contentType %}
+                    <span class="type-badge-small type-{{ source.contentType }}">{{ source.contentType | replace(from="_", to=" ") | title }}</span>
+                    {% endif %}
+                </h4>
+                <blockquote class="source-inline-quote">"{{ source.quote | truncate(length=200) }}"</blockquote>
+                <a href="{{ source.url }}" class="source-inline-link" target="_blank">View on Internet Archive →</a>
+            </div>
+        </div>
+    {% endif %}
+</div>
+
+<style>
+/* Inline featured source styles */
+.featured-source-inline {
+    margin: 2rem 0;
+}
+
+.featured-source-box {
+    display: flex;
+    gap: 1.5rem;
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+}
+
+.source-image-small {
+    flex-shrink: 0;
+    width: 200px;
+}
+
+.source-image-small img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.source-text {
+    flex: 1;
+}
+
+.source-inline-title {
+    margin: 0 0 0.75rem 0;
+    font-size: 1.1rem;
+    color: #2c3e50;
+}
+
+.type-badge-small {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.5rem;
+    margin-left: 0.5rem;
+    border-radius: 12px;
+    font-weight: normal;
+}
+
+.source-inline-quote {
+    margin: 0.75rem 0;
+    padding-left: 1rem;
+    border-left: 2px solid #e0e0e0;
+    font-style: italic;
+    color: #555;
+}
+
+.source-inline-link {
+    color: #3498db;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+/* Compact figure version */
+.source-figure-compact {
+    max-width: 400px;
+    margin: 2rem auto;
+}
+
+.source-figure-compact img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+.source-figure-compact:hover img {
+    transform: scale(1.02);
+}
+
+.source-figure-compact figcaption {
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.source-label {
+    font-style: italic;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .featured-source-box {
+        flex-direction: column;
+    }
+    
+    .source-image-small {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+</style>
+{% else %}
+<p class="source-error">[Featured source not found: {{ id }}]</p>
+{% endif %}

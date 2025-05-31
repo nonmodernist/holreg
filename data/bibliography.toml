@@ -488,11 +488,20 @@ source = "exhibitors herald"
 date = "1920"
 url = "http://archive.org/stream/exhibitorsherald10exhi#page/n298/"
 accessed = "2025-05-30"
+featured = true
+featured_note = ""
+page_image_url = "https://archive.org/download/exhibitorsherald10exhi/page/n298_medium.jpg"
 # Film: Pollyanna (1920)
 # Content type: production
 # Relevance score: 10
 # Lantern ID: exhibitorsherald10exhi_0299
-quote = """Announces 'Pollyanna' Will be Published January 18 Adapted by Frances Marion and Directed by"""
+quote = """"Pollyanna" will give to Miss Pickford the greater opportunities she sought. Miss Pickford has taken an unusually long time to finish "Pollyanna." Under her new arrangement, from script to screen, she has had at her disposal every resource and aid available, absolute freedom for the full expression of her own inimitable personality, and unlimited financial means."""
+contentType = "production"
+film = "Pollyanna"
+filmYear = 1920
+lanternId = "exhibitorsherald10exhi_0299"
+
+
 
 [exhibitorsherald_pollyanna_1920_production_2]
 type = "lantern"

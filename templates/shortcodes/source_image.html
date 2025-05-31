@@ -1,0 +1,63 @@
+{# Simple shortcode for just the source image #}
+{% set bib = load_data(path="data/bibliography.toml") %}
+{% set source = bib[id] %}
+
+{% if source and source.page_image_url %}
+<figure class="source-image-figure {% if align %}align-{{ align }}{% endif %}" {% if width %}style="width: {{ width }};"{% endif %}>
+    <a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">
+        <img src="{{ source.page_image_url }}" 
+             alt="{{ alt | default(value=source.source ~ ' - ' ~ source.date) }}"
+             loading="lazy">
+    </a>
+    {% if caption %}
+    <figcaption>{{ caption }}</figcaption>
+    {% elif show_caption %}
+    <figcaption>{{ source.source | title }}, {{ source.date }}</figcaption>
+    {% endif %}
+</figure>
+
+<style>
+.source-image-figure {
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.source-image-figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.source-image-figure figcaption {
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+}
+
+.align-left {
+    float: left;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+}
+
+.align-right {
+    float: right;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.align-center {
+    display: block;
+    margin: 2rem auto;
+}
+
+@media (max-width: 768px) {
+    .align-left, .align-right {
+        float: none;
+        margin: 2rem auto;
+    }
+}
+</style>
+{% endif %}
