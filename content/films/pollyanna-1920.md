@@ -82,5 +82,6 @@ As one of the most powerful figures in early Hollywood, Pickford had the autonom
 
 ## Notes
 
-1. **Pickford's power:** According to the *Exhibitor's Herald*, "Under her new arrangement, from script to screen, [Pickford] has had at her disposal every resource and aid available, absolute freedom for the full expression of her own inimitable personality, and unlimited financial means." {{ cite(id="exhibitorsherald_pollyanna_1920_production") }} Also see: {{ cite(id="brouwers_pollyanna_2014_210") }} 
+1. **Pickford's power:** According to the *Exhibitor's Herald*, "Under her new arrangement, from script to screen, [Pickford] has had at her disposal every resource and aid available, absolute freedom for the full expression of her own inimitable personality, and unlimited financial means." {{ cite(id="exhibitorsherald_pollyanna_1920_production") }} See also: {{ cite(id="brouwers_pollyanna_2014_210") }} 
 2. **$40,000:** The contemporary press repeated this figure every chance they could. See, for example: {{ cite(id="variety_pollyanna_1920") }} {{ cite(id="exhibitorsherald_pollyanna_1920") }}
+3. **Production details:** See {{ cite(id="afi_pollyanna_1920") }}
