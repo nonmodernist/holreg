@@ -29,17 +29,12 @@ story_year = 1913
 story_author = "Eleanor H. Porter"
 director = "Paul Powell"
 screenwriter = "Frances Marion"
-studio = ["Mary Pickford Company", "United Artists"]
-stars = "Mary Pickford"
-screenwriter = "Frances Marion"
+production_company = "Mary Pickford Company"
+distributor = "United Artists"
+stars = ["Mary Pickford"]
 setting = "Vermont"
 format = "Silent, B&W"
 duration = "58 minutes"
-
-
-# Content flags
-show_citation = true
-author_byline = "Alexandra Edwards"
 
 # Film image
 [extra.film_image]
@@ -53,17 +48,14 @@ completeness = "complete"
 access = "available"
 availability_type = "internet_archive"
 
+[extra.internet_archive]
+available = true
+identifier = "silent-pollyanna"
+title_on_ia = "Pollyanna"
+watch_url = "https://archive.org/details/silent-pollyanna"
+embed_url = "https://archive.org/embed/silent-pollyanna"
+last_checked = "2025-05-30"
 
-[extra.film_status]
-survival = "extant"
-completeness = "complete"
-access = "available"
-availability_type = "internet_archive"
-
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
 +++
 
 After her missionary father's death in the Ozarks, Pollyanna Whittier is sent to live with her wealthy Aunt Polly on a New England plantation. Despite her aunt’s harshness, Pollyanna befriends orphan Jimmy Bean and brings optimism to the community through her father’s “Glad Game”—finding something to be grateful for in every situation. 
@@ -72,14 +64,16 @@ When Pollyanna is struck by a car while saving a child, she becomes paralyzed. T
 
 # Regional Focus
 
-<!-- TODO fact check and rewrite all of this -->
-
-The film’s setting on a “New England plantation” (likely a large estate) highlights the region’s agricultural wealth and social hierarchies, while Pollyanna’s origins in the Ozarks represent the simpler, more spiritual values of America’s interior. The contrast between these two regional identities—Western frontier evangelicalism versus Eastern sophistication—drives much of the narrative tension and reflects broader national conversations about traditional versus modern American values during the post-World War I period.
+The film’s setting on a “New England plantation” (likely a large estate) highlights the region’s wealth and social hierarchies, while Pollyanna’s origins in the Ozarks represent the simpler, more spiritual values of America’s interior. The contrast between these two regional identities—Western frontier evangelicalism versus Eastern sophistication—drives much of the narrative tension and reflects broader national conversations about traditional versus modern American values during the post-World War I period.
 
 # Production Strategy
 
-*Pollyanna* was produced by Mary Pickford’s own company in partnership with [United Artists](/studios/united-artists), the distribution company [OR STUDIO????] she co-founded in 1919 with Charlie Chaplin, Douglas Fairbanks, and [D.W. Griffith](/directors/d-w-griffith) to give artists greater creative and financial control over their work. As one of the most powerful figures in early Hollywood, Pickford had the autonomy to choose her own projects and collaborators. She frequently worked with screenwriter Frances Marion, one of the highest-paid and most successful screenwriters of the silent era, who specialized in crafting strong female protagonists and adapting literary works for the screen. Marion’s expertise in literary adaptation made her an ideal choice for bringing Eleanor H. Porter’s beloved regional novel to film [HOW MANY ADAPTATIONS HAD SHE DONE???], while Pickford’s star power and production control ensured that this New England story would reach national audiences. Their collaboration represents the kind of creative partnership that allowed literary regionalism to flourish in early Hollywood, with women creators at both the production and writing levels shaping how regional American stories were told on screen.
+*Pollyanna* was produced by Mary Pickford’s own company in partnership with [United Artists](/studios/united-artists), the distribution company she co-founded in 1919 with Charlie Chaplin, Douglas Fairbanks, and [D.W. Griffith](/directors/d-w-griffith) to give artists greater creative and financial control over their work. 
+
+As one of the most powerful figures in early Hollywood, Pickford had the autonomy to choose her own projects and collaborators, as well as the money to pursue expensive screen rights—she reportedly paid $40,000 for Porter's 1913 novel. She frequently worked with screenwriter Frances Marion, one of the highest-paid and most successful screenwriters of the silent era, who specialized in crafting strong female protagonists and adapting literary works for the screen. Marion’s expertise in literary adaptation made her an ideal choice for bringing Eleanor H. Porter’s beloved regional novel to film [HOW MANY ADAPTATIONS HAD SHE DONE???], while Pickford’s star power and production control ensured that this New England story would reach national audiences. Their collaboration represents the kind of creative partnership that allowed literary regionalism to flourish in early Hollywood, with women creators at both the production and writing levels shaping how regional American stories were told on screen.
 
 ## Notes
 
-1. **Topic/Theme:** Detailed explanation or context. 
+1. **Post-war Pollyanna:** {{ cite(id="brouwers_pollyanna_2014_210") }} 
+2. **Pickford's power:** According to the *Exhibitor's Herald*, "Under her new arrangement, from script to screen, [Pickford] has had at her disposal every resource and aid available, absolute freedom for the full expression of her own inimitable personality, and unlimited financial means." {{ cite(id="exhibitorsherald_pollyanna_1920_production") }}
+2. **$40,000:** The contemporary press repeated this figure every chance they could. See, for example: {{ cite(id="variety_pollyanna_1920") }} {{ cite(id="exhibitorsherald_pollyanna_1920") }}

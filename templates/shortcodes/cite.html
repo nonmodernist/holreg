@@ -45,6 +45,28 @@
         {%- if citation.accessed -%}
             accessed {{ citation.accessed }}.
         {%- endif -%}
+    {%- elif citation.type == "lantern" -%}
+        {#- Format Lantern source citation -#}
+        {%- if citation.author -%}
+            {{ citation.author }},&nbsp;
+        {%- endif -%}
+        {%- if citation.url -%}
+            <a href="{{ citation.url }}" target="_blank" rel="noopener noreferrer"> 
+        {%- endif -%}
+        {%- if citation.title -%}
+            "{{ citation.title }},"
+        {%- else -%}
+            {{ citation.source | title }} 
+        {%- endif -%}
+        {%- if citation.url -%}
+            </a> &nbsp;
+        {%- endif -%} 
+        <em>{{ citation.source | title }}</em>
+        {%- if citation.date -%}, {{ citation.date }}{%- endif -%}
+        {%- if citation.accessed -%}, accessed {{ citation.accessed }}{%- endif -%}.
+        {%- if citation.quote -%} 
+            &nbsp;<button class="view-quote-btn" data-citation-id="{{ id }}" aria-label="View quote from source">View quote</button> 
+        {%- endif -%}
     {%- endif -%}
 {%- else -%}
     <span class="citation-error">[Citation not found: {{ id }}]</span>

@@ -7,6 +7,71 @@
 # For print sources, include a "quote" field with the relevant passage
 # For online sources, include a "url" field
 
+# =============================================================================
+#  POLLYANNA (1920) - ELEANOR PORTER
+# =============================================================================
+
+[variety_pollyanna_1920]
+type = "lantern"
+title = "Pollyanna"
+source = "Variety"
+date = "January 24, 1920"
+page = "60"
+url = "https://archive.org/details/variety57-1920-01/page/n269/mode/2up?view=theater"
+
+
+[brouwers_pollyanna_2014_210]
+type = "print"
+author = "Anke Brouwers"
+title = "The Gospel of Good Cheer: Innocence, Spiritual Healing, and Patriotism in Mary Pickford's 'Pollyanna'"
+source = "Eleanor H. Porter's Pollyanna: A Children's Classic At 100"
+publisher = "University Press of Mississippi"
+location = "Jackson"
+page = "210"
+year = "2014"
+accessed = "2025-05-31"
+quote = """*Pollyanna* was a special event: it was Pickford's first release for United Artists, the studio she had co-founded with Charlie Chaplin, Douglas Fairbanks, and D. W. Griffith the previous year. The company was to distribute the independently produced films of its owners, who thereby ensured themselves complete creative control as well as greater financial gains. *Pollyanna* was therefore an important film in the history of its distribution company, and also marked the beginning of a new phase in the career of its star, who had commanded top box-office results since the mid-1910s. Pickford's belief in self-reliance, a theme both within the narrative of the film and a stated goal of the new studio, proved personally and financially satisfying since, with a gross of over a million dollars, *Pollyanna* was a big hit.
+
+The decision to adapt *Pollyanna* was a safe bet: the book, its sequel, and the play were still hugely popular, while the basic material resembled Pickford’s most popular previous roles such as Rebecca in *Rebecca of Sunnybrook Farm* (Neilan 1917), Gwendolyn in *The Poor Little Rich Girl* (Tourneur 1917), Judy Abbot in *Daddy-Long-Legs* (Neilan 1919), and Sara Crewe in *The Little Princess* (Neilan 1917). Overall, *Pollyanna* complemented Pickford’s screen persona as expressed through these characters that were, in the words of film historian Kevin Brownlow, “extremely attractive, warm-hearted, generous, funny—but independent and fiery-tempered when the occasion demands” (Parade 120). Pickford had steadily appropriated, cultivated and consolidated these properties since 1914 (starting with Edwin S. Porter’s adaptation of *Tess of the Storm Country*) through filmic and extra-filmic means."""
+
+[brouwers_pollyanna_2014_224]
+type = "print"
+author = "Anke Brouwers"
+title = "The Gospel of Good Cheer: Innocence, Spiritual Healing, and Patriotism in Mary Pickford's 'Pollyanna'"
+source = "Eleanor H. Porter's Pollyanna: A Children's Classic At 100"
+publisher = "University Press of Mississippi"
+location = "Jackson"
+page = "210"
+year = "2014"
+accessed = "2025-05-31"
+quote = """Considering the difference in tone of both pictures, *Pollyanna* and *The Love Light* symbolically represent the different consecutive symptoms of traumatic experiences and, in their story material, offer two possible cures or trajectories of recovery: through denial and optimism or through remembrance and perseverance."""
+
+[brouwers_pollyanna_2014_224_2]
+type = "print"
+author = "Anke Brouwers"
+title = "The Gospel of Good Cheer: Innocence, Spiritual Healing, and Patriotism in Mary Pickford's 'Pollyanna'"
+source = "Eleanor H. Porter's Pollyanna: A Children's Classic At 100"
+publisher = "University Press of Mississippi"
+location = "Jackson"
+page = "210"
+year = "2014"
+accessed = "2025-05-31"
+quote = """Unlike the novel and the play by Catherine Chisholm Cushing (which also served as an important source, as the opening credits acknowledge), the film fully dramatizes Pollyanna’s fateful accident and her subsequent recovery. In the book, the accident is referred to in retrospect, in a single vague paragraph, and by Pollyanna herself in a short, if enthusiastic, letter closing the book that swiftly narrates her first steps in a medical rehabilitation center. In order to meet public expectations and star requirements—a star like Pickford needed scenes in which she could be both active (performing the action instead of narrating it) and emotionally moving—these events required explicit staging. The visualization of these spectacular and cathartic scenes additionally endowed the Pollyanna character with a somewhat heroic status."""
+
+# Research Note: Comparing Pollyanna and The Love Light
+
+[pollyanna_love_light]  # descriptive_name
+type = "research_note"
+topic = "Producer/writer patterns"
+films = ["pollyanna-1920.md"]  # Use your existing film page slugs
+sources = ["brouwers_pollyanna_2014_224"]  # Reference citation IDs from bibliography
+finding = "An interesting comparison between Pollyanna and The Love Light - Pickford and Marion, with Marion directing the latter"
+priority = "low"  # How important/urgent is this?
+potential_placement = "future pages on pickford and marion"
+status = "captured"  # captured/in_progress/applied/archived
+date_added = "2025-05-30"
+follow_up = "" # Optional
+
 
 # =============================================================================
 # 🌟  GIANT (1956) - Edna Ferber
@@ -470,7 +535,7 @@ quote = """' Grosses Already Beat Original Version Universal's 'Imitation of Lif
 
 [exhibitorsherald_pollyanna_1920]
 type = "lantern"
-title = "Pollyanna - review"
+title = "Mary Pickford in Pollyanna"
 source = "exhibitors herald"
 date = "1920"
 url = "http://archive.org/stream/exhibitorsherald10exhi#page/n538/"
@@ -479,11 +544,11 @@ accessed = "2025-05-30"
 # Content type: review
 # Relevance score: 11
 # Lantern ID: exhibitorsherald10exhi_0539
-quote = """Powell. Published January 18. OPINION. In the annals of filmdom 'Pollyanna' will doubtless go"""
+# quote = """Mary Pickford paid $40,000 for the screen rights to the story"""
 
 [exhibitorsherald_pollyanna_1920_production]
 type = "lantern"
-title = "Pollyanna - production"
+title = "Mary Pickford's First 'Big Four' Film Ready"
 source = "exhibitors herald"
 date = "1920"
 url = "http://archive.org/stream/exhibitorsherald10exhi#page/n298/"
@@ -492,7 +557,7 @@ accessed = "2025-05-30"
 # Content type: production
 # Relevance score: 10
 # Lantern ID: exhibitorsherald10exhi_0299
-quote = """Announces 'Pollyanna' Will be Published January 18 Adapted by Frances Marion and Directed by"""
+# quote = """"Pollyanna" will give to Miss Pickford the greater opportunities she sought. Miss Pickford has taken an unusually long time to finish "Pollyanna." Under her new arrangement, from script to screen, she has had at her disposal every resource and aid available, absolute freedom for the full expression of her own inimitable personality, and unlimited financial means."""
 
 [exhibitorsherald_pollyanna_1920_production_2]
 type = "lantern"
@@ -533,9 +598,9 @@ accessed = "2025-05-30"
 # Lantern ID: exhibitorsherald10exhi_0527
 quote = """'Pollyanna' Given Long Runs in Principal Theatres Throughout the Country Required Three Months in"""
 
-[exhibitorsherald_pollyanna_1920_mention]
+[exhibitorsherald_pollyanna_1920_marketing]
 type = "lantern"
-title = "Pollyanna - mention"
+title = "Pollyanna - marketing"
 source = "exhibitors herald"
 date = "1920"
 url = "http://archive.org/stream/exhibitorsherald10exhi#page/n412/"
@@ -585,18 +650,19 @@ accessed = "2025-05-30"
 # Lantern ID: movpicwor432movi_0372
 quote = """Happy Pollyanna HENRY L. DOUGHERTY, special writer and motion picture critic of the Los"""
 
-[photoplay_pollyanna_1920_mention_2]
+[photoplay_pollyanna_1920_review]
 type = "lantern"
-title = "Pollyanna - mention"
+title = "The Shadow Stage"
+author = "Burns Mantle"
 source = "photoplay"
 date = "1920"
 url = "http://archive.org/stream/photoplayvolume11718chic#page/n471/"
 accessed = "2025-05-30"
 # Film: Pollyanna (1920)
-# Content type: mention
-# Relevance score: 7
+# Content type: review
+# Relevance score: 10 - manually review
 # Lantern ID: photoplayvolume11718chic_0472
-quote = """Pickford s 'Pollyanna will prove the saviors of the screen. THE popular pose, I know"""
+# quote = """Analyze "Pollyanna" and you find it conventionally sure fire. The plight of the "glad" girl is the hokum of the theater at its hokumist. The "glad" game itself, robbed of the thing it stands for, which is the beautiful optimism of youth and the earned rewards of "playing the game" and "being a thoroughbred," is a deliberate bid for your kind applause. It reeks with the sentimentalism of the theater at its baldest. But during its performance in the theater it is a good game, and a cheering one. A week of it and you might strangle Pollyanna. For one afternoon or an evening she is an inspiration."""
 
 [motionpicturemag_pollyanna_1920_mention]
 type = "lantern"
