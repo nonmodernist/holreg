@@ -135,6 +135,25 @@ class LanternBibliographyTool {
             .trim();
     }
 
+    // Helper function to extract page image URL from IA read URL
+extractPageImageUrl(readUrl) {
+    // Extract the clean URL
+    const urlMatch = readUrl.match(/href="([^"]+)"/);
+    const cleanUrl = urlMatch ? urlMatch[1] : readUrl;
+    
+    // Parse the IA URL
+    // https://archive.org/stream/variety204-1956-10#page/n71/
+    const match = cleanUrl.match(/archive\.org\/stream\/([^#]+)#page\/([^\/]+)/);
+    
+    if (match) {
+        const identifier = match[1];
+        const pageNum = match[2];
+        return `https://archive.org/download/${identifier}/page/${pageNum}_medium.jpg`;
+    }
+    
+    return null;
+}
+
     // Format a single bibliography entry
     formatBibliographyEntry(entry) {
         const lines = [];
@@ -150,12 +169,31 @@ class LanternBibliographyTool {
         
         lines.push(`url = "${entry.url}"`);
         lines.push(`accessed = "${entry.accessed}"`);
+
+            // Add featured flag if marked
+            if (entry.featured) {
+        lines.push(`featured = true`);
+        if (entry.featured_note) {
+            lines.push(`featured_note = "${entry.featured_note}"`);
+        }
+        // Try to extract page image URL
+        const imageUrl = this.extractPageImageUrl(entry.readUrl);
+        if (imageUrl) {
+            lines.push(`page_image_url = "${imageUrl}"`);
+        }
+    }
         
         // Add metadata as comments for reference
         lines.push(`# Film: ${entry.film} (${entry.filmYear})`);
         lines.push(`# Content type: ${entry.contentType}`);
         lines.push(`# Relevance score: ${entry.score}`);
         lines.push(`# Lantern ID: ${entry.lanternId}`);
+
+        // ADD contentType as a field too (for the macro styling)
+    lines.push(`contentType = "${entry.contentType}"`);
+    lines.push(`film = "${entry.film}"`);
+    lines.push(`filmYear = ${entry.filmYear}`);
+    lines.push(`lanternId = "${entry.lanternId}"`);
         
         if (entry.excerpt) {
             lines.push(`quote = """${entry.excerpt}"""`);
@@ -228,91 +266,114 @@ class LanternBibliographyTool {
     }
 
     // Process a single film
-    async processFilm(film) {
-        if (film.uniqueResults.length === 0) {
-            return;
-        }
+ // Replace your existing processFilm method (starting around line 355) with this:
+async processFilm(film) {
+    if (film.uniqueResults.length === 0) {
+        return;
+    }
+    
+    this.displayFilmSources(film);
+    
+    const response = await this.prompt('Select sources to add (e.g., "1,3,5" or "all" or "none"): ');
+    
+    let selectedIndices = [];
+    let reviewedAll = false;
+    
+    if (response.toLowerCase() === 'all') {
+        selectedIndices = film.uniqueResults.map((_, i) => i);
+        reviewedAll = true;
+    } else if (response.toLowerCase() === 'none') {
+        reviewedAll = true;
+    } else if (response !== '') {
+        selectedIndices = response.split(',')
+            .map(s => parseInt(s.trim()) - 1)
+            .filter(i => i >= 0 && i < film.uniqueResults.length);
+    }
+    
+    // Track the review decision for this film
+    if (!this.reviewDecisions[film.filePath]) {
+        this.reviewDecisions[film.filePath] = {
+            filmTitle: film.title,
+            filmYear: film.year,
+            reviewedAt: new Date().toISOString(),
+            reviewedAll: reviewedAll,
+            sources: {}
+        };
+    }
+    
+    // Ask about featured sources if any were selected
+    let featuredIndices = [];
+    if (selectedIndices.length > 0) {
+        console.log('\n🌟 Featured Sources:');
+        const featuredResponse = await this.prompt('Which should be featured on the film page? (e.g., "1,3" or "none"): ');
         
-        this.displayFilmSources(film);
-        
-        const response = await this.prompt('Select sources to add (e.g., "1,3,5" or "all" or "none"): ');
-        
-        let selectedIndices = [];
-        let reviewedAll = false;
-        
-        if (response.toLowerCase() === 'all') {
-            selectedIndices = film.uniqueResults.map((_, i) => i);
-            reviewedAll = true;
-        } else if (response.toLowerCase() === 'none') {
-            reviewedAll = true;
-        } else if (response !== '') {
-            selectedIndices = response.split(',')
+        if (featuredResponse.toLowerCase() !== 'none' && featuredResponse !== '') {
+            featuredIndices = featuredResponse.split(',')
                 .map(s => parseInt(s.trim()) - 1)
-                .filter(i => i >= 0 && i < film.uniqueResults.length);
-        }
-        
-        // Track the review decision for this film
-        if (!this.reviewDecisions[film.filePath]) {
-            this.reviewDecisions[film.filePath] = {
-                filmTitle: film.title,
-                filmYear: film.year,
-                reviewedAt: new Date().toISOString(),
-                reviewedAll: reviewedAll,
-                sources: {}
-            };
-        }
-        
-        // Process selected sources
-        for (const index of selectedIndices) {
-            const result = film.uniqueResults[index];
-            
-            const id = this.generateCitationId(
-                result.publication,
-                film.title,
-                film.year,
-                result.contentType
-            );
-            
-            const entry = {
-                id,
-                title: `${film.title} - ${result.contentType}`,
-                source: result.publication.name,
-                date: this.formatDate(result.date),
-                url: this.extractUrl(result.readUrl),
-                accessed: new Date().toISOString().split('T')[0],
-                film: film.title,
-                filmYear: film.year,
-                contentType: result.contentType,
-                score: result.score,
-                lanternId: result.id,
-                excerpt: this.cleanExcerpt(result.excerpt)
-            };
-            
-            this.newEntries.push(entry);
-            console.log(`   ✅ Added: ${id}`);
-            
-            // Track this decision
-            this.reviewDecisions[film.filePath].sources[result.id] = {
-                status: 'added',
-                bibliographyId: id,
-                reviewedAt: new Date().toISOString()
-            };
-        }
-        
-        // Mark rejected sources if we reviewed all
-        if (reviewedAll) {
-            film.uniqueResults.forEach((result, index) => {
-                if (!selectedIndices.includes(index)) {
-                    this.reviewDecisions[film.filePath].sources[result.id] = {
-                        status: 'rejected',
-                        reason: 'not_selected',
-                        reviewedAt: new Date().toISOString()
-                    };
-                }
-            });
+                .filter(i => selectedIndices.includes(i));
         }
     }
-
+    
+    // Process selected sources
+    for (const index of selectedIndices) {
+        const result = film.uniqueResults[index];
+        
+        const id = this.generateCitationId(
+            result.publication,
+            film.title,
+            film.year,
+            result.contentType
+        );
+        
+        const entry = {
+            id,
+            title: `${film.title} - ${result.contentType}`,
+            source: result.publication.name,
+            date: this.formatDate(result.date),
+            url: this.extractUrl(result.readUrl),
+            readUrl: result.readUrl, // Keep for image extraction
+            accessed: new Date().toISOString().split('T')[0],
+            film: film.title,
+            filmYear: film.year,
+            contentType: result.contentType,
+            score: result.score,
+            lanternId: result.id,
+            excerpt: this.cleanExcerpt(result.excerpt),
+            featured: featuredIndices.includes(index)
+        };
+        
+        // If featured, optionally add a note
+        if (entry.featured) {
+            const note = await this.prompt(`Featured note for "${entry.source}" (or press Enter to skip): `);
+            if (note) {
+                entry.featured_note = note;
+            }
+        }
+        
+        this.newEntries.push(entry);
+        console.log(`   ✅ Added: ${id}${entry.featured ? ' [FEATURED]' : ''}`);
+        
+        // Track this decision
+        this.reviewDecisions[film.filePath].sources[result.id] = {
+            status: 'added',
+            bibliographyId: id,
+            reviewedAt: new Date().toISOString()
+        };
+    }
+    
+    // Mark rejected sources if we reviewed all
+    if (reviewedAll) {
+        film.uniqueResults.forEach((result, index) => {
+            if (!selectedIndices.includes(index)) {
+                this.reviewDecisions[film.filePath].sources[result.id] = {
+                    status: 'rejected',
+                    reason: 'not_selected',
+                    reviewedAt: new Date().toISOString()
+                };
+            }
+        });
+    }
+}
     // Save updated bibliography
     saveBibliography() {
         if (this.newEntries.length === 0) {

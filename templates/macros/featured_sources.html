@@ -1,0 +1,228 @@
+{% macro featured_sources(page) %}
+{# Load bibliography data #}
+{% set bibliography = load_data(path="data/bibliography.toml") %}
+
+{# Debug: Let's see what we're working with #}
+<!-- Debug: Page title = "{{ page.title }}", Year = {{ page.extra.year }} -->
+
+{# Display featured sources for this film #}
+{% set found_featured = false %}
+{% for key, source in bibliography %}
+    {# Only process if source has featured=true #}
+    {% if source.featured is defined and source.featured == true %}
+        <!-- Debug: Checking {{ key }}: film="{{ source.film }}", year={{ source.filmYear }} -->
+        {% if source.film == page.title and source.filmYear == page.extra.year %}
+            {% if not found_featured %}
+                {% set_global found_featured = true %}
+                <div class="section featured-sources">
+                    <h2 class="section-title">📰 Featured Trade Press Coverage</h2>
+                    <div class="featured-sources-grid">
+            {% endif %}
+            
+            <div class="featured-source-card">
+                {# Magazine page preview if available #}
+                {% if source.page_image_url %}
+                <div class="source-image-container">
+                    <a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">
+                        <img src="{{ source.page_image_url }}" 
+                             alt="Page from {{ source.source }} {{ source.date }}"
+                             loading="lazy">
+                        <div class="image-overlay">
+                            <span class="view-label">View Full Page →</span>
+                        </div>
+                    </a>
+                </div>
+                {% endif %}
+                
+                <div class="source-content">
+                    <h3 class="source-title">
+                        {{ source.source | title }}
+                        {% if source.date %} - {{ source.date }}{% endif %}
+                    </h3>
+                    
+                    {% if source.contentType %}
+                    <span class="content-type-badge type-{{ source.contentType }}">
+                        {{ source.contentType | replace(from="_", to=" ") | title }}
+                    </span>
+                    {% endif %}
+                    
+                    <blockquote class="source-excerpt">
+                        "{{ source.quote }}"
+                    </blockquote>
+                    
+                    {% if source.featured_note %}
+                    <p class="featured-note">{{ source.featured_note }}</p>
+                    {% endif %}
+                    
+                    <div class="source-actions">
+                        <a href="{{ source.url }}" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           class="source-link">
+                            Read on Internet Archive →
+                        </a>
+                        
+                        {% if source.lanternId %}
+                        <button class="cite-btn" 
+                                data-citation-key="{{ key }}"
+                                onclick="copyBibliographyCitation(this)">
+                            Copy Citation
+                        </button>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+    {% endif %}
+{% endfor %}
+
+{% if found_featured %}
+    </div>
+</div>
+
+<script>
+function copyBibliographyCitation(button) {
+    const key = button.getAttribute('data-citation-key');
+    const citation = '{{ "{{" }} cite(id="' + key + '") {{ "}}" }}';
+    navigator.clipboard.writeText(citation).then(function() {
+        button.textContent = 'Copied!';
+        setTimeout(function() {
+            button.textContent = 'Copy Citation';
+        }, 2000);
+    });
+}
+</script>
+{% endif %}
+
+<style>
+.featured-sources {
+    margin: 3rem 0;
+}
+
+.featured-sources-grid {
+    display: grid;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.featured-source-card {
+    background: #f8f9fa;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .featured-source-card {
+        grid-template-columns: 1fr;
+    }
+}
+
+.source-image-container {
+    position: relative;
+    background: #ddd;
+    min-height: 400px;
+}
+
+.source-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.8);
+    color: white;
+    padding: 0.75rem;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.source-image-container:hover .image-overlay {
+    opacity: 1;
+}
+
+.source-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.source-title {
+    margin: 0 0 0.5rem 0;
+    color: #2c3e50;
+    font-size: 1.25rem;
+}
+
+.content-type-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.type-review { background: #e3f2fd; color: #1976d2; }
+.type-production { background: #f3e5f5; color: #7b1fa2; }
+.type-box_office { background: #e8f5e9; color: #388e3c; }
+.type-advertisement { background: #fff3e0; color: #f57c00; }
+.type-mention { background: #fafafa; color: #616161; }
+
+.source-excerpt {
+    margin: 1rem 0;
+    padding-left: 1rem;
+    border-left: 3px solid #3498db;
+    font-style: italic;
+    color: #555;
+    flex-grow: 1;
+}
+
+.featured-note {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0.5rem 0;
+}
+
+.source-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.source-link {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.source-link:hover {
+    text-decoration: underline;
+}
+
+.cite-btn {
+    background: none;
+    border: 1px solid #3498db;
+    color: #3498db;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+}
+
+.cite-btn:hover {
+    background: #3498db;
+    color: white;
+}
+</style>
+{% endmacro %}
