@@ -11,7 +11,6 @@
 # 📚 BIBLIOGRAPHY TABLE OF CONTENTS
 # =============================================================================
 # 
-# Fieldwork Footage ZNH (1928)
 # Pollyanna (1920)
 # Giant (1956) 
 # Gone with the Wind (1939)
@@ -22,133 +21,6 @@
 # Lantern Sources
 # AFI Catalog Entries
 # =============================================================================
-
-# =============================================================================
-#  FIELDWORK FOOTAGE (1928)
-# =============================================================================
-
-[pioneers_booklet_hurston]
-type = "print"
-title = "Supplemental Booklet: Film Credits and Notes"
-source = "Pioneers: First Women Filmmakers"
-publisher = "Kino Lorber"
-location = "New York City"
-year = "2018"
-page = "62"
-quote = ""
-
-[caddoo_2012]
-type = "academic"
-author = "Cara Caddoo"
-title = "Double Consciousness and the Films of Zora Neale Hurston"
-source = "Theorizing Visual Studies: Writing Through the Discipline"
-publisher = "Taylor & Francis Group"
-year = "2012"
-location = "London"
-page = "166-171"
-quote = """Hurston’s ethnographic footage alternated between a detached scientific POV, which assumed a distant spectator, and a mutable, subjective perspective that collapsed the boundaries between viewer and subject. She had been hired by Charlotte Osgood Mason to collect anthropological records of a fixed, classifiable subject—the poor black southerner. Her films, however, present “a nexus of competing gazes” that belie any simplistic reading of her subjects (Smith, 2004, 2). In one clip, she introduced a logging camp with a highly subjective tracking shot from a moving railroad car. Here, the camera is mounted at the front of the train, evoking the perspective of a camp laborer. The spectator looks through the eyes of the black anthropological subject, blurring the lines between scientific subject and observer. Hurston’s artistic vision later reappears in a short experiment with stop-motion animation (Hurston *Fieldwork Footage*, 1927–29), where a boulder appears to magically change shape before disappearing from the screen. These images did not fit the scientific purpose of the project, or the supposedly primitive aspects of black southern life that her patron hired her to record (Hurston, 1942; Hurston *Fieldwork Footage*, ibid.). Instead, they suggest that Hurston utilized some of the time, space, and materials afforded by her white sponsors to assert moments of personal perspective (and pleasure) into her work."""
-
-[convict_lease_gainesville_2005]
-type = "online"
-title = "Florida's lumber camps were supported by convict leasing"
-source = "The Gainesville Sun"
-author = "Jack E. Davis"
-date = "June 27, 2005"
-url = "https://www.gainesville.com/story/news/2005/06/27/floridas-lumber-camps-were-supported-by-convict-leasing/31696805007/"
-accessed = "2025-05-31"
-
-[hartman_2019]
-type = "print"
-author = "Saidiya Hartman"
-source = "Wayward Lives, Beautiful Experiments: Intimate Histories of Riotous Black Girls, Troublesome Women, and Queer Radicals"
-publisher = "W. W. Norton & Company"
-location = "New York"
-year = "2019"
-page = "xiii-xv"
-quote = """Every historian of the multitude, the dispossessed, the subaltern, and the enslaved is forced to grapple with the power and authority of the archive and the limits it sets on what can be known, whose perspective matters, and who is endowed with the gravity and authority of historical actor... I prefer to think of this book as the fugitive text of the wayward... In this spirit, I have pressed at the limits of the case file and the document, speculated about what might have been, imagined the things whispered in dark bedrooms, and amplified moments of withholding, escape and possibility."""
-
-[gaines_2018]
-type = "print"
-author = "Jane M. Gaines"
-source = "Pink-Slipped: What Happened to Women in the Silent Film Industries?"
-publisher = "University of Illinois Press"
-location = "Urbana"
-year = "2018"
-page = "72-75"
-quote = """The extant film print itself is no final proof of the existence of past events and therefore the surviving object alone may not put an end to questions about what actually happened behind or in front of the camera loaded with light-sensitive film stock... What we cannot deny is that the artifact is but a tiny piece relative to the rest of the past. Indeed, it is given inordinate significance relative to its fractional portion. How strange that the primary source document, only a remnant... can come to stand in for the entirety of the whole to which it once belonged."""
-
-[binggeli_2009]
-type = "print"
-author = "Elizabeth Binggeli"
-title = "The Unadapted: Warner Bros. Reads Zora Neale Hurston"
-source = "Cinema Journal"
-volume = "48"
-number = "3"
-year = "2009"
-date = "Spring 2009"
-page = "1-25"
-quote = """While it is a commonplace that Hollywood narrative production in the studio era was conservative, particularly in regard to race, Hollywood narrative consumption was strikingly ecumenical. This consumption has not been adequately interrogated because scholars examining literature-to-film adaptations generally approach archival material from the film backwards that is, from the produced adaptation back through screenplay versions, production notes, and early readings of the source text. Such an approach utilizes only a tiny fraction of extant archival material because studio archives retain a tremendous number of documents related to the reception of rejected stories, including plot synopses, critiques, and memoranda that circulated between readers, editors, and producers. Traditional adaptation studies collectively form a kind of studio narrative history written solely about the victors: about the stories that managed to be made into produced films. James Snead pointed out that while "omission and exclusion are perhaps the most widespread tactics of racial stereotyping," these tactics are "also the most difficult to prove because their manifestation is precisely absence itself." (1) Fully understanding the forces that create representational absences in film requires looking beyond film, at those stories that were rejected by studios and never adapted. [...]
-
-An early association with the author Fannie Hurst may have inspired Hurston to see her works adapted to film. In 1923 Hurston worked as chauffeur and secretary to Hurst, whose fiction was then being adapted to silent film and would soon be adapted to talkies. Universal twice adapted Hurst's 1933 novel *Imitation of Life*, the melodramatic story of a white, upwardly-mobile "new woman" and a young "tragic mulatta" attempting to pass for white. In 1934, the same year the first of the *Imitation of Life* (directed by John Stahl) films was released, Hurston's literary agent, Ann Watkins, submitted Hurston's first novel, *Jonah's Gourd Vine* (1934), to Warner Bros. for review. (9) Warner Bros. was not the only studio to consider Hurston's fiction, but its exceptionally complete story department archive provides a glimpse into industry-wide source acquisition practices. *Jonah* was reviewed by a studio reader but was rejected; no documentation remains to explain why.
-
-But in July of 1937, Warner Bros. received another of Hurston's novels--*Their Eyes Were Watching God*--nearly two months before its publication. It was not unusual for a studio to read a novel in galley form; fierce industry competition encouraged studios to gamble on novels the public had yet to approve. [...]
-
-While Hurston's first three novels and autobiography failed to tempt the studios, a white writer specializing in rural Floridian life was quickly becoming a Hollywood daring. In 1938, Marjorie Kinnan Rawlings sold the rights of her Pulitzer prize-winning novel *The Yearling* (1938) to Metro-Goldwyn-Mayer for $30,000. Director Clarence Brown's lush adaptation, released in 1946, was a critical and box-office smash. Rawlings would see further success in Hollywood with MGM's purchase of her stories "A Mother in Mannville" (1936) and "Mountain Prelude" (1947), which together became the film *The Sun Comes Up* in 1949, directed by Richard Thorpe."""
-
-[charnov_1998]
-type = "print"
-author = "Elaine S. Charnov"
-title = "The Performative Visual Anthropology Films of Zora Neale Hurston"
-source = "Film Criticism"
-volume = "23"
-number = "1"
-date = "Fall 1998"
-page = "38-47"
-quote = """From a historical perspective the footage is rare and unique. Few people actually documented daily performative acts in the life of Central and Southern Florida in the late 1920s - particularly life in rural, African-American communities. It is important to note that the films under discussion are quite short. They range in length from about ten seconds to three minutes (which was the maximum length of early film rolls). Some of the longer performative sequences include children dancing and playing games, adults preparing a barbecue, and an outdoor baptism in Miami, Florida. One of the most stunning sequences includes what may be some of the only existing film footage of a logging and turpentine camp in neighboring Polk County, shot in 1928. In addition to their historic value, these surviving films are significant in illustrating Zora Neale Hurston's creative process."""
-
-
-
-[womack_2015]
-type = "print"
-author = "Autumn Womack"
-title = "“The Brown Bag of Miscellany”: Zora Neale Hurston and the Practice of Overexposure"
-source = "Black Camera"
-volume = "7"
-number = "1"
-date = "Fall 2015"
-page = "115-133"
-quote = """In March 1928, Zora Neale Hurston wrote to Langston Hughes, her friend and collaborator, updating him on her trip through the American South. Hurston was traveling under the sponsorship of Charlotte Osgood Mason, her white patron, who in December 1927 had equipped Hurston with a car, two hundred dollars a month, a 16mm camera, and the directive to collect “all information, both written and oral, concerning the music, poetry, folklore, literature, hoodoo, conjure, manifestations of art and kindred subjects relating to and existing among North American negroes.” [...]
-
-During the next two years, Hurston amassed at least twenty-four minutes of silent 16mm footage of everyday life, includ ing children playing games, a baptism, a church picnic, and a Florida lumber camp. The most technically and artistically ambitious was *Kossula: Last of the Takkoi Slaves*, a five-minute silent film featuring Kossula (also known as Cudjo Lewis), the eighty-eight-year-old man who many believed to be the last survivor of the Middle Passage. Hurston never explicitly addressed the production of these films, which is strange, given her penchant for documenting her creative and scientific endeavors in letters and autobiographies.
-"""
-
-[gibson_2016]
-type = "print"
-author = "Gloria J. Gibson"
-title = "Cinematic Foremothers: Zora Neale Hurston and Eloyce King Patrick Gist"
-source = "Oscar Micheaux and His Circle: African-American Filmmaking and Race Cinema of the Silent Era"
-year = "2016"
-publisher = "Indiana University Press"
-location = "Bloomington"
-page = "195-209"
-quote = """This footage may well represent the earliest film footage shot by an African-American woman. Without a doubt, it is the earliest ethnographic footage by an African-American folklorist. The footage, like her writing, is celebratory, showcasing the diverse talents, rituals, and creativity of African-American people."""
-
-[morgan_wfpp_2013]
-type = "online"
-author = "Kyna Morgan and Aimee Dixon"
-title = "African-American Women in the Silent Film Industry"
-source = "Women Film Pioneers Project"
-url = "https://wfpp.columbia.edu/essay/african-american-women-in-the-silent-film-industry/"
-accessed = "2025-05-31"
-
-[dixon_wfpp_hurston_2013]
-type = "online"
-author = "Aimee Dixon"
-title = "Zora Neale Hurston"
-source = "Women Film Pioneers Project"
-url = "https://wfpp.columbia.edu/pioneer/zora-neale-hurston/"
-accessed = "2025-05-31"
-
 
 # =============================================================================
 #  POLLYANNA (1920) - ELEANOR PORTER
@@ -283,6 +155,7 @@ title = "Edna Ferber's Hollywood: American Fictions of Gender, Race, and History
 publisher = "University of Texas Press"
 year = "2009"
 location = "Austin"
+url = "http://ebookcentral.proquest.com/lib/tcu/detail.action?docID=3443441"
 accessed = "2025-05-29"
 page = "192, 202"
 quote = """As both an educated woman and an easternborn outsider, Leslie functions as Ferber's constant critical voice... 
@@ -1731,82 +1604,4 @@ title = "Tess of the Storm Country"
 source = "AFI Catalog of Feature Films"
 url = "https://catalog.afi.com/Film/53310-TESS-OFTHESTORMCOUNTRY?sid=6a4e2309-626d-4c02-b3c1-17f3efa72fa3&sr=0.16437614&cp=1&pos=1"
 accessed = "2025-05-31"
-
-# =============================================================================
-# 🎬 LANTERN SOURCES - Added 2025-05-31
-# =============================================================================
-
-# Ramona (1910)
-# ------------------------------------------------------------
-
-[movinwor_ramona_1910_mention]
-type = "lantern"
-title = "Realism in Motion Pictures"
-source = "The Moving Picture World"
-date = "1910"
-url = "http://archive.org/stream/movinwor06chal#page/n784/"
-accessed = "2025-05-31"
-featured = true
-featured_note = "Praise for the film's realism"
-page_image_url = "https://archive.org/download/movinwor06chal/page/n784_medium.jpg"
-# Film: Ramona (1910)
-# Content type: mention
-# Relevance score: 6.5
-# Lantern ID: movinwor06chal_0785
-contentType = "mention"
-film = "Ramona"
-filmYear = 1910
-lanternId = "movinwor06chal_0785"
-quote = """There are seme genre moving pictures that can be well executed in a studio from suitable models, but there are certain subjects that should not he attempted without the atmosphere and realism of the natural scenery. Many more or less successful attempts have been made to illustrate popular novels or historical events by means of the motion picture. Needless to say that realism in work of this kind can only be obtained by going to the locations described, regardless of the expense or inconveniences. And this is what the Biograph Company has done in the making of a film that will he seen on the screen in about another week... The Biograph Company climbed into the mountains of Camulos to show the bleak and bare regions into which the Indians were driven to starve or exist by stealing."""
-
-[filmindexjanjun_ramona_1910_announcement]
-type = "lantern"
-title = "Ramona - announcement"
-source = "filmindexjanjun"
-date = "1910"
-url = "http://archive.org/stream/filmindexjanjun105film#page/n474/"
-accessed = "2025-05-31"
-# Film: Ramona (1910)
-# Content type: announcement
-# Relevance score: 6
-# Lantern ID: filmindexjanjun105film_0475
-contentType = "announcement"
-film = "Ramona"
-filmYear = 1910
-lanternId = "filmindexjanjun105film_0475"
-quote = """THE FILM INDEX. 5 RAMONA The Biograph Company Announces One of Its Classic"""
-
-[movinwor_ramona_1910_mention_2]
-type = "lantern"
-title = "Ramona - mention"
-source = "Moving Picture World"
-date = "1910"
-url = "http://archive.org/stream/movinwor06chal#page/n942/"
-accessed = "2025-05-31"
-# Film: Ramona (1910)
-# Content type: mention
-# Relevance score: 4.5
-# Lantern ID: movinwor06chal_0943
-contentType = "mention"
-film = "Ramona"
-filmYear = 1910
-lanternId = "movinwor06chal_0943"
-quote = """exhibitor's interest at heart. The play way 'Ramona.' Wherein was it great ? The idea oi the"""
-
-[filmindexjanjun_ramona_1910_mention]
-type = "lantern"
-title = "Ramona - ad"
-source = "filmindexjanjun"
-date = "1910"
-url = "http://archive.org/stream/filmindexjanjun105film#page/n524/"
-accessed = "2025-05-31"
-# Film: Ramona (1910)
-# Content type: ad
-# Relevance score: 4.5
-# Lantern ID: filmindexjanjun105film_0525
-contentType = "advertisement"
-film = "Ramona"
-filmYear = 1910
-lanternId = "filmindexjanjun105film_0525"
-quote = """. Length, 995 Feet RAMONA Released May 26th, 1910. A KNOT IN THE PLOT There Is Many a Slip"""
 

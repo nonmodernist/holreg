@@ -1,6 +1,5 @@
 +++
 title = "Ramona"
-date = 2024-01-01
 weight = 1910
 description = "The first of four adaptations of the novel"
 
@@ -18,18 +17,22 @@ directors = ["D.W. Griffith"]
 # Film metadata for sidebar
 year = 1910
 significance = "hidden_gem"
-significance_note = "Rare surviving silent film from 1910, available free on Internet Archive."
+significance_note = "D.W. Griffith's early masterpiece launched regionalist cinema by filming Helen Hunt Jackson's novel in authentic California locations. A foundational work and a rare surviving film from the era."
 original_story = "Ramona"
+story_type = "novel"
 story_year = 1884
 story_author = "Helen Hunt Jackson"
 director = "D.W. Griffith"
+stars = ["Mary Pickford"]
 studio = "Biograph"
 setting = "Southern California"
+filming_locations = ["Ventura County, CA"]
 format = "Silent, B&W"
 duration = "16 minutes"
 
 # Content flags
 show_citation = true
+author_byline = "Alexandra Edwards"
 
 # Film image
 [extra.film_image]
@@ -37,9 +40,6 @@ url = "/images/sidebar-ramona.jpg"
 alt = "Woman with dark hair looks through barred window with concerned expression, holding onto bars"
 
 caption = "Scene still from the 1910 film adaptation \"Ramona\" showing the protagonist, played by Mary Pickford, confined behind a barred window."
-
-survival = ["extant"]
-access = ["available"]
 
 [extra.film_status]
 survival = "extant"
@@ -56,17 +56,22 @@ embed_url = "https://archive.org/embed/silent-ramona"
 last_checked = "2025-05-30"
 +++
 
-## Plot Summary
+This silent short film chronicles the troubled romance between Ramona (Mary Pickford), a Spanish orphan from the prestigious Moreno family, and Alessandro (Henry B. Walthall), a Native American who appears on her family's ranch one day.
 
-[Add plot summary here]
+## Regional Focus
 
-## Adaptation Analysis
+Set in Southern California during the post-Mexican War period (1840s-1850s) when California was transitioning to American control. It portrays the rancho culture of Spanish/Mexican California and the conflicts between European settlers, Spanish/Mexican landowners, and Native Americans. The film’s authentic Ventura County filming location reflects Griffith's early interest in Southern California, allowing him to showcase the actual landscapes described in Jackson’s novel.
 
-[Add analysis of how the film adapts the source material]
+## Production & Adaptation
 
-## Historical Context
+### Filming Locations
 
-[Add information about the film's place in Hollywood history and regional representation]
+Shot on location at Rancho Camulos in Ventura County, California, which Jackson visited while researching the novel. This site was known as the “Home of Ramona” and became a tourist destination after the novel's publication.
 
 
 
+
+## Notes
+
+1. **Production details:** See {{ cite(id="afi_ramona_1910") }}
+2. **Rancho Camulos:** See D.W. Griffith's opening title card proclaiming the film “taken at Camulos, Ventura County, California, the actual scenes where Mrs. Jackson placed her characters.” 

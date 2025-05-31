@@ -125,7 +125,7 @@ studio = "[Studio Name]"
 production_company = ""
 distributor = "" # if different
 setting = "[Geographic Setting as Depicted]"
-filming_locations = ["[Actual Filming Location]"] # Array format for multiple locations
+filming_locations = ["Actual Filming Location"] # Array format for multiple locations
 format = "[Silent/Sound], [B&W/Color]"
 duration = "[Runtime if known]"
 
