@@ -30,16 +30,28 @@ story_author = "Eleanor H. Porter"
 director = "Paul Powell"
 screenwriter = "Frances Marion"
 studio = ["Mary Pickford Company", "United Artists"]
+stars = "Mary Pickford"
+screenwriter = "Frances Marion"
 setting = "Vermont"
 format = "Silent, B&W"
 duration = "58 minutes"
 
+
+# Content flags
+show_citation = true
+author_byline = "Alexandra Edwards"
 
 # Film image
 [extra.film_image]
 url = "/images/sidebar-pollyanna1920.jpg"
 alt = "A young girl sits in a tiny makeshift wagon that is being pulled by a dog."
 caption = "CAPTION NEEDED."
+
+[extra.film_status]
+survival = "extant"
+completeness = "complete"
+access = "available"
+availability_type = "internet_archive"
 
 
 [extra.film_status]
