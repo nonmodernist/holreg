@@ -7,6 +7,19 @@
 # For print sources, include a "quote" field with the relevant passage
 # For online sources, include a "url" field
 
+# =============================================================================
+# 📚 BIBLIOGRAPHY TABLE OF CONTENTS
+# =============================================================================
+# Giant (1956) - Lines 25-85
+# Gone with the Wind (1939) - Lines 132-170
+# Imitation of Life (1959) - Lines 174-245
+# A Tree Grows in Brooklyn (1945) - Lines 249
+# Freckles (1917) - Lines 259-270
+# Research Notes - Lines 276-354
+# Lantern Sources - Lines 360 - 
+# AFI Catalog Entries - Lines 700-end
+# =============================================================================
+
 
 # =============================================================================
 # 🌟  GIANT (1956) - Edna Ferber
@@ -259,24 +272,6 @@ location = "London"
 year = "1927"
 page = "243"
 quote = "She had allowed a well-known company to do one of her early books. They had invited her to approve the adaptation and continuity and make suggestions; all of which she did. But when they made the picture, they ignored all of her ideas and suggestions."
-
-# =============================================================================
-# 👩‍💼 GENE STRATTON-PORTER - Author Biography Sources
-# =============================================================================
-
-
-
-
-
-# =============================================================================
-# 🎭 GENERAL THEORY - Cross-Film Sources
-# =============================================================================
-
-
-
-
-
-
 
 
 # =============================================================================
@@ -717,20 +712,6 @@ source = "AFI Catalog of Feature Films"
 url = "https://catalog.afi.com/Film/40029-RAMONA?sid=2cf388ca-c6f1-4525-beb4-678d1a0e5e3b&sr=0.16478254&cp=1&pos=2"
 accessed = "2025-05-31"
 
-[afi_janet_of_the_dunes_1913]
-type = "online"
-title = "Janet of the Dunes"
-source = "AFI Catalog of Feature Films"
-url = "https://catalog.afi.com/Catalog/moviedetails/XXXXX"
-accessed = "2025-05-31"
-
-[afi_joyce_of_the_north_woods_1913]
-type = "online"
-title = "Joyce of the North Woods"
-source = "AFI Catalog of Feature Films"
-url = "https://catalog.afi.com/Catalog/moviedetails/XXXXX"
-accessed = "2025-05-31"
-
 [afi_mrs_wiggs_of_the_cabbage_patch_1914]
 type = "online"
 title = "Mrs. Wiggs of the Cabbage Patch"
@@ -907,13 +888,6 @@ url = "https://catalog.afi.com/Film/10460-LOVEY-MARY?sid=a9c6d2bc-6a56-490e-b655
 accessed = "2025-05-31"
 
 
-[afi_fieldwork_footage_1928]
-type = "online"
-title = "Fieldwork Footage"
-source = "AFI Catalog of Feature Films"
-url = "https://catalog.afi.com/Catalog/moviedetails/XXXXX"
-accessed = "2025-05-31"
-
 [afi_freckles_1928]
 type = "online"
 title = "Freckles"
@@ -1074,13 +1048,6 @@ source = "AFI Catalog of Feature Films"
 url = "https://catalog.afi.com/Film/25224-KEEPER-OFTHEBEES?sid=6ebe59ff-b77e-485d-99da-2664c1198904&sr=0.15056205&cp=1&pos=0"
 accessed = "2025-05-31"
 
-
-[afi_back_street_1948]
-type = "online"
-title = "Back Street"
-source = "AFI Catalog of Feature Films"
-url = "https://catalog.afi.com/Catalog/moviedetails/XXXXX"
-accessed = "2025-05-31"
 
 [afi_i_remember_mama_1948]
 type = "online"
