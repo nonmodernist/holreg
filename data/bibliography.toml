@@ -11,6 +11,7 @@
 # 📚 BIBLIOGRAPHY TABLE OF CONTENTS
 # =============================================================================
 # 
+# Bright Road (1953)
 # Fieldwork Footage ZNH (1928)
 # Pollyanna (1920)
 # Giant (1956) 
@@ -22,6 +23,29 @@
 # Lantern Sources
 # AFI Catalog Entries
 # =============================================================================
+
+
+# =============================================================================
+#  BRIGHT ROAD (1953)
+# =============================================================================
+
+[bogle_hollywood_black]
+type = "print"
+author = "Donald Bogle"
+source = "Hollywood Black"
+publisher = "Running Press"
+location = "Philadelphia"
+year = "2019"
+page = "np"
+# quote = ""
+
+[nyt_bright_road]
+type = "online"
+author = "Bosley Crowther"
+title = "The Screen in Review"
+source = "The New York Times"
+url = "https://www.nytimes.com/1953/04/29/archives/the-screen-in-review-mgms-bright-road-at-55th-street-catches.html"
+accessed = "2025-05-31"
 
 # =============================================================================
 #  FIELDWORK FOOTAGE (1928)
