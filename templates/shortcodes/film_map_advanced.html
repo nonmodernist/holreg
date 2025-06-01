@@ -1,0 +1,39 @@
+<!-- Advanced film location map -->
+<div id="{{ id }}-map" class="film-location-map" style="height: {{ height | default(value='500px') }}"></div>
+
+<!-- Store data in hidden div -->
+<div id="{{ id }}-data" style="display: none;">
+    {{ data }}
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Parse the data
+    var dataElement = document.getElementById('{{ id }}-data');
+    var mapData = JSON.parse(dataElement.textContent);
+    
+    // Initialize map
+    var map = L.map('{{ id }}-map').setView([mapData.center_lat, mapData.center_lng], mapData.zoom || 5);
+    
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+    
+    // Add markers
+    if (mapData.locations) {
+        mapData.locations.forEach(function(loc) {
+            L.marker([loc.lat, loc.lng])
+                .bindPopup('<strong>' + loc.name + '</strong><br>' + (loc.description || ''))
+                .addTo(map);
+        });
+    }
+});
+</script>
+
+<style>
+.film-location-map {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    margin: 2rem 0;
+}
+</style>

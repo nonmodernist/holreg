@@ -1,0 +1,42 @@
+<!-- Film location map -->
+<div id="map-{{ id | default(value='film-map') }}" 
+     class="film-location-map" 
+     style="height: {{ height | default(value='400px') }}">
+</div>
+
+{% if caption %}
+<div class="map-caption">{{ caption }}</div>
+{% endif %}
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var map = L.map('map-{{ id | default(value="film-map") }}').setView([{{ lat | default(value=39.8) }}, {{ lng | default(value=-98.6) }}], {{ zoom | default(value=5) }});
+    
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap contributors',
+        maxZoom: 18
+    }).addTo(map);
+    
+    // Add a single marker for now
+    {% if location_name %}
+    L.marker([{{ lat }}, {{ lng }}])
+        .bindPopup('<strong>{{ location_name }}</strong>{% if location_desc %}<br>{{ location_desc }}{% endif %}')
+        .addTo(map);
+    {% endif %}
+});
+</script>
+
+<style>
+.film-location-map {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin: 2rem 0;
+}
+.map-caption {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+</style>
