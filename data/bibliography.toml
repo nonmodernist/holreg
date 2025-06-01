@@ -27,6 +27,14 @@
 #  FIELDWORK FOOTAGE (1928)
 # =============================================================================
 
+[loc_znh_catalog]
+type = "online"
+author = "Author Name"
+title = "ZORA NEALE HURSTON: RECORDINGS, MANUSCRIPTS, PHOTOGRAPHS, AND EPHEMERA"
+source = "Library of Congress"
+url = "https://web.archive.org/web/20170121215426/https://www.loc.gov/folklife/guides/Hurston.html"
+accessed = "2025-05-31"
+
 [pioneers_booklet_hurston]
 type = "print"
 title = "Supplemental Booklet: Film Credits and Notes"

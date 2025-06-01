@@ -11,11 +11,11 @@
         {%- if citation.title -%}
             "{{ citation.title }},"&nbsp;
         {%- endif -%} 
-        <em>{{ citation.source }}</em>&nbsp;
+        <em>{{ citation.source }}</em>
         {%- if citation.volume -%},&nbsp;{{ citation.volume }}{%- endif -%} 
-        {%- if citation.number -%},&nbsp;no. {{ citation.number }}{%- endif -%} 
+        {%- if citation.number -%},&nbsp;no. {{ citation.number }}&nbsp;{%- endif -%} 
         {%- if citation.publisher -%}
-            ({{ citation.location }}: {{ citation.publisher }}, {{ citation.year }}) 
+            &nbsp;({{ citation.location }}: {{ citation.publisher }}, {{ citation.year }}) 
         {%- elif citation.date -%}
             ({{ citation.date }}) 
         {%- endif -%}
