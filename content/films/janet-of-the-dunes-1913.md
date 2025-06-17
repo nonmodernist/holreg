@@ -21,7 +21,6 @@ story_author = "Harriet Comstock"
 director = "Richard Ridgely"
 studio = "Edison Company"
 setting = "northeast atlantic coast - Long Island"
-availability = "Unknown"
 format = "Unknown"
 
 # Content flags
@@ -35,14 +34,3 @@ caption = "CAPTION."
 
 +++
 
-## Plot Summary
-
-[Add plot summary here]
-
-## Adaptation Analysis
-
-[Add analysis of how the film adapts the source material]
-
-## Historical Context
-
-[Add information about the film's place in Hollywood history and regional representation]

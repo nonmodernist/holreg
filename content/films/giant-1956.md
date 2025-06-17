@@ -69,10 +69,6 @@ The discovery of oil beneath grazing land represents the seismic economic shift 
 
 ### Filming Locations
 
-{{ film_map(id="giant-map", lat=31.45, lng=-103.79, zoom=7, location_name="Marfa, Texas", location_desc="Worth Evans Ranch", caption="Primary filming location for Giant (1956)") }}
-
-
-
 {{ film_map_advanced(
     id="giant",
     data='{
@@ -85,10 +81,6 @@ The discovery of oil beneath grazing land represents the seismic economic shift 
         ]
     }'
 ) }}
-
-
-
-{{ image(src="giant-production.jpg", alt="Production still from Giant", caption="Rock Hudson films a scene in West Texas", class="rounded shadow size-medium") }}
 
 Shot on location at the Worth Evans Ranch, twenty-one miles from Marfa, Texas, where the imposing Benedict family home facade—built at the Warner Bros. prop department and shipped to Texas—still stands today. The landscape of West Texas provided the sweeping vistas of rangeland that define the film’s visual representation of cattle empire grandeur, though key elements like the oil derricks were also constructed in Hollywood and transported to the remote Texas location. Nearby Valentine served as the setting for the film’s Mexican village sequences, utilizing the area’s existing Hispanic community and architecture to represent the cross-cultural dynamics central to the story. 
 

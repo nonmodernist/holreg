@@ -1536,3 +1536,25 @@ filmYear = 1913
 lanternId = "movingpicturewor18newy_0359"
 quote = """THE MOVING PICTURE WORLD 351 JANET OF THE DUNES From the Novel by Harriet T"""
 
+
+
+
+[movingpicturewor_janet_of_the_dunes_1913_ad]
+type = "lantern"
+title = "Janet of the Dunes"
+source = "The Moving Picture World"
+date = "1913"
+url = "http://archive.org/stream/movingpicturewor18newy#page/n354/"
+accessed = "2025-06-01"
+# Film: Janet of the Dunes (1913)
+# Content type: ad
+# Relevance score: 10
+# Lantern ID: movingpicturewor18newy_0354
+contentType = "advertisement"
+film = "Janet of the Dunes"
+filmYear = 1913
+lanternId = "movingpicturewor18newy_0354"
+quote = """John Devant flirted with lovely Mary •Fleming all one summer, married her, and, tiring of her, soon deserted her. Mary went back to her little Long Island town, left baby Janet in care of faithful Captain Billy and flung herself into the sea. Janet, care-free as the wind, found an entrance into a deserted house — Devant's — where she used to read. One day Devant surprised her there and became interested in her, not knowing her identity. An artist friend of his painted Janet and became very much attached to her, although he did not realize it until he was dismissed after his fiancee had made a very disagreeable scene upon finding Janet waiting in the artist's studio. But the artist came back to Janet — floating on the wreckage of the ship in which he had set sail — and Devant, learning who Janet really was, swore to atone for the desertion of her mother."""
+featured = true
+featured_note = ""
+page_image_url = "https://archive.org/download/movingpicturewor18newy/page/n354_medium.jpg"
